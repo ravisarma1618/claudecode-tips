@@ -1,4 +1,4 @@
-name: Deploy Claude Code Mastery to GitHub Pages
+name: Deploy CCU Scholar to GitHub Pages
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
     paths:
       - "claude-code-mastery/**"
       - ".github/workflows/deploy-pages.yml"
-
   workflow_dispatch:
 
 permissions:
@@ -20,44 +19,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: ./claude-code-mastery
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: claude-code-mastery/package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build website
-        run: npm run build
-
-      - name: Validate generated website
-        run: test -s dist/index.html
+      - name: Verify website files
+        run: |
+          test -s claude-code-mastery/index.html
+          test -s claude-code-mastery/data/curriculum.json
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload generated website
+      - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./claude-code-mastery/dist"
+          path: ./claude-code-mastery
 
       - name: Deploy website
         id: deployment
