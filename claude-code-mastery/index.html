@@ -3,265 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Claude Code University: an interactive beginner-to-architect learning portal.">
+  <meta name="description" content="Claude Code University: beginner-to-AI-architect learning portal.">
   <title>CCU | Scholar Portal</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    body { font-family: 'Inter', sans-serif; background-color: #fafafa; }
-    .glass-sidebar { background: rgba(255,255,255,.86); backdrop-filter: blur(12px); }
-    .module-card { transition: all .2s cubic-bezier(.4,0,.2,1); }
-    .module-card:hover { transform: translateY(-2px); border-color: #000; box-shadow: 0 12px 30px rgba(0,0,0,.06); }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: #e5e5e5; border-radius: 10px; }
-    .lesson-body h3 { margin-top: 1.5rem; margin-bottom: .5rem; font-weight: 600; color: #111827; }
-    .lesson-body ul, .lesson-body ol { margin-left: 1.2rem; margin-bottom: 1rem; }
-    .lesson-body li { margin-bottom: .4rem; color: #4b5563; }
-    .lesson-body code { background:#f3f4f6; padding:.1rem .35rem; border-radius:.3rem; font-size:.85em; }
+    body{font-family:Inter,sans-serif;background:#fafafa}.glass-sidebar{background:rgba(255,255,255,.88);backdrop-filter:blur(12px)}
+    .module-card{transition:all .2s cubic-bezier(.4,0,.2,1)}.module-card:hover{transform:translateY(-2px);border-color:#000;box-shadow:0 12px 30px rgba(0,0,0,.06)}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#e5e5e5;border-radius:10px}
+    .lesson h3{font-weight:600;margin:1.35rem 0 .45rem;color:#111827}.lesson ul,.lesson ol{margin-left:1.2rem;margin-bottom:1rem}.lesson li{margin:.35rem 0;color:#4b5563}
+    .pill{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#6b7280}.hidden-view{display:none!important}
   </style>
 </head>
-<body class="flex min-h-screen overflow-hidden">
-  <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-72 -translate-x-full border-r border-gray-200 glass-sidebar p-7 transition-transform lg:static lg:translate-x-0 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between mb-10">
-        <div class="flex items-center gap-3">
-          <div class="w-9 h-9 bg-black rounded-full text-white grid place-items-center text-xs font-bold">CCU</div>
-          <div><div class="font-semibold tracking-tight">CCU Scholar</div><div class="text-[10px] uppercase tracking-[.18em] text-gray-400">Claude Code University</div></div>
-        </div>
-        <button id="closeMenu" class="lg:hidden text-xl">×</button>
-      </div>
-      <nav class="space-y-2 text-sm">
-        <button data-view="dashboard" class="nav-btn w-full text-left px-3 py-2 rounded-md bg-black text-white">Dashboard</button>
-        <button data-view="modules" class="nav-btn w-full text-left px-3 py-2 rounded-md text-gray-500 hover:text-black hover:bg-gray-100">Modules</button>
-        <button data-view="progress" class="nav-btn w-full text-left px-3 py-2 rounded-md text-gray-500 hover:text-black hover:bg-gray-100">Progress</button>
-        <button data-view="about" class="nav-btn w-full text-left px-3 py-2 rounded-md text-gray-500 hover:text-black hover:bg-gray-100">About</button>
-      </nav>
-      <div class="mt-10">
-        <div class="flex justify-between text-xs mb-2"><span class="text-gray-500">Course progress</span><span id="overallPercent">0%</span></div>
-        <div class="h-1.5 rounded-full bg-gray-100 overflow-hidden"><div id="overallBar" class="h-full bg-black" style="width:0%"></div></div>
-      </div>
-    </div>
-    <div class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">Semester 2026.01</div>
+<body class="flex h-screen overflow-hidden text-gray-900">
+  <aside id="sidebar" class="w-72 glass-sidebar border-r border-gray-200 flex flex-col p-7 overflow-y-auto max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:z-50 max-md:-translate-x-full transition-transform">
+    <div class="flex items-center justify-between mb-10"><div class="flex items-center gap-3"><div class="w-8 h-8 bg-black rounded-full"></div><span class="font-semibold text-lg tracking-tight">CCU Scholar</span></div><button id="closeMenu" class="md:hidden text-xl">×</button></div>
+    <nav class="space-y-3 mb-8">
+      <button data-view="dashboard" class="nav-link block w-full text-left text-sm font-medium text-black">Dashboard</button>
+      <button data-view="modules" class="nav-link block w-full text-left text-sm font-medium text-gray-400 hover:text-black">Modules</button>
+    </nav>
+    <div class="border-t border-gray-200 pt-5"><div class="flex justify-between text-xs mb-2"><span>Course progress</span><span id="progressText">0%</span></div><div class="w-full h-1.5 bg-gray-100 rounded"><div id="progressBar" class="h-full bg-black rounded" style="width:0%"></div></div></div>
+    <div class="mt-8"><label class="pill block mb-2" for="lessonSearch">Find a lesson</label><input id="lessonSearch" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-black" placeholder="Search topics..."></div>
+    <div id="lessonNav" class="mt-6 space-y-1"></div>
+    <div class="mt-auto pt-8 text-[10px] text-gray-400 uppercase tracking-widest font-semibold">Semester 2026.01</div>
   </aside>
 
-  <div id="scrim" class="fixed inset-0 z-30 bg-black/30 hidden lg:hidden"></div>
+  <main class="flex-1 overflow-y-auto bg-white">
+    <div class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-gray-100 px-6 py-3 md:hidden"><button id="openMenu" class="text-sm font-medium">☰ Menu</button></div>
+    <div class="p-6 md:p-12">
+      <div id="errorBox" class="hidden mb-8 border border-red-200 bg-red-50 text-red-800 rounded-lg p-4 text-sm"></div>
 
-  <main class="flex-1 h-screen overflow-y-auto bg-white">
-    <div class="max-w-7xl mx-auto p-6 md:p-10 lg:p-12">
-      <div class="flex items-center justify-between mb-10">
-        <button id="openMenu" class="lg:hidden border rounded-md px-3 py-2 text-sm">Menu</button>
-        <div class="ml-auto flex gap-2">
-          <input id="searchInput" class="w-52 md:w-72 border border-gray-200 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-black" placeholder="Search modules or lessons">
-          <button id="resetProgress" class="border border-gray-200 rounded-md px-3 py-2 text-sm hover:border-black">Reset</button>
-        </div>
-      </div>
-
-      <section id="dashboardView" class="view-section">
-        <header class="max-w-4xl mb-12">
-          <p class="text-[11px] uppercase tracking-[.24em] text-gray-400 font-semibold mb-4">Beginner → Power User → AI Architect</p>
-          <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">Claude Code University</h1>
-          <p class="text-gray-500 text-lg leading-8">Start with zero Claude Code knowledge. Learn by doing: terminal basics, practical coding, customization, agents, multi-agent systems, AI engineering, and production architecture.</p>
-        </header>
-        <div id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"></div>
-        <div class="flex items-end justify-between mb-6">
-          <div><p class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Learning path</p><h2 class="text-2xl font-semibold mt-1">Curriculum phases</h2></div>
-          <button id="continueBtn" class="bg-black text-white rounded-md px-4 py-2 text-sm">Continue learning</button>
-        </div>
-        <section id="phaseGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></section>
+      <section id="dashboardView">
+        <header class="max-w-5xl mb-12"><p class="pill mb-3">Claude Code University</p><h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-3">From complete beginner<br>to AI architect.</h1><p class="text-gray-500 max-w-2xl">An interactive, practical curriculum for learning Claude Code, agents, multi-agent systems, AI engineering, and enterprise architecture.</p></header>
+        <div id="phaseGrid" class="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6"></div>
       </section>
 
-      <section id="modulesView" class="view-section hidden">
-        <header class="mb-8"><p class="text-xs uppercase tracking-widest text-gray-400 font-semibold">All lessons</p><h2 class="text-3xl font-semibold mt-2">Modules</h2></header>
-        <div id="moduleList" class="space-y-4"></div>
+      <section id="modulesView" class="hidden-view">
+        <header class="max-w-5xl mb-10"><p class="pill mb-3">Curriculum</p><h1 class="text-4xl font-semibold tracking-tight mb-2">All modules</h1><p class="text-gray-500">Select any lesson to open the practical guide.</p></header>
+        <div id="moduleGrid" class="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-5"></div>
       </section>
 
-      <section id="progressView" class="view-section hidden">
-        <header class="mb-8"><p class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Your activity</p><h2 class="text-3xl font-semibold mt-2">Progress</h2></header>
-        <div id="progressList" class="space-y-4"></div>
-      </section>
-
-      <section id="aboutView" class="view-section hidden max-w-3xl">
-        <p class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Course design</p>
-        <h2 class="text-3xl font-semibold mt-2 mb-6">How every lesson works</h2>
-        <div class="grid sm:grid-cols-2 gap-4 text-sm text-gray-600" id="lessonPattern"></div>
+      <section id="lessonView" class="hidden-view max-w-4xl">
+        <button id="backButton" class="text-sm text-gray-500 hover:text-black mb-8">← Back to modules</button>
+        <div id="lessonContent"></div>
+        <div class="flex justify-between gap-4 mt-12 pt-6 border-t border-gray-200"><button id="prevLesson" class="border border-gray-200 rounded-lg px-4 py-2 text-sm disabled:opacity-30">Previous</button><button id="completeLesson" class="bg-black text-white rounded-lg px-5 py-2 text-sm">Mark complete</button><button id="nextLesson" class="border border-gray-200 rounded-lg px-4 py-2 text-sm disabled:opacity-30">Next</button></div>
       </section>
     </div>
   </main>
 
-  <dialog id="lessonDialog" class="w-[min(900px,94vw)] rounded-xl p-0 backdrop:bg-black/40">
-    <div class="p-6 md:p-8 max-h-[88vh] overflow-y-auto">
-      <div class="flex justify-between gap-4 mb-6">
-        <div><p id="dialogMeta" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold"></p><h2 id="dialogTitle" class="text-2xl md:text-3xl font-semibold mt-2"></h2></div>
-        <button id="closeDialog" class="h-9 w-9 border rounded-full">×</button>
-      </div>
-      <div id="dialogBody" class="lesson-body text-sm leading-7"></div>
-      <div class="mt-8 pt-6 border-t flex justify-between items-center gap-3">
-        <button id="prevLesson" class="border rounded-md px-4 py-2 text-sm">Previous</button>
-        <button id="completeLesson" class="bg-black text-white rounded-md px-4 py-2 text-sm">Mark complete</button>
-        <button id="nextLesson" class="border rounded-md px-4 py-2 text-sm">Next</button>
-      </div>
-    </div>
-  </dialog>
-
   <script>
-    const STORAGE_KEY = 'ccu-completed-lessons-v2';
-    const pattern = ['What is it?','Why do we need it?','Real-life analogy','How Claude Code implements it','When to use it','When not to use it','How to enable or disable it','How to use it','Let’s build it','When it fails','Common mistakes','Exercise','Interview question','Advanced version','Summary'];
-    let phases = [], lessons = [], currentIndex = 0;
-    let completed = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+    const state={data:null,lessons:[],current:-1,completed:new Set(JSON.parse(localStorage.getItem('ccu-completed')||'[]'))};
+    const $=id=>document.getElementById(id);
+    const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const list=(title,items,ordered=false)=>items?.length?`<h3>${esc(title)}</h3><${ordered?'ol':'ul'}>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</${ordered?'ol':'ul'}>`:'';
 
-    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-    const list = value => Array.isArray(value) ? value : value ? [value] : [];
-    const section = (title, value, ordered=false) => {
-      const items = list(value).filter(Boolean);
-      if (!items.length) return '';
-      if (items.length === 1 && typeof items[0] === 'string' && items[0].length > 120) return `<h3>${title}</h3><p class="text-gray-600">${esc(items[0])}</p>`;
-      const tag = ordered ? 'ol' : 'ul';
-      return `<h3>${title}</h3><${tag}>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</${tag}>`;
-    };
-
-    async function init() {
-      try {
-        const res = await fetch('./data/curriculum.json', {cache:'no-store'});
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        phases = data.phases || [];
-        lessons = phases.flatMap((p,pi)=>p.levels.flatMap(l=>l.modules.map(m=>({...m, phaseTitle:p.title, phaseIndex:pi, levelTitle:l.title}))));
-        renderAll();
-        const hash = new URLSearchParams(location.hash.slice(1)).get('lesson');
-        if (hash) openLesson(Math.max(0, lessons.findIndex(l=>l.id===hash)));
-      } catch (error) {
-        document.getElementById('phaseGrid').innerHTML = `<div class="border border-red-200 bg-red-50 p-6 rounded-lg md:col-span-2"><h2 class="font-semibold text-red-800">Curriculum could not load</h2><p class="text-sm text-red-700 mt-2">${esc(error.message)}. Confirm that data/curriculum.json exists in the deployed site.</p></div>`;
+    function parseCurriculum(raw){
+      try{return JSON.parse(raw)}catch(firstError){
+        // Repair invalid JSON backslashes such as Windows paths: C:\ or D:\work.
+        // Valid JSON escapes (\", \\, \/, \b, \f, \n, \r, \t, \uXXXX) remain untouched.
+        const repaired=raw.replace(/\\(?!["\\/bfnrtu])/g,'\\\\');
+        try{return JSON.parse(repaired)}catch(secondError){
+          throw new Error(`${secondError.message}. Original parse error: ${firstError.message}`);
+        }
       }
     }
 
-    function renderAll(filter='') {
-      renderStats(); renderPhases(filter); renderModules(filter); renderProgress(); renderAbout(); updateProgress();
+    async function load(){
+      try{
+        const response=await fetch('./data/curriculum.json',{cache:'no-store'});
+        if(!response.ok)throw new Error(`Could not load curriculum.json (HTTP ${response.status})`);
+        const raw=await response.text();
+        state.data=parseCurriculum(raw);
+        state.lessons=state.data.phases.flatMap((phase,pIndex)=>phase.levels.flatMap(level=>level.modules.map(module=>({...module,phaseTitle:phase.title,phaseDescription:phase.description,phaseIndex:pIndex}))));
+        renderAll();
+      }catch(error){
+        $('errorBox').classList.remove('hidden');
+        $('errorBox').innerHTML=`<strong>Curriculum could not load.</strong><br>${esc(error.message)}<br><span class="text-xs">Confirm that <code>data/curriculum.json</code> exists in the deployed site.</span>`;
+        console.error(error);
+      }
     }
 
-    function renderStats() {
-      const stats = [
-        ['Phases', phases.length], ['Lessons', lessons.length], ['Completed', completed.size], ['Practical focus', '80%']
-      ];
-      document.getElementById('stats').innerHTML = stats.map(([k,v])=>`<div class="border border-gray-200 rounded-lg p-5"><div class="text-2xl font-semibold">${v}</div><div class="text-xs text-gray-400 mt-1 uppercase tracking-wider">${k}</div></div>`).join('');
-    }
-
-    function phaseLessons(phase) { return phase.levels.flatMap(l=>l.modules); }
-    function renderPhases(filter='') {
-      const q = filter.toLowerCase();
-      const filtered = phases.filter(p => !q || [p.title,p.description,...phaseLessons(p).flatMap(l=>[l.title,l.simple,l.objective])].join(' ').toLowerCase().includes(q));
-      document.getElementById('phaseGrid').innerHTML = filtered.map((p,i)=>{
-        const ls = phaseLessons(p), done = ls.filter(l=>completed.has(l.id)).length, pct = ls.length ? Math.round(done/ls.length*100) : 0;
-        const firstIndex = lessons.findIndex(l=>l.phaseTitle===p.title);
-        return `<button class="module-card text-left border border-gray-200 p-6 rounded-lg" onclick="openLesson(${firstIndex})">
-          <div class="flex justify-between items-start mb-4"><span class="text-[10px] uppercase font-bold text-gray-400">Phase ${String(i+1).padStart(2,'0')}</span><span class="text-xs bg-gray-100 px-2 py-0.5 rounded">${pct}%</span></div>
-          <h3 class="font-medium text-lg mb-2">${esc(p.title.replace(/^Phase\s*\d*\s*[·:-]?\s*/i,''))}</h3>
-          <p class="text-sm text-gray-500 mb-6 leading-6">${esc(p.description)}</p>
-          <div class="flex justify-between text-xs text-gray-400 mb-2"><span>${ls.length} lessons</span><span>${done} complete</span></div>
-          <div class="w-full bg-gray-100 h-1 rounded-full"><div class="h-full bg-black rounded-full" style="width:${pct}%"></div></div>
-        </button>`;
-      }).join('') || '<p class="text-gray-500">No matching phases.</p>';
-    }
-
-    function renderModules(filter='') {
-      const q = filter.toLowerCase();
-      document.getElementById('moduleList').innerHTML = phases.map((p,pi)=>{
-        const rows = phaseLessons(p).map(l=>({...l,index:lessons.findIndex(x=>x.id===l.id)})).filter(l=>!q || JSON.stringify(l).toLowerCase().includes(q));
-        if (!rows.length) return '';
-        return `<section class="border border-gray-200 rounded-lg overflow-hidden"><div class="p-5 bg-gray-50 border-b"><p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Phase ${pi+1}</p><h3 class="font-semibold mt-1">${esc(p.title)}</h3></div><div>${rows.map(l=>`<button onclick="openLesson(${l.index})" class="w-full text-left px-5 py-4 border-b last:border-b-0 hover:bg-gray-50 flex justify-between gap-4"><div><div class="font-medium">${esc(l.title)}</div><div class="text-sm text-gray-500 mt-1">${esc(l.objective || l.simple || '')}</div></div><span class="text-xs ${completed.has(l.id)?'bg-black text-white':'bg-gray-100'} rounded-full px-2 py-1 h-fit">${completed.has(l.id)?'Done':'Open'}</span></button>`).join('')}</div></section>`;
-      }).join('') || '<p class="text-gray-500">No matching lessons.</p>';
-    }
-
-    function renderProgress() {
-      document.getElementById('progressList').innerHTML = phases.map((p,i)=>{
-        const ls=phaseLessons(p), done=ls.filter(l=>completed.has(l.id)).length, pct=ls.length?Math.round(done/ls.length*100):0;
-        return `<div class="border rounded-lg p-5"><div class="flex justify-between"><div><p class="text-[10px] uppercase tracking-widest text-gray-400">Phase ${i+1}</p><h3 class="font-medium mt-1">${esc(p.title)}</h3></div><span class="text-sm">${pct}%</span></div><div class="h-1.5 bg-gray-100 rounded-full mt-4"><div class="h-full bg-black rounded-full" style="width:${pct}%"></div></div><p class="text-xs text-gray-400 mt-2">${done} of ${ls.length} lessons complete</p></div>`;
+    function renderAll(){renderPhases();renderModules(state.lessons);renderNav(state.lessons);updateProgress()}
+    function renderPhases(){
+      $('phaseGrid').innerHTML=state.data.phases.map((phase,i)=>{
+        const lessons=phase.levels.flatMap(l=>l.modules),done=lessons.filter(x=>state.completed.has(x.id)).length,pct=lessons.length?Math.round(done/lessons.length*100):0;
+        return `<button class="module-card text-left border border-gray-200 p-6 rounded-lg" data-phase="${i}"><div class="flex justify-between mb-4"><span class="pill">Phase ${String(i).padStart(2,'0')}</span><span class="text-xs bg-gray-100 px-2 py-1 rounded">${pct}%</span></div><h2 class="font-medium text-xl mb-2">${esc(phase.title.replace(/^Phase \d+ · /,''))}</h2><p class="text-sm text-gray-500 mb-6">${esc(phase.description)}</p><div class="w-full bg-gray-100 h-1 rounded"><div class="h-full bg-black rounded" style="width:${pct}%"></div></div><p class="text-xs text-gray-400 mt-3">${lessons.length} lessons</p></button>`;
       }).join('');
+      document.querySelectorAll('[data-phase]').forEach(btn=>btn.onclick=()=>{showView('modules');renderModules(state.lessons.filter(x=>x.phaseIndex===Number(btn.dataset.phase)))});
     }
-
-    function renderAbout() {
-      document.getElementById('lessonPattern').innerHTML = pattern.map((x,i)=>`<div class="border rounded-lg p-4"><span class="text-[10px] text-gray-400 font-bold">${String(i+1).padStart(2,'0')}</span><div class="font-medium text-gray-900 mt-1">${x}</div></div>`).join('');
+    function renderModules(items){
+      $('moduleGrid').innerHTML=items.map((l)=>`<button class="module-card text-left border border-gray-200 p-5 rounded-lg" data-lesson="${esc(l.id)}"><div class="flex justify-between mb-3"><span class="pill">${esc(l.phaseTitle)}</span><span class="text-xs ${state.completed.has(l.id)?'bg-black text-white':'bg-gray-100'} px-2 py-1 rounded">${state.completed.has(l.id)?'Done':'Open'}</span></div><h3 class="font-medium text-lg mb-2">${esc(l.title)}</h3><p class="text-sm text-gray-500">${esc(l.objective||l.simple)}</p></button>`).join('');
+      document.querySelectorAll('[data-lesson]').forEach(btn=>btn.onclick=()=>openLesson(btn.dataset.lesson));
     }
-
-    function lessonHtml(l) {
-      const analogy = l.analogy || l.realLifeAnalogy;
-      const why = l.why || l.whyNeeded || l.objective;
-      const implementation = l.claudeCode || l.implementation || l.simple;
-      const useWhen = l.whenToUse || l.useWhen;
-      const avoidWhen = l.whenNotToUse || l.avoidWhen;
-      const enable = l.enableDisable || l.configuration;
-      const failures = l.whenItFails || l.failureModes;
-      const interview = l.interviewQuestion || l.quiz?.question;
-      const advanced = l.advancedVersion || l.advanced;
-      return [
-        section('What is it?', l.simple || l.definition),
-        section('Why do we need it?', why),
-        section('Real-life analogy', analogy),
-        section('How Claude Code implements it', implementation),
-        section('When to use it', useWhen),
-        section('When not to use it', avoidWhen),
-        section('How to enable or disable it', enable),
-        section('How to use it', l.howToUse || l.procedure, true),
-        section('Let’s build it', l.letsBuild || l.good),
-        section('When it is going to fail', failures),
-        section('Common mistakes', l.commonMistakes || l.bad),
-        section('Exercise', l.exercise),
-        section('Interview question', interview),
-        section('Advanced version', advanced),
-        section('Success criteria', l.success),
-        section('Summary', l.summary || l.simple)
-      ].join('');
+    function renderNav(items){
+      $('lessonNav').innerHTML=items.map(l=>`<button data-navlesson="${esc(l.id)}" class="block w-full text-left text-xs py-2 ${state.completed.has(l.id)?'text-black':'text-gray-400'} hover:text-black">${state.completed.has(l.id)?'✓ ':''}${esc(l.title)}</button>`).join('');
+      document.querySelectorAll('[data-navlesson]').forEach(btn=>btn.onclick=()=>openLesson(btn.dataset.navlesson));
     }
-
-    function openLesson(index) {
-      if (!lessons.length) return;
-      currentIndex = Math.max(0, Math.min(index, lessons.length-1));
-      const l = lessons[currentIndex];
-      document.getElementById('dialogMeta').textContent = `${l.phaseTitle} · ${l.levelTitle || ''}`;
-      document.getElementById('dialogTitle').textContent = l.title;
-      document.getElementById('dialogBody').innerHTML = lessonHtml(l);
-      document.getElementById('completeLesson').textContent = completed.has(l.id) ? 'Mark incomplete' : 'Mark complete';
-      document.getElementById('prevLesson').disabled = currentIndex===0;
-      document.getElementById('nextLesson').disabled = currentIndex===lessons.length-1;
-      document.getElementById('lessonDialog').showModal();
-      history.replaceState(null,'',`#lesson=${encodeURIComponent(l.id)}`);
+    function openLesson(id){
+      state.current=state.lessons.findIndex(x=>x.id===id);if(state.current<0)return;
+      const l=state.lessons[state.current];showView('lesson');
+      $('lessonContent').innerHTML=`<p class="pill mb-3">${esc(l.phaseTitle)} · Difficulty ${esc(l.difficulty)}</p><h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-3">${esc(l.title)}</h1><p class="text-lg text-gray-500 mb-8">${esc(l.objective)}</p><article class="lesson border-t border-gray-200 pt-6"><h3>What is it?</h3><p class="text-gray-600">${esc(l.simple)}</p><h3>Why do we need it?</h3><p class="text-gray-600">${esc(l.problem)}</p><h3>Real-life analogy</h3><p class="text-gray-600">${esc(l.analogy)}</p><h3>How Claude Code implements it</h3><p class="text-gray-600">${esc(l.howClaudeImplements)}</p>${list('When to use it',l.whenToUse)}${list('When not to use it',l.whenNotToUse)}<h3>How to enable or disable it</h3><p class="text-gray-600">${esc(l.enableDisable)}</p>${list('How to use it',l.usage)}${list("Let's build it",l.procedure,true)}${list('When this can fail',l.failureModes)}${list('Common mistakes',l.commonMistakes)}<h3>Bad approach</h3><p class="bg-red-50 border border-red-100 rounded-lg p-4 text-gray-700">${esc(l.bad)}</p><h3>Better approach</h3><p class="bg-green-50 border border-green-100 rounded-lg p-4 text-gray-700">${esc(l.good)}</p><h3>Exercise</h3><p class="text-gray-600">${esc(l.exercise)}</p><h3>Interview question</h3><p class="text-gray-600">${esc(l.interviewQuestion)}</p><h3>Advanced version</h3><p class="text-gray-600">${esc(l.advanced)}</p><h3>Success criteria</h3><p class="text-gray-600">${esc(l.success)}</p><h3>Summary</h3><p class="font-medium">${esc(l.summary)}</p></article>`;
+      $('completeLesson').textContent=state.completed.has(l.id)?'Completed ✓':'Mark complete';$('prevLesson').disabled=state.current===0;$('nextLesson').disabled=state.current===state.lessons.length-1;window.scrollTo(0,0);
     }
+    function showView(name){['dashboard','modules','lesson'].forEach(v=>$(v+'View').classList.toggle('hidden-view',v!==name));$('sidebar').classList.add('max-md:-translate-x-full')}
+    function updateProgress(){const pct=state.lessons.length?Math.round(state.completed.size/state.lessons.length*100):0;$('progressText').textContent=pct+'%';$('progressBar').style.width=pct+'%'}
+    function saveProgress(){localStorage.setItem('ccu-completed',JSON.stringify([...state.completed]));updateProgress();renderPhases();renderNav(state.lessons)}
 
-    function toggleComplete() {
-      const id = lessons[currentIndex].id;
-      completed.has(id) ? completed.delete(id) : completed.add(id);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...completed]));
-      document.getElementById('completeLesson').textContent = completed.has(id) ? 'Mark incomplete' : 'Mark complete';
-      renderAll(document.getElementById('searchInput').value.trim());
-    }
-
-    function updateProgress() {
-      const pct = lessons.length ? Math.round(completed.size/lessons.length*100) : 0;
-      document.getElementById('overallPercent').textContent = `${pct}%`;
-      document.getElementById('overallBar').style.width = `${pct}%`;
-    }
-
-    function showView(name) {
-      document.querySelectorAll('.view-section').forEach(s=>s.classList.add('hidden'));
-      document.getElementById(`${name}View`).classList.remove('hidden');
-      document.querySelectorAll('.nav-btn').forEach(b=>{b.className='nav-btn w-full text-left px-3 py-2 rounded-md text-gray-500 hover:text-black hover:bg-gray-100';});
-      const active=document.querySelector(`[data-view="${name}"]`); if(active) active.className='nav-btn w-full text-left px-3 py-2 rounded-md bg-black text-white';
-      closeMenu();
-    }
-
-    function openMenu(){document.getElementById('sidebar').classList.remove('-translate-x-full');document.getElementById('scrim').classList.remove('hidden');}
-    function closeMenu(){document.getElementById('sidebar').classList.add('-translate-x-full');document.getElementById('scrim').classList.add('hidden');}
-
-    document.getElementById('searchInput').addEventListener('input',e=>renderAll(e.target.value.trim()));
-    document.getElementById('resetProgress').addEventListener('click',()=>{if(confirm('Reset all lesson progress?')){completed.clear();localStorage.removeItem(STORAGE_KEY);renderAll();}});
-    document.getElementById('continueBtn').addEventListener('click',()=>{const i=lessons.findIndex(l=>!completed.has(l.id));openLesson(i<0?0:i);});
-    document.getElementById('completeLesson').addEventListener('click',toggleComplete);
-    document.getElementById('prevLesson').addEventListener('click',()=>openLesson(currentIndex-1));
-    document.getElementById('nextLesson').addEventListener('click',()=>openLesson(currentIndex+1));
-    document.getElementById('closeDialog').addEventListener('click',()=>{document.getElementById('lessonDialog').close();history.replaceState(null,'',location.pathname);});
-    document.querySelectorAll('.nav-btn').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
-    document.getElementById('openMenu').addEventListener('click',openMenu); document.getElementById('closeMenu').addEventListener('click',closeMenu); document.getElementById('scrim').addEventListener('click',closeMenu);
-    init();
+    document.querySelectorAll('.nav-link').forEach(btn=>btn.onclick=()=>{showView(btn.dataset.view);if(btn.dataset.view==='modules')renderModules(state.lessons)});
+    $('backButton').onclick=()=>showView('modules');$('prevLesson').onclick=()=>state.current>0&&openLesson(state.lessons[state.current-1].id);$('nextLesson').onclick=()=>state.current<state.lessons.length-1&&openLesson(state.lessons[state.current+1].id);
+    $('completeLesson').onclick=()=>{const l=state.lessons[state.current];state.completed.has(l.id)?state.completed.delete(l.id):state.completed.add(l.id);saveProgress();openLesson(l.id)};
+    $('lessonSearch').oninput=e=>{const q=e.target.value.toLowerCase().trim(),items=state.lessons.filter(l=>JSON.stringify(l).toLowerCase().includes(q));renderNav(items);if(!$('modulesView').classList.contains('hidden-view'))renderModules(items)};
+    $('openMenu').onclick=()=>$('sidebar').classList.remove('max-md:-translate-x-full');$('closeMenu').onclick=()=>$('sidebar').classList.add('max-md:-translate-x-full');
+    load();
   </script>
 </body>
 </html>
