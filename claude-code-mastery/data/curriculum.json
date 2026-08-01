@@ -2,16 +2,16 @@
   "phases": [
     {
       "id": "phase-foundations",
-      "title": "Phase 1 · Foundations",
-      "description": "Build the operating model: scope, context, evidence, and safe control.",
+      "title": "Phase 1 · First Steps",
+      "description": "Understand what Claude Code is, install it safely, and complete your first small task.",
       "levels": [
         {
           "id": "level-beginner",
-          "title": "Level 1 · Beginner",
+          "title": "Level 1 · Complete Beginner",
           "modules": [
             {
               "id": "lesson-agent-loop",
-              "title": "The agent loop",
+              "title": "What Claude Code is",
               "difficulty": 1,
               "topics": [
                 "mental-model",
@@ -21,33 +21,34 @@
               "insightIds": [
                 "foundation-001"
               ],
-              "objective": "Turn a request into a controlled explore–act–verify loop.",
-              "simple": "Claude Code is not just a chat box. It can read files, run tools, edit code, and observe results. Your job is to define the finish line and supervise the loop.",
+              "objective": "Understand Claude Code without assuming any terminal or AI coding knowledge.",
+              "simple": "Claude Code is an AI assistant that works inside a terminal. It can look at files in a project, explain them, suggest changes, edit files, and run commands. You remain in control: you choose the folder, describe the task, review permissions, and check the result.",
               "procedure": [
-                "State the outcome and non-goals.",
-                "Let Claude inspect relevant evidence.",
-                "Review the proposed direction when risk is meaningful.",
-                "Require an observable check.",
-                "Inspect the diff and remaining risks."
+                "Learn three words first: terminal, folder, and command.",
+                "Open a terminal and move into a small practice project.",
+                "Start Claude Code from that folder.",
+                "Ask it to explain the project before changing anything.",
+                "Approve only actions you understand.",
+                "Review the result and ask what changed."
               ],
-              "bad": "Make the login better.",
-              "good": "Add per-IP rate limiting to POST /login. Preserve the response contract and existing dependencies. First map current middleware and tests; then implement and run focused plus full tests. Report changed files and residual risks.",
-              "exercise": "Rewrite one vague task from your backlog as an executable brief.",
-              "success": "Another engineer can tell exactly what success, boundaries, and verification mean.",
+              "bad": "Open an important work project and ask Claude to improve everything.",
+              "good": "Open a disposable practice folder and ask: ‘Explain what is in this folder. Do not change any files.’",
+              "exercise": "Create a practice folder containing one text file, open Claude Code there, and ask it to explain the file without editing it.",
+              "success": "You can explain what Claude Code can do, what it cannot safely decide for you, and why the current folder matters.",
               "quiz": {
-                "question": "What most reliably improves autonomous work?",
+                "question": "Who decides which folder and task Claude Code works on?",
                 "options": [
-                  "A longer chat",
-                  "An observable verification target",
-                  "More adjectives"
+                  "Claude Code",
+                  "You",
+                  "GitHub"
                 ],
                 "answer": 1,
-                "explanation": "External evidence closes the correction loop."
+                "explanation": "Claude Code works inside the folder you choose and follows the task you provide."
               }
             },
             {
               "id": "lesson-prompt-briefs",
-              "title": "Prompts that survive contact with code",
+              "title": "How to ask for help clearly",
               "difficulty": 1,
               "topics": [
                 "prompting",
@@ -58,34 +59,34 @@
                 "prompting-001",
                 "planning-001"
               ],
-              "objective": "Provide sufficient context without micromanaging implementation.",
-              "simple": "Specify what matters: outcome, evidence, constraints, scope, and checks. Let repository conventions fill in the rest.",
+              "objective": "Write simple requests that a first-time user can understand and verify.",
+              "simple": "A useful request says what you want, what Claude may inspect, what it must not change, and how you will know the task is complete. You do not need technical language. Plain sentences are enough.",
               "procedure": [
-                "Name the user-visible outcome.",
-                "Point to starting evidence or ask Claude to find it.",
-                "List invariants and non-goals.",
-                "Define verification.",
-                "Invite questions only for material ambiguity."
+                "Say the result you want.",
+                "Mention the file, screen, or problem involved.",
+                "State any important limit, such as ‘do not delete files.’",
+                "Ask Claude to explain its plan before editing when you are unsure.",
+                "Ask it to show the changed files and how to test the result."
               ],
-              "bad": "Make it cleaner and production ready.",
-              "good": "Refactor the CSV parser to handle quoted newlines without changing its exported API. Follow existing error conventions. Add regression tests from these two examples; run the parser test group and typecheck. Avoid new dependencies.",
-              "exercise": "Add two explicit non-goals and one measurable check to a prompt.",
-              "success": "The prompt constrains behavior but does not dictate every code line.",
+              "bad": "Fix this.",
+              "good": "Read README.md and improve spelling and clarity. Do not change commands or technical meaning. Show me the proposed changes before editing.",
+              "exercise": "Rewrite ‘make my website better’ into a request containing a result, a boundary, and a check.",
+              "success": "A new user can read the request and understand what should happen and what should remain untouched.",
               "quiz": {
-                "question": "Which detail is usually least useful?",
+                "question": "Which request is safest for a beginner?",
                 "options": [
-                  "A concrete invariant",
-                  "A vague adjective",
-                  "A verification command"
+                  "Make everything better",
+                  "Explain the project first and do not edit files",
+                  "Delete unused files"
                 ],
                 "answer": 1,
-                "explanation": "Terms like ‘better’ or ‘cleaner’ have no observable boundary."
+                "explanation": "Starting with explanation-only work lets you learn the project before allowing changes."
               }
             },
             {
               "id": "lesson-repo-map",
-              "title": "Map an unfamiliar repository",
-              "difficulty": 2,
+              "title": "Understand a project before editing it",
+              "difficulty": 1,
               "topics": [
                 "repository",
                 "planning"
@@ -95,28 +96,67 @@
                 "planning-001",
                 "scope-001"
               ],
-              "objective": "Build a trustworthy map before editing.",
-              "simple": "Ask for structure, entry points, data flow, conventions, and test commands—each tied to files.",
+              "objective": "Learn what a project folder contains using plain-language questions.",
+              "simple": "A coding project is usually a folder containing source files, configuration files, documentation, and tests. You do not need to understand every file. First ask Claude to identify the important parts and explain them in simple language.",
               "procedure": [
-                "Read project instructions and top-level docs.",
-                "Inspect manifests and build commands.",
-                "Trace one representative request or execution path.",
-                "Find adjacent tests and recent relevant history.",
-                "Write a map with file references and uncertainties."
+                "Ask Claude to list the main folders and important files.",
+                "Ask which file starts the application.",
+                "Ask how the project is normally run.",
+                "Ask where tests are located.",
+                "Ask for a short beginner-friendly summary.",
+                "Do not edit until the map makes sense to you."
               ],
-              "bad": "Read every file and explain the repo.",
-              "good": "Map the authentication request path from entry point to persistence. Cite files and symbols, identify the test seam, and list uncertainties. Do not edit.",
-              "exercise": "Produce a five-file evidence map for one feature.",
-              "success": "You can predict which files and checks a small change would touch.",
+              "bad": "Read every file and explain all code at once.",
+              "good": "Explain this project for a beginner. Show the five most important files, what each one does, and the command used to run the project. Do not edit anything.",
+              "exercise": "Ask Claude to create a five-item map of a small project and verify that every referenced file exists.",
+              "success": "You know where the application starts, where its main code lives, and how it can be run or checked.",
               "quiz": {
-                "question": "Why avoid reading every file?",
+                "question": "What should you do before changing an unfamiliar project?",
                 "options": [
-                  "Files are dangerous",
-                  "It creates noisy context without a question",
-                  "Claude cannot read directories"
+                  "Delete generated files",
+                  "Ask for a simple project map",
+                  "Run every command"
                 ],
                 "answer": 1,
-                "explanation": "Repository exploration should follow a hypothesis or execution path."
+                "explanation": "A project map gives you context before you approve edits."
+              }
+            },
+            {
+              "id": "lesson-first-safe-edit",
+              "title": "Make your first safe edit",
+              "difficulty": 1,
+              "topics": [
+                "editing",
+                "verification"
+              ],
+              "type": "workflow",
+              "insightIds": [
+                "testing-001"
+              ],
+              "objective": "Complete one small, reversible change from request to verification.",
+              "simple": "Your first edit should be small and easy to inspect, such as correcting text, changing a heading, or adding a comment. Avoid authentication, payments, deployments, databases, and production systems while learning.",
+              "procedure": [
+                "Choose one small file in a practice project.",
+                "Describe exactly one change.",
+                "Ask Claude to show its plan.",
+                "Approve the edit only after the plan is clear.",
+                "Open the file and inspect the change.",
+                "Run a simple check or ask Claude to explain how to verify it.",
+                "Use Git or a backup so the change can be reversed."
+              ],
+              "bad": "Refactor the complete application on my first day.",
+              "good": "In index.html, change the page heading from ‘Hello’ to ‘Welcome’. Do not modify anything else. After editing, show the exact changed line.",
+              "exercise": "Change one heading or sentence in a disposable project and verify the old and new text.",
+              "success": "Only the intended line changed, you inspected it, and you know how to undo it.",
+              "quiz": {
+                "question": "What is a good first Claude Code task?",
+                "options": [
+                  "Deploy to production",
+                  "Change one heading in a practice file",
+                  "Rewrite the whole application"
+                ],
+                "answer": 1,
+                "explanation": "A tiny reversible edit is easy to understand and verify."
               }
             }
           ]
@@ -125,16 +165,16 @@
     },
     {
       "id": "phase-productive",
-      "title": "Phase 2 · Productive delivery",
-      "description": "Plan, implement, test, debug, and review in tight loops.",
+      "title": "Phase 2 · Everyday Use",
+      "description": "Use Claude Code for common coding tasks with clear checks and safe boundaries.",
       "levels": [
         {
           "id": "level-productive",
-          "title": "Level 2 · Productive",
+          "title": "Level 2 · Comfortable Beginner",
           "modules": [
             {
               "id": "lesson-plan-slices",
-              "title": "Plans that produce reviewable slices",
+              "title": "Break a large request into small steps",
               "difficulty": 2,
               "topics": [
                 "planning",
@@ -145,33 +185,33 @@
                 "planning-001",
                 "scope-001"
               ],
-              "objective": "Convert a feature into ordered, independently verifiable increments.",
-              "simple": "A useful plan names files, decisions, checks, and rollback points—not just activities.",
+              "objective": "Turn one intimidating task into a sequence of understandable changes.",
+              "simple": "Large requests are difficult to review. Ask Claude to split the work into small steps where each step produces something you can inspect or test.",
               "procedure": [
-                "Explore current behavior.",
-                "Compare the simplest viable options.",
-                "Choose and record constraints.",
-                "Split by behavior and verification boundary.",
-                "Implement one slice at a time."
+                "Describe the final result.",
+                "Ask Claude to identify the smallest useful first step.",
+                "Review which files that step may change.",
+                "Complete and test only that step.",
+                "Continue one step at a time."
               ],
-              "bad": "1. Update backend 2. Update frontend 3. Test.",
-              "good": "Slice 1: add failing service test and minimal domain behavior. Slice 2: expose existing-style endpoint and contract test. Slice 3: connect UI state and browser check.",
-              "exercise": "Split a cross-stack feature into three demonstrable slices.",
-              "success": "Each slice can be reviewed and reverted independently.",
+              "bad": "Build the complete application in one attempt.",
+              "good": "First show a three-step plan. Implement only step 1: add the empty contact page and a navigation link. Stop before adding the form.",
+              "exercise": "Split a login feature into page, validation, and server steps.",
+              "success": "Each step has a visible result and can be reviewed before continuing.",
               "quiz": {
-                "question": "The best split boundary is usually…",
+                "question": "Why use small steps?",
                 "options": [
-                  "Equal line counts",
-                  "A verifiable behavior",
-                  "One file per task"
+                  "To make more files",
+                  "To make changes easier to review and undo",
+                  "To avoid all testing"
                 ],
                 "answer": 1,
-                "explanation": "Behavioral slices create meaningful checkpoints."
+                "explanation": "Small steps reduce risk and make mistakes easier to locate."
               }
             },
             {
               "id": "lesson-debug-evidence",
-              "title": "Evidence-first debugging",
+              "title": "Fix errors without guessing",
               "difficulty": 2,
               "topics": [
                 "debugging",
@@ -182,33 +222,34 @@
                 "debugging-001",
                 "testing-001"
               ],
-              "objective": "Move from symptom to proven root cause.",
-              "simple": "Reproduce first. Then reduce the search area and try to disprove competing explanations.",
+              "objective": "Give Claude enough evidence to investigate an error safely.",
+              "simple": "An error message is evidence. Copy the exact message, explain what you were doing, and ask Claude to investigate before changing code. Random edits can hide the real problem.",
               "procedure": [
-                "Capture exact symptom and environment.",
-                "Create the smallest reliable reproduction.",
-                "Trace from observed boundary inward.",
-                "List competing hypotheses and discriminating evidence.",
-                "Fix the cause, retain a regression test, run broader checks."
+                "Reproduce the error once.",
+                "Copy the full error message.",
+                "Tell Claude the command or action that caused it.",
+                "Ask for likely causes and the safest next check.",
+                "Make one change at a time.",
+                "Run the same action again to confirm the fix."
               ],
-              "bad": "The test is flaky. Fix timing.",
-              "good": "Reproduce the failure 20 times, compare passing and failing logs, identify shared state, and test the leading two hypotheses before editing production code.",
-              "exercise": "Write two falsifiable hypotheses for a recent bug.",
-              "success": "The fix explains all observed evidence and the old behavior now fails a regression test.",
+              "bad": "It does not work. Change whatever is needed.",
+              "good": "When I run `npm test`, this exact error appears: [paste error]. Explain the likely cause first. Do not edit files until you show the evidence.",
+              "exercise": "Use a harmless syntax error in a practice project and ask Claude to explain and fix it.",
+              "success": "The original error no longer occurs, and you understand which change fixed it.",
               "quiz": {
-                "question": "What comes before a fix?",
+                "question": "What should you provide when asking Claude to fix an error?",
                 "options": [
-                  "A reproduction",
-                  "A refactor",
-                  "A confidence score"
+                  "Only ‘it failed’",
+                  "The exact error and action that caused it",
+                  "Your password"
                 ],
-                "answer": 0,
-                "explanation": "Without a reproduction, you cannot prove the fix addresses the symptom."
+                "answer": 1,
+                "explanation": "Exact evidence helps Claude investigate instead of guessing."
               }
             },
             {
               "id": "lesson-context",
-              "title": "Context and session control",
+              "title": "Start, continue, and reset sessions",
               "difficulty": 2,
               "topics": [
                 "context",
@@ -220,33 +261,33 @@
                 "context-001",
                 "context-002"
               ],
-              "objective": "Recognize context decay and recover without losing durable state.",
-              "simple": "Start fresh between unrelated tasks. For long work, save a compact handoff before clearing or branching.",
+              "objective": "Understand what Claude remembers inside a session and how to continue safely.",
+              "simple": "Claude uses the current conversation and project files as working context. Long or unrelated conversations can become confusing. Save a short summary before starting a fresh session.",
               "procedure": [
-                "Watch for repeated mistakes, forgotten constraints, or irrelevant history.",
-                "Stop the current action early.",
-                "Record goal, decisions, files, evidence, failures, and next step.",
-                "Compact or start a named fresh session.",
-                "Verify the new session’s understanding before edits."
+                "Keep one session focused on one task.",
+                "Ask for a progress summary before stopping.",
+                "Record completed work, changed files, checks, and the next step.",
+                "Start a fresh session for unrelated work.",
+                "Give the new session the saved summary and ask it to verify the current files."
               ],
-              "bad": "Continue correcting the same misunderstanding indefinitely.",
-              "good": "Create HANDOFF.md with current state and test evidence; start fresh and ask the new session to validate the handoff against the repository.",
-              "exercise": "Write a context handoff in under 200 words.",
-              "success": "A fresh agent can name the next action and critical constraints without the old transcript.",
+              "bad": "Use one endless session for many unrelated projects.",
+              "good": "Create HANDOFF.md with the goal, completed steps, changed files, test result, and next action. Then start a fresh session.",
+              "exercise": "Write a five-line handoff for a small task.",
+              "success": "A fresh session can understand the current state without reading the old conversation.",
               "quiz": {
-                "question": "When is /clear safest?",
+                "question": "When is a fresh session useful?",
                 "options": [
-                  "Before saving state",
-                  "After a durable handoff",
-                  "During an unrecorded experiment"
+                  "When starting an unrelated task",
+                  "Only after deleting files",
+                  "Never"
                 ],
-                "answer": 1,
-                "explanation": "Durable state prevents context reset from becoming knowledge loss."
+                "answer": 0,
+                "explanation": "Fresh sessions reduce confusion from unrelated history."
               }
             },
             {
               "id": "lesson-git-review",
-              "title": "Git and review as control surfaces",
+              "title": "Review and undo changes with Git",
               "difficulty": 2,
               "topics": [
                 "git",
@@ -258,33 +299,34 @@
                 "git-001",
                 "review-001"
               ],
-              "objective": "Make every agent change inspectable and reversible.",
-              "simple": "Use status, diff, tests, focused commits, and draft PRs as explicit gates.",
+              "objective": "Use basic Git checks as a safety net.",
+              "simple": "Git records file changes. The most useful beginner commands are status and diff: status shows which files changed, and diff shows the changed lines. Commit only after you understand and verify the change.",
               "procedure": [
-                "Confirm the intended branch and clean baseline.",
-                "Review status before and after edits.",
-                "Inspect the complete diff, including generated files.",
-                "Run required checks.",
-                "Commit coherently and open a draft PR with evidence."
+                "Check `git status` before editing.",
+                "Ask Claude to make one focused change.",
+                "Check `git status` again.",
+                "Review `git diff`.",
+                "Run the appropriate check.",
+                "Commit only the intended files with a clear message."
               ],
-              "bad": "Commit and push everything.",
-              "good": "Show status and diff summary; identify unrelated changes; run the documented checks; propose a commit message; wait before push.",
-              "exercise": "Review a diff for scope, behavior, tests, and security separately.",
-              "success": "Every changed line belongs to the stated objective and has an appropriate check.",
+              "bad": "Commit every changed file without reading the diff.",
+              "good": "Show `git status` and summarize `git diff`. Identify any unrelated changes before creating a commit.",
+              "exercise": "Modify one text file, inspect the diff, then restore or commit it.",
+              "success": "You can see what changed and can return to a known state.",
               "quiz": {
-                "question": "Why is a checkpoint not a Git replacement?",
+                "question": "Which command shows changed lines?",
                 "options": [
-                  "It has no UI",
-                  "It may not capture Bash or external changes",
-                  "It cannot store text"
+                  "git diff",
+                  "git clone",
+                  "git login"
                 ],
-                "answer": 1,
-                "explanation": "Git is the durable record across all change mechanisms."
+                "answer": 0,
+                "explanation": "`git diff` displays the actual line-by-line changes."
               }
             },
             {
               "id": "lesson-agentic-harness",
-              "title": "Harness engineering: from demo to dependable system",
+              "title": "Understand the safety system around Claude",
               "difficulty": 2,
               "topics": [
                 "harness",
@@ -295,33 +337,34 @@
               "insightIds": [
                 "agentic-architecture"
               ],
-              "objective": "Identify every system surrounding the model.",
-              "simple": "A prompt is one component. A dependable agent also needs controlled context, tools, state, memory, evaluation, permissions, traces, retry rules, and stopping conditions.",
+              "objective": "Recognize that reliable AI work needs more than a good prompt.",
+              "simple": "Claude works through a surrounding system: your instructions, project files, allowed tools, permissions, tests, Git history, and review. Together these controls make the work safer and more reliable.",
               "procedure": [
-                "Draw the agent boundary and goal.",
-                "List context inputs and tools.",
-                "Choose durable state and memory.",
-                "Define evaluation and stop conditions.",
-                "Add permissions, tracing, and recovery."
+                "Name the task.",
+                "Limit the folder and tools.",
+                "Decide which actions need approval.",
+                "Define the check for success.",
+                "Keep a way to undo changes.",
+                "Stop when evidence is missing."
               ],
-              "bad": "Use a smart model and keep retrying until it works.",
-              "good": "Design the complete loop: explicit state, typed tools, outcome evaluator, bounded retries, logs, and a human escalation path.",
-              "exercise": "Draw a harness diagram for one automation you use.",
-              "success": "Every arrow has an owner, observable output, and failure path.",
+              "bad": "Give Claude broad access and trust it to decide everything.",
+              "good": "Work in one repository, allow file reads and local tests, review edits, and require approval before push or deployment.",
+              "exercise": "Write a simple safety checklist for a practice project.",
+              "success": "You can identify the task boundary, permissions, verification, and rollback method.",
               "quiz": {
-                "question": "What distinguishes a production harness from a demo?",
+                "question": "What makes Claude Code safer?",
                 "options": [
-                  "A longer system prompt",
-                  "Explicit feedback, state, safety, and observability",
-                  "More agents"
+                  "A longer greeting",
+                  "Clear limits, checks, and review",
+                  "Skipping permissions"
                 ],
                 "answer": 1,
-                "explanation": "Reliability comes from the surrounding system, not model capability alone."
+                "explanation": "Reliability comes from controls around the model."
               }
             },
             {
               "id": "lesson-daily-interface",
-              "title": "Daily Claude Code interface mastery",
+              "title": "Useful everyday commands and habits",
               "difficulty": 2,
               "topics": [
                 "statusline",
@@ -333,30 +376,29 @@
               "insightIds": [
                 "daily-interface"
               ],
-              "objective": "Reduce friction in frequent interactions.",
-              "simple": "Status and context visibility prevent accidental branch/session mistakes; voice captures detailed intent; aliases, concise output, history search, and background work reduce repeated overhead.",
+              "objective": "Learn only the interface features that remove common beginner friction.",
+              "simple": "You do not need every shortcut. First learn how to start Claude, stop an action, view help, review permissions, and keep track of the current folder and Git branch.",
               "procedure": [
-                "Learn essential slash commands and input editing.",
-                "Expose model, directory, branch, dirty state, and context usage.",
-                "Use voice for rich briefs, then review transcription.",
-                "Ask for compact file/log slices.",
-                "Name and search sessions.",
-                "Background only bounded long-running work.",
-                "Adopt one customization at a time."
+                "Confirm the terminal's current folder.",
+                "Use the built-in help to discover commands.",
+                "Learn how to interrupt a running action.",
+                "Check the current Git branch before edits.",
+                "Prefer short focused sessions.",
+                "Add shortcuts only after you understand the manual command."
               ],
-              "bad": "Install every customization and patch before doing real work.",
-              "good": "Track recurring friction for a week, then add the smallest alias/status/voice improvement and verify it saves time without adding risk.",
-              "exercise": "Measure one repeated interaction and remove two unnecessary steps.",
-              "success": "The improvement is used repeatedly and does not broaden authority.",
+              "bad": "Install many plugins and aliases before learning the basic workflow.",
+              "good": "Use the default interface for a week and write down repeated problems before adding one customization.",
+              "exercise": "Find the help command, current folder, and current Git branch in a practice project.",
+              "success": "You can identify where Claude is working and stop or inspect its actions.",
               "quiz": {
-                "question": "Why customize the status line?",
+                "question": "What should you check before allowing edits?",
                 "options": [
-                  "Decoration",
-                  "To expose branch, worktree, and context state before acting",
-                  "To increase model intelligence"
+                  "Current folder and branch",
+                  "Screen brightness",
+                  "Browser history"
                 ],
-                "answer": 1,
-                "explanation": "Visible state prevents coordination errors."
+                "answer": 0,
+                "explanation": "Folder and branch determine where the changes will be made."
               }
             }
           ]
@@ -365,8 +407,8 @@
     },
     {
       "id": "phase-advanced",
-      "title": "Phase 3 · Advanced systems",
-      "description": "Build reusable context, integrations, parallelism, and bounded autonomy.",
+      "title": "Phase 3 · Advanced Workflows",
+      "description": "Introduce reusable instructions, tools, parallel work, permissions, and agent architecture after the basics are comfortable.",
       "levels": [
         {
           "id": "level-advanced",
@@ -374,7 +416,7 @@
           "modules": [
             {
               "id": "lesson-claudemd",
-              "title": "CLAUDE.md as executable team memory",
+              "title": "Use CLAUDE.md for project instructions",
               "difficulty": 3,
               "topics": [
                 "claude-md",
@@ -385,33 +427,33 @@
               "insightIds": [
                 "memory-001"
               ],
-              "objective": "Maintain concise instructions that measurably change behavior.",
-              "simple": "Add a rule when a non-obvious instruction repeats. Remove it when stale or inferable.",
+              "objective": "Store stable project-specific guidance Claude repeatedly needs.",
+              "simple": "CLAUDE.md is a project instruction file. Put commands and rules there only when they are stable, important, and not obvious from the project itself.",
               "procedure": [
-                "Start minimal.",
-                "Add exact commands and non-obvious constraints.",
-                "Choose global, project, local, or child scope.",
-                "Commit shared instructions.",
-                "Test whether behavior changes; prune periodically."
+                "Notice a repeated correction.",
+                "Write one concrete rule.",
+                "Add exact run or test commands.",
+                "Keep temporary task progress elsewhere.",
+                "Review and remove stale rules."
               ],
-              "bad": "Always write good, clean, secure code. Here is every file in the project…",
-              "good": "Run `npm test -- --runInBand` on Windows CI. Never edit `src/generated`; run `npm run generate`. API errors use `ProblemDetails` from `src/http/errors.ts`.",
-              "exercise": "Delete three generic lines and replace one recurring correction with a concrete rule.",
-              "success": "The file is short, current, scoped, and answers questions the repository cannot.",
+              "bad": "Fill CLAUDE.md with generic advice and the current conversation.",
+              "good": "Use `npm test` for checks. Do not edit `src/generated`; run `npm run generate` instead.",
+              "exercise": "Create a small CLAUDE.md with one command and one project rule.",
+              "success": "The file is short, accurate, and changes Claude's behavior in a useful way.",
               "quiz": {
-                "question": "Where should temporary task progress live?",
+                "question": "What belongs in CLAUDE.md?",
                 "options": [
-                  "CLAUDE.md",
-                  "A task handoff or plan",
-                  "Every child CLAUDE.md"
+                  "Stable project rules",
+                  "Passwords",
+                  "Temporary chat history"
                 ],
-                "answer": 1,
-                "explanation": "Project instructions are for stable guidance, not ephemeral state."
+                "answer": 0,
+                "explanation": "CLAUDE.md is for durable project guidance."
               }
             },
             {
               "id": "lesson-extension-choice",
-              "title": "Skills, hooks, MCP, and subagents",
+              "title": "Choose between skills, hooks, MCP, and subagents",
               "difficulty": 3,
               "topics": [
                 "skills",
@@ -425,33 +467,33 @@
                 "extensions-001",
                 "subagents-001"
               ],
-              "objective": "Choose the smallest extension mechanism that fits.",
-              "simple": "Rules are memory; skills are methods; hooks are deterministic events; MCP is an external bridge; subagents isolate cognition.",
+              "objective": "Understand each extension mechanism through simple examples.",
+              "simple": "A skill teaches a reusable method. A hook automatically runs a fixed action at a specific moment. MCP connects Claude to an outside service. A subagent handles a separate focused task with its own context.",
               "procedure": [
-                "Name the missing capability.",
-                "Decide whether it is always-on, on-demand, event-driven, external, or isolated.",
+                "Describe the missing capability.",
+                "Decide whether it is a method, automatic event, external connection, or separate investigation.",
                 "Choose one mechanism.",
-                "Limit scope and permissions.",
-                "Measure context and maintenance cost."
+                "Give it the smallest permissions possible.",
+                "Test both success and failure."
               ],
-              "bad": "Install a large plugin collection because it might be useful.",
-              "good": "Create an on-demand `release-check` skill with a read-only script; keep deployment approval outside it.",
-              "exercise": "Classify five recurring tasks by extension type.",
-              "success": "Each extension has a clear trigger, narrow authority, and owner.",
+              "bad": "Install every extension because it may become useful.",
+              "good": "Use a hook for formatting, a skill for code review steps, MCP for read-only issue lookup, and a subagent for an isolated security review.",
+              "exercise": "Match four sample tasks to skill, hook, MCP, or subagent.",
+              "success": "You can explain why one mechanism is a better fit than the others.",
               "quiz": {
-                "question": "What best fits deterministic formatting after edits?",
+                "question": "Which mechanism is best for automatically formatting after an edit?",
                 "options": [
-                  "A hook",
-                  "A subagent",
-                  "Global prose"
+                  "Hook",
+                  "Subagent",
+                  "Long prompt"
                 ],
                 "answer": 0,
-                "explanation": "Hooks run deterministic actions at defined lifecycle events."
+                "explanation": "Hooks run deterministic actions at defined events."
               }
             },
             {
               "id": "lesson-parallel",
-              "title": "Parallel work without collisions",
+              "title": "Run independent work in parallel",
               "difficulty": 3,
               "topics": [
                 "parallel",
@@ -463,33 +505,34 @@
                 "parallel-001",
                 "subagents-001"
               ],
-              "objective": "Scale throughput while keeping ownership and integration clear.",
-              "simple": "Parallelize independent investigation or branches; serialize shared design and integration.",
+              "objective": "Use parallel work without creating conflicting edits.",
+              "simple": "Parallel work helps only when tasks are independent. Two agents should not edit the same files at the same time unless you have a deliberate merge plan.",
               "procedure": [
-                "Draw task dependencies.",
-                "Assign non-overlapping read/write scopes.",
-                "Use worktrees for concurrent edits.",
-                "Require concise evidence-based outputs.",
-                "Integrate and verify centrally."
+                "List task dependencies.",
+                "Separate research from implementation.",
+                "Assign non-overlapping file ownership.",
+                "Use separate worktrees or branches for writers.",
+                "Bring results back to one integration owner.",
+                "Run combined checks."
               ],
-              "bad": "Send four agents to refactor the same module.",
-              "good": "One agent maps data migration risk; one reviews security; one implements in a worktree; the lead integrates after both reports.",
-              "exercise": "Mark a feature graph with parallel and serial nodes.",
-              "success": "No two writers own the same files and every branch has an integration check.",
+              "bad": "Ask several agents to rewrite the same module.",
+              "good": "One agent investigates tests, one reviews security, and one implementation agent edits isolated files; a lead combines the results.",
+              "exercise": "Mark which parts of a small feature can run in parallel.",
+              "success": "No two agents unknowingly overwrite the same work.",
               "quiz": {
-                "question": "What limits parallelism most often?",
+                "question": "When is parallel work useful?",
                 "options": [
-                  "Token speed",
-                  "Shared-state coordination",
-                  "Terminal colors"
+                  "When tasks are independent",
+                  "Whenever more agents are available",
+                  "When everyone edits one file"
                 ],
-                "answer": 1,
-                "explanation": "Conflicting edits and decisions erase concurrency gains."
+                "answer": 0,
+                "explanation": "Independence prevents coordination cost from exceeding the benefit."
               }
             },
             {
               "id": "lesson-permissions",
-              "title": "Permission design and isolation",
+              "title": "Design permissions and isolation",
               "difficulty": 3,
               "topics": [
                 "permissions",
@@ -500,33 +543,33 @@
               "insightIds": [
                 "permissions-001"
               ],
-              "objective": "Increase useful autonomy without expanding blast radius.",
-              "simple": "Approve categories you understand, keep irreversible actions explicit, and isolate experiments.",
+              "objective": "Give Claude enough access for the task without exposing unrelated systems.",
+              "simple": "Permissions control what Claude can reach. Isolation, such as a disposable container or practice repository, limits damage even when a command is wrong.",
               "procedure": [
-                "Inventory tools, data, network, and credentials.",
-                "Classify actions by reversibility and impact.",
-                "Allowlist exact safe commands.",
-                "Sandbox risky long-running work.",
-                "Review logs, outputs, and approved rules."
+                "List files, tools, network access, and credentials involved.",
+                "Allow only what the task needs.",
+                "Keep deletion, push, deploy, and external messages explicit.",
+                "Use disposable environments for experiments.",
+                "Review permission rules periodically."
               ],
-              "bad": "Use skip-permissions on the host for convenience.",
-              "good": "Run the experiment in a disposable container with only the repository mounted, no production credentials, and a diff-based export path.",
-              "exercise": "Create a permission matrix for tests, package install, push, and deploy.",
-              "success": "A mistaken command cannot reach unrelated files, secrets, or production.",
+              "bad": "Disable permission checks on a machine containing important credentials.",
+              "good": "Run an experiment in a disposable container with only the practice repository mounted and no production secrets.",
+              "exercise": "Create an allow/ask/deny table for read, test, install, push, and deploy.",
+              "success": "A mistaken action cannot reach unrelated files, secrets, or production.",
               "quiz": {
-                "question": "What is the safest way to increase autonomy?",
+                "question": "What is safer than simply trusting the model?",
                 "options": [
-                  "Trust the model",
-                  "Constrain the environment",
-                  "Hide prompts"
+                  "Constraining the environment",
+                  "Hiding logs",
+                  "Unlimited access"
                 ],
-                "answer": 1,
-                "explanation": "Isolation limits consequences independent of intent."
+                "answer": 0,
+                "explanation": "Isolation limits consequences regardless of intent."
               }
             },
             {
               "id": "lesson-state-memory",
-              "title": "Context, state, and memory architecture",
+              "title": "Separate context, state, and memory",
               "difficulty": 3,
               "topics": [
                 "context",
@@ -537,33 +580,33 @@
               "insightIds": [
                 "state-memory"
               ],
-              "objective": "Store the right information in the right place.",
-              "simple": "Context is ephemeral working input. State tracks workflow progress. Memory preserves selected facts or patterns across runs. Mixing them creates bloated prompts and stale truth.",
+              "objective": "Store information where it remains accurate and useful.",
+              "simple": "Context is what Claude needs now. State records current progress. Memory stores selected facts useful later. The real source of truth remains the project, database, issue, or document where the fact originates.",
               "procedure": [
-                "Classify each datum as context, state, memory, or source of truth.",
-                "Keep authoritative state outside chat.",
-                "Write memory only after validation.",
-                "Attach provenance and expiry.",
-                "Rehydrate a fresh context from minimal state."
+                "Classify each piece of information.",
+                "Keep progress in a task file or structured state.",
+                "Keep stable rules in project instructions.",
+                "Attach a source to important remembered facts.",
+                "Load only what the current task needs."
               ],
-              "bad": "Keep the full transcript forever so the agent remembers.",
-              "good": "Store task status in structured JSON, validated conventions in a small memory file, and load only relevant source material into each iteration.",
-              "exercise": "Classify ten pieces of session information into context/state/memory.",
-              "success": "A fresh run resumes correctly without the previous transcript.",
+              "bad": "Keep the entire conversation forever and treat it as truth.",
+              "good": "Store completed task IDs in JSON, project rules in CLAUDE.md, and load only relevant files into a new session.",
+              "exercise": "Classify ten examples as context, state, memory, or source of truth.",
+              "success": "A fresh session can resume accurately without the whole old transcript.",
               "quiz": {
-                "question": "Where should “task 4 passed” live?",
+                "question": "Where should current task progress live?",
                 "options": [
-                  "Context only",
-                  "Structured workflow state",
-                  "Global CLAUDE.md"
+                  "Structured state or handoff",
+                  "Global instructions",
+                  "A random prompt"
                 ],
-                "answer": 1,
-                "explanation": "Progress is state, not a timeless instruction."
+                "answer": 0,
+                "explanation": "Progress changes over time and should be stored as state."
               }
             },
             {
               "id": "lesson-tool-design",
-              "title": "Tool and interface design",
+              "title": "Design narrow tools for agents",
               "difficulty": 3,
               "topics": [
                 "tools",
@@ -575,33 +618,33 @@
               "insightIds": [
                 "tool-design"
               ],
-              "objective": "Give agents narrow, predictable hands.",
-              "simple": "Tools should expose one coherent capability with explicit input, structured output, useful errors, and least privilege. CLI and MCP are delivery mechanisms, not goals.",
+              "objective": "Create tools that are easy to call, validate, and restrict.",
+              "simple": "A good tool does one clear job, accepts explicit inputs, returns structured results, and fails with useful errors. Narrow tools are safer than unrestricted shell access.",
               "procedure": [
-                "Start from the missing capability.",
-                "Prefer an established CLI or API.",
-                "Define input/output schemas.",
-                "Constrain authority and time.",
-                "Test success, failure, and adversarial inputs."
+                "Start with one capability.",
+                "Define required inputs.",
+                "Define structured output.",
+                "Limit time, files, and authority.",
+                "Test normal, invalid, and dangerous inputs."
               ],
-              "bad": "Give the agent a generic shell and tell it to be careful.",
-              "good": "Expose a read-only get_ci_failure(run_id) operation returning job, step, excerpt, and source URL; keep retry and mutation outside it.",
-              "exercise": "Redesign one broad tool as two narrow operations.",
-              "success": "Invalid calls fail clearly and the tool cannot affect unrelated resources.",
+              "bad": "Give the agent a generic shell with production credentials.",
+              "good": "Provide a read-only operation that accepts a CI run ID and returns the failed job, failed step, log excerpt, and source link.",
+              "exercise": "Split one broad tool into two smaller operations.",
+              "success": "Invalid requests fail clearly and unrelated resources remain unreachable.",
               "quiz": {
-                "question": "What is the first reason to add MCP?",
+                "question": "What is a strong reason to add MCP?",
                 "options": [
-                  "It is fashionable",
-                  "A needed external capability lacks a better narrow interface",
-                  "To make prompts longer"
+                  "A required external capability needs a controlled interface",
+                  "It is popular",
+                  "To increase prompt length"
                 ],
-                "answer": 1,
-                "explanation": "Choose integration by capability gap and permission boundary."
+                "answer": 0,
+                "explanation": "MCP is useful when it provides a needed, permissioned bridge."
               }
             },
             {
               "id": "lesson-orchestration",
-              "title": "Orchestration and multi-agent systems",
+              "title": "Coordinate multiple agents",
               "difficulty": 3,
               "topics": [
                 "orchestration",
@@ -612,34 +655,34 @@
               "insightIds": [
                 "orchestration"
               ],
-              "objective": "Coordinate work without multiplying confusion.",
-              "simple": "Orchestration is dependency management: who does what, in which order, with what handoff and integration gate. Multiple agents are useful only for separable work.",
+              "objective": "Assign ownership, order, and handoffs across several agents.",
+              "simple": "Orchestration is work coordination. It defines who owns each task, what must happen first, what output each agent must return, and who verifies the combined result.",
               "procedure": [
-                "Draw task dependencies.",
+                "Draw dependencies.",
                 "Keep shared decisions with one owner.",
-                "Fan out independent read/review tasks.",
-                "Isolate writers in worktrees.",
-                "Validate outputs against contracts.",
-                "Integrate centrally."
+                "Parallelize independent research.",
+                "Isolate editing agents.",
+                "Require a clear handoff format.",
+                "Integrate and test centrally."
               ],
-              "bad": "Launch five agents on the same feature and merge what looks best.",
-              "good": "One lead owns architecture; independent agents map security and tests; one isolated writer implements; the lead reconciles evidence and runs integration checks.",
-              "exercise": "Turn a project into a dependency graph and label parallel nodes.",
-              "success": "No overlapping write ownership; every handoff has a schema and acceptance check.",
+              "bad": "Launch many agents on the same vague task.",
+              "good": "A lead owns architecture; separate agents investigate tests and security; one writer implements; the lead integrates and verifies.",
+              "exercise": "Create a small dependency diagram for a feature.",
+              "success": "Every task has one owner, a defined output, and an integration check.",
               "quiz": {
-                "question": "When should two agents work in parallel?",
+                "question": "What is the purpose of orchestration?",
                 "options": [
-                  "When their work is independent and outputs can be integrated",
-                  "Whenever both are available",
-                  "When they edit the same file"
+                  "Coordinate ownership and dependencies",
+                  "Use as many agents as possible",
+                  "Avoid verification"
                 ],
                 "answer": 0,
-                "explanation": "Independence and explicit integration are the prerequisites."
+                "explanation": "Orchestration manages work and handoffs."
               }
             },
             {
               "id": "lesson-guardrails-human",
-              "title": "Guardrails, permissions, and human gates",
+              "title": "Use guardrails and human approval",
               "difficulty": 3,
               "topics": [
                 "guardrails",
@@ -650,34 +693,33 @@
               "insightIds": [
                 "guardrails-hitl"
               ],
-              "objective": "Place control at the point of consequence.",
-              "simple": "Guardrails encode prohibited behavior, permissions limit reachable actions, and human gates reserve consequential decisions. Each layer covers different failures.",
+              "objective": "Reserve human approval for actions with real consequences.",
+              "simple": "Guardrails prohibit unsafe behavior. Permissions limit available actions. Human gates require a person to approve high-impact steps such as deleting data, pushing code, deploying, purchasing, or sending messages.",
               "procedure": [
-                "Inventory assets and side effects.",
-                "Classify actions by impact and reversibility.",
-                "Constrain filesystem/network/tool scope.",
+                "List possible side effects.",
+                "Rate actions by impact and reversibility.",
                 "Automate safe reads and checks.",
-                "Require approval before irreversible or external actions.",
-                "Log overrides."
+                "Require approval for external or irreversible actions.",
+                "Log approvals and exceptions."
               ],
-              "bad": "Ask for approval on everything—or skip all permissions.",
-              "good": "Auto-run local tests in a sandbox, allow read-only issue lookup, and require approval for push, deploy, deletion, or sending messages.",
-              "exercise": "Create a permission matrix for your workflow.",
-              "success": "A mistaken instruction cannot reach secrets, unrelated files, or production.",
+              "bad": "Ask for approval on every file read, or approve every action automatically.",
+              "good": "Allow local tests automatically, but require approval before push, deploy, deletion, or sending an external message.",
+              "exercise": "Build a human-approval list for your workflow.",
+              "success": "Consequential actions cannot happen silently.",
               "quiz": {
-                "question": "Which action most clearly needs a human gate?",
+                "question": "Which action clearly needs human approval?",
                 "options": [
-                  "Read a local source file",
+                  "Read a local file",
                   "Run a unit test",
                   "Deploy to production"
                 ],
                 "answer": 2,
-                "explanation": "Deployment has external and potentially irreversible impact."
+                "explanation": "Deployment affects an external system and may be difficult to reverse."
               }
             },
             {
               "id": "lesson-evals-observability",
-              "title": "Evals, observability, and tracing",
+              "title": "Measure quality and inspect traces",
               "difficulty": 3,
               "topics": [
                 "evals",
@@ -688,33 +730,34 @@
               "insightIds": [
                 "evals-observability"
               ],
-              "objective": "Know whether the agent succeeded and why.",
-              "simple": "An eval scores outcomes against a dataset or rubric. Observability records the execution path—context, tool calls, state, retries, latency, cost, and overrides.",
+              "objective": "Know whether an agent succeeded and understand why.",
+              "simple": "An evaluation checks the result against examples or rules. A trace records what happened: inputs, tool calls, outputs, retries, time, cost, and approvals.",
               "procedure": [
-                "Define representative tasks and expected outcomes.",
-                "Record tool/state transitions with correlation IDs.",
-                "Track quality, cost, latency, retries, and overrides.",
-                "Separate model failure from tool/data failure.",
-                "Regression-test changes to prompts, tools, or models."
+                "Create representative tasks.",
+                "Define expected outcomes.",
+                "Record important execution steps.",
+                "Track quality, cost, latency, and retries.",
+                "Compare versions before rollout.",
+                "Inspect failures by component."
               ],
-              "bad": "It worked on my last prompt, so ship it.",
-              "good": "Run a versioned task set, compare pass rate and cost, and inspect traces for regressions before rollout.",
-              "exercise": "Design five eval cases including one adversarial failure.",
-              "success": "A regression is reproducible and traceable to a component or step.",
+              "bad": "It worked once, so it is ready.",
+              "good": "Run a versioned set of tasks, compare pass rate and cost, and inspect traces for failures before release.",
+              "exercise": "Create five small evaluation cases for one workflow.",
+              "success": "A failure can be reproduced and traced to a prompt, tool, data source, or decision.",
               "quiz": {
-                "question": "What does observability add beyond a pass/fail eval?",
+                "question": "What does a trace provide?",
                 "options": [
-                  "The execution evidence explaining the outcome",
-                  "A prettier prompt",
+                  "The execution path behind the result",
+                  "A new model",
                   "Unlimited retries"
                 ],
                 "answer": 0,
-                "explanation": "Traces explain how and where an outcome was produced."
+                "explanation": "Tracing explains how the outcome was produced."
               }
             },
             {
               "id": "lesson-stopping-recovery",
-              "title": "Stopping conditions, reflection, and recovery",
+              "title": "Define stopping and recovery rules",
               "difficulty": 3,
               "topics": [
                 "stopping",
@@ -725,34 +768,34 @@
               "insightIds": [
                 "stopping-recovery"
               ],
-              "objective": "Ensure every loop can finish safely.",
-              "simple": "Reflection is useful only when it compares evidence with a rule. A loop needs verified success, terminal failure, time/cost/attempt budgets, and escalation exits.",
+              "objective": "Ensure an agent loop cannot continue forever or claim success without proof.",
+              "simple": "A safe loop has a success check, a maximum number of attempts, time or cost limits, known terminal errors, and a clear path to ask a human for help.",
               "procedure": [
-                "Define machine-checkable success.",
-                "Set maximum attempts, time, and cost.",
-                "Name terminal errors and forbidden actions.",
-                "Reflect against evidence after each iteration.",
-                "Escalate ambiguity rather than retrying it.",
-                "Preserve trace and partial state."
+                "Define a machine-checkable success condition.",
+                "Set attempt, time, and cost limits.",
+                "List errors that should stop immediately.",
+                "Compare each result with evidence.",
+                "Escalate unclear requirements.",
+                "Save partial progress and logs."
               ],
-              "bad": "Keep trying until you are confident.",
-              "good": "Exit on passing acceptance checks; stop after three failed attempts or budget; escalate permissions and ambiguous requirements to a person.",
-              "exercise": "Write success and failure exits for one agent loop.",
-              "success": "Every execution ends in verified success, explicit failure, or owned escalation.",
+              "bad": "Keep trying until you feel confident.",
+              "good": "Stop when tests pass; otherwise stop after three attempts or the budget limit and report the evidence.",
+              "exercise": "Write success, failure, and escalation exits for one loop.",
+              "success": "Every run ends as verified success, explicit failure, or human escalation.",
               "quiz": {
-                "question": "What is a safe stopping design?",
+                "question": "What is required besides a success phrase?",
                 "options": [
-                  "Only a completion phrase",
-                  "Success plus budgets, terminal failures, and escalation",
-                  "No limit if tests exist"
+                  "Independent checks and hard limits",
+                  "More retries",
+                  "A longer prompt"
                 ],
-                "answer": 1,
-                "explanation": "A phrase alone can be emitted falsely; independent checks and hard bounds are required."
+                "answer": 0,
+                "explanation": "The model can say it is done incorrectly; external checks and limits are needed."
               }
             },
             {
               "id": "lesson-claudemd-layers",
-              "title": "CLAUDE.md hierarchy and progressive disclosure",
+              "title": "Organize CLAUDE.md for larger projects",
               "difficulty": 3,
               "topics": [
                 "claude-md",
@@ -763,34 +806,34 @@
               "insightIds": [
                 "claudemd-hierarchy"
               ],
-              "objective": "Build concise instructions that load at the correct scope.",
-              "simple": "A hierarchy lets global preferences, team rules, personal overrides, and subsystem guidance remain separate. The root is an index, not a warehouse.",
+              "objective": "Keep instructions relevant by placing them at the correct scope.",
+              "simple": "Large projects may use a root instruction file plus smaller files for individual areas. General rules belong at the root; frontend-only or backend-only rules should live near those parts.",
               "procedure": [
-                "Start with observed repeated corrections.",
-                "Choose global, root, local, or child scope.",
-                "Keep core commands and non-obvious invariants concise.",
-                "Link detailed references progressively.",
-                "Use deterministic tools for style enforcement.",
-                "Review and prune on repository changes."
+                "Start from repeated corrections.",
+                "Choose global, project, personal, or subsystem scope.",
+                "Keep root instructions concise.",
+                "Link detailed references instead of copying everything.",
+                "Use tools for deterministic formatting.",
+                "Remove stale rules."
               ],
-              "bad": "Put 200 rules, every directory description, lint style, and current task in the root file.",
-              "good": "Root: commands and invariants. Child frontend file: UI-specific rules. Local file: personal setup. Hook: formatter enforcement. Handoff: current task state.",
-              "exercise": "Refactor a bloated instruction file into four destinations.",
-              "success": "Each rule loads only where relevant and measurably changes behavior.",
+              "bad": "Put all rules, task progress, and directory descriptions in one huge root file.",
+              "good": "Root file contains commands and shared rules; frontend folder contains UI rules; a handoff file contains current task progress.",
+              "exercise": "Move four sample rules to the correct scope.",
+              "success": "Each rule loads only where it is relevant.",
               "quiz": {
-                "question": "Where should frontend-only exceptions live?",
+                "question": "Where should frontend-only rules live?",
                 "options": [
-                  "Global CLAUDE.md",
-                  "A scoped child CLAUDE.md",
-                  "The current chat forever"
+                  "A scoped frontend instruction file",
+                  "A global file",
+                  "Nowhere"
                 ],
-                "answer": 1,
-                "explanation": "Narrow scope reduces noise and unintended application."
+                "answer": 0,
+                "explanation": "Narrow scope reduces irrelevant context."
               }
             },
             {
               "id": "lesson-research-writing-devops",
-              "title": "Research, writing, browser, and DevOps workflows",
+              "title": "Research, browser, writing, and CI workflows",
               "difficulty": 3,
               "topics": [
                 "research",
@@ -802,30 +845,30 @@
               "insightIds": [
                 "research-writing-devops"
               ],
-              "objective": "Use the terminal as a universal interface while preserving verification.",
-              "simple": "Claude Code can orchestrate search, files, Markdown, CI logs, browsers, APIs, and artifacts. The common pattern is durable input, established tools, and independent evidence.",
+              "objective": "Use Claude Code beyond editing while preserving sources and verification.",
+              "simple": "Claude Code can organize research, draft Markdown, inspect CI logs, use browser tools, and prepare artifacts. Keep source links, save outputs in files, and require review before publishing or changing external systems.",
               "procedure": [
                 "Save source material and URLs.",
-                "Choose the direct CLI/API/browser tool.",
-                "Ask for structured sourced output.",
-                "Keep writing in reviewable Markdown.",
-                "For CI, reproduce and inspect history/flakiness.",
-                "For UI, combine DOM/accessibility checks with screenshots.",
-                "Use draft PRs or artifacts as review gates."
+                "Choose the direct tool for the task.",
+                "Request structured sourced output.",
+                "Keep drafts in reviewable files.",
+                "Use focused logs for CI.",
+                "Use both DOM checks and screenshots for UI.",
+                "Require approval before publishing."
               ],
-              "bad": "Research this, fix CI, and publish the result.",
-              "good": "Collect cited evidence, produce a Markdown draft, diagnose CI with focused logs and history, verify changes, then create a draft PR without pushing or publishing automatically.",
-              "exercise": "Turn one research result into a cited Markdown note and a verified action plan.",
-              "success": "Claims have sources; commands/results are recorded; external publication remains reviewed.",
+              "bad": "Research, fix, deploy, and publish everything automatically.",
+              "good": "Collect cited evidence, create a Markdown draft, diagnose CI, verify changes, and stop at a draft review gate.",
+              "exercise": "Turn one source into a cited note and an action plan.",
+              "success": "Claims are sourced, results are saved, and external publication remains reviewed.",
               "quiz": {
-                "question": "What is the safest publication workflow?",
+                "question": "What is the safest publishing process?",
                 "options": [
-                  "Agent publishes directly",
-                  "Durable draft, evidence review, then explicit approval",
-                  "Trust a polished tone"
+                  "Draft, review evidence, then approve",
+                  "Publish immediately",
+                  "Trust the writing style"
                 ],
-                "answer": 1,
-                "explanation": "A reviewable artifact separates generation from external action."
+                "answer": 0,
+                "explanation": "Review separates generation from external action."
               }
             }
           ]
@@ -834,8 +877,8 @@
     },
     {
       "id": "phase-expert",
-      "title": "Phase 4 · Expert operating system",
-      "description": "Turn reliable personal loops into team-scale, reviewable automation.",
+      "title": "Phase 4 · Expert Systems",
+      "description": "Build bounded automation only after the manual workflow is proven and measurable.",
       "levels": [
         {
           "id": "level-expert",
@@ -843,7 +886,7 @@
           "modules": [
             {
               "id": "lesson-automation",
-              "title": "Automate the automation",
+              "title": "Automate a proven workflow",
               "difficulty": 4,
               "topics": [
                 "automation",
@@ -855,33 +898,34 @@
                 "automation-001",
                 "testing-001"
               ],
-              "objective": "Encode a proven loop with machine-checkable boundaries.",
-              "simple": "Automate after the manual loop is reliable and its failure states are understood.",
+              "objective": "Turn a reliable manual process into bounded automation.",
+              "simple": "Automate only after you understand the normal path, failure cases, inputs, checks, permissions, and recovery. Automation should fail safely and leave evidence.",
               "procedure": [
-                "Run the workflow manually and collect failures.",
-                "Define inputs, schema, timeouts, and authority.",
-                "Use non-interactive mode for bounded analysis.",
-                "Validate outputs deterministically.",
-                "Require approval at high-impact boundaries and monitor drift."
+                "Run the process manually several times.",
+                "Record common failures.",
+                "Define inputs, outputs, timeouts, and permissions.",
+                "Validate results with deterministic checks.",
+                "Keep human approval at high-impact boundaries.",
+                "Monitor drift."
               ],
-              "bad": "Give an unattended agent repository and production access.",
-              "good": "CI sends a bounded diff to a read-only reviewer, validates JSON findings, and posts a report; humans approve any mutation.",
-              "exercise": "Add failure, timeout, and rollback behavior to an automation design.",
-              "success": "The automation fails closed, produces auditable evidence, and has a named owner.",
+              "bad": "Give an unattended agent production access on day one.",
+              "good": "A CI workflow sends a bounded diff to a read-only reviewer, validates structured findings, and lets a human approve any mutation.",
+              "exercise": "Add timeout, failure, rollback, and ownership rules to one automation.",
+              "success": "The automation fails closed, produces logs, and has a named owner.",
               "quiz": {
                 "question": "What should be automated first?",
                 "options": [
-                  "An ambiguous new workflow",
-                  "A proven observable loop",
+                  "A proven observable workflow",
+                  "An ambiguous new process",
                   "Production deployment"
                 ],
-                "answer": 1,
-                "explanation": "Known loops have defined inputs, checks, and recovery."
+                "answer": 0,
+                "explanation": "A proven process has known inputs, checks, and recovery."
               }
             },
             {
               "id": "lesson-independent-review",
-              "title": "Independent verification systems",
+              "title": "Use independent verification",
               "difficulty": 4,
               "topics": [
                 "review",
@@ -893,33 +937,33 @@
                 "review-001",
                 "debugging-001"
               ],
-              "objective": "Reduce correlated mistakes between authoring and review.",
-              "simple": "A fresh context, different evidence, or deterministic tool can challenge assumptions the authoring session inherited.",
+              "objective": "Reduce the chance that the same mistaken assumption survives authoring and review.",
+              "simple": "A fresh reviewer should compare the change with requirements, inspect callers, run independent checks, and actively search for counterexamples.",
               "procedure": [
-                "Freeze the candidate diff.",
-                "Give the reviewer requirements and repository—not the author’s rationale first.",
-                "Ask for falsification and line-level evidence.",
+                "Save the requirement and diff.",
+                "Use a fresh context or reviewer.",
+                "Ask for evidence and possible failure cases.",
                 "Run independent tests and security checks.",
-                "Reconcile findings and document residual risk."
+                "Reconcile findings and document remaining risk."
               ],
-              "bad": "Ask the same session: Is your code correct?",
-              "good": "In a fresh worktree session, review the diff against the issue, search for callers, run adversarial tests, and report only evidenced findings.",
-              "exercise": "Design a writer/reviewer/tester triangle for a risky change.",
+              "bad": "Ask the authoring session whether its own code is correct.",
+              "good": "In a fresh session, review the diff against the task, inspect affected callers, run adversarial tests, and report evidence-based findings.",
+              "exercise": "Design writer, reviewer, and tester roles for one risky change.",
               "success": "At least two independent evidence paths support the result.",
               "quiz": {
                 "question": "Why use a fresh reviewer?",
                 "options": [
-                  "It has more tokens",
-                  "It avoids authoring-context bias",
-                  "It can skip tests"
+                  "To reduce authoring bias",
+                  "To skip tests",
+                  "To increase file count"
                 ],
-                "answer": 1,
-                "explanation": "Fresh context is less committed to the original assumptions."
+                "answer": 0,
+                "explanation": "Fresh context is less attached to the original assumptions."
               }
             },
             {
               "id": "lesson-operating-manual",
-              "title": "Your evolving Claude Code operating manual",
+              "title": "Build your Claude Code operating manual",
               "difficulty": 4,
               "topics": [
                 "teams",
@@ -932,33 +976,33 @@
                 "automation-001",
                 "review-001"
               ],
-              "objective": "Build a durable system from observed successes and failures.",
-              "simple": "Capture only repeatable leverage: prompts, checks, rules, skills, and failure recoveries that proved useful.",
+              "objective": "Keep only practices that repeatedly improve results in your environment.",
+              "simple": "Record costly failures, useful prompts, checks, rules, skills, and recovery steps. Promote a practice into the manual only after it proves useful more than once.",
               "procedure": [
-                "Log costly failures and repeated corrections.",
-                "Turn recurring guidance into the smallest durable artifact.",
-                "Measure acceptance, rework, test failures, and cycle time.",
-                "Review instructions and permissions monthly.",
-                "Retire tools that add context or maintenance without measurable benefit."
+                "Log repeated mistakes and corrections.",
+                "Store each lesson in the smallest suitable artifact.",
+                "Measure rework, failed checks, acceptance, and cycle time.",
+                "Review permissions and instructions regularly.",
+                "Remove tools that add complexity without benefit."
               ],
-              "bad": "Accumulate every community tip and plugin.",
-              "good": "After three similar CI investigations, create a read-only triage skill with evidence fields; compare its findings for a month before automating comments.",
-              "exercise": "Choose one repeated correction and design its durable home.",
-              "success": "Your system becomes simpler while success rate and recovery speed improve.",
+              "bad": "Collect every community tip and plugin.",
+              "good": "After several similar CI investigations, create a read-only troubleshooting skill and compare its quality for a month.",
+              "exercise": "Choose one repeated correction and decide where it should live.",
+              "success": "The system becomes simpler while quality and recovery improve.",
               "quiz": {
                 "question": "What belongs in a long-term manual?",
                 "options": [
-                  "Every trend",
                   "Practices validated in your environment",
-                  "All chat transcripts"
+                  "Every new trend",
+                  "All transcripts"
                 ],
-                "answer": 1,
-                "explanation": "Local evidence matters more than novelty."
+                "answer": 0,
+                "explanation": "Local evidence is more useful than novelty."
               }
             },
             {
               "id": "lesson-ralph-loop",
-              "title": "Ralph loops and overnight builds",
+              "title": "Ralph loops and long-running builds",
               "difficulty": 4,
               "topics": [
                 "ralph",
@@ -969,35 +1013,35 @@
               "insightIds": [
                 "ralph-loop"
               ],
-              "objective": "Use file-based iteration without unbounded autonomy.",
-              "simple": "Ralph repeatedly works one atomic story, tests it, records progress, and continues. Its value is fresh context plus durable state—not blind repetition.",
+              "objective": "Use repeated file-based iterations with hard safety boundaries.",
+              "simple": "A Ralph loop repeatedly selects one small unfinished story, works on it, runs checks, records progress, and continues. It must use external verification and hard limits rather than trusting a ‘DONE’ message.",
               "procedure": [
-                "Write and review a PRD.",
-                "Convert it to atomic stories with passes:false.",
+                "Write and review the requirements.",
+                "Split work into atomic stories.",
                 "Define executable acceptance checks.",
-                "Work one story per iteration.",
-                "Update state and progress notes only after checks pass.",
+                "Work on one story per iteration.",
+                "Update progress only after checks pass.",
                 "Stop on completion, budget, terminal error, or human gate.",
-                "Run inside an isolated environment."
+                "Run in an isolated environment."
               ],
-              "bad": "Build my whole SaaS overnight. Say DONE when finished.",
-              "good": "In a disposable worktree/container, implement the next failing story only; run named checks; set passes:true only when they pass; stop after 12 iterations or $X.",
-              "exercise": "Design a three-story Ralph task file and hard-stop policy.",
-              "success": "A false DONE cannot terminate the loop, and a bad trajectory cannot run indefinitely.",
+              "bad": "Build my whole product overnight and say DONE when finished.",
+              "good": "In a disposable worktree, implement only the next failing story, run named checks, and stop after 12 iterations or the budget limit.",
+              "exercise": "Create a three-story task file and a hard-stop policy.",
+              "success": "False completion cannot end the loop and a bad path cannot run indefinitely.",
               "quiz": {
                 "question": "What makes a Ralph loop trustworthy?",
                 "options": [
+                  "Atomic work, external checks, state, and limits",
                   "The word DONE",
-                  "Atomic work, external checks, durable state, and hard limits",
-                  "Many retries"
+                  "Unlimited retries"
                 ],
-                "answer": 1,
-                "explanation": "Verification and boundaries—not persistence alone—make it useful."
+                "answer": 0,
+                "explanation": "Verification and boundaries make repetition useful."
               }
             },
             {
               "id": "lesson-hooks-subagents",
-              "title": "Hooks, subagents, skills, and MCP together",
+              "title": "Combine hooks, skills, subagents, and MCP",
               "difficulty": 4,
               "topics": [
                 "hooks",
@@ -1009,25 +1053,26 @@
               "insightIds": [
                 "hooks-enforcement"
               ],
-              "objective": "Compose extension mechanisms by responsibility.",
-              "simple": "CLAUDE.md tells; hooks enforce deterministic events; skills package on-demand methods; subagents isolate cognition; MCP bridges external capabilities.",
+              "objective": "Compose extension mechanisms without overlap or unnecessary authority.",
+              "simple": "Use project instructions for stable rules, hooks for automatic fixed actions, skills for reusable methods, subagents for isolated reasoning, and MCP for controlled external access.",
               "procedure": [
                 "Name the missing behavior.",
-                "Classify it as instruction, deterministic event, reusable method, isolated work, or external capability.",
+                "Classify its responsibility.",
                 "Choose one mechanism first.",
-                "Limit trigger and authority.",
-                "Test failure and uninstall paths."
+                "Limit its trigger and permissions.",
+                "Test failure and removal paths.",
+                "Add a second mechanism only when responsibilities remain distinct."
               ],
-              "bad": "Install a plugin bundle and place all instructions in CLAUDE.md.",
-              "good": "Hook blocks secret access; skill describes security review; read-only subagent performs it; MCP retrieves issue context; root CLAUDE.md states when to use the workflow.",
+              "bad": "Install a large bundle and repeat the same behavior in every mechanism.",
+              "good": "A hook blocks secret access, a skill defines security review, a read-only subagent performs it, and MCP retrieves issue context.",
               "exercise": "Map five recurring jobs to the smallest mechanism.",
-              "success": "No mechanism duplicates another and each has a clear owner and permission boundary.",
+              "success": "Each mechanism has one responsibility, owner, and permission boundary.",
               "quiz": {
                 "question": "What should enforce formatting after every edit?",
                 "options": [
                   "A hook",
                   "A subagent",
-                  "A longer CLAUDE.md paragraph"
+                  "A longer instruction paragraph"
                 ],
                 "answer": 0,
                 "explanation": "Formatting is deterministic event-driven work."
@@ -1035,7 +1080,7 @@
             },
             {
               "id": "lesson-knowledge-graph",
-              "title": "Graphify, Obsidian, and provenance-linked knowledge",
+              "title": "Build a sourced knowledge graph",
               "difficulty": 4,
               "topics": [
                 "knowledge-graph",
@@ -1046,31 +1091,30 @@
               "insightIds": [
                 "knowledge-graph"
               ],
-              "objective": "Turn document collections into a reversible, sourced second brain.",
-              "simple": "A knowledge graph models ideas as nodes and relationships as edges. Obsidian makes them navigable, but usefulness depends on provenance and retrieval—not note volume.",
+              "objective": "Turn documents into connected notes while preserving provenance and reversibility.",
+              "simple": "A knowledge graph stores concepts as nodes and relationships as edges. Every useful note and relationship should point back to its source so generated connections can be checked.",
               "procedure": [
-                "Start in an isolated vault or deletable folder.",
-                "Ingest an explicit source set.",
+                "Use an isolated vault or folder.",
+                "Choose a limited source set.",
                 "Extract concepts and typed relationships.",
                 "Create one note per useful concept.",
-                "Backlink every note to source and location.",
-                "Enrich bare notes with sourced summaries.",
-                "Define review, retrieval, and refresh routines.",
-                "Merge into the main vault only after audit."
+                "Add source and location backlinks.",
+                "Review sample claims and edges.",
+                "Import into the main system only after audit."
               ],
-              "bad": "Generate 600 linked titles directly inside my main vault.",
-              "good": "Build an isolated vault, preserve source documents, attach provenance to every node, sample-check edges, then import one removable folder.",
+              "bad": "Generate hundreds of unsourced notes directly inside the main vault.",
+              "good": "Build an isolated folder, preserve source documents, add provenance to each note, sample-check relationships, and import one removable directory.",
               "exercise": "Create a five-document mini graph with source backlinks.",
-              "success": "Every claim is traceable and the entire import can be removed cleanly.",
+              "success": "Every claim is traceable and the import can be removed cleanly.",
               "quiz": {
-                "question": "What prevents graph-based synthesis from becoming unsupported?",
+                "question": "What prevents unsupported synthesis?",
                 "options": [
-                  "More edges",
-                  "Source provenance on nodes and claims",
-                  "A bigger vault"
+                  "Source provenance",
+                  "More notes",
+                  "More colors"
                 ],
-                "answer": 1,
-                "explanation": "Backlinks allow every synthesis to be checked against origin."
+                "answer": 0,
+                "explanation": "Provenance lets each claim be checked against its origin."
               }
             }
           ]
