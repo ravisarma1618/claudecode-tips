@@ -1,0 +1,8 @@
+{
+  "name":"claude-code-mastery",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{"build":"node scripts/build.mjs","serve":"npx http-server dist -p 4173 -c-1","test":"node scripts/validate.mjs && node scripts/validate_premium_practice.mjs && node scripts/premium_audit.mjs && playwright test","test:data":"node scripts/validate.mjs && node scripts/validate_premium_practice.mjs && node scripts/premium_audit.mjs"},
+  "devDependencies":{"@playwright/test":"^1.54.1","http-server":"^14.1.1"}
+}

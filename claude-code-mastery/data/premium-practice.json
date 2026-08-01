@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Claude Code Mastery Professional Practice System",
+  "purpose": "Eight cumulative, evidence-graded projects that convert the 95-topic curriculum into demonstrable professional capability.",
+  "assessmentPolicy": {
+    "passingScore": 75,
+    "distinctionScore": 90,
+    "masteryRule": "A score is valid only when the learner submits direct artifacts and execution evidence. Claude's narrative or self-assessment is never sufficient proof.",
+    "resubmissionRule": "A failed project is revised from reviewer feedback. Preserve the first submission, feedback, and corrected evidence so improvement remains inspectable.",
+    "integrityRule": "Claude may assist throughout, but the learner must explain each boundary, verifier, failure recovery, and approval decision without asking Claude to reconstruct the explanation during grading.",
+    "gradingScale": [
+      {"band":"exemplary","minimum":90,"meaning":"Production-ready reasoning, reproducible evidence, explicit tradeoffs, and strong recovery design."},
+      {"band":"proficient","minimum":75,"meaning":"Correct and reproducible work with minor omissions that do not threaten safety or outcome."},
+      {"band":"developing","minimum":60,"meaning":"Partial success, but important assumptions, evidence, or operational boundaries remain weak."},
+      {"band":"not-yet","minimum":0,"meaning":"The artifact cannot be trusted, reproduced, safely continued, or independently verified."}
+    ]
+  },
+  "projects": [
+    {
+      "id": "project-01-agent-brief",
+      "order": 1,
+      "title": "Turn an Ambiguous Request into a Controlled Agent Brief",
+      "phaseId": "foundations",
+      "estimatedHours": "6-8",
+      "professionalScenario": "A stakeholder asks for a 'better onboarding experience' in an unfamiliar product. The request contains unstated preferences, mixed visual references, and no finish line.",
+      "objective": "Transform ambiguity into a bounded observe-decide-act-check engagement with explicit goals, questions, stopping rules, and recovery paths.",
+      "prerequisiteProjectIds": [],
+      "primaryTopicIds": ["found-goal-vs-task","found-agent-loop","found-reflection-rule","found-stopping","found-harness","found-loop-engineering","prompt-executable-brief","prompt-clarifying-questions","prompt-voice-context","prompt-visual-reference","prompt-negative-feedback","prompt-edit-before-bad-answer"],
+      "evidenceSourceIds": ["pdf-agentic-10","pdf-agentic-15","pdf-ruben-27","pdf-reddit-25","pdf-official-best-practices"],
+      "deliverables": [
+        "A one-page executable brief containing outcome, users, constraints, non-goals, authority, acceptance evidence, and stopping conditions.",
+        "A decision log showing which ambiguities required stakeholder questions and which were safely resolved from evidence.",
+        "A trajectory-recovery demonstration that rewinds or branches after a deliberately bad intermediate answer.",
+        "A final evidence packet linking every claimed decision to an answer, visual reference, or observed artifact."
+      ],
+      "guidedLabs": [
+        {"id":"lab-01a-goal-loop","title":"From task wording to persistent goal","steps":["Underline every vague noun and adjective in the request.","Write the state that must become true and the evidence that would prove it.","Define observe, decide, act, and check outputs separately.","Add success, risk, time, and escalation stops."],"proof":"A reviewer can predict when the agent continues, stops, or asks for help."},
+        {"id":"lab-01b-interview","title":"Material-ambiguity interview","steps":["Generate candidate questions.","Remove questions whose answers would not change scope, architecture, risk, or acceptance.","Present the remaining questions with mutually exclusive choices where appropriate.","Update the brief and record the decision delta."],"proof":"Every retained question changes a named project decision."},
+        {"id":"lab-01c-trajectory","title":"Recover from a poisoned trajectory","steps":["Introduce a plausible but wrong assumption.","Allow one response to follow it.","Compare correction-in-place, prompt edit, branch, and fresh-session recovery.","Choose the least destructive recovery and verify the stale assumption is absent."],"proof":"The corrected run no longer relies on the deliberately introduced assumption."}
+      ],
+      "independentAssignment": {"brief":"Repeat the method on a real request from your backlog without using the supplied worksheet headings until after your first draft.","constraints":["Maximum two stakeholder-interview rounds.","At least one visual or negative example.","At least one explicit non-goal and one risk stop."],"submission":"Brief, question transcript, recovery comparison, and a two-minute written defense."},
+      "rubric": [
+        {"criterion":"Goal and boundaries","weight":25,"exemplary":"Outcome, authority, non-goals, and all stop classes are operational and non-conflicting.","proficient":"Outcome and major boundaries are clear; one minor stop or non-goal is underspecified.","needsWork":"The agent can redefine done or act beyond intended authority."},
+        {"criterion":"Context and questioning","weight":25,"exemplary":"Only decision-changing context is retained; questions expose material ambiguity efficiently.","proficient":"Context is useful with small redundancy; questions resolve major ambiguity.","needsWork":"The brief dumps context or asks ceremonial questions."},
+        {"criterion":"Feedback and recovery","weight":25,"exemplary":"Reflection uses measurable rules and recovery removes stale trajectory state.","proficient":"Recovery works but comparison or evidence is incomplete.","needsWork":"Correction leaves the bad assumption active or relies on reassurance."},
+        {"criterion":"Evidence packet","weight":25,"exemplary":"Every important decision and completion claim has inspectable evidence and provenance.","proficient":"Core claims are evidenced; minor decisions lack provenance.","needsWork":"Narrative substitutes for evidence."}
+      ],
+      "modelSolutionOutline": ["Restate the stakeholder outcome as observable user behavior.","Separate stable constraints from preferences and hypotheses.","Run a short material-ambiguity interview.","Write loop stages, checkpoints, and stopping rules.","Demonstrate branch/rewind recovery on one injected mistake.","Submit decision-to-evidence links; do not provide a polished implementation."],
+      "professionalChecklist": ["Outcome is observable.","Non-goals are explicit.","Authority and risky transitions are named.","Questions change real decisions.","Visual and negative references are interpreted, not blindly copied.","Success, failure, budget, and escalation stops exist.","A poisoned trajectory can be removed rather than argued with."],
+      "masteryGate": "Score at least 75 and explain the difference between a persistent goal, a task, and a stopping condition from the submitted artifacts."
+    },
+    {
+      "id": "project-02-repository-change",
+      "order": 2,
+      "title": "Deliver a Verified Change in an Unfamiliar Repository",
+      "phaseId": "foundations",
+      "estimatedHours": "10-14",
+      "professionalScenario": "You inherit a repository and must fix a small production defect without an architectural tour, while preserving unrelated work and producing a reviewable Git history.",
+      "objective": "Map the repository, decompose the change, operate the terminal effectively, and close the write-test-inspect-Git loop.",
+      "prerequisiteProjectIds": ["project-01-agent-brief"],
+      "primaryTopicIds": ["repo-map","repo-decomposition","verify-targets","verify-write-test-cycle","git-gh-workflow","source-cowork-code","extensions-slash-status-alias","tool-terminal-output","tool-realpath"],
+      "evidenceSourceIds": ["pdf-official-best-practices","pdf-reddit-25","pdf-linkedin-32","pdf-ykdojo-repo","pdf-ruben-27"],
+      "deliverables": ["A repository map with file-backed entry points, data flow, commands, conventions, tests, and uncertainties.","A dependency-ordered change plan with independently verifiable slices.","A focused implementation on a branch with clean commits and captured command output.","A review packet containing diff summary, tests, negative case, residual risks, and exact reproduction commands."],
+      "guidedLabs": [
+        {"id":"lab-02a-repo-map","title":"Evidence-backed repository map","steps":["Read instructions and manifests before source files.","Trace one representative execution path with file references.","Locate adjacent tests and recent relevant history.","List facts separately from hypotheses and unknowns."],"proof":"A second engineer locates the change surface without repeating discovery."},
+        {"id":"lab-02b-terminal-proof","title":"Capture terminal evidence","steps":["Resolve working and target paths to absolute paths.","Run the smallest diagnostic command.","Capture exit code and relevant output.","Store the command, environment assumption, and result in the evidence packet."],"proof":"The result can be reproduced outside the original terminal scrollback."},
+        {"id":"lab-02c-git-loop","title":"Checkpointed write-test-inspect loop","steps":["Create a clean branch and baseline check.","Add or identify a failing reproduction.","Implement the smallest slice.","Run focused checks, inspect the diff, then run broader checks and commit."],"proof":"Git history and test output show the defect moving from reproduced to fixed."}
+      ],
+      "independentAssignment": {"brief":"Choose a repository you did not author and make one behavior-preserving defect fix or documentation-tested improvement.","constraints":["No broad refactor.","No new dependency unless justified and approved.","At least one negative verification case."],"submission":"Repository map, branch/commit references, command transcript, diff review, and handoff."},
+      "rubric": [
+        {"criterion":"Repository understanding","weight":25,"exemplary":"Map is concise, file-backed, uncertainty-aware, and correctly predicts change impact.","proficient":"Major entry points and tests are correct with minor omissions.","needsWork":"Map is generic, speculative, or misses the actual execution path."},
+        {"criterion":"Change decomposition","weight":20,"exemplary":"Slices are dependency-aware, reversible, and independently verifiable.","proficient":"Plan is workable with one oversized slice.","needsWork":"Plan is a file list or one unreviewable leap."},
+        {"criterion":"Verification","weight":30,"exemplary":"Failure reproduction, focused checks, broader checks, and diff inspection directly support the claim.","proficient":"Core test evidence is present; one layer is weak.","needsWork":"Passing commands do not test the claimed behavior."},
+        {"criterion":"Git and handoff","weight":25,"exemplary":"History is intentional, paths/commands are reproducible, and handoff exposes residual risk.","proficient":"Review is straightforward with minor history or handoff noise.","needsWork":"Unrelated edits, ambiguous commands, or missing recovery checkpoints remain."}
+      ],
+      "modelSolutionOutline": ["Map before editing.","Write a minimal failing reproduction.","Create a dependency-ordered plan.","Implement one reversible slice.","Capture focused and broad verification.","Inspect the diff and commit intentionally.","Handoff facts, commands, risks, and remaining uncertainty."],
+      "professionalChecklist": ["Instructions and manifests read first.","Claims cite files.","Absolute paths used where process boundaries matter.","Baseline is known.","Failure reproduced.","Focused and broad checks captured.","Diff contains no accidental changes.","Commit and handoff are reviewable."],
+      "masteryGate": "Score at least 75 with a reproducible before/after failure demonstration and no unexplained diff."
+    },
+    {
+      "id": "project-03-context-operating-system",
+      "order": 3,
+      "title": "Build a Repository Context and CLAUDE.md Operating System",
+      "phaseId": "context-project-memory",
+      "estimatedHours": "14-18",
+      "professionalScenario": "A team repeatedly loses setup knowledge, overloads long sessions, and gets inconsistent agent behavior across a monorepo.",
+      "objective": "Design context, state, memory, planning, indexing, and scoped instruction layers that allow clean sessions to resume reliably.",
+      "prerequisiteProjectIds": ["project-02-repository-change"],
+      "primaryTopicIds": ["context-engineering","context-freshness","context-compact-handoff","context-history-search","context-session-resume","memory-architecture","state-management","context-connectors-cost","context-projects-fit","prompt-abstraction-level","prompt-plan-vs-prototype","repo-index-large","repo-simplify","instructions-mental-model","instructions-creation","instructions-why-how-what","instructions-hierarchy","instructions-progressive-disclosure","instructions-workflows","instructions-conditional","instructions-maintenance","source-system-prompt-slimming"],
+      "evidenceSourceIds": ["pdf-agentic-10","pdf-agentic-15","pdf-official-best-practices","pdf-claudemd-masterclass","pdf-ruben-27","pdf-reddit-25","pdf-linkedin-32","pdf-ykdojo-repo"],
+      "deliverables": ["A context classification table separating working context, task state, durable memory, instructions, and authoritative sources.","A root CLAUDE.md plus one scoped child instruction file and linked progressive-disclosure document.","A large-repository navigation index with ownership and refresh policy.","A session handoff/resume drill completed successfully from a clean session.","A maintenance plan covering PR updates, staleness review, provenance, and safe rejection of system-prompt patching."],
+      "guidedLabs": [
+        {"id":"lab-03a-context-budget","title":"Curate a working context","steps":["Inventory candidate context.","Classify each item by decision relevance, authority, freshness, and cost.","Remove redundant/stale output.","Write a compact handoff preserving goal, decisions, state, checks, and hazards."],"proof":"A clean session answers the next decision without the discarded transcript."},
+        {"id":"lab-03b-claudemd","title":"Author scoped instructions","steps":["Write WHY, HOW, and WHAT for the root.","Move conditional detail to linked documents.","Add a narrow child instruction file.","Test instructions with representative and out-of-scope tasks."],"proof":"Correct rules load at the correct scope without duplicating a linter or full documentation set."},
+        {"id":"lab-03c-resume","title":"Cold-resume simulation","steps":["Stop mid-task at a safe checkpoint.","Name the session and create structured state.","Resume in a clean context using only durable artifacts.","Compare intended and actual next action; repair missing handoff fields."],"proof":"The resumed operator selects the correct next action and verifier."}
+      ],
+      "independentAssignment": {"brief":"Apply the operating system to a real multi-directory repository and recruit another person or clean session to perform the cold-resume test.","constraints":["Root CLAUDE.md remains concise.","At least one path-specific rule.","No raw transcript used as durable memory."],"submission":"Instruction tree, index, context/state schema, cold-resume evidence, and maintenance proposal."},
+      "rubric": [
+        {"criterion":"Information architecture","weight":25,"exemplary":"Context, state, memory, instruction, and source-of-truth boundaries are precise and enforced.","proficient":"Categories are usable with minor overlap.","needsWork":"Transcript, task state, and timeless rules are mixed."},
+        {"criterion":"Instruction quality","weight":30,"exemplary":"Hierarchy is concise, scoped, executable, progressively disclosed, and tested.","proficient":"Instructions work with small redundancy or one weak scope.","needsWork":"CLAUDE.md is generic, bloated, stale, or substitutes for tooling."},
+        {"criterion":"Session continuity","weight":25,"exemplary":"Cold resume reliably restores the correct decision state without old chat.","proficient":"Resume succeeds with one clarification.","needsWork":"Success depends on hidden transcript or operator memory."},
+        {"criterion":"Maintenance and safety","weight":20,"exemplary":"Ownership, refresh triggers, provenance, expiry, and risky customization policy are explicit.","proficient":"Maintenance exists but lacks one trigger or owner.","needsWork":"Artifacts will silently decay or unsafe patching is normalized."}
+      ],
+      "modelSolutionOutline": ["Classify information before writing files.","Keep root instructions small and stable.","Link deeper indexes and workflows conditionally.","Represent progress as structured state.","Test scope with positive and negative tasks.","Run a cold-resume drill.","Assign owners and refresh triggers."],
+      "professionalChecklist": ["Root file explains WHY/HOW/WHAT.","Commands are executable.","Nested rules are narrow.","Index links remain valid.","State is external and structured.","Handoff omits stale transcript.","Connectors load only when needed.","Maintenance is version-controlled.","System-prompt modifications are not a default."],
+      "masteryGate": "Score at least 80 and pass the cold-resume drill using only committed artifacts."
+    },
+    {
+      "id": "project-04-extension-platform",
+      "order": 4,
+      "title": "Design a Reusable Claude Code Extension Platform",
+      "phaseId": "reliable-systems",
+      "estimatedHours": "14-20",
+      "professionalScenario": "A team repeats a repository investigation and external research workflow, but ad hoc prompts produce inconsistent results and excessive tool authority.",
+      "objective": "Choose correctly among instructions, skills, hooks, MCP, CLI, plugins, and tool contracts; implement one reusable capability with safe interfaces.",
+      "prerequisiteProjectIds": ["project-03-context-operating-system"],
+      "primaryTopicIds": ["extensions-taxonomy","extensions-dx-setup-accounts","extensions-skills","extensions-hooks","extensions-mcp","tool-interface-design","tool-browser-research","tool-universal-interface"],
+      "evidenceSourceIds": ["pdf-official-best-practices","pdf-claudemd-masterclass","pdf-agentic-10","pdf-agentic-15","pdf-linkedin-32","pdf-ykdojo-repo","pdf-reddit-25"],
+      "deliverables": ["An extension decision record comparing at least four mechanisms by invocation, reuse, determinism, authority, context cost, and failure recovery.","A reusable skill or command with a narrow input/output contract.","One deterministic hook or external validator for an invariant.","MCP/CLI documentation covering purpose, authentication, allowed operations, errors, and fallback.","A test matrix containing valid, malformed, denied, unavailable, and stale-source cases."],
+      "guidedLabs": [
+        {"id":"lab-04a-extension-choice","title":"Choose the correct extension lifecycle","steps":["Describe the repeated capability.","Score instruction, skill, command, hook, plugin, CLI, and MCP options.","Separate judgment from deterministic enforcement.","Record the least-complex mechanism that meets the need."],"proof":"The chosen mechanism's lifecycle and authority match the requirement."},
+        {"id":"lab-04b-tool-contract","title":"Design a recoverable tool contract","steps":["Give the operation a narrow verb and schema.","Define validation and idempotency.","Return actionable structured errors.","Test ambiguous and denied inputs."],"proof":"A caller can recover without guessing or broadening authority."},
+        {"id":"lab-04c-source-research","title":"Traceable research workflow","steps":["Define authoritative source boundaries.","Use direct retrieval before browser fallback.","Capture source date and limitations.","Produce claim-to-source links and an unavailable-source path."],"proof":"Every factual result is traceable and blocked access is honestly reported."}
+      ],
+      "independentAssignment": {"brief":"Package one workflow your team repeats monthly as a documented reusable capability.","constraints":["No ambient write authority.","At least five negative tests.","No claim that missing YK tips 41-46 supply unavailable commands."],"submission":"Decision record, implementation, documentation, test results, and decommissioning plan."},
+      "rubric": [
+        {"criterion":"Mechanism selection","weight":25,"exemplary":"Choice is minimal, lifecycle-correct, and explicitly rejects unnecessary alternatives.","proficient":"Choice works with minor overengineering.","needsWork":"Mechanisms are treated as interchangeable."},
+        {"criterion":"Interface design","weight":30,"exemplary":"Inputs, outputs, validation, errors, authority, and idempotency are narrow and testable.","proficient":"Contract is usable with one weak failure path.","needsWork":"Ambiguous schema or broad authority forces guessing."},
+        {"criterion":"Evidence and provenance","weight":25,"exemplary":"Research and tool results retain dates, sources, limitations, and structured evidence.","proficient":"Core provenance is present with minor gaps.","needsWork":"Results cannot be traced or freshness is hidden."},
+        {"criterion":"Operations","weight":20,"exemplary":"Authentication, fallback, monitoring, versioning, and retirement are documented and tested.","proficient":"Normal operations are documented; one lifecycle edge is weak.","needsWork":"The capability cannot be safely maintained."}
+      ],
+      "modelSolutionOutline": ["Start with a lifecycle decision matrix.","Keep judgment in a skill/brief and invariant enforcement in a hook/tool.","Define a narrow structured contract.","Document authority and fallback.","Test positive, malformed, denied, unavailable, and stale cases.","Version and assign ownership."],
+      "professionalChecklist": ["Mechanism matches lifecycle.","Tool name and schema are unambiguous.","Errors are actionable.","Authority is least privilege.","Authentication is documented.","Fallback is explicit.","Sources are dated and linked.","Negative cases pass.","Retirement path exists."],
+      "masteryGate": "Score at least 80 with all denied/malformed tests passing and no undocumented external authority."
+    },
+    {
+      "id": "project-05-production-change-control",
+      "order": 5,
+      "title": "Run a Production-Grade Change-Control Simulation",
+      "phaseId": "reliable-systems",
+      "estimatedHours": "16-22",
+      "professionalScenario": "A security-sensitive change must pass TDD, independent review, CI diagnosis, permission gates, and an isolated execution environment before merge.",
+      "objective": "Integrate testing, review, recovery, delivery, permissions, isolation, and human approval into one auditable workflow.",
+      "prerequisiteProjectIds": ["project-04-extension-platform"],
+      "primaryTopicIds": ["verify-tdd","verify-diff-review","recovery-common-failures","git-interactive-pr","git-devops-ci","permissions-guardrails","permissions-hitl","permissions-risk-tier","permissions-isolation","permissions-auto-mode","source-enterprise-seats"],
+      "evidenceSourceIds": ["pdf-official-best-practices","pdf-ykdojo-repo","pdf-linkedin-32","pdf-reddit-25","pdf-agentic-10","pdf-agentic-15","pdf-ruben-27"],
+      "deliverables": ["A risk classification and permission matrix for read, edit, command, network, credential, deployment, and destructive actions.","A failing-first test commit followed by the minimal implementation commit.","An isolated execution record including credentials/network policy and abort procedure.","An independent review report and disposition log for each finding.","A simulated CI failure investigation, corrected run, merge checklist, and rollback plan."],
+      "guidedLabs": [
+        {"id":"lab-05a-risk-gates","title":"Place meaningful human gates","steps":["Inventory possible actions and external effects.","Classify reversibility, blast radius, ambiguity, and sensitivity.","Automate safe reads and reversible local actions.","Require evidence-rich approval at irreversible or external transitions."],"proof":"The matrix avoids both blanket approval and approval fatigue."},
+        {"id":"lab-05b-tdd-review","title":"Fail-first implementation and fresh review","steps":["Write a behavioral test and observe failure.","Commit the test intent.","Implement minimally and run checks.","Open a clean reviewer context to challenge behavior, scope, security, and tests."],"proof":"History proves the test failed first and reviewer findings receive explicit dispositions."},
+        {"id":"lab-05c-ci-recovery","title":"Diagnose a pipeline failure","steps":["Read pipeline configuration and failing logs.","Classify environment, dependency, test, permission, or product failure.","Reproduce narrowly in isolation.","Correct the cause, rerun, and record why blind retry was rejected."],"proof":"The corrected run passes for a diagnosed reason rather than chance."}
+      ],
+      "independentAssignment": {"brief":"Run the simulation on a change with at least one security or data-handling boundary.","constraints":["Independent reviewer context required.","No real deployment.","At least one intentionally injected CI failure."],"submission":"Risk matrix, commits, isolated-run log, review dispositions, CI diagnosis, and rollback drill."},
+      "rubric": [
+        {"criterion":"Test and review evidence","weight":30,"exemplary":"Fail-first history, behavior-focused tests, fresh review, and finding dispositions form a complete proof chain.","proficient":"Core chain is correct with minor review/test gaps.","needsWork":"Tests mirror implementation or review trusts author context."},
+        {"criterion":"Permission architecture","weight":25,"exemplary":"Risk tiers, least privilege, meaningful gates, and deny paths are explicit and tested.","proficient":"Major risks are gated with one overbroad permission.","needsWork":"Blanket bypass or approval fatigue undermines control."},
+        {"criterion":"Isolation and CI diagnosis","weight":25,"exemplary":"Environment boundaries are explicit and failure is reproduced, classified, and corrected causally.","proficient":"Isolation and diagnosis work with one missing control.","needsWork":"Container is treated as total safety or retry replaces diagnosis."},
+        {"criterion":"Release readiness","weight":20,"exemplary":"Merge, rollback, residual risk, and ownership are decision-ready.","proficient":"Release packet is usable with a minor omission.","needsWork":"No safe rollback or unresolved risk is hidden."}
+      ],
+      "modelSolutionOutline": ["Classify actions before choosing automation mode.","Commit a failing behavioral test.","Implement minimally in isolation.","Run a fresh independent review.","Inject and diagnose one CI failure.","Require approval at the simulated release boundary.","Demonstrate rollback."],
+      "professionalChecklist": ["Behavioral test fails first.","No unrelated refactor.","Reviewer is context-independent.","Permission matrix covers deny paths.","Credentials and network are bounded.","CI cause is classified.","No blind retry.","Rollback is rehearsed.","Time-sensitive enterprise claims are verified before use."],
+      "masteryGate": "Score at least 80, with no rubric score below proficient in permission architecture or release readiness."
+    },
+    {
+      "id": "project-06-parallel-automation",
+      "order": 6,
+      "title": "Build an Observable Parallel Automation Pipeline",
+      "phaseId": "bounded-autonomy",
+      "estimatedHours": "18-24",
+      "professionalScenario": "A repository-wide migration must fan out across independent items, use specialist agents, preserve branch isolation, and return structured results under cost and time limits.",
+      "objective": "Design evals and traces, then coordinate parallel agents and non-interactive batch work without collisions or unbounded polling.",
+      "prerequisiteProjectIds": ["project-05-production-change-control"],
+      "primaryTopicIds": ["verify-evals","verify-observability","source-model-routing","parallel-orchestration","parallel-multi-agent-roles","parallel-boundaries","git-worktrees","parallel-background","automation-noninteractive","automation-backoff","automation-fanout","automation-of-automation","automation-remote-control"],
+      "evidenceSourceIds": ["pdf-agentic-10","pdf-agentic-15","pdf-official-best-practices","pdf-ykdojo-repo","pdf-linkedin-32","pdf-reddit-25","pdf-ruben-27"],
+      "deliverables": ["A representative eval set with outcome, trajectory, safety, cost, and latency measures.","An orchestration design showing roles, inputs, ownership, worktrees, handoffs, integration, and escalation.","A bounded fan-out runner with structured output, concurrency limit, backoff, cancellation, and aggregate report.","A trace sample containing versions, tool calls, state transitions, errors, timings, costs, and final disposition.","A remote-control threat model and emergency-stop drill."],
+      "guidedLabs": [
+        {"id":"lab-06a-eval-trace","title":"Measure before scaling","steps":["Select representative and adversarial cases.","Define outcome and trajectory graders.","Capture versions, calls, state, cost, latency, and errors.","Run a single-worker baseline."],"proof":"Baseline quality and operational cost are reproducible."},
+        {"id":"lab-06b-parallel-contract","title":"Create collision-free work packets","steps":["Partition on independent outcomes.","Assign files/branches/worktrees and output schema.","Define shared-contract freeze and integrator.","Test a deliberate overlap and escalation path."],"proof":"Workers cannot silently overwrite or redefine shared work."},
+        {"id":"lab-06c-fanout","title":"Bounded fan-out and aggregation","steps":["Provide a stable input list.","Run isolated structured invocations with a concurrency ceiling.","Apply maximum attempts and increasing polling intervals.","Aggregate success, failure, skipped, cost, and residual items."],"proof":"The run terminates under every tested condition and retains item-level evidence."}
+      ],
+      "independentAssignment": {"brief":"Execute a reversible migration or analysis across at least 12 independent items.","constraints":["Maximum concurrency declared before run.","At least two injected worker failures.","Remote access is simulated or locally isolated."],"submission":"Baseline, orchestration diagram, work packets, runner, traces, aggregate report, and emergency-stop evidence."},
+      "rubric": [
+        {"criterion":"Evaluation and observability","weight":25,"exemplary":"Representative graders and traces expose outcome, trajectory, safety, cost, latency, and recovery.","proficient":"Core outcome/trace data exists with one blind spot.","needsWork":"Success is inferred from worker prose."},
+        {"criterion":"Partition and coordination","weight":25,"exemplary":"Roles and boundaries create real independence with explicit integration and conflict handling.","proficient":"Parallelism works with modest coordination overhead.","needsWork":"Workers collide or duplicate work."},
+        {"criterion":"Automation control","weight":30,"exemplary":"Concurrency, retries, backoff, cancellation, structured output, and termination are deterministic and tested.","proficient":"Pipeline is bounded with one weak edge case.","needsWork":"Polling, retries, or output are unbounded/ambiguous."},
+        {"criterion":"Operational security","weight":20,"exemplary":"Remote control, credentials, network, audit, and emergency stop are threat-modeled and exercised.","proficient":"Major controls exist; one operational detail is incomplete.","needsWork":"Remote convenience broadens authority without visibility."}
+      ],
+      "modelSolutionOutline": ["Benchmark one worker.","Partition only independent items.","Freeze shared contracts.","Create isolated worktrees and structured work packets.","Run bounded fan-out.","Trace and aggregate every disposition.","Compare against baseline and exercise emergency stop."],
+      "professionalChecklist": ["Baseline exists.","Grader matches claim.","Workers have unique ownership.","Integrator is named.","Concurrency and budgets are bounded.","Retries classify failures.","Every item has a disposition.","Secrets are excluded from traces.","Emergency stop works."],
+      "masteryGate": "Score at least 82 and complete the failure-injection run without lost work, collision, or unbounded execution."
+    },
+    {
+      "id": "project-07-ralph-autonomy",
+      "order": 7,
+      "title": "Graduate a Ralph Loop from Supervised to Unattended",
+      "phaseId": "bounded-autonomy",
+      "estimatedHours": "20-30",
+      "professionalScenario": "A bounded, testable feature is a candidate for overnight iteration, but the team requires proof that completion, state, cost, and recovery are engineered rather than promised.",
+      "objective": "Build and progressively qualify a Ralph-style loop using PRD tasks, durable memory, feedback gates, completion contract, and autonomy maturity levels.",
+      "prerequisiteProjectIds": ["project-06-parallel-automation"],
+      "primaryTopicIds": ["ralph-fit","ralph-core","ralph-prd-tasks","ralph-memory","ralph-feedback","ralph-levels","ralph-patterns"],
+      "evidenceSourceIds": ["pdf-ralph-loop","pdf-agentic-10","pdf-agentic-15","pdf-official-best-practices"],
+      "deliverables": ["A fit/no-fit decision covering ambiguity, reversibility, observability, external effects, and verification strength.","A reviewed PRD and atomic prd.json with dependencies and acceptance checks.","Separate chronological progress log and durable agents.md patterns/gotchas.","A stop-hook/completion contract plus iteration, cost, time, failure, and escalation ceilings.","Evidence from Level 1 supervised, Level 2 attended, and a safely simulated Level 3 unattended run.","A pattern comparison covering feature builder, test-until-green, multi-persona review, and POC validator."],
+      "guidedLabs": [
+        {"id":"lab-07a-fit-prd","title":"Qualify the task and atomize the PRD","steps":["Reject tasks with subjective or unsafe completion.","Write user-visible requirements and non-goals.","Split work into dependency-aware atomic tasks.","Attach direct acceptance checks to every task."],"proof":"No task can pass solely because the agent emits a completion phrase."},
+        {"id":"lab-07b-memory-feedback","title":"Wire state and feedback","steps":["Store task status in prd.json.","Append iteration facts to progress.txt.","Promote only validated durable patterns to agents.md.","Feed tests, lint, build, Git, state, and limits into each iteration."],"proof":"A fresh iteration selects the correct next task without prior conversational context."},
+        {"id":"lab-07c-maturity","title":"Earn autonomy progressively","steps":["Run one supervised iteration and inspect every artifact.","Run an attended loop with low limits and injected failure.","Correct all control failures.","Simulate unattended execution in isolation and perform the morning review checklist."],"proof":"Each maturity level passes its gate before the next begins."}
+      ],
+      "independentAssignment": {"brief":"Select a bounded internal tool or feature and demonstrate all three maturity gates; Level 3 may be a time-compressed isolated simulation.","constraints":["No production credentials or deployment.","Completion promise is never accepted as proof.","At least one corrupted task-state or failing-test injection."],"submission":"Fit decision, PRD, task/state files, hook/loop configuration, logs, Git history, cost report, failure recovery, and morning review."},
+      "rubric": [
+        {"criterion":"Fit and task architecture","weight":25,"exemplary":"Task is genuinely loop-suitable; PRD/tasks are atomic, dependency-aware, and directly verifiable.","proficient":"Fit is sound with one oversized task.","needsWork":"Ambiguous or unsafe work is forced into the loop."},
+        {"criterion":"State and feedback","weight":25,"exemplary":"Task state, progress, durable learning, tests, and Git form a coherent fresh-context feedback system.","proficient":"State works with minor duplication.","needsWork":"The loop depends on transcript or stale memory."},
+        {"criterion":"Bounds and recovery","weight":30,"exemplary":"All ceilings and stop paths are enforced, failure-injected, and recoverable from checkpoints.","proficient":"Major bounds work; one secondary ceiling is weak.","needsWork":"Completion token, retries, cost, or external action is unbounded."},
+        {"criterion":"Autonomy graduation","weight":20,"exemplary":"Evidence justifies each maturity promotion and morning review independently validates outcomes.","proficient":"All levels demonstrated with a small evidence gap.","needsWork":"Unattended status is claimed before lower levels are proven."}
+      ],
+      "modelSolutionOutline": ["Start with a fit decision.","Review a PRD before looping.","Make tasks atomic and verifiable.","Separate task state, chronological progress, and durable knowledge.","Enforce budgets outside model prose.","Pass supervised and attended gates.","Simulate unattended execution, then independently review files, tests, logs, and Git."],
+      "professionalChecklist": ["Task is bounded and reversible.","Every task has acceptance evidence.","Completion token is not proof.","State files have distinct roles.","Tests and Git feed the loop.","Iteration/cost/time ceilings are enforced.","Failure and escalation exits work.","Maturity gates are sequential.","Morning review reruns checks independently."],
+      "masteryGate": "Score at least 85 with exemplary bounds/recovery and independent evidence for all three maturity levels."
+    },
+    {
+      "id": "project-08-professional-capstone",
+      "order": 8,
+      "title": "Capstone: Build a Provenance-Linked Claude Code Engineering Practice",
+      "phaseId": "knowledge-practice",
+      "estimatedHours": "30-45",
+      "professionalScenario": "You must deliver a maintainable personal or team system that turns an authoritative corpus into usable knowledge, creates one high-value tool, and continuously improves Claude Code practice through evidence rather than trend chasing.",
+      "objective": "Integrate knowledge acquisition, graph/vault design, provenance, retrieval cadence, artifacts, personal software, writing, workflow measurement, deliberate learning, and qualified creative judgment.",
+      "prerequisiteProjectIds": ["project-07-ralph-autonomy"],
+      "primaryTopicIds": ["knowledge-corpus-ingest","knowledge-graph-model","knowledge-obsidian-import","knowledge-node-enrichment","knowledge-provenance","knowledge-retrieval-cadence","tool-html-infographics","tool-artifacts-miniapps","practice-personal-software","practice-writing-markdown","practice-personal-workflow","practice-learning","source-creative-opinions"],
+      "evidenceSourceIds": ["pdf-graphify-obsidian","pdf-ruben-27","pdf-ykdojo-repo","pdf-linkedin-32","pdf-reddit-25","pdf-official-best-practices"],
+      "deliverables": ["A source manifest for an authoritative corpus with identity, retrieval date, status, and limitations.","A staged concept graph and isolated Obsidian import with enriched nodes, source backlinks, and reversible merge.","A retrieval/review cadence that surfaces relevant knowledge and records whether it changed a decision.","One persistent artifact or personalized mini-tool with documented data storage, privacy, export, and maintenance.","A version-controlled Markdown operating manual linking prompts, decisions, checklists, project evidence, and learning log.","A capstone defense showing which source opinions were adopted, rejected, or time-qualified and why."],
+      "guidedLabs": [
+        {"id":"lab-08a-corpus-provenance","title":"Build the trustworthy corpus","steps":["Define authoritative and excluded source boundaries.","Record document identity, dates, failures, and limitations.","Generate concepts and relationships in a staging area.","Link every enriched node back to source evidence."],"proof":"A reviewer can trace a sampled graph claim to the original document and page."},
+        {"id":"lab-08b-vault-safety","title":"Stage and merge a reversible vault","steps":["Generate a standalone vault or disposable folder.","Inspect collisions, bare notes, naming, and backlinks.","Enrich selected nodes with source-grounded meaning.","Merge as one removable folder and perform rollback."],"proof":"The import can be removed without damaging the main vault."},
+        {"id":"lab-08c-personal-tool","title":"Build a maintainable personal tool","steps":["Select a narrow recurring decision or friction.","Prototype an artifact with persistent data and export.","Document privacy, failure, maintenance, and retirement.","Measure whether it improves the workflow over a manual baseline."],"proof":"The tool changes a measured workflow outcome and preserves user data portability."},
+        {"id":"lab-08d-learning-loop","title":"Operate the knowledge system","steps":["Schedule a retrieval prompt or review queue.","Use one surfaced note in a real decision.","Record the decision delta and confidence.","Update the operating manual and share one validated discovery."],"proof":"The system retrieves and changes practice; it is not merely a document graveyard."}
+      ],
+      "independentAssignment": {"brief":"Deliver the complete capstone on a corpus and workflow relevant to your professional practice, then defend it to a reviewer unfamiliar with your build process.","constraints":["At least 25 source documents or an equivalently substantive corpus.","At least 30 enriched concepts with provenance.","One rollback drill and one source-update drill.","No unsupported installation steps inferred from the Graphify screenshots."],"submission":"Repository/vault, manifests, graph, tool, operating manual, metrics, rollback evidence, update evidence, and 15-minute written or live defense."},
+      "rubric": [
+        {"criterion":"Corpus and provenance","weight":25,"exemplary":"Identity, acquisition, limitations, graph claims, and backlinks form a complete auditable chain.","proficient":"Core provenance works with small metadata gaps.","needsWork":"Graph or notes cannot be traced to authoritative sources."},
+        {"criterion":"Knowledge usefulness and safety","weight":20,"exemplary":"Nodes are meaningfully enriched, import is reversible, and retrieval demonstrably changes decisions.","proficient":"Vault is useful and reversible; retrieval evidence is modest.","needsWork":"Bare nodes accumulate or merge cannot be safely undone."},
+        {"criterion":"Personal tool quality","weight":20,"exemplary":"Tool solves measured friction with durable data, privacy, export, maintenance, and retirement design.","proficient":"Tool is useful with one lifecycle omission.","needsWork":"Demo has no persistence, portability, or ownership."},
+        {"criterion":"Operating practice","weight":20,"exemplary":"Manual, checklists, learning log, and decision records create an evolving evidence-based practice.","proficient":"Practice is repeatable with minor gaps.","needsWork":"Artifacts are disconnected or trend/opinion replaces measured learning."},
+        {"criterion":"Capstone defense","weight":15,"exemplary":"Learner explains mechanisms, tradeoffs, source qualifications, failures, and updates without hidden AI reconstruction.","proficient":"Defense is sound with minor uncertainty.","needsWork":"Learner cannot justify boundaries or distinguish fact from opinion."}
+      ],
+      "modelSolutionOutline": ["Manifest and stage the corpus.","Build the graph without merging into the main vault.","Enrich nodes and wire provenance.","Test reversible import and update paths.","Build one measured personal tool.","Create a retrieval cadence and decision-delta log.","Unify prior project artifacts in a version-controlled operating manual.","Defend adopted, rejected, and time-qualified source guidance."],
+      "professionalChecklist": ["Corpus scope is explicit.","Every document has identity/status/date.","Graph claims have provenance.","Bare nodes are enriched or removed.","Vault import is isolated and reversible.","Retrieval cadence produces decisions.","Tool data persists and exports.","Privacy and retirement are documented.","Operating manual links evidence.","Source opinions remain qualified.","Update and rollback drills pass."],
+      "masteryGate": "Score at least 85, with no criterion below proficient, and pass an independent provenance spot-check plus rollback drill."
+    }
+  ],
+  "capstoneProgression": [
+    {"stage":1,"projectId":"project-01-agent-brief","independence":"high guidance","professionalArtifact":"Executable brief and decision log","gate":"The learner can define control before action."},
+    {"stage":2,"projectId":"project-02-repository-change","independence":"guided execution","professionalArtifact":"Verified repository change","gate":"The learner can produce direct engineering evidence."},
+    {"stage":3,"projectId":"project-03-context-operating-system","independence":"guided system design","professionalArtifact":"Repository instruction and session-continuity system","gate":"A clean session can safely continue the work."},
+    {"stage":4,"projectId":"project-04-extension-platform","independence":"bounded design brief","professionalArtifact":"Reusable extension with tested contracts","gate":"A team can reuse and maintain the capability."},
+    {"stage":5,"projectId":"project-05-production-change-control","independence":"professional simulation","professionalArtifact":"Auditable change-control packet","gate":"Safety, review, CI, and rollback controls withstand failure injection."},
+    {"stage":6,"projectId":"project-06-parallel-automation","independence":"independent implementation","professionalArtifact":"Observable parallel pipeline","gate":"Parallel work terminates, aggregates, and recovers without collision."},
+    {"stage":7,"projectId":"project-07-ralph-autonomy","independence":"independent autonomy qualification","professionalArtifact":"Graduated autonomous loop","gate":"Unattended execution is earned through lower maturity evidence."},
+    {"stage":8,"projectId":"project-08-professional-capstone","independence":"independent capstone and defense","professionalArtifact":"Provenance-linked engineering operating practice","gate":"The system remains useful, traceable, reversible, and teachable after handoff."}
+  ],
+  "professionalChecklists": [
+    {"id":"check-project-start","title":"Before starting a serious project","items":["Define observable outcome and non-goals.","Identify authority, irreversible transitions, and approver.","Create a reversible checkpoint.","Select direct verification evidence.","Confirm prerequisite project gates are passed.","Record source-specific claims that require current verification."]},
+    {"id":"check-evidence-submission","title":"Before submitting evidence","items":["Every claim links to an artifact, command result, diff, trace, or source.","Commands include relevant environment assumptions and exit results.","Negative and boundary cases are included.","Failures and corrections remain visible.","Secrets and personal data are removed.","A fresh reviewer can reproduce the conclusion."]},
+    {"id":"check-professional-review","title":"Professional reviewer checklist","items":["Judge observed behavior, not polish.","Challenge hidden assumptions and scope expansion.","Check evidence matches the claimed layer.","Inspect permission and data boundaries.","Attempt the documented recovery or rollback.","Score every rubric criterion independently.","Return actionable evidence-based revision requests."]},
+    {"id":"check-capstone-defense","title":"Capstone defense checklist","items":["Explain the operating model without notes generated during the defense.","Trace a sampled claim to source evidence.","Demonstrate one failure recovery.","Demonstrate one rollback.","Explain one rejected source recommendation.","Show how the system detects staleness.","Name the next measurable improvement."]}
+  ]
+}

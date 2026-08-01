@@ -1,0 +1,35 @@
+{
+  "schemaVersion":"1.0",
+  "phases":[
+    {"id":"foundations","title":"Phase 1 · Foundations","description":"Learn how agent work is controlled, how to communicate intent, and how to demand evidence before confidence.","groups":[
+      {"id":"agent-model","title":"Understand the agent operating model","topicIds":["found-goal-vs-task","found-agent-loop","found-reflection-rule","found-stopping","found-harness","found-loop-engineering"]},
+      {"id":"communicate-intent","title":"Communicate intent clearly","topicIds":["prompt-executable-brief","prompt-clarifying-questions","prompt-voice-context","prompt-visual-reference","prompt-negative-feedback","prompt-edit-before-bad-answer"]},
+      {"id":"enter-codebase","title":"Enter a codebase safely","topicIds":["repo-map","repo-decomposition"]},
+      {"id":"evidence-basics","title":"Close the evidence and checkpoint loop","topicIds":["verify-targets","verify-write-test-cycle","git-gh-workflow"]},
+      {"id":"daily-terminal","title":"Choose and operate the daily interface","topicIds":["source-cowork-code","extensions-slash-status-alias","tool-terminal-output","tool-realpath"]}
+    ]},
+    {"id":"context-project-memory","title":"Phase 2 · Context and project memory","description":"Manage sessions and durable state, plan codebase work, and build a maintainable CLAUDE.md system.","groups":[
+      {"id":"context-lifecycle","title":"Manage context, sessions, state, and memory","topicIds":["context-engineering","context-freshness","context-compact-handoff","context-history-search","context-session-resume","memory-architecture","state-management","context-connectors-cost","context-projects-fit"]},
+      {"id":"plan-codebase","title":"Plan and shape codebase work","topicIds":["prompt-abstraction-level","prompt-plan-vs-prototype","repo-index-large","repo-simplify"]},
+      {"id":"claude-md-system","title":"Build CLAUDE.md from bootstrap to maintenance","topicIds":["instructions-mental-model","instructions-creation","instructions-why-how-what","instructions-hierarchy","instructions-progressive-disclosure","instructions-workflows","instructions-conditional","instructions-maintenance","source-system-prompt-slimming"]}
+    ]},
+    {"id":"reliable-systems","title":"Phase 3 · Reliable engineering systems","description":"Connect testing and recovery to extension design, tool contracts, delivery, and enforceable safety boundaries.","groups":[
+      {"id":"quality-recovery","title":"Test, review, and recover","topicIds":["verify-tdd","verify-diff-review","recovery-common-failures"]},
+      {"id":"delivery","title":"Prepare pull requests and investigate CI","topicIds":["git-interactive-pr","git-devops-ci"]},
+      {"id":"extension-architecture","title":"Choose and build Claude Code extensions","topicIds":["extensions-taxonomy","extensions-dx-setup-accounts","extensions-skills","extensions-hooks","extensions-mcp"]},
+      {"id":"tool-contracts","title":"Design tool and external-system interfaces","topicIds":["tool-interface-design","tool-browser-research","tool-universal-interface"]},
+      {"id":"safety-control","title":"Enforce permissions, isolation, and human control","topicIds":["permissions-guardrails","permissions-hitl","permissions-risk-tier","permissions-isolation","permissions-auto-mode","source-enterprise-seats"]}
+    ]},
+    {"id":"bounded-autonomy","title":"Phase 4 · Parallelism and bounded autonomy","description":"Measure agent behavior first, then scale through isolated parallel work, automation, and supervised-to-unattended loops.","groups":[
+      {"id":"evaluate-observe","title":"Evaluate, observe, and route agent work","topicIds":["verify-evals","verify-observability","source-model-routing"]},
+      {"id":"parallel-agents","title":"Coordinate parallel agents without collisions","topicIds":["parallel-orchestration","parallel-multi-agent-roles","parallel-boundaries","git-worktrees","parallel-background"]},
+      {"id":"batch-automation","title":"Build bounded command and batch automation","topicIds":["automation-noninteractive","automation-backoff","automation-fanout","automation-of-automation","automation-remote-control"]},
+      {"id":"ralph-loops","title":"Build Ralph loops from supervised to unattended","topicIds":["ralph-fit","ralph-core","ralph-prd-tasks","ralph-memory","ralph-feedback","ralph-levels","ralph-patterns"]}
+    ]},
+    {"id":"knowledge-practice","title":"Phase 5 · Knowledge and personal practice","description":"Turn sources into provenance-linked knowledge and evolve a personal workflow without creating a maintenance burden.","groups":[
+      {"id":"knowledge-system","title":"Build a trustworthy knowledge system","topicIds":["knowledge-corpus-ingest","knowledge-graph-model","knowledge-obsidian-import","knowledge-node-enrichment","knowledge-provenance","knowledge-retrieval-cadence"]},
+      {"id":"personal-tools","title":"Create artifacts and personal software","topicIds":["tool-html-infographics","tool-artifacts-miniapps","practice-personal-software"]},
+      {"id":"operating-practice","title":"Evolve your operating practice","topicIds":["practice-writing-markdown","practice-personal-workflow","practice-learning","source-creative-opinions"]}
+    ]}
+  ]
+}

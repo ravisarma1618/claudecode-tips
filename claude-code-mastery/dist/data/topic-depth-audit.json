@@ -1,0 +1,1818 @@
+{
+  "auditedAt": "2026-07-31T21:06:49.030Z",
+  "expectedTopics": 95,
+  "actualTopics": 95,
+  "missingTopicIds": [],
+  "extraTopicIds": [],
+  "passed": 95,
+  "failed": 0,
+  "minInstructionalWords": 1505,
+  "averageInstructionalWords": 1613,
+  "topics": [
+    {
+      "id": "found-goal-vs-task",
+      "instructionalWords": 1612,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "found-agent-loop",
+      "instructionalWords": 1560,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "found-reflection-rule",
+      "instructionalWords": 1578,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "found-stopping",
+      "instructionalWords": 1505,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "found-harness",
+      "instructionalWords": 1558,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "found-loop-engineering",
+      "instructionalWords": 1510,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-executable-brief",
+      "instructionalWords": 1545,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-clarifying-questions",
+      "instructionalWords": 1563,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-voice-context",
+      "instructionalWords": 1609,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-visual-reference",
+      "instructionalWords": 1604,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-edit-before-bad-answer",
+      "instructionalWords": 1637,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-negative-feedback",
+      "instructionalWords": 1577,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-abstraction-level",
+      "instructionalWords": 1547,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "prompt-plan-vs-prototype",
+      "instructionalWords": 1595,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "repo-map",
+      "instructionalWords": 1538,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "repo-decomposition",
+      "instructionalWords": 1542,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "repo-index-large",
+      "instructionalWords": 1546,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "repo-simplify",
+      "instructionalWords": 1570,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-engineering",
+      "instructionalWords": 1579,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-freshness",
+      "instructionalWords": 1630,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-compact-handoff",
+      "instructionalWords": 1621,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-history-search",
+      "instructionalWords": 1593,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "memory-architecture",
+      "instructionalWords": 1603,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "state-management",
+      "instructionalWords": 1593,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-connectors-cost",
+      "instructionalWords": 1650,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-projects-fit",
+      "instructionalWords": 1696,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-mental-model",
+      "instructionalWords": 1618,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-hierarchy",
+      "instructionalWords": 1608,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-progressive-disclosure",
+      "instructionalWords": 1612,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-workflows",
+      "instructionalWords": 1590,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-conditional",
+      "instructionalWords": 1589,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-maintenance",
+      "instructionalWords": 1595,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-taxonomy",
+      "instructionalWords": 1643,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-skills",
+      "instructionalWords": 1609,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-hooks",
+      "instructionalWords": 1574,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-mcp",
+      "instructionalWords": 1542,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-slash-status-alias",
+      "instructionalWords": 1621,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "extensions-dx-setup-accounts",
+      "instructionalWords": 1651,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-interface-design",
+      "instructionalWords": 1567,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-terminal-output",
+      "instructionalWords": 1599,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-realpath",
+      "instructionalWords": 1570,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-browser-research",
+      "instructionalWords": 1585,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-artifacts-miniapps",
+      "instructionalWords": 1553,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-html-infographics",
+      "instructionalWords": 1673,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "tool-universal-interface",
+      "instructionalWords": 1623,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-targets",
+      "instructionalWords": 1623,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-write-test-cycle",
+      "instructionalWords": 1614,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-tdd",
+      "instructionalWords": 1636,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-diff-review",
+      "instructionalWords": 1619,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-evals",
+      "instructionalWords": 1582,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "verify-observability",
+      "instructionalWords": 1587,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "git-gh-workflow",
+      "instructionalWords": 1637,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "git-worktrees",
+      "instructionalWords": 1610,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "git-interactive-pr",
+      "instructionalWords": 1600,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "git-devops-ci",
+      "instructionalWords": 1605,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "permissions-guardrails",
+      "instructionalWords": 1586,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "permissions-hitl",
+      "instructionalWords": 1573,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "permissions-risk-tier",
+      "instructionalWords": 1576,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "permissions-isolation",
+      "instructionalWords": 1595,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "permissions-auto-mode",
+      "instructionalWords": 1604,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "parallel-orchestration",
+      "instructionalWords": 1530,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "parallel-multi-agent-roles",
+      "instructionalWords": 1606,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "parallel-boundaries",
+      "instructionalWords": 1567,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "parallel-background",
+      "instructionalWords": 1589,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-fit",
+      "instructionalWords": 1684,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-core",
+      "instructionalWords": 1641,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-prd-tasks",
+      "instructionalWords": 1597,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-memory",
+      "instructionalWords": 1611,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-feedback",
+      "instructionalWords": 1573,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-levels",
+      "instructionalWords": 1642,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "ralph-patterns",
+      "instructionalWords": 1637,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "automation-noninteractive",
+      "instructionalWords": 1582,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "automation-backoff",
+      "instructionalWords": 1614,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "automation-of-automation",
+      "instructionalWords": 1640,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "automation-remote-control",
+      "instructionalWords": 1573,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-graph-model",
+      "instructionalWords": 1615,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-obsidian-import",
+      "instructionalWords": 1630,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-provenance",
+      "instructionalWords": 1606,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-retrieval-cadence",
+      "instructionalWords": 1687,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "practice-writing-markdown",
+      "instructionalWords": 1683,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "practice-personal-workflow",
+      "instructionalWords": 1633,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "practice-learning",
+      "instructionalWords": 1679,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "practice-personal-software",
+      "instructionalWords": 1629,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "context-session-resume",
+      "instructionalWords": 1671,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "automation-fanout",
+      "instructionalWords": 1622,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-why-how-what",
+      "instructionalWords": 1690,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "instructions-creation",
+      "instructionalWords": 1645,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-corpus-ingest",
+      "instructionalWords": 1661,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "knowledge-node-enrichment",
+      "instructionalWords": 1712,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "recovery-common-failures",
+      "instructionalWords": 1728,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "source-system-prompt-slimming",
+      "instructionalWords": 1757,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "source-model-routing",
+      "instructionalWords": 1729,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "source-cowork-code",
+      "instructionalWords": 1724,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "source-enterprise-seats",
+      "instructionalWords": 1728,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    },
+    {
+      "id": "source-creative-opinions",
+      "instructionalWords": 1678,
+      "pass": true,
+      "checks": {
+        "canonicalTopic": true,
+        "requiredFields": true,
+        "minimumWords": true,
+        "procedure": true,
+        "failureRecovery": true,
+        "workedApplication": true,
+        "reusableAid": true,
+        "practiceAndMastery": true,
+        "validCitation": true,
+        "visualDecision": true
+      },
+      "missingFields": [],
+      "badCitations": []
+    }
+  ]
+}

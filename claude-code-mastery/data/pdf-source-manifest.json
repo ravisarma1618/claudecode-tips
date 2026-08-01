@@ -1,0 +1,4394 @@
+[
+  {
+    "id": "pdf-agentic-10",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\10 Agentic AI Concepts You Need to Master Before 2027.pdf",
+    "filename": "10 Agentic AI Concepts You Need to Master Before 2027.pdf",
+    "sha256": "9238fa12043b277b12ef5363a86783ef68400261c18210659e89d72c36386c51",
+    "bytes": 1451825,
+    "pages": 18,
+    "title": "10 Agentic AI Concepts You Need to Master Before 2027",
+    "author": "",
+    "subject": "",
+    "textCharacters": 23587,
+    "wordCount": 4197,
+    "headings": [
+      {
+        "page": 1,
+        "text": "Before 2027"
+      },
+      {
+        "page": 1,
+        "text": "55 12 Share"
+      },
+      {
+        "page": 5,
+        "text": "1. Harness engineering"
+      },
+      {
+        "page": 6,
+        "text": "2. Loop engineering"
+      },
+      {
+        "page": 7,
+        "text": "3. Context engineering"
+      },
+      {
+        "page": 8,
+        "text": "4. Tool design"
+      },
+      {
+        "page": 9,
+        "text": "5. Memory architecture"
+      },
+      {
+        "page": 10,
+        "text": "6. Orchestration patterns"
+      },
+      {
+        "page": 11,
+        "text": "7. Guardrails & permissions"
+      },
+      {
+        "page": 12,
+        "text": "8. Evals for agents"
+      },
+      {
+        "page": 14,
+        "text": "9. Human-in-the-loop design"
+      },
+      {
+        "page": 15,
+        "text": "10. Observability & tracing"
+      },
+      {
+        "page": 17,
+        "text": "1. How to build your AI agent from scratch"
+      },
+      {
+        "page": 17,
+        "text": "2. The ultimate ML/AI Engineer roadmap with curriculum guidance, AI projects, tools and"
+      },
+      {
+        "page": 17,
+        "text": "3. Agentic Intelligence - a must-have book that walks you through talking to LLMs, to fine-"
+      },
+      {
+        "page": 17,
+        "text": "Comments Restacks"
+      }
+    ],
+    "links": [
+      "https://danicasimic.substack.com/p/how-to-build-your-first-agentic-system?r=3twegb",
+      "https://danicasimic.substack.com/p/tools-i-use-every-day-as-a-data-scientist",
+      "https://stan.store/codingmermaid/p/agentic-intelligence-mastery",
+      "https://stan.store/codingmermaid/p/ai-engineer-roadmap-az",
+      "https://substack.com/",
+      "https://substack.com/@danicasimic",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/privacy",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!jMNQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F706f111d-8a60-42a2-9dbd-fd3246f44fe9_1536x1024.png"
+    ],
+    "embeddedImages": [
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-agentic-10/page-002-image-01.png",
+        "bytes": 1182989
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-agentic-10.md"
+  },
+  {
+    "id": "pdf-agentic-15",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\15 Agentic AI Concepts Everyone Needs - by Hamza Khalid.pdf",
+    "filename": "15 Agentic AI Concepts Everyone Needs - by Hamza Khalid.pdf",
+    "sha256": "348f661d57c0a4b26c4762e986f6f3bfbc50a50d8887acd210e92e9dfa9fa49a",
+    "bytes": 9916245,
+    "pages": 28,
+    "title": "15 Agentic AI Concepts Everyone Needs - by Hamza Khalid",
+    "author": "",
+    "subject": "",
+    "textCharacters": 16462,
+    "wordCount": 3457,
+    "headings": [
+      {
+        "page": 1,
+        "text": "41 14 Share"
+      },
+      {
+        "page": 2,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 3,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 3,
+        "text": "Referral Winners - June 2026"
+      },
+      {
+        "page": 4,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 5,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 6,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 7,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 7,
+        "text": "1. Agent - a goal, not a task: A task ends. A goal persists. I gave Claude a standing"
+      },
+      {
+        "page": 8,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 8,
+        "text": "2. Agent Loop - observe, decide, act, check."
+      },
+      {
+        "page": 9,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 10,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 10,
+        "text": "Step 1 (Observe): Pull open rates for the last 8 issues from the attached CSV."
+      },
+      {
+        "page": 10,
+        "text": "Step 2 (Decide): Identify any issue with an open rate below 40%."
+      },
+      {
+        "page": 10,
+        "text": "Step 3 (Act): For each flagged issue, write a one-sentence hypothesis"
+      },
+      {
+        "page": 10,
+        "text": "Step 4 (Check): Confirm every hypothesis ties to a specific data point."
+      },
+      {
+        "page": 11,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 11,
+        "text": "3. Planning and Task Decomposition - only for real dependencies: My analytics task"
+      },
+      {
+        "page": 12,
+        "text": "4. Reflection - a measurable rule, not a vibe: The line that fixed everything: “If you"
+      },
+      {
+        "page": 12,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 12,
+        "text": "5. Tool Use - give it hands, not just an opinion: A model that can only talk back is a"
+      },
+      {
+        "page": 13,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 13,
+        "text": "6. Memory - decide what carries forward: For the analytics task, no memory is needed"
+      },
+      {
+        "page": 14,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 14,
+        "text": "7. Context Window Management - don’t drown it: Every agent has a limit on how"
+      },
+      {
+        "page": 15,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 15,
+        "text": "8. State Management - track where the task actually is: For multi-step work, I now"
+      },
+      {
+        "page": 16,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 16,
+        "text": "9. Guardrails - the rules it can’t cross: For the analytics agent, the guardrail is simple:"
+      },
+      {
+        "page": 17,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 17,
+        "text": "10. Permissions and Human-in-the-Loop - where you stay in control: My reviewer"
+      },
+      {
+        "page": 18,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 18,
+        "text": "11. Orchestration - coordinating more than one agent: This only matters once you’re"
+      },
+      {
+        "page": 19,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 19,
+        "text": "12. Multi-Agent Systems - different agents, different jobs: Same idea, bigger scale: a"
+      },
+      {
+        "page": 20,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 20,
+        "text": "13. Observability - being able to see what it actually did. Please show your work step"
+      },
+      {
+        "page": 21,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 21,
+        "text": "14. Stopping Conditions - when does it actually stop? Every agent needs an explicit"
+      },
+      {
+        "page": 22,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 22,
+        "text": "15. Skills - reusable capabilities you don’t rebuild from scratch: Once a prompt"
+      },
+      {
+        "page": 23,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 24,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 24,
+        "text": "Best Practices / Use Cases"
+      },
+      {
+        "page": 25,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 25,
+        "text": "Recap Checklist"
+      },
+      {
+        "page": 26,
+        "text": "Everyone Needs"
+      },
+      {
+        "page": 27,
+        "text": "Hi Ravi"
+      },
+      {
+        "page": 28,
+        "text": "Everyone Needs"
+      }
+    ],
+    "links": [
+      "https://humzakhalid.substack.com/",
+      "https://open.substack.com/users/246633-joao-o-crespo?utm_source=mentions",
+      "https://open.substack.com/users/29986946-steve-dubois?utm_source=mentions",
+      "https://substack.com/",
+      "https://substack.com/@humzakhalid",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/privacy",
+      "https://substack.com/sign-in?redirect=%2Fp%2F15-agentic-ai-concepts-everyone-needs&for_pub=humzakhalid&change_user=true",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!3pnb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0624bafe-e4b9-4d89-b44b-6b3da86bce22_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!9Swo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F828b27dd-af1d-43cc-a978-f6cf094bf30e_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!9iNx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffaff77c0-4a43-473a-b91d-b57ca6ecdeaf_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!FVxG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a6134c2-57d6-47d5-90b5-dd8f79cd84ee_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!IT2l!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fca455f1f-3995-4182-ab55-f5e463e69030_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!JKAi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb19e74e9-5314-4e9f-82f2-f45b291b8ba6_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!LM3y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c158fff-8f7a-4a88-a57a-5e70c29df871_2931x1624.png",
+      "https://substackcdn.com/image/fetch/$s_!Pshf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F672e5dfe-d1b2-4d3c-9166-7d2e79d99f96_1024x1024.png",
+      "https://substackcdn.com/image/fetch/$s_!Q9cc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc9a686f-5bd0-4d57-bda9-02e29003caf0_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!RKOt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe81f7a3e-7651-4111-ab7a-9ebbcf19db62_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!X37c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e9b8b0d-2a2a-465a-a8b8-bd4807405535_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!YUFU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa711f65d-1ff5-4021-ad35-eee9e7ca1f90_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!YUUt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2710ffac-1266-4c18-be9c-acd7591f8faa_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!blh6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a1c82ea-1d35-4e88-ab2e-e04288985680_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!eH8M!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b02201f-07d3-4e42-9689-4ac7f9fe88bc_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!rWiE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3458bc74-645e-444b-992a-6164060bb856_1456x720.png",
+      "https://substackcdn.com/image/fetch/$s_!sSM4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67067d2e-4a87-49fb-b546-78ea925c42a5_1456x720.png",
+      "https://theclaudekit.com/",
+      "https://theclaudekit.com/trade",
+      "https://www.aiinpublic.com/subscribe?simple=true&next=https%3A%2F%2Fwww.aiinpublic.com%2Fp%2F15-agentic-ai-concepts-everyone-needs&utm_source=paywall-free-trial&utm_medium=web&utm_content=204223283&coupon=5d64f177"
+    ],
+    "embeddedImages": [
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-001-image-03.png",
+        "bytes": 25078
+      },
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-002-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-002-image-02.png",
+        "bytes": 708231
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-003-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-003-image-02.png",
+        "bytes": 708231
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-004-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-005-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-005-image-02.png",
+        "bytes": 292461
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-006-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-007-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-008-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-008-image-02.png",
+        "bytes": 367991
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-009-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-009-image-02.png",
+        "bytes": 438104
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-010-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-010-image-02.png",
+        "bytes": 395579
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-011-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-011-image-02.png",
+        "bytes": 487568
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-012-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-012-image-02.png",
+        "bytes": 468323
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-013-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-013-image-02.png",
+        "bytes": 419236
+      },
+      {
+        "page": 14,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-014-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 14,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-014-image-02.png",
+        "bytes": 471750
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-015-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-015-image-02.png",
+        "bytes": 528649
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-016-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-016-image-02.png",
+        "bytes": 479331
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-017-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-017-image-02.png",
+        "bytes": 464073
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-018-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-018-image-02.png",
+        "bytes": 516239
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-019-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-019-image-02.png",
+        "bytes": 455565
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-020-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-020-image-02.png",
+        "bytes": 479017
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-021-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-021-image-02.png",
+        "bytes": 503983
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-022-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-022-image-02.png",
+        "bytes": 515227
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-023-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-023-image-02.png",
+        "bytes": 436798
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-024-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-025-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-026-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-027-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-agentic-15/page-028-image-01.png",
+        "bytes": 25078
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-agentic-15.md"
+  },
+  {
+    "id": "pdf-reddit-25",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf",
+    "filename": "25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf",
+    "sha256": "579307b788b259657fc703c7aa7c231ac1d09e5dd18610e68fce5c4a678c670a",
+    "bytes": 4192997,
+    "pages": 38,
+    "title": "25 Claude Code Tips from 11 Months of Intense Use : r/ClaudeAI",
+    "author": "",
+    "subject": "",
+    "textCharacters": 68258,
+    "wordCount": 11696,
+    "headings": [
+      {
+        "page": 1,
+        "text": "Tip 0: Customize your status line Created Jan 23, 2023"
+      },
+      {
+        "page": 1,
+        "text": "  Informal-Crow-4807"
+      },
+      {
+        "page": 1,
+        "text": "Tip 1: Learn a few essential slash commands"
+      },
+      {
+        "page": 3,
+        "text": "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec"
+      },
+      {
+        "page": 3,
+        "text": "Mon ··············································▒█░▓░█"
+      },
+      {
+        "page": 3,
+        "text": "Wed ·············································░▒█▒▓░█"
+      },
+      {
+        "page": 3,
+        "text": "Fri ············································░▓░█▓▓█"
+      },
+      {
+        "page": 3,
+        "text": "Less ░ ▒ ▓ █ More"
+      },
+      {
+        "page": 3,
+        "text": "Tip 2: Talk to Claude Code with your voice Message Mods"
+      },
+      {
+        "page": 3,
+        "text": "Kris - Anthropic Ambassador"
+      },
+      {
+        "page": 4,
+        "text": "Tip 3: Break down large problems into smaller ones"
+      },
+      {
+        "page": 4,
+        "text": "Flooding Assistant"
+      },
+      {
+        "page": 5,
+        "text": "Tip 4: Using Git and GitHub CLI like a pro Evasion Guard"
+      },
+      {
+        "page": 5,
+        "text": "Reddit Rules Privacy Policy User Agreement Accessibility"
+      },
+      {
+        "page": 6,
+        "text": "Tip 5: AI context is like milk; it's best served fresh and condensed!"
+      },
+      {
+        "page": 6,
+        "text": "Tip 6: Getting output out of your terminal"
+      },
+      {
+        "page": 7,
+        "text": "Tip 7: Set up terminal aliases for quick access"
+      },
+      {
+        "page": 8,
+        "text": "Tip 8: Proactively compact your context"
+      },
+      {
+        "page": 8,
+        "text": "# System Prompt Slimming - Handoff Document"
+      },
+      {
+        "page": 8,
+        "text": "## Goal"
+      },
+      {
+        "page": 8,
+        "text": "## Current Progress"
+      },
+      {
+        "page": 8,
+        "text": "### What's Been Done"
+      },
+      {
+        "page": 8,
+        "text": " "
+      },
+      {
+        "page": 9,
+        "text": "Tip 9: Complete the write-test cycle for autonomous tasks"
+      },
+      {
+        "page": 9,
+        "text": "1. Start a tmux session"
+      },
+      {
+        "page": 9,
+        "text": "2. Send commands to it"
+      },
+      {
+        "page": 9,
+        "text": "3. Capture the output"
+      },
+      {
+        "page": 9,
+        "text": "4. Verify it's what you expect"
+      },
+      {
+        "page": 11,
+        "text": "# Claude for Chrome"
+      },
+      {
+        "page": 11,
+        "text": "Tip 10: Cmd+A and Ctrl+A are your friends"
+      },
+      {
+        "page": 12,
+        "text": "Tip 11: Use Gemini CLI as a fallback for blocked sites"
+      },
+      {
+        "page": 12,
+        "text": "Tip 12: Invest in your own workflow"
+      },
+      {
+        "page": 13,
+        "text": "Tip 13: Search through your conversation history"
+      },
+      {
+        "page": 13,
+        "text": "# Find all conversations mentioning \"Reddit\""
+      },
+      {
+        "page": 13,
+        "text": "# Find today's conversations about a topic"
+      },
+      {
+        "page": 13,
+        "text": "# Extract just the user messages from a conversation (requires jq)"
+      },
+      {
+        "page": 13,
+        "text": " "
+      },
+      {
+        "page": 14,
+        "text": "Tip 14: Multitasking with terminal tabs"
+      },
+      {
+        "page": 14,
+        "text": "Tip 15: Slim down the system prompt"
+      },
+      {
+        "page": 14,
+        "text": "Component Before After Savings"
+      },
+      {
+        "page": 16,
+        "text": "} Create"
+      },
+      {
+        "page": 16,
+        "text": "Tip 16: Git worktrees for parallel branch work"
+      },
+      {
+        "page": 16,
+        "text": "Tip 17: Manual exponential backoff for long-running jobs"
+      },
+      {
+        "page": 16,
+        "text": "Tip 18: Claude Code as a writing assistant"
+      },
+      {
+        "page": 17,
+        "text": "Tip 19: Markdown is the s**t"
+      },
+      {
+        "page": 17,
+        "text": "Tip 20: Use Notion to preserve links when pasting"
+      },
+      {
+        "page": 17,
+        "text": "Tip 21: Containers for long-running risky tasks"
+      },
+      {
+        "page": 18,
+        "text": "1. Your local Claude Code starts a tmux session"
+      },
+      {
+        "page": 18,
+        "text": "2. In that tmux session, it runs or connects to the container"
+      },
+      {
+        "page": 18,
+        "text": "3. Inside the container, Claude Code runs with --dangerously-skip-permissions"
+      },
+      {
+        "page": 18,
+        "text": "4. Your outer Claude Code uses tmux send-keys to send prompts and capture-pane to read"
+      },
+      {
+        "page": 19,
+        "text": "Tip 22: The best way to get better at using Claude Code is by using it"
+      },
+      {
+        "page": 19,
+        "text": "Tip 23: Clone and half-clone conversations"
+      },
+      {
+        "page": 20,
+        "text": " "
+      },
+      {
+        "page": 20,
+        "text": "Tip 24: Use realpath to get absolute paths"
+      },
+      {
+        "page": 21,
+        "text": "Tip 25: Understanding CLAUDE.md vs Skills vs Slash Commands vs"
+      },
+      {
+        "page": 22,
+        "text": "574 53 4 Share"
+      },
+      {
+        "page": 23,
+        "text": "Top 1% Commenter"
+      },
+      {
+        "page": 26,
+        "text": "1. They don't know your exact use case so they preprompt things you"
+      },
+      {
+        "page": 26,
+        "text": "2. Ethical reject request fluff"
+      },
+      {
+        "page": 26,
+        "text": "3. Antropic product information"
+      },
+      {
+        "page": 26,
+        "text": "4. Tone and language"
+      },
+      {
+        "page": 31,
+        "text": "1. Fast drafting: Claude Desktop app, based on natively saved (yet adaptable as"
+      },
+      {
+        "page": 31,
+        "text": "2. Hard verification: Approximately at least 5 AI Panel member-AI's adversarially check"
+      },
+      {
+        "page": 31,
+        "text": "3. Persistent context: My AI Panel, thanks to a good app that auto tracks all content"
+      },
+      {
+        "page": 31,
+        "text": "\"First Among Equals.\""
+      },
+      {
+        "page": 32,
+        "text": "Memory & Context"
+      },
+      {
+        "page": 32,
+        "text": "Infrastructure & Automation"
+      },
+      {
+        "page": 33,
+        "text": "Claude Code & Subagents"
+      },
+      {
+        "page": 34,
+        "text": "External Integrations"
+      },
+      {
+        "page": 34,
+        "text": "Governance & Quality Control"
+      },
+      {
+        "page": 37,
+        "text": "Top 1% Poster"
+      }
+    ],
+    "links": [
+      "http://claude.md/",
+      "http://karanbansal.in/blog/claude-code-hooks",
+      "https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf",
+      "https://developers.reddit.com/apps/admin-tattler",
+      "https://developers.reddit.com/apps/automod-toggle",
+      "https://developers.reddit.com/apps/automod-wiper",
+      "https://developers.reddit.com/apps/ban-extended",
+      "https://developers.reddit.com/apps/bot-bouncer",
+      "https://developers.reddit.com/apps/comment-nuke",
+      "https://developers.reddit.com/apps/evasion-guard",
+      "https://developers.reddit.com/apps/flairassistant",
+      "https://developers.reddit.com/apps/floodassistant",
+      "https://developers.reddit.com/apps/freestyle-ui",
+      "https://developers.reddit.com/apps/manipulation-pi",
+      "https://developers.reddit.com/apps/modmail-userinfo",
+      "https://developers.reddit.com/apps/modqueue-tools",
+      "https://developers.reddit.com/apps/mthelper",
+      "https://developers.reddit.com/apps/sub-stats-bot",
+      "https://discord.gg/prcdpx7qMm",
+      "https://gist.github.com/Ethros19/c10c502b9bc435aeae4cb64f9a0d8aa8",
+      "https://github.com/Eventual-Inc/Daft",
+      "https://github.com/anthropics/claude-code/issues/13115",
+      "https://github.com/glauberlima/claude-code-statusline",
+      "https://github.com/shanraisshan/claude-code-best-practice",
+      "https://github.com/ykdojo/claude-code-tips",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/commands/handoff.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/README.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/clone-conversation.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/context-bar.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/half-clone-conversation.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/skills/reddit-fetch/SKILL.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/system-prompt/UPGRADING.md",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/container",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/system-prompt",
+      "https://github.com/ykdojo/super-voice-assistant",
+      "https://luma.com/claudecommunity",
+      "https://redditinc.com/",
+      "https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a",
+      "https://support.anthropic.com/en/articles/9015913-how-to-get-support",
+      "https://support.reddithelp.com/hc/sections/38303584022676-Accessibility",
+      "https://tryvoiceink.com/?atp=voiceInk",
+      "https://www.anthropic.com/newsletter/developers",
+      "https://www.claudelog.com/",
+      "https://www.claudeworkflows.org/",
+      "https://www.reddit.com/",
+      "https://www.reddit.com/message/compose?to=r/ClaudeAI",
+      "https://www.reddit.com/mod/ClaudeAI/moderators/",
+      "https://www.reddit.com/notifications",
+      "https://www.reddit.com/policies/privacy-policy",
+      "https://www.reddit.com/r/ClaudeAI/",
+      "https://www.reddit.com/r/ClaudeAI/?f=flair_name%3A%22Productivity%22",
+      "https://www.reddit.com/r/ClaudeAI/comments/1q92wwv/merged_commands_and_skills_in_213_update/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qcan9z/my_top_10_claude_code_tips_from_11_months_of/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0b5hu1/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bewge/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bkc78/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bsgm8/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bstl2/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bv676/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bvrye/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0bz3b5/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0c0qfz/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0c11tk/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0c2b7b/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0cpdyp/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0d6dvf/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0dcx2v/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0dkgr0/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0e8dht/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0egbmt/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0elxca/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0ens42/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0eqklk/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0ervdo/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0f9yre/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0fdcu0/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0fpo6f/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0fpzmp/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0frqgl/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0g5nl2/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0g5yes/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0gkmli/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0inkf7/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0jlzu1/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0mu4ls/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0pke6n/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0pkq49/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0stj41/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o0zzukw/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o1n9qmj/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o1zkldu/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o5xw5ec/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o6xo6my/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o70gs96/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o8qe0r4/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/o95hgjr/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/orodzk7/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/owv9lh4/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1qgccgs/comment/ox9mrmj/",
+      "https://www.reddit.com/r/ClaudeAI/submit/",
+      "https://www.reddit.com/r/ClaudeAI/wiki/survivalguideweekly/",
+      "https://www.reddit.com/r/ClaudeCodeTLDR",
+      "https://www.reddit.com/r/ClaudeCoding",
+      "https://www.reddit.com/r/ClaudeCoding/",
+      "https://www.reddit.com/r/ClaudeWorkflows",
+      "https://www.reddit.com/r/claudexplorers",
+      "https://www.reddit.com/user/0xFF0000/",
+      "https://www.reddit.com/user/Acceptable-Kick-7102/",
+      "https://www.reddit.com/user/AlvsLib/",
+      "https://www.reddit.com/user/AutoModerator/",
+      "https://www.reddit.com/user/Avidium18/",
+      "https://www.reddit.com/user/ClaudeAI-mod-bot/",
+      "https://www.reddit.com/user/ConsiderationHour710/",
+      "https://www.reddit.com/user/David_AntAmbassador/",
+      "https://www.reddit.com/user/EnvironmentalEar5126/",
+      "https://www.reddit.com/user/Fair_Advantage4942/",
+      "https://www.reddit.com/user/Kris_AntAmbassador/",
+      "https://www.reddit.com/user/Maleficent_Sun_5597/",
+      "https://www.reddit.com/user/McNemarra/",
+      "https://www.reddit.com/user/Odd-Librarian4630/",
+      "https://www.reddit.com/user/Ok-Drama8310/",
+      "https://www.reddit.com/user/Site-Staff/",
+      "https://www.reddit.com/user/Spiritual_Bunch334/",
+      "https://www.reddit.com/user/Substantial-Rub-1240/",
+      "https://www.reddit.com/user/TheLawIsSacred/",
+      "https://www.reddit.com/user/Touix/",
+      "https://www.reddit.com/user/addiktion/",
+      "https://www.reddit.com/user/ajfoucault/",
+      "https://www.reddit.com/user/boopatron/",
+      "https://www.reddit.com/user/bot-bouncer/",
+      "https://www.reddit.com/user/champdebloom/",
+      "https://www.reddit.com/user/chrischen-003/",
+      "https://www.reddit.com/user/evia89/",
+      "https://www.reddit.com/user/glauberlima/",
+      "https://www.reddit.com/user/gopietz/",
+      "https://www.reddit.com/user/herms14/",
+      "https://www.reddit.com/user/inventor_black/",
+      "https://www.reddit.com/user/jogalleciez/",
+      "https://www.reddit.com/user/karanb192/",
+      "https://www.reddit.com/user/maigpy/",
+      "https://www.reddit.com/user/manipulation-pi/",
+      "https://www.reddit.com/user/mnewiraq/",
+      "https://www.reddit.com/user/mylifeasacoder/",
+      "https://www.reddit.com/user/oh-my-dog/",
+      "https://www.reddit.com/user/rageagainistjg/",
+      "https://www.reddit.com/user/septemous/",
+      "https://www.reddit.com/user/sixbillionthsheep/",
+      "https://www.reddit.com/user/specific_account_/",
+      "https://www.reddit.com/user/spiffco7/",
+      "https://www.reddit.com/user/telesteriaq/",
+      "https://www.reddit.com/user/thomascherickal1/",
+      "https://www.reddit.com/user/vicethal/",
+      "https://www.reddit.com/user/yksugi/",
+      "https://www.redditinc.com/policies/content-policy",
+      "https://www.redditinc.com/policies/user-agreement"
+    ],
+    "embeddedImages": [
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-001-image-01.png",
+        "bytes": 14337
+      },
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-001-image-07.png",
+        "bytes": 43185
+      },
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-002-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-003-image-01.png",
+        "bytes": 12553
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-003-image-05.png",
+        "bytes": 23268
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-003-image-06.png",
+        "bytes": 17803
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-003-image-07.png",
+        "bytes": 19019
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-003-image-08.png",
+        "bytes": 43185
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-01.png",
+        "bytes": 32708
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-02.png",
+        "bytes": 22183
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-03.png",
+        "bytes": 21292
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-04.png",
+        "bytes": 30085
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-05.png",
+        "bytes": 11945
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-004-image-08.png",
+        "bytes": 43185
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-005-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-006-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-007-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-008-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-009-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-010-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-011-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-012-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-013-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 14,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-014-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-015-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-016-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-017-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-018-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-019-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-020-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-021-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-022-image-05.png",
+        "bytes": 43185
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-023-image-05.png",
+        "bytes": 43185
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-024-image-06.png",
+        "bytes": 43185
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-025-image-05.png",
+        "bytes": 43185
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-026-image-05.png",
+        "bytes": 43185
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-027-image-06.png",
+        "bytes": 43185
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-028-image-05.png",
+        "bytes": 43185
+      },
+      {
+        "page": 29,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-029-image-04.png",
+        "bytes": 43185
+      },
+      {
+        "page": 30,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-030-image-02.png",
+        "bytes": 43185
+      },
+      {
+        "page": 31,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-031-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 32,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-032-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 33,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-033-image-02.png",
+        "bytes": 43185
+      },
+      {
+        "page": 34,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-034-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 35,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-035-image-01.png",
+        "bytes": 43185
+      },
+      {
+        "page": 36,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-036-image-06.png",
+        "bytes": 43185
+      },
+      {
+        "page": 37,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-037-image-06.png",
+        "bytes": 43185
+      },
+      {
+        "page": 38,
+        "localPath": "assets/pdf-images/pdf-reddit-25/page-038-image-01.png",
+        "bytes": 43185
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-reddit-25.md"
+  },
+  {
+    "id": "pdf-ruben-27",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\27 Claude tips after 1,800 hours. - by Ruben Hassid.pdf",
+    "filename": "27 Claude tips after 1,800 hours. - by Ruben Hassid.pdf",
+    "sha256": "7fe8c1fcf01b83fd7675f52d7ac60239d5dba7b88d075e5388c25ab91f53efdf",
+    "bytes": 6411549,
+    "pages": 33,
+    "title": "27 Claude tips after 1,800 hours. - by Ruben Hassid",
+    "author": "",
+    "subject": "",
+    "textCharacters": 17967,
+    "wordCount": 4494,
+    "headings": [
+      {
+        "page": 1,
+        "text": "630 6 40 Share"
+      },
+      {
+        "page": 8,
+        "text": "Opus 5 (High)."
+      },
+      {
+        "page": 10,
+        "text": "1. Go back to the prompt right before the “bad” answer."
+      },
+      {
+        "page": 11,
+        "text": "2. Edit your prompt and click “Save”."
+      },
+      {
+        "page": 11,
+        "text": "1. Install W ispr F low (what I use for dictation) o r u se t he o ne f rom C laude."
+      },
+      {
+        "page": 11,
+        "text": "2. Talk f or 10 m inutes s traight: t he g oal, t he c onstraints, w hat y ou t ried, w hat"
+      },
+      {
+        "page": 11,
+        "text": "3. End w ith: “ These were messy voicenotes. Ask me clarifying questions if you didn’t"
+      },
+      {
+        "page": 16,
+        "text": "1. Install C laude. G o t o t he t op l eft “ Code” t ab."
+      },
+      {
+        "page": 16,
+        "text": "2. Click o n t he d ictation t ool a nd a sk t o v ibecode w hatever y ou w ant."
+      },
+      {
+        "page": 16,
+        "text": "3. Sky i s t he l imit. Li ke t ry: Build a website to track my daily frisbee sessions."
+      }
+    ],
+    "links": [
+      "https://ruben.substack.com/p/how-to-bypass-ai-detectors",
+      "https://ruben.substack.com/p/the-claude-code-bible",
+      "https://ruben.substack.com/subscribe?simple=true&next=https%3A%2F%2Fruben.substack.com%2Fp%2F1800-hours-of-claude&utm_source=paywall&utm_medium=web&utm_content=208545548",
+      "https://substack.com/",
+      "https://substack.com/@ruben",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/privacy",
+      "https://substack.com/profile/339636559-ruben-hassid",
+      "https://substack.com/sign-in?redirect=%2Fp%2F1800-hours-of-claude&for_pub=ruben&change_user=false",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!0liA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1c05ff45-9832-4706-b0f6-364c283be81f_1930x752.png",
+      "https://substackcdn.com/image/fetch/$s_!1SVY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd87761eb-7117-4e7c-9120-30541361a0eb_3456x2166.png",
+      "https://substackcdn.com/image/fetch/$s_!2it0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2d43e693-5daa-4e8f-b8c4-328ea753b58d_3456x1434.png",
+      "https://substackcdn.com/image/fetch/$s_!2ufg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46843e6f-0eee-472d-889f-df7c07629c3e_3456x1552.png",
+      "https://substackcdn.com/image/fetch/$s_!4NL7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F767c4120-df88-4af9-bf59-febc6f69c77c_3456x890.png",
+      "https://substackcdn.com/image/fetch/$s_!4VTa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28a05b-ea23-4ea5-8825-6eac649d9f8f_3456x2168.png",
+      "https://substackcdn.com/image/fetch/$s_!98u4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0d8d0495-df91-4faf-bd7e-512dbcada645_3456x992.png",
+      "https://substackcdn.com/image/fetch/$s_!A8ke!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5d020f7-0f90-49fd-bc31-5bf896a511cc_3456x1438.png",
+      "https://substackcdn.com/image/fetch/$s_!BcVD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8badb9a1-af30-45d1-ac5c-a6d054a1db50_3456x1052.png",
+      "https://substackcdn.com/image/fetch/$s_!CdBn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F775ce74c-16e8-41ab-be17-54110b0e5b4b_3456x1366.png",
+      "https://substackcdn.com/image/fetch/$s_!CsrU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbcd44928-9562-4707-8057-033d66c4fa01_1844x448.png",
+      "https://substackcdn.com/image/fetch/$s_!Dg4C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc66ced3-de31-43e3-90fa-b1c193a45a6e_3456x1192.png",
+      "https://substackcdn.com/image/fetch/$s_!G7Ld!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbd83d994-2842-43c2-a6a2-0d968e4edea4_1980x1172.png",
+      "https://substackcdn.com/image/fetch/$s_!IgX3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac871ec-d6fc-4e6c-b3e8-b28c9b7b8e5c_1802x860.png",
+      "https://substackcdn.com/image/fetch/$s_!M4ug!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea53a6a-ff9c-4a7a-b7c7-dbd9f88f7fe7_3456x1456.png",
+      "https://substackcdn.com/image/fetch/$s_!R7cf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fafa51c25-6158-42d2-b859-65388e92bc83_3456x692.png",
+      "https://substackcdn.com/image/fetch/$s_!RxpI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F677dc940-8c34-4d07-b016-fb0b77013c76_3456x2166.png",
+      "https://substackcdn.com/image/fetch/$s_!RyxQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4da360a3-f09b-47d4-b1a2-ceb793c5e439_3456x988.png",
+      "https://substackcdn.com/image/fetch/$s_!V4s_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa3b8bcc1-2402-4b84-9dd0-58aec492a951_1938x884.png",
+      "https://substackcdn.com/image/fetch/$s_!VXUc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff29e0c55-5d43-434c-bc1a-045a22f2f060_3456x2166.png",
+      "https://substackcdn.com/image/fetch/$s_!blVc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49f9d2df-bcc3-448a-bcd1-bd9af7978a81_3456x2168.png",
+      "https://substackcdn.com/image/fetch/$s_!diZE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F319b5a45-1ad5-40bc-8dcd-28cffa8e2dd6_3244x1536.png",
+      "https://substackcdn.com/image/fetch/$s_!eHVC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bdd65e7-bb47-485a-8246-7a660cf8bd69_3456x834.png",
+      "https://substackcdn.com/image/fetch/$s_!g8Dt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb09b85c7-7ff7-4b7a-93e5-e71f200d5f7b_3456x1908.png",
+      "https://substackcdn.com/image/fetch/$s_!g9ap!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1c5a3262-cc9f-4774-a7a4-e90b467f3403_3456x1922.png",
+      "https://substackcdn.com/image/fetch/$s_!ln_g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F570ffc03-1443-4cff-ac7b-0c27e277ae16_3456x892.png",
+      "https://substackcdn.com/image/fetch/$s_!n3Wr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf1ec75d-0eb1-4e90-833a-71a9cf3ba029_3456x2162.png",
+      "https://substackcdn.com/image/fetch/$s_!quiN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba43bd8b-e22e-413a-9218-45c3ab0ebe44_3456x1766.png",
+      "https://trust.anthropic.com/"
+    ],
+    "embeddedImages": [
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-002-image-01.png",
+        "bytes": 462365
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-003-image-01.png",
+        "bytes": 131008
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-003-image-02.png",
+        "bytes": 221506
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-005-image-01.png",
+        "bytes": 200586
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-006-image-01.png",
+        "bytes": 68117
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-007-image-01.png",
+        "bytes": 146001
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-007-image-02.png",
+        "bytes": 287751
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-008-image-01.png",
+        "bytes": 208335
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-009-image-01.png",
+        "bytes": 568790
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-010-image-01.png",
+        "bytes": 256519
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-011-image-01.png",
+        "bytes": 170856
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-012-image-01.png",
+        "bytes": 405922
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-013-image-01.png",
+        "bytes": 134884
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-015-image-01.png",
+        "bytes": 197835
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-016-image-01.png",
+        "bytes": 48572
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-017-image-01.png",
+        "bytes": 90739
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-018-image-01.png",
+        "bytes": 339705
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-019-image-01.png",
+        "bytes": 91844
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-019-image-02.png",
+        "bytes": 244604
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-021-image-01.png",
+        "bytes": 312245
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-022-image-01.png",
+        "bytes": 334672
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-023-image-01.png",
+        "bytes": 127749
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-024-image-01.png",
+        "bytes": 110500
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-025-image-01.png",
+        "bytes": 260163
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-027-image-01.png",
+        "bytes": 84019
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-028-image-01.png",
+        "bytes": 80317
+      },
+      {
+        "page": 29,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-029-image-01.png",
+        "bytes": 114350
+      },
+      {
+        "page": 31,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-031-image-01.png",
+        "bytes": 230142
+      },
+      {
+        "page": 32,
+        "localPath": "assets/pdf-images/pdf-ruben-27/page-032-image-01.png",
+        "bytes": 302850
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-ruben-27.md"
+  },
+  {
+    "id": "pdf-linkedin-32",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\32 Claude Code Tips_ From Basics to Advanced - by YK.pdf",
+    "filename": "32 Claude Code Tips_ From Basics to Advanced - by YK.pdf",
+    "sha256": "694ff282c281735581a10f29944e21cd7324d8569512580685f071b43244fbd5",
+    "bytes": 3453015,
+    "pages": 48,
+    "title": "32 Claude Code Tips: From Basics to Advanced - by YK",
+    "author": "",
+    "subject": "",
+    "textCharacters": 49523,
+    "wordCount": 9234,
+    "headings": [
+      {
+        "page": 1,
+        "text": "189 5 8 Share"
+      },
+      {
+        "page": 1,
+        "text": "Tip 0: Customize your status line"
+      },
+      {
+        "page": 2,
+        "text": "Tip 1: Talk to Claude Code with your voice"
+      },
+      {
+        "page": 4,
+        "text": "Tip 2: Break down large problems into smaller"
+      },
+      {
+        "page": 7,
+        "text": "Tip 3: Using Git and GitHub CLI like a pro"
+      },
+      {
+        "page": 7,
+        "text": "Tip 4: AI context is like milk; it’s best served fresh"
+      },
+      {
+        "page": 8,
+        "text": "Tip 5: Getting output out of your terminal"
+      },
+      {
+        "page": 9,
+        "text": "Tip 6: Set up terminal aliases for quick access"
+      },
+      {
+        "page": 10,
+        "text": "Tip 7: Proactively compact your context"
+      },
+      {
+        "page": 11,
+        "text": "# System Prompt Slimming - Handoff Document"
+      },
+      {
+        "page": 11,
+        "text": "## Goal"
+      },
+      {
+        "page": 12,
+        "text": "## Current Progress"
+      },
+      {
+        "page": 12,
+        "text": "### What’s Been Done"
+      },
+      {
+        "page": 12,
+        "text": "Tip 8: Complete the write-test cycle for"
+      },
+      {
+        "page": 13,
+        "text": "1. Start a tmux session"
+      },
+      {
+        "page": 13,
+        "text": "2. Send commands to it"
+      },
+      {
+        "page": 13,
+        "text": "3. Capture the output"
+      },
+      {
+        "page": 13,
+        "text": "4. Verify it’s what you expect"
+      },
+      {
+        "page": 16,
+        "text": "# Claude for Chrome"
+      },
+      {
+        "page": 16,
+        "text": "Tip 9: Cmd+A and Ctrl+A are your friends"
+      },
+      {
+        "page": 17,
+        "text": "Tip 10: Use Gemini CLI as a fallback for blocked"
+      },
+      {
+        "page": 17,
+        "text": "Tip 11: Invest in your own workflow"
+      },
+      {
+        "page": 18,
+        "text": "Tip 12: Search through your conversation history"
+      },
+      {
+        "page": 19,
+        "text": "# Find all conversations mentioning “Reddit”"
+      },
+      {
+        "page": 19,
+        "text": "# Find today’s conversations about a topic"
+      },
+      {
+        "page": 19,
+        "text": "{} \\\\\\\\;"
+      },
+      {
+        "page": 19,
+        "text": "# Extract just the user messages from a conversation (requires jq)"
+      },
+      {
+        "page": 19,
+        "text": "Tip 13: Multitasking with terminal tabs"
+      },
+      {
+        "page": 21,
+        "text": "1. Leftmost tab - A persistent tab running my voice transcription system (always"
+      },
+      {
+        "page": 21,
+        "text": "2. Second tab - Setting up a Docker container"
+      },
+      {
+        "page": 21,
+        "text": "3. Third tab - Checking disk usage on my local machine"
+      },
+      {
+        "page": 21,
+        "text": "4. Fourth tab - Working on an engineering project"
+      },
+      {
+        "page": 21,
+        "text": "5. Fifth tab (current) - Writing this very tip"
+      },
+      {
+        "page": 21,
+        "text": "Tip 14: Slim down the system prompt"
+      },
+      {
+        "page": 26,
+        "text": "Tip 15: Git worktrees for parallel branch work"
+      },
+      {
+        "page": 27,
+        "text": "Tip 16: Manual exponential backoff for long-"
+      },
+      {
+        "page": 28,
+        "text": "Tip 17: Claude Code as a writing assistant"
+      },
+      {
+        "page": 30,
+        "text": "Tip 18: Markdown is the s**t"
+      },
+      {
+        "page": 31,
+        "text": "Tip 19: Use Notion to preserve links when pasting"
+      },
+      {
+        "page": 31,
+        "text": "Tip 20: Containers for long-running risky tasks"
+      },
+      {
+        "page": 33,
+        "text": "1. Your local Claude Code starts a tmux session"
+      },
+      {
+        "page": 33,
+        "text": "2. In that tmux session, it runs or connects to the container"
+      },
+      {
+        "page": 33,
+        "text": "3. Inside the container, Claude Code runs with --dangerously-skip-permissions"
+      },
+      {
+        "page": 33,
+        "text": "4. Your outer Claude Code uses tmux send-keys to send prompts and capture-"
+      },
+      {
+        "page": 34,
+        "text": "Tip 21: The best way to get better at using Claude"
+      },
+      {
+        "page": 35,
+        "text": "Tip 22: Clone conversations to branch off"
+      },
+      {
+        "page": 37,
+        "text": "Tip 23: Use realpath to get absolute paths"
+      },
+      {
+        "page": 37,
+        "text": "Tip 24: Understanding CLAUDE.md vs Skills vs"
+      },
+      {
+        "page": 39,
+        "text": "Tip 25: Interactive PR reviews"
+      },
+      {
+        "page": 40,
+        "text": "Tip 26: Claude Code as a research tool"
+      },
+      {
+        "page": 40,
+        "text": "Tip 27: Mastering different ways of verifying its"
+      },
+      {
+        "page": 41,
+        "text": "Tip 28: Claude Code as a DevOps engineer"
+      },
+      {
+        "page": 42,
+        "text": "Tip 29: Keep CLAUDE.md simple and concise"
+      },
+      {
+        "page": 42,
+        "text": "Tip 30: Claude Code as the universal interface"
+      },
+      {
+        "page": 43,
+        "text": "Tip 31: It’s all about choosing the right level of"
+      },
+      {
+        "page": 46,
+        "text": "189 Likes ∙8 Restacks"
+      },
+      {
+        "page": 47,
+        "text": "Comments Restacks"
+      },
+      {
+        "page": 47,
+        "text": "Nik Haldimann Next Generation Of Dec 12, 2025"
+      },
+      {
+        "page": 47,
+        "text": "Jake Malarz Dec 26, 2025"
+      }
+    ],
+    "links": [
+      "http://claude.md/",
+      "https://agenticcoding.substack.com/p/32-claude-code-tips-from-basics-to/comment/186815915",
+      "https://agenticcoding.substack.com/p/32-claude-code-tips-from-basics-to/comment/191835914",
+      "https://agenticcoding.substack.com/p/32-claude-code-tips-from-basics-to/comments",
+      "https://github.com/anthropics/claude-code/issues/13115",
+      "https://github.com/ykdojo/claude-code-tips",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/content/how-i-saved-10k-with-claude-code.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/README.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/clone-conversation.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/context-bar.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/half-clone-conversation.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/skills/reddit-fetch/SKILL.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/system-prompt/UPGRADING.md",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/container",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/system-prompt",
+      "https://github.com/ykdojo/super-voice-assistant",
+      "https://goodsnooze.gumroad.com/l/macwhisper",
+      "https://ngof.nikhaldimann.com/?utm_source=substack-feed-item&utm_content=comment_metadata",
+      "https://substack.com/",
+      "https://substack.com/@ykdojo",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/note/p-180970862/restacks?utm_source=substack&utm_content=facepile-restacks",
+      "https://substack.com/privacy",
+      "https://substack.com/profile/225608548-jake-malarz?utm_source=substack-feed-item",
+      "https://substack.com/profile/9261776-nik-haldimann?utm_source=substack-feed-item",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!7f6K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fccf2ed6d-31ee-49db-b803-b26b8a24f9c4_905x405.png",
+      "https://substackcdn.com/image/fetch/$s_!GBya!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ab3a5f7-1b6e-46d1-b45c-e6ce1035ef9f_1806x914.png",
+      "https://substackcdn.com/image/fetch/$s_!JB5C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F497ebf58-6045-4fb9-a48a-f7be909fc23e_1920x1080.png",
+      "https://substackcdn.com/image/fetch/$s_!U_0g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff35194c9-eb18-4407-aea2-8ac95a0fc4e2_2048x844.png",
+      "https://substackcdn.com/image/fetch/$s_!Z06n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3ca5b650-1b48-4c49-bd83-11a45b2160a4_1920x1080.png",
+      "https://substackcdn.com/image/fetch/$s_!f1FB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d69704b-919a-46da-9f43-add476915735_1920x1080.png",
+      "https://substackcdn.com/image/fetch/$s_!f9JS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd683e698-20c0-4230-ad70-5f3cdd51a397_1920x1080.png",
+      "https://substackcdn.com/image/fetch/$s_!hFfS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb1f46253-76f0-409e-bdc3-f4f445b25925_834x334.png",
+      "https://substackcdn.com/image/fetch/$s_!jIzf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6ce031c-5939-4d5b-83d8-6f3a2b3f2b67_909x408.png",
+      "https://substackcdn.com/image/fetch/$s_!rzPi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92d3c507-e203-4f8d-9e5e-98a7f1bc02af_1800x1638.png",
+      "https://superwhisper.com/",
+      "javascript:void(0)"
+    ],
+    "embeddedImages": [
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-003-image-01.png",
+        "bytes": 525621
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-005-image-01.png",
+        "bytes": 35526
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-006-image-01.png",
+        "bytes": 82817
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-020-image-01.png",
+        "bytes": 486480
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-022-image-01.png",
+        "bytes": 79737
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-023-image-01.png",
+        "bytes": 113671
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-024-image-01.png",
+        "bytes": 115520
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-028-image-01.png",
+        "bytes": 438884
+      },
+      {
+        "page": 30,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-030-image-01.png",
+        "bytes": 754200
+      },
+      {
+        "page": 45,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-045-image-01.png",
+        "bytes": 314037
+      },
+      {
+        "page": 47,
+        "localPath": "assets/pdf-images/pdf-linkedin-32/page-047-image-03.png",
+        "bytes": 10169
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-linkedin-32.md"
+  },
+  {
+    "id": "pdf-official-best-practices",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\Best practices for Claude Code - Claude Code Docs.pdf",
+    "filename": "Best practices for Claude Code - Claude Code Docs.pdf",
+    "sha256": "19c36c2ba3e86b9ea63cc72f336740298b8994a9ed300952e8d057ff1cce0afa",
+    "bytes": 1048865,
+    "pages": 29,
+    "title": "Best practices for Claude Code - Claude Code Docs",
+    "author": "",
+    "subject": "",
+    "textCharacters": 35923,
+    "wordCount": 6006,
+    "headings": [
+      {
+        "page": 3,
+        "text": "Strategy Before After"
+      },
+      {
+        "page": 4,
+        "text": "1 Explore"
+      },
+      {
+        "page": 4,
+        "text": "2 Plan"
+      },
+      {
+        "page": 5,
+        "text": "3 Implement"
+      },
+      {
+        "page": 5,
+        "text": "4 Commit"
+      },
+      {
+        "page": 6,
+        "text": "Strategy Before After"
+      },
+      {
+        "page": 7,
+        "text": "Strategy Before After"
+      },
+      {
+        "page": 8,
+        "text": "# Code style"
+      },
+      {
+        "page": 8,
+        "text": "# Workflow"
+      },
+      {
+        "page": 9,
+        "text": "✅ Include ❌ Exclude"
+      },
+      {
+        "page": 10,
+        "text": "# Additional Instructions"
+      },
+      {
+        "page": 13,
+        "text": "# API Conventions"
+      },
+      {
+        "page": 14,
+        "text": "1. Use `gh issue view` to get the issue details"
+      },
+      {
+        "page": 14,
+        "text": "2. Understand the problem described in the issue"
+      },
+      {
+        "page": 14,
+        "text": "3. Search the codebase for relevant files"
+      },
+      {
+        "page": 14,
+        "text": "4. Implement the necessary changes to fix the issue"
+      },
+      {
+        "page": 14,
+        "text": "5. Write and run tests to verify the fix"
+      },
+      {
+        "page": 14,
+        "text": "6. Ensure code passes linting and type checking"
+      },
+      {
+        "page": 14,
+        "text": "7. Create a descriptive commit message"
+      },
+      {
+        "page": 14,
+        "text": "8. Push and create a PR"
+      },
+      {
+        "page": 22,
+        "text": "# One-off queries"
+      },
+      {
+        "page": 22,
+        "text": "# Structured output for scripts"
+      },
+      {
+        "page": 22,
+        "text": "# Streaming for real-time processing"
+      },
+      {
+        "page": 23,
+        "text": "Session A (Writer) Session B (Reviewer)"
+      }
+    ],
+    "links": [
+      "https://claude.com/partners/mcp",
+      "https://claude.com/partners/powered-by-claude",
+      "https://claude.com/partners/services",
+      "https://claude.com/programs/startups",
+      "https://code.claude.com/docs/en/agent-teams",
+      "https://code.claude.com/docs/en/checkpointing",
+      "https://code.claude.com/docs/en/checkpointing#rewind-and-summarize",
+      "https://code.claude.com/docs/en/chrome",
+      "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/context-window",
+      "https://code.claude.com/docs/en/costs#reduce-token-usage",
+      "https://code.claude.com/docs/en/desktop#work-in-parallel-with-sessions",
+      "https://code.claude.com/docs/en/discover-plugins#code-intelligence",
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/features-overview#match-features-to-your-goal",
+      "https://code.claude.com/docs/en/goal",
+      "https://code.claude.com/docs/en/headless",
+      "https://code.claude.com/docs/en/hooks#stop",
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/how-claude-code-works",
+      "https://code.claude.com/docs/en/interactive-mode#side-questions-with-%2Fbtw",
+      "https://code.claude.com/docs/en/mcp",
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/overview",
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/permission-modes#analyze-before-you-edit-with-plan-mode",
+      "https://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode",
+      "https://code.claude.com/docs/en/permission-modes#when-auto-mode-falls-back",
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/platforms",
+      "https://code.claude.com/docs/en/plugins",
+      "https://code.claude.com/docs/en/prompt-library",
+      "https://code.claude.com/docs/en/sandboxing",
+      "https://code.claude.com/docs/en/sessions",
+      "https://code.claude.com/docs/en/skills",
+      "https://code.claude.com/docs/en/statusline",
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/workflows",
+      "https://code.claude.com/docs/en/worktrees",
+      "https://status.anthropic.com/",
+      "https://support.claude.com/",
+      "https://trust.anthropic.com/",
+      "https://www.anthropic.com/careers",
+      "https://www.anthropic.com/company",
+      "https://www.anthropic.com/economic-futures",
+      "https://www.anthropic.com/engineering",
+      "https://www.anthropic.com/events",
+      "https://www.anthropic.com/learn",
+      "https://www.anthropic.com/legal/aup",
+      "https://www.anthropic.com/legal/commercial-terms",
+      "https://www.anthropic.com/legal/consumer-terms",
+      "https://www.anthropic.com/legal/privacy",
+      "https://www.anthropic.com/news",
+      "https://www.anthropic.com/research",
+      "https://www.anthropic.com/responsible-disclosure-policy",
+      "https://www.anthropic.com/supported-countries",
+      "https://www.anthropic.com/transparency",
+      "https://www.claude.com/customers",
+      "https://www.linkedin.com/company/anthropicresearch",
+      "https://x.com/AnthropicAI",
+      "mailto:user@.com",
+      "mailto:user@example.com"
+    ],
+    "embeddedImages": [],
+    "extractedText": "content/pdf-extracted/pdf-official-best-practices.md"
+  },
+  {
+    "id": "pdf-ralph-loop",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\Claude Code Ralph Loop_ From Basic Prompts to Autonomous Overnight Builds.pdf",
+    "filename": "Claude Code Ralph Loop_ From Basic Prompts to Autonomous Overnight Builds.pdf",
+    "sha256": "213df8ad3de2a45420b7b2d31b78b584c40d323e1af972cae650894d6a593005",
+    "bytes": 3533595,
+    "pages": 56,
+    "title": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+    "author": "",
+    "subject": "",
+    "textCharacters": 35993,
+    "wordCount": 6191,
+    "headings": [
+      {
+        "page": 1,
+        "text": "Autonomous Overnight Builds Claude Code Ralph Loop:"
+      },
+      {
+        "page": 1,
+        "text": "139 6 14 Share"
+      },
+      {
+        "page": 2,
+        "text": "Code Ralph Loop Deep Dive"
+      },
+      {
+        "page": 5,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 6,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 7,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 7,
+        "text": "Why Claude Code Needs Ralph"
+      },
+      {
+        "page": 8,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 9,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 10,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 10,
+        "text": "1. Forces verification — Claude can’t exit until it proves the work is done"
+      },
+      {
+        "page": 10,
+        "text": "2. Fresh context — Each iteration starts clean, avoiding context rot"
+      },
+      {
+        "page": 10,
+        "text": "Core Mechanism"
+      },
+      {
+        "page": 11,
+        "text": "1. You give Ralph your prompt and a completion promise (like “DONE” or"
+      },
+      {
+        "page": 11,
+        "text": "2. Claude works on the task"
+      },
+      {
+        "page": 11,
+        "text": "3. Claude tries to exit"
+      },
+      {
+        "page": 11,
+        "text": "4. The stop hook intercepts the exit"
+      },
+      {
+        "page": 11,
+        "text": "5. It scans the output for the completion promise"
+      },
+      {
+        "page": 11,
+        "text": "6. If no promise is found, it feeds the same prompt back to Claude"
+      },
+      {
+        "page": 11,
+        "text": "7. Claude sees its previous work in the files and improves it"
+      },
+      {
+        "page": 11,
+        "text": "8. Repeat until the completion promise appears"
+      },
+      {
+        "page": 12,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 13,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 14,
+        "text": "Completion Promise"
+      },
+      {
+        "page": 15,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 16,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 16,
+        "text": "1. Ralph is not the Anthropic plugin."
+      },
+      {
+        "page": 16,
+        "text": "2. Ralph is not magic."
+      },
+      {
+        "page": 16,
+        "text": "3. Ralph is not a replacement for thinking."
+      },
+      {
+        "page": 17,
+        "text": "4. Ralph is not always the right tool. Claude Code Ralph Loop:"
+      },
+      {
+        "page": 17,
+        "text": "Ralph Architecture"
+      },
+      {
+        "page": 17,
+        "text": "1) PRD (Product Requirements Document)"
+      },
+      {
+        "page": 19,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 20,
+        "text": "2) Task List (prd.json)"
+      },
+      {
+        "page": 20,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 20,
+        "text": "1 {"
+      },
+      {
+        "page": 20,
+        "text": "4 {"
+      },
+      {
+        "page": 20,
+        "text": "11 ],"
+      },
+      {
+        "page": 20,
+        "text": "13 },"
+      },
+      {
+        "page": 20,
+        "text": "14 {"
+      },
+      {
+        "page": 21,
+        "text": "21 ],"
+      },
+      {
+        "page": 21,
+        "text": "24 {"
+      },
+      {
+        "page": 21,
+        "text": "31 ],"
+      },
+      {
+        "page": 21,
+        "text": "33 }"
+      },
+      {
+        "page": 21,
+        "text": "34 ]"
+      },
+      {
+        "page": 21,
+        "text": "35 }"
+      },
+      {
+        "page": 22,
+        "text": "3) Memory System"
+      },
+      {
+        "page": 23,
+        "text": "1 ## Iteration 3 - 2024-01-15 14:32"
+      },
+      {
+        "page": 23,
+        "text": "4 Claude Code Ralph Loop:"
+      },
+      {
+        "page": 23,
+        "text": "10 **Files Changed:**"
+      },
+      {
+        "page": 23,
+        "text": "15 **Learnings:**"
+      },
+      {
+        "page": 23,
+        "text": "1 # Project Patterns"
+      },
+      {
+        "page": 24,
+        "text": "8 ## Testing Claude Code Ralph Loop:"
+      },
+      {
+        "page": 24,
+        "text": "13 ## Gotchas"
+      },
+      {
+        "page": 24,
+        "text": "4) Feedback Loop System"
+      },
+      {
+        "page": 25,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 26,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 28,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 28,
+        "text": "Ralph Execution"
+      },
+      {
+        "page": 29,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 30,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 31,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 31,
+        "text": "Level 1: Manual Single Runs (The Screwdriver)"
+      },
+      {
+        "page": 31,
+        "text": "Run Level 1:"
+      },
+      {
+        "page": 33,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 34,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 35,
+        "text": "Level 2: Attended Loops (Power Drill)"
+      },
+      {
+        "page": 37,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 38,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 39,
+        "text": "Level 3: Unattended Overnight (Jackhammer)"
+      },
+      {
+        "page": 40,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 41,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 42,
+        "text": "1. Check prd.json — how many tasks passed?"
+      },
+      {
+        "page": 42,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 42,
+        "text": "2. Read progress.txt — any errors or blockers? From Basic Prompts to…"
+      },
+      {
+        "page": 42,
+        "text": "3. Review git log — are commits sensible?"
+      },
+      {
+        "page": 42,
+        "text": "4. Run tests manually — do they pass?"
+      },
+      {
+        "page": 42,
+        "text": "5. Test the feature yourself — does it work?"
+      },
+      {
+        "page": 43,
+        "text": "Ralph Practical Examples"
+      },
+      {
+        "page": 43,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 43,
+        "text": "Pattern 1: The Feature Builder"
+      },
+      {
+        "page": 44,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 45,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 46,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 46,
+        "text": "Pattern 2: Test-Until-Green"
+      },
+      {
+        "page": 46,
+        "text": "6 Process:"
+      },
+      {
+        "page": 47,
+        "text": "12 Claude Code Ralph Loop:"
+      },
+      {
+        "page": 47,
+        "text": "Pattern 3: Multi-Persona Review"
+      },
+      {
+        "page": 48,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 49,
+        "text": "3 Personas:"
+      },
+      {
+        "page": 50,
+        "text": "Pattern 4: Proof of Concept Validator"
+      },
+      {
+        "page": 51,
+        "text": "17 Tasks:"
+      },
+      {
+        "page": 52,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 52,
+        "text": "Multi-Persona Review."
+      },
+      {
+        "page": 52,
+        "text": "Final Thoughts"
+      },
+      {
+        "page": 53,
+        "text": "Claude Code Masterclass"
+      },
+      {
+        "page": 53,
+        "text": "— Joe Njenga"
+      },
+      {
+        "page": 54,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 54,
+        "text": "139 Likes ∙14 Restacks"
+      },
+      {
+        "page": 55,
+        "text": "Claude Code Ralph Loop:"
+      },
+      {
+        "page": 55,
+        "text": "Sam Miller Apr 2"
+      },
+      {
+        "page": 55,
+        "text": "Ludo Vecchio Ludo Vecchio Apr 4"
+      }
+    ],
+    "links": [
+      "https://en.wikipedia.org/wiki/Ralph_Wiggum",
+      "https://en.wikipedia.org/wiki/The_Simpsons",
+      "https://findinghumans.substack.com/?utm_source=substack-feed-item&utm_content=comment_metadata",
+      "https://github.com/Njengah/claude-code-masterclass",
+      "https://github.com/ghuntley",
+      "https://newsletter.claudecodemasterclass.com/p/claude-code-ralph-loop-from-basic/comment/236977590",
+      "https://newsletter.claudecodemasterclass.com/p/claude-code-ralph-loop-from-basic/comment/238083376",
+      "https://newsletter.claudecodemasterclass.com/p/claude-code-ralph-loop-from-basic/comments",
+      "https://substack.com/",
+      "https://substack.com/@joenjenga",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/note/p-186188688/restacks?utm_source=substack&utm_content=facepile-restacks",
+      "https://substack.com/privacy",
+      "https://substack.com/profile/18847334-sam-miller?utm_source=substack-feed-item",
+      "https://substack.com/profile/787181-ludo-vecchio?utm_source=substack-feed-item",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!-aCo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fecb53ecb-2342-4b2b-bf23-d3e9a05368ca_662x1025.png",
+      "https://substackcdn.com/image/fetch/$s_!0BE5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F20737a19-0953-4eeb-9bcc-e5a138172ea2_850x1567.png",
+      "https://substackcdn.com/image/fetch/$s_!5aFa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4f90b6d-5ca9-4f8b-b2a7-4540b0779fb9_733x1048.png",
+      "https://substackcdn.com/image/fetch/$s_!9vAM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F68c83512-3a62-4c45-8c2f-00c3117808b7_851x544.gif",
+      "https://substackcdn.com/image/fetch/$s_!Atyv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c7067e0-091c-4fef-b7a2-8dff1ae8ed3e_1045x361.png",
+      "https://substackcdn.com/image/fetch/$s_!IOUc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe49aaf7-a481-4c34-be3f-d6abbfce4bdf_838x1434.png",
+      "https://substackcdn.com/image/fetch/$s_!If5S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe3be8f4-45b2-4c1e-bc75-f9d9b024104b_662x1025.png",
+      "https://substackcdn.com/image/fetch/$s_!NI2X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5781fd21-a731-4246-8b9c-5796391969b0_670x780.png",
+      "https://substackcdn.com/image/fetch/$s_!SMta!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6863c54c-0a57-4938-814f-358de84601ee_826x711.png",
+      "https://substackcdn.com/image/fetch/$s_!bP7i!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad1bec4a-a081-4b4a-a593-27c72f4c920d_1280x720.png",
+      "https://substackcdn.com/image/fetch/$s_!ebwM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1142b442-54d4-4cb5-a6ad-70acf0341fcc_941x1011.png",
+      "https://substackcdn.com/image/fetch/$s_!jTxz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F396b1577-ab76-478e-90c5-be4e38b5e9ea_725x1099.png",
+      "https://substackcdn.com/image/fetch/$s_!omEw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ae0adc7-1d78-4ba6-952f-b35ba7afd0b3_1478x780.png",
+      "https://substackcdn.com/image/fetch/$s_!tpUt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05c9438d-43eb-4f83-92d3-a9968e00c809_811x824.png",
+      "https://substackcdn.com/image/fetch/$s_!ydOw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d03b36c-21ff-4686-ada5-680537010464_700x226.png",
+      "javascript:void(0)"
+    ],
+    "embeddedImages": [
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-001-image-02.png",
+        "bytes": 373551
+      },
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-001-image-04.png",
+        "bytes": 25078
+      },
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-002-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-003-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-004-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-005-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-006-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-006-image-02.png",
+        "bytes": 101416
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-007-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-007-image-02.png",
+        "bytes": 101416
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-008-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-009-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-009-image-02.png",
+        "bytes": 89964
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-010-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-011-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-012-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-012-image-02.png",
+        "bytes": 200523
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-013-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-013-image-02.png",
+        "bytes": 200523
+      },
+      {
+        "page": 14,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-014-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-015-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-016-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-017-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-018-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-019-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-019-image-02.png",
+        "bytes": 169477
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-020-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-021-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-022-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-023-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-024-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-025-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-025-image-02.png",
+        "bytes": 191193
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-026-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-026-image-02.png",
+        "bytes": 191193
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-027-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-027-image-02.png",
+        "bytes": 52866
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-028-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 29,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-029-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 30,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-030-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 30,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-030-image-02.png",
+        "bytes": 154209
+      },
+      {
+        "page": 31,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-031-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 31,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-031-image-02.png",
+        "bytes": 154209
+      },
+      {
+        "page": 32,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-032-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 33,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-033-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 33,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-033-image-02.png",
+        "bytes": 95011
+      },
+      {
+        "page": 34,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-034-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 34,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-034-image-02.png",
+        "bytes": 95011
+      },
+      {
+        "page": 35,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-035-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 36,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-036-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 37,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-037-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 37,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-037-image-02.png",
+        "bytes": 138013
+      },
+      {
+        "page": 38,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-038-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 38,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-038-image-02.png",
+        "bytes": 138013
+      },
+      {
+        "page": 39,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-039-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 40,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-040-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 40,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-040-image-02.png",
+        "bytes": 139088
+      },
+      {
+        "page": 41,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-041-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 41,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-041-image-02.png",
+        "bytes": 139088
+      },
+      {
+        "page": 42,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-042-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 43,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-043-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 44,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-044-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 44,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-044-image-02.png",
+        "bytes": 139088
+      },
+      {
+        "page": 45,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-045-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 45,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-045-image-02.png",
+        "bytes": 139088
+      },
+      {
+        "page": 46,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-046-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 47,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-047-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 48,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-048-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 48,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-048-image-02.png",
+        "bytes": 147702
+      },
+      {
+        "page": 49,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-049-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 49,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-049-image-02.png",
+        "bytes": 147702
+      },
+      {
+        "page": 50,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-050-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 51,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-051-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 52,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-052-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 52,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-052-image-02.png",
+        "bytes": 30614
+      },
+      {
+        "page": 53,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-053-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 54,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-054-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 54,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-054-image-02.png",
+        "bytes": 100732
+      },
+      {
+        "page": 54,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-054-image-03.png",
+        "bytes": 10021
+      },
+      {
+        "page": 55,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-055-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 55,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-055-image-04.png",
+        "bytes": 10014
+      },
+      {
+        "page": 56,
+        "localPath": "assets/pdf-images/pdf-ralph-loop/page-056-image-01.png",
+        "bytes": 25078
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-ralph-loop.md"
+  },
+  {
+    "id": "pdf-claudemd-masterclass",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\CLAUDE.md Masterclass_ With Hooks, Subagents & Pro Automation.pdf",
+    "filename": "CLAUDE.md Masterclass_ With Hooks, Subagents & Pro Automation.pdf",
+    "sha256": "e6422ae786c6b6e0ee255a8c7c131021373adb1cdaa968ada0548ebda8ed7acd",
+    "bytes": 3077780,
+    "pages": 43,
+    "title": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+    "author": "",
+    "subject": "",
+    "textCharacters": 29107,
+    "wordCount": 4652,
+    "headings": [
+      {
+        "page": 1,
+        "text": "800 25 82 Share"
+      },
+      {
+        "page": 7,
+        "text": "Mental Model"
+      },
+      {
+        "page": 7,
+        "text": "1. Project Memory — Claude remembers your setup across sessions"
+      },
+      {
+        "page": 7,
+        "text": "2. Operational Boundaries — Rules Claude won’t break"
+      },
+      {
+        "page": 7,
+        "text": "3. Context Primer — Claude starts informed, not blank"
+      },
+      {
+        "page": 7,
+        "text": "Three Levels"
+      },
+      {
+        "page": 9,
+        "text": "How Each Level Loads"
+      },
+      {
+        "page": 9,
+        "text": "Monorepo Setup"
+      },
+      {
+        "page": 10,
+        "text": "File Naming Options"
+      },
+      {
+        "page": 11,
+        "text": "# Project Context"
+      },
+      {
+        "page": 11,
+        "text": "## About This Project"
+      },
+      {
+        "page": 11,
+        "text": "## Key Directories"
+      },
+      {
+        "page": 11,
+        "text": "## Commands"
+      },
+      {
+        "page": 12,
+        "text": "### A Real Example"
+      },
+      {
+        "page": 12,
+        "text": "# Project Context"
+      },
+      {
+        "page": 13,
+        "text": "## About This Project"
+      },
+      {
+        "page": 13,
+        "text": "## Key Directories"
+      },
+      {
+        "page": 13,
+        "text": "## Commands"
+      },
+      {
+        "page": 16,
+        "text": "1) 150-200 Instruction Limit From Start to Pro-Level User…"
+      },
+      {
+        "page": 19,
+        "text": "2) Progressive Disclosure CLAUDE.md Masterclass:"
+      },
+      {
+        "page": 19,
+        "text": "## Additional Documentation"
+      },
+      {
+        "page": 20,
+        "text": "3) Don’t Use CLAUDE.md as a Linter"
+      },
+      {
+        "page": 20,
+        "text": "# Don't do this"
+      },
+      {
+        "page": 20,
+        "text": "## Code Style"
+      },
+      {
+        "page": 21,
+        "text": "4) My Golden Rule"
+      },
+      {
+        "page": 24,
+        "text": "Method 2: Manual Creation"
+      },
+      {
+        "page": 24,
+        "text": "Method 3: The # Memory Shortcut"
+      },
+      {
+        "page": 24,
+        "text": "# Always run tests before committing"
+      },
+      {
+        "page": 25,
+        "text": "My Recommendation"
+      },
+      {
+        "page": 26,
+        "text": "Pattern 1: Index Files for Large Codebases"
+      },
+      {
+        "page": 26,
+        "text": "Step 1: Generate a general index"
+      },
+      {
+        "page": 26,
+        "text": "# general_index.md"
+      },
+      {
+        "page": 26,
+        "text": "## /src/api/"
+      },
+      {
+        "page": 27,
+        "text": "## /src/models/"
+      },
+      {
+        "page": 27,
+        "text": "## /src/utils/"
+      },
+      {
+        "page": 27,
+        "text": "Step 2: Reference it in CLAUDE.md"
+      },
+      {
+        "page": 27,
+        "text": "## Navigation"
+      },
+      {
+        "page": 27,
+        "text": "Pattern 2: Modular CLAUDE.md Design"
+      },
+      {
+        "page": 28,
+        "text": "# CLAUDE.md From Start to Pro-Level User…"
+      },
+      {
+        "page": 28,
+        "text": "## Development Commands"
+      },
+      {
+        "page": 28,
+        "text": "## Code Standards"
+      },
+      {
+        "page": 28,
+        "text": "## Workflow Procedures"
+      },
+      {
+        "page": 28,
+        "text": "## File Boundaries"
+      },
+      {
+        "page": 28,
+        "text": "## Tool Integration"
+      },
+      {
+        "page": 28,
+        "text": "Pattern 3: Workflow Definitions"
+      },
+      {
+        "page": 29,
+        "text": "## Workflows"
+      },
+      {
+        "page": 29,
+        "text": "### Adding a New API Endpoint"
+      },
+      {
+        "page": 29,
+        "text": "1. Check if similar endpoint exists in `src/api/`"
+      },
+      {
+        "page": 29,
+        "text": "2. Create schema in `src/schemas/` if new data types needed"
+      },
+      {
+        "page": 29,
+        "text": "3. Implement endpoint in appropriate router file"
+      },
+      {
+        "page": 29,
+        "text": "4. Add tests in `tests/api/`"
+      },
+      {
+        "page": 29,
+        "text": "5. Update API documentation"
+      },
+      {
+        "page": 29,
+        "text": "6. Run full test suite before committing"
+      },
+      {
+        "page": 29,
+        "text": "### Database Schema Changes"
+      },
+      {
+        "page": 29,
+        "text": "1. Describe the change and why it's needed"
+      },
+      {
+        "page": 29,
+        "text": "2. Create migration: `alembic revision --autogenerate -m \"description\"`"
+      },
+      {
+        "page": 29,
+        "text": "3. Review generated migration file"
+      },
+      {
+        "page": 29,
+        "text": "4. Test migration: `alembic upgrade head`"
+      },
+      {
+        "page": 29,
+        "text": "5. Test rollback: `alembic downgrade -1`"
+      },
+      {
+        "page": 29,
+        "text": "6. Update relevant models and schemas"
+      },
+      {
+        "page": 29,
+        "text": "Pattern 4: Context Swapping"
+      },
+      {
+        "page": 30,
+        "text": "Pattern 5: Conditional Instructions"
+      },
+      {
+        "page": 30,
+        "text": "## Conditional Rules"
+      },
+      {
+        "page": 31,
+        "text": "Pattern 6: MCP Server Documentation"
+      },
+      {
+        "page": 31,
+        "text": "## MCP Integrations"
+      },
+      {
+        "page": 31,
+        "text": "### Slack MCP"
+      },
+      {
+        "page": 32,
+        "text": "### Database MCP"
+      },
+      {
+        "page": 33,
+        "text": "## Standards"
+      },
+      {
+        "page": 35,
+        "text": "## Subagent Guidelines From Start to Pro-Level User…"
+      },
+      {
+        "page": 36,
+        "text": "Maintenance Best Practices"
+      },
+      {
+        "page": 36,
+        "text": "1. Update with your PRs"
+      },
+      {
+        "page": 37,
+        "text": "2. Use the # shortcut continuously"
+      },
+      {
+        "page": 37,
+        "text": "# Always run database migrations before starting the dev server"
+      },
+      {
+        "page": 37,
+        "text": "3. Review quarterly"
+      },
+      {
+        "page": 38,
+        "text": "4. Version control it"
+      },
+      {
+        "page": 38,
+        "text": "Final Thoughts"
+      },
+      {
+        "page": 39,
+        "text": "Next: Coming Up Issues"
+      },
+      {
+        "page": 40,
+        "text": "Claude Code Masterclass"
+      },
+      {
+        "page": 41,
+        "text": "— Joe Njenga"
+      },
+      {
+        "page": 42,
+        "text": "800 Likes ∙ 82 Restacks"
+      },
+      {
+        "page": 42,
+        "text": "Comments Restacks"
+      },
+      {
+        "page": 42,
+        "text": "Ilia Karelin Prosper Jan 29"
+      }
+    ],
+    "links": [
+      "http://claude.md/",
+      "https://github.com/astral-sh/ruff",
+      "https://github.com/prettier/eslint-plugin-prettier",
+      "https://github.com/rust-lang/rustfmt",
+      "https://newsletter.claudecodemasterclass.com/about",
+      "https://newsletter.claudecodemasterclass.com/p/claude-code-masterclass-introduction",
+      "https://newsletter.claudecodemasterclass.com/p/claudemd-masterclass-from-start-to/comment/206481555",
+      "https://newsletter.claudecodemasterclass.com/p/claudemd-masterclass-from-start-to/comment/206963476",
+      "https://newsletter.claudecodemasterclass.com/p/claudemd-masterclass-from-start-to/comments",
+      "https://prosperinai.substack.com/?utm_source=substack-feed-item&utm_content=comment_metadata",
+      "https://substack.com/",
+      "https://substack.com/@joenjenga",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/note/p-185975468/restacks?utm_source=substack&utm_content=facepile-restacks",
+      "https://substack.com/privacy",
+      "https://substack.com/profile/172048615-ilia-karelin?utm_source=substack-feed-item",
+      "https://substack.com/profile/17917302-pk?utm_source=substack-feed-item",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!07Zz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fee30c862-3d73-42e4-9eb1-7aac419cf5d7_729x421.png",
+      "https://substackcdn.com/image/fetch/$s_!7Qdr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9592624e-3d7f-495c-9dda-04c805466e95_1478x780.png",
+      "https://substackcdn.com/image/fetch/$s_!8_iE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F443f7d30-fddb-46d6-98ed-491e2c09cb2e_1133x696.png",
+      "https://substackcdn.com/image/fetch/$s_!KeyV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b97f38b-b36a-4ce4-857b-22907aa92434_813x810.png",
+      "https://substackcdn.com/image/fetch/$s_!LALW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5822ea22-beb3-47f2-af65-209e74eec8b0_739x504.png",
+      "https://substackcdn.com/image/fetch/$s_!XEc9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed6cf526-d4e7-46a9-a9e9-0dcad0cbd0bd_1284x810.gif",
+      "https://substackcdn.com/image/fetch/$s_!Y5F5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fecddb4bc-c0e7-45e1-9ea9-e4b33a5b48a4_806x372.png",
+      "https://substackcdn.com/image/fetch/$s_!YbEz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633c4dfc-2322-40d6-97a5-fb3c0795bcbb_705x556.png",
+      "https://substackcdn.com/image/fetch/$s_!h9vv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabb60890-4225-49ac-85fb-6f1cfe550c52_862x495.png",
+      "https://substackcdn.com/image/fetch/$s_!oDzt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F91008896-8bba-4e2e-abed-7605640e5bce_1135x490.png",
+      "https://substackcdn.com/image/fetch/$s_!p7iv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F281c2944-1db9-4a27-bc2d-9ac17df9d2e6_1284x810.gif",
+      "https://substackcdn.com/image/fetch/$s_!rju5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb7a5534d-8bf4-470a-905e-5d26a11b1bfd_1200x600.png",
+      "https://substackcdn.com/image/fetch/$s_!xtSM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6310cdf3-8a1c-4645-9642-035305014d95_1285x810.gif",
+      "javascript:void(0)"
+    ],
+    "embeddedImages": [
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-001-image-02.png",
+        "bytes": 146024
+      },
+      {
+        "page": 1,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-001-image-04.png",
+        "bytes": 25078
+      },
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-002-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-003-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-004-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-004-image-02.png",
+        "bytes": 322466
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-005-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-005-image-02.png",
+        "bytes": 84984
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-006-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-007-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-008-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-008-image-02.png",
+        "bytes": 110806
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-009-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-009-image-02.png",
+        "bytes": 110806
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-009-image-03.png",
+        "bytes": 105734
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-010-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-011-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-012-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-013-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 14,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-014-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-015-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 15,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-015-image-02.png",
+        "bytes": 153508
+      },
+      {
+        "page": 16,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-016-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-017-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 17,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-017-image-02.png",
+        "bytes": 49204
+      },
+      {
+        "page": 18,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-018-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 19,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-019-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 20,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-020-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 21,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-021-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-022-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 22,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-022-image-02.png",
+        "bytes": 325123
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-023-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 24,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-024-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-025-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-025-image-02.png",
+        "bytes": 304895
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-026-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 27,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-027-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-028-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 29,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-029-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 30,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-030-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 31,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-031-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 32,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-032-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 33,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-033-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 33,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-033-image-02.png",
+        "bytes": 51087
+      },
+      {
+        "page": 34,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-034-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 34,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-034-image-02.png",
+        "bytes": 63177
+      },
+      {
+        "page": 35,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-035-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 36,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-036-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 36,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-036-image-02.png",
+        "bytes": 32320
+      },
+      {
+        "page": 37,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-037-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 38,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-038-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 39,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-039-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 40,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-040-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 41,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-041-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 41,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-041-image-02.png",
+        "bytes": 100732
+      },
+      {
+        "page": 42,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-042-image-01.png",
+        "bytes": 25078
+      },
+      {
+        "page": 43,
+        "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-043-image-01.png",
+        "bytes": 25078
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-claudemd-masterclass.md"
+  },
+  {
+    "id": "pdf-graphify-obsidian",
+    "file": "C:\\mycode\\claude code tips\\manual pdf\\Graphify + Obsidian + Claude Code = CHEAT CODE.pdf",
+    "filename": "Graphify + Obsidian + Claude Code = CHEAT CODE.pdf",
+    "sha256": "cda911b71d7b2a9fb18201288d0786f51d2c7018c7ecb26b191922f5cd3418dd",
+    "bytes": 7819326,
+    "pages": 13,
+    "title": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+    "author": "",
+    "subject": "",
+    "textCharacters": 4804,
+    "wordCount": 861,
+    "headings": [
+      {
+        "page": 1,
+        "text": "11 1 Share"
+      },
+      {
+        "page": 12,
+        "text": "11 Likes"
+      },
+      {
+        "page": 12,
+        "text": "Comments Restacks"
+      }
+    ],
+    "links": [
+      "https://growthexe.substack.com/p/graphify-obsidian-claude-code-cheat/comment/288236844",
+      "https://growthexe.substack.com/s/ai/?utm_source=substack&utm_medium=menu",
+      "https://juanpardilla.substack.com/?utm_source=substack-feed-item&utm_content=comment_metadata",
+      "https://substack.com/",
+      "https://substack.com/@divyanshisharma2",
+      "https://substack.com/ccpa#personal-data-collected",
+      "https://substack.com/privacy",
+      "https://substack.com/profile/124442216-juan-pardilla?utm_source=substack-feed-item",
+      "https://substack.com/tos",
+      "https://substackcdn.com/image/fetch/$s_!3OBU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69d9478f-69c3-4904-9461-a0b689f76326_1695x928.png",
+      "https://substackcdn.com/image/fetch/$s_!DI_d!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff9c624c0-a18e-45ef-8245-6b8eff208404_1729x910.png",
+      "https://substackcdn.com/image/fetch/$s_!EJ-1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78686a8e-52b9-4b51-9aac-983d0ef22967_1731x909.png",
+      "https://substackcdn.com/image/fetch/$s_!JhhN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2ae2731-7f54-4799-9f2b-13131f91f80e_1734x907.png",
+      "https://substackcdn.com/image/fetch/$s_!ZsCm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F35f2b8e6-b7ad-4973-8589-202cf825fd52_1733x907.png",
+      "https://substackcdn.com/image/fetch/$s_!bDG8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fca81a61d-51f7-47c6-8bf7-57aad6061bb2_1735x907.png",
+      "https://substackcdn.com/image/fetch/$s_!ezyg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F047c25c7-b839-4b03-8814-27052db6a6ba_1672x941.png",
+      "https://substackcdn.com/image/fetch/$s_!fuye!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19988a6a-724b-417d-b79d-365921e84788_1729x910.png",
+      "https://substackcdn.com/image/fetch/$s_!m2H7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdba3683a-d203-4c6c-b997-2e4609e5b571_1736x906.png",
+      "https://substackcdn.com/image/fetch/$s_!uaa9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c812a36-d38d-4db5-bfa3-ff311f0da863_1122x1402.jpeg",
+      "javascript:void(0)"
+    ],
+    "embeddedImages": [
+      {
+        "page": 2,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-002-image-01.png",
+        "bytes": 1243829
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-003-image-01.png",
+        "bytes": 1243829
+      },
+      {
+        "page": 3,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-003-image-02.png",
+        "bytes": 439243
+      },
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-004-image-01.png",
+        "bytes": 1141670
+      },
+      {
+        "page": 5,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-005-image-01.png",
+        "bytes": 1202429
+      },
+      {
+        "page": 6,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-006-image-01.png",
+        "bytes": 544937
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-007-image-01.png",
+        "bytes": 426275
+      },
+      {
+        "page": 8,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-008-image-01.png",
+        "bytes": 372752
+      },
+      {
+        "page": 9,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-009-image-01.png",
+        "bytes": 266696
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-010-image-01.png",
+        "bytes": 409698
+      },
+      {
+        "page": 11,
+        "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-011-image-01.png",
+        "bytes": 496606
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-graphify-obsidian.md"
+  },
+  {
+    "id": "pdf-ykdojo-repo",
+    "file": "C:\\mycode\\CLAUDE~2\\MANUAL~2\\YKDOJO~1.PDF",
+    "filename": "YKDOJO~1.PDF",
+    "sha256": "37f353e3ab26f6b6cb4ecf682fe6c3e594d2fc2de4a2f8e90a625fff40d4d7bc",
+    "bytes": 5816087,
+    "pages": 46,
+    "title": "ykdojo/claude-code-tips: 40+ tips for getting the most out of Claude Code, from basics to advanced - includes a custom status line script and Claude Code running itself in a container. Also includes the dx plugin: skills for everyday dev workflows.",
+    "author": "",
+    "subject": "",
+    "textCharacters": 74683,
+    "wordCount": 13607,
+    "headings": [
+      {
+        "page": 1,
+        "text": "Releases 46"
+      },
+      {
+        "page": 1,
+        "text": "Deployments 174"
+      },
+      {
+        "page": 2,
+        "text": "Contributors 5"
+      },
+      {
+        "page": 4,
+        "text": "Tip 0: Customize your status line"
+      },
+      {
+        "page": 4,
+        "text": "Tip 1: Learn a few essential slash commands"
+      },
+      {
+        "page": 4,
+        "text": "Tip 2: Talk to Claude Code with your voice"
+      },
+      {
+        "page": 4,
+        "text": "Tip 3: Break down large problems into smaller ones"
+      },
+      {
+        "page": 4,
+        "text": "Tip 4: Using Git and GitHub CLI like a pro"
+      },
+      {
+        "page": 4,
+        "text": "Tip 5: AI context is like milk; it's best served fresh and condensed!"
+      },
+      {
+        "page": 5,
+        "text": "Tip 6: Getting output out of your terminal"
+      },
+      {
+        "page": 5,
+        "text": "Tip 7: Set up terminal aliases for quick access"
+      },
+      {
+        "page": 5,
+        "text": "Tip 8: Proactively compact your context"
+      },
+      {
+        "page": 5,
+        "text": "Tip 9: Complete the write-test cycle for autonomous tasks"
+      },
+      {
+        "page": 5,
+        "text": "Tip 10: Cmd+A and Ctrl+A are your friends"
+      },
+      {
+        "page": 5,
+        "text": "Tip 11: Invest in your own workflow"
+      },
+      {
+        "page": 5,
+        "text": "Tip 12: Search through your conversation history"
+      },
+      {
+        "page": 5,
+        "text": "Tip 13: Multitasking with terminal tabs"
+      },
+      {
+        "page": 5,
+        "text": "Tip 14: Git worktrees for parallel branch work"
+      },
+      {
+        "page": 5,
+        "text": "Tip 16: Claude Code as a writing assistant"
+      },
+      {
+        "page": 5,
+        "text": "Tip 17: Markdown is the s**t"
+      },
+      {
+        "page": 5,
+        "text": "Tip 18: Use Notion to preserve links when pasting"
+      },
+      {
+        "page": 5,
+        "text": "Tip 19: Isolated environments for long-running risky tasks"
+      },
+      {
+        "page": 5,
+        "text": "Tip 20: The best way to get better at using Claude Code is by using it"
+      },
+      {
+        "page": 5,
+        "text": "Tip 21: Fork and half-clone conversations"
+      },
+      {
+        "page": 5,
+        "text": "Tip 22: Use realpath to get absolute paths"
+      },
+      {
+        "page": 5,
+        "text": "Tip 23: Understanding CLAUDE.md vs Skills vs Slash Commands vs Plugins"
+      },
+      {
+        "page": 5,
+        "text": "Tip 24: Interactive PR reviews"
+      },
+      {
+        "page": 5,
+        "text": "Tip 25: Claude Code as a research tool"
+      },
+      {
+        "page": 5,
+        "text": "Tip 26: Mastering different ways of verifying its output"
+      },
+      {
+        "page": 5,
+        "text": "Tip 27: Claude Code as a DevOps engineer"
+      },
+      {
+        "page": 5,
+        "text": "Tip 28: Keep CLAUDE.md simple and review it periodically"
+      },
+      {
+        "page": 5,
+        "text": "Tip 29: Claude Code as the universal interface"
+      },
+      {
+        "page": 5,
+        "text": "Tip 30: It's all about choosing the right level of abstraction"
+      },
+      {
+        "page": 5,
+        "text": "Tip 31: Use auto mode"
+      },
+      {
+        "page": 5,
+        "text": "Tip 32: Control Claude Code from your phone"
+      },
+      {
+        "page": 5,
+        "text": "Tip 33: Learn to use artifacts"
+      },
+      {
+        "page": 6,
+        "text": "Tip 34: Write lots of tests (and use TDD)"
+      },
+      {
+        "page": 6,
+        "text": "Tip 35: Be braver in the unknown; iterative problem solving"
+      },
+      {
+        "page": 6,
+        "text": "Tip 36: Running bash commands and subagents in the background"
+      },
+      {
+        "page": 6,
+        "text": "Tip 37: The era of personalized software is here"
+      },
+      {
+        "page": 6,
+        "text": "Tip 38: Navigating and editing your input box"
+      },
+      {
+        "page": 6,
+        "text": "Tip 39: Spend some time planning, but also prototype quickly"
+      },
+      {
+        "page": 6,
+        "text": "Tip 40: Simplify overcomplicated code"
+      },
+      {
+        "page": 6,
+        "text": "Tip 41: Automation of automation"
+      },
+      {
+        "page": 6,
+        "text": "Tip 42: Share your knowledge and contribute where you can"
+      },
+      {
+        "page": 6,
+        "text": "Tip 43: Keep learning!"
+      },
+      {
+        "page": 6,
+        "text": "Tip 44: Install the dx plugin"
+      },
+      {
+        "page": 6,
+        "text": "Tip 45: Quick setup script"
+      },
+      {
+        "page": 6,
+        "text": "Tip 46: Switch between multiple Claude accounts"
+      },
+      {
+        "page": 6,
+        "text": "Tip 0: Customize your status line"
+      },
+      {
+        "page": 7,
+        "text": "Tip 1: Learn a few essential slash commands"
+      },
+      {
+        "page": 9,
+        "text": "Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan"
+      },
+      {
+        "page": 9,
+        "text": "Mon ·········································▒▒██▓░█▓█░█"
+      },
+      {
+        "page": 9,
+        "text": "Wed ········································░▓▒█▓▓░▒▓▒██"
+      },
+      {
+        "page": 9,
+        "text": "Fri ········································▒░░▓▒▒█▓▓▓█"
+      },
+      {
+        "page": 9,
+        "text": "Less ░ ▒ ▓ █ More"
+      },
+      {
+        "page": 9,
+        "text": "Tip 2: Talk to Claude Code with your voice"
+      },
+      {
+        "page": 11,
+        "text": "Tip 3: Break down large problems into smaller ones"
+      },
+      {
+        "page": 14,
+        "text": "Tip 4: Using Git and GitHub CLI like a pro"
+      },
+      {
+        "page": 15,
+        "text": "Tip 5: AI context is like milk; it's best served fresh and condensed!"
+      },
+      {
+        "page": 15,
+        "text": "Tip 6: Getting output out of your terminal"
+      },
+      {
+        "page": 16,
+        "text": "Tip 7: Set up terminal aliases for quick access"
+      },
+      {
+        "page": 17,
+        "text": "Tip 8: Proactively compact your context"
+      },
+      {
+        "page": 17,
+        "text": "# System Prompt Slimming - Handoff Document"
+      },
+      {
+        "page": 17,
+        "text": "## Goal"
+      },
+      {
+        "page": 17,
+        "text": "## Current Progress"
+      },
+      {
+        "page": 17,
+        "text": "### What's Been Done"
+      },
+      {
+        "page": 18,
+        "text": "2. Yes, auto-accept edits"
+      },
+      {
+        "page": 18,
+        "text": "3. Yes, manually approve edits"
+      },
+      {
+        "page": 18,
+        "text": "4. Type here to tell Claude what to change"
+      },
+      {
+        "page": 19,
+        "text": "Tip 9: Complete the write-test cycle for autonomous tasks"
+      },
+      {
+        "page": 19,
+        "text": "1. Start a tmux session"
+      },
+      {
+        "page": 19,
+        "text": "2. Send commands to it"
+      },
+      {
+        "page": 19,
+        "text": "3. Capture the output"
+      },
+      {
+        "page": 19,
+        "text": "4. Verify it's what you expect"
+      },
+      {
+        "page": 20,
+        "text": "# Claude for Chrome"
+      },
+      {
+        "page": 21,
+        "text": "Tip 10: Cmd+A and Ctrl+A are your friends"
+      },
+      {
+        "page": 21,
+        "text": "Tip 11: Invest in your own workflow"
+      },
+      {
+        "page": 22,
+        "text": "Tip 12: Search through your conversation history"
+      },
+      {
+        "page": 22,
+        "text": "# Find all conversations mentioning \"Reddit\""
+      },
+      {
+        "page": 22,
+        "text": "# Find today's conversations about a topic"
+      },
+      {
+        "page": 22,
+        "text": "# Extract just the user messages from a conversation (requires jq)"
+      },
+      {
+        "page": 22,
+        "text": "Tip 13: Multitasking with terminal tabs"
+      },
+      {
+        "page": 23,
+        "text": "1. Leftmost tab - A persistent tab running my voice transcription system (always stays here)"
+      },
+      {
+        "page": 23,
+        "text": "2. Second tab - Setting up a Docker container"
+      },
+      {
+        "page": 24,
+        "text": "3. Third tab - Checking disk usage on my local machine"
+      },
+      {
+        "page": 24,
+        "text": "4. Fourth tab - Working on an engineering project"
+      },
+      {
+        "page": 24,
+        "text": "5. Fifth tab (current) - Writing this very tip"
+      },
+      {
+        "page": 24,
+        "text": "Tip 14: Git worktrees for parallel branch work"
+      },
+      {
+        "page": 25,
+        "text": "Tip 15: Manual exponential backoff for long-running jobs"
+      },
+      {
+        "page": 27,
+        "text": "Tip 16: Claude Code as a writing assistant"
+      },
+      {
+        "page": 28,
+        "text": "Tip 17: Markdown is the s**t"
+      },
+      {
+        "page": 29,
+        "text": "Tip 18: Use Notion to preserve links when pasting"
+      },
+      {
+        "page": 29,
+        "text": "Tip 19: Isolated environments for long-running risky tasks"
+      },
+      {
+        "page": 29,
+        "text": "1. You can run it in a container. I even created a preset environment to make running containerized Claude Code sessions easy."
+      },
+      {
+        "page": 29,
+        "text": "2. You can take it a step further by setting up a whole machine Claude Code can fully control, computer use included."
+      },
+      {
+        "page": 30,
+        "text": "1. Your local Claude Code starts a tmux session"
+      },
+      {
+        "page": 30,
+        "text": "2. In that tmux session, it runs or connects to the container"
+      },
+      {
+        "page": 30,
+        "text": "3. Inside the container, Claude Code runs with --dangerously-skip-permissions"
+      },
+      {
+        "page": 30,
+        "text": "4. Your outer Claude Code uses tmux send-keys to send prompts and capture-pane to read output"
+      },
+      {
+        "page": 30,
+        "text": "Tip 20: The best way to get better at using Claude Code is by using it"
+      },
+      {
+        "page": 30,
+        "text": "Tip 21: Fork and half-clone conversations"
+      },
+      {
+        "page": 32,
+        "text": "\"Stop\": ["
+      },
+      {
+        "page": 33,
+        "text": "Tip 22: Use realpath to get absolute paths"
+      },
+      {
+        "page": 33,
+        "text": "Tip 23: Understanding CLAUDE.md vs Skills vs Slash Commands vs Plugins"
+      },
+      {
+        "page": 34,
+        "text": "Tip 24: Interactive PR reviews"
+      },
+      {
+        "page": 34,
+        "text": "Tip 25: Claude Code as a research tool"
+      },
+      {
+        "page": 35,
+        "text": "Tip 26: Mastering different ways of verifying its output"
+      },
+      {
+        "page": 35,
+        "text": "Tip 27: Claude Code as a DevOps engineer"
+      },
+      {
+        "page": 36,
+        "text": "Tip 28: Keep CLAUDE.md simple and review it periodically"
+      },
+      {
+        "page": 37,
+        "text": "Tip 29: Claude Code as the universal interface"
+      },
+      {
+        "page": 38,
+        "text": "Tip 30: It's all about choosing the right level of abstraction"
+      },
+      {
+        "page": 40,
+        "text": "Tip 31: Use auto mode"
+      },
+      {
+        "page": 40,
+        "text": "Tip 32: Control Claude Code from your phone"
+      },
+      {
+        "page": 41,
+        "text": "Docs: Remote Control."
+      },
+      {
+        "page": 41,
+        "text": "Tip 33: Learn to use artifacts"
+      },
+      {
+        "page": 41,
+        "text": "Tip 34: Write lots of tests (and use TDD)"
+      },
+      {
+        "page": 41,
+        "text": "1. Write tests first"
+      },
+      {
+        "page": 41,
+        "text": "2. Make sure they fail"
+      },
+      {
+        "page": 42,
+        "text": "3. Commit the tests"
+      },
+      {
+        "page": 42,
+        "text": "4. Write the code to make them pass"
+      },
+      {
+        "page": 42,
+        "text": "Tip 35: Be braver in the unknown; iterative problem solving"
+      },
+      {
+        "page": 43,
+        "text": "Tip 36: Running bash commands and subagents in the background"
+      },
+      {
+        "page": 43,
+        "text": "Tip 37: The era of personalized software is here"
+      },
+      {
+        "page": 44,
+        "text": "Tip 38: Navigating and editing your input box"
+      },
+      {
+        "page": 45,
+        "text": "Tip 39: Spend some time planning, but also prototype quickly"
+      },
+      {
+        "page": 46,
+        "text": "Tip 40: Simplify overcomplicated code"
+      }
+    ],
+    "links": [
+      "https://code.claude.com/docs/en/remote-control",
+      "https://docs.anthropic.com/en/docs/claude-code/hooks",
+      "https://github.com/",
+      "https://github.com/Eventual-Inc/Daft",
+      "https://github.com/Geborek",
+      "https://github.com/anthropics/claude-code/issues/13115",
+      "https://github.com/claude",
+      "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fykdojo%2Fclaude-code-tips&report=ykdojo+%28user%29",
+      "https://github.com/copilot",
+      "https://github.com/delfinadap",
+      "https://github.com/issues",
+      "https://github.com/korotovsky/slack-mcp-server",
+      "https://github.com/notifications",
+      "https://github.com/pulls",
+      "https://github.com/repos",
+      "https://github.com/thomasthinks",
+      "https://github.com/topics/agentic",
+      "https://github.com/topics/agentic-ai",
+      "https://github.com/topics/agentic-coding",
+      "https://github.com/topics/agentic-workflow",
+      "https://github.com/topics/ai",
+      "https://github.com/topics/claude",
+      "https://github.com/topics/claude-ai",
+      "https://github.com/topics/claude-code",
+      "https://github.com/topics/cli",
+      "https://github.com/topics/developer-tools",
+      "https://github.com/topics/productivity",
+      "https://github.com/topics/tips-and-tricks",
+      "https://github.com/users/ykdojo/packages?repo_name=claude-code-tips",
+      "https://github.com/ykdojo",
+      "https://github.com/ykdojo/claude-code-tips",
+      "https://github.com/ykdojo/claude-code-tips/actions",
+      "https://github.com/ykdojo/claude-code-tips/activity",
+      "https://github.com/ykdojo/claude-code-tips/agents?author=ravisarma1618",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/.gitignore",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/CLAUDE.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/GLOBAL-CLAUDE.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/LICENSE",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/README.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/breakdown-direct.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/breakdown-steps.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/git-worktrees.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/keep-it-simple-meme.jpg",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/manual-exponential-backoff.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/multitasking-terminal-tabs.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/vibe-coding-spectrum.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/voice-transcription-mistakes.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/assets/writing-assistant-side-by-side.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/content/how-i-saved-10k-with-claude-code.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/README.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/check-context.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/color-preview.png",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/context-bar.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/scripts/half-clone-conversation.sh",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/skills/gha/SKILL.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/skills/handoff/SKILL.md",
+      "https://github.com/ykdojo/claude-code-tips/blob/main/skills/review-claudemd/SKILL.md",
+      "https://github.com/ykdojo/claude-code-tips/branches",
+      "https://github.com/ykdojo/claude-code-tips/commit/2a2a43472d58fc1bb137fc9c5851cecd4084ca9e",
+      "https://github.com/ykdojo/claude-code-tips/commit/31038b8ebace01a975d480b6ee8aceab0c753df2",
+      "https://github.com/ykdojo/claude-code-tips/commit/37d92afa3a693a02744c2ad46f7f729858166ad0",
+      "https://github.com/ykdojo/claude-code-tips/commit/3df8f171530ce28d24a626563e8d7b2fb9933d6a",
+      "https://github.com/ykdojo/claude-code-tips/commit/47f29db3f8be685804aa913df517bb460d8f57fc",
+      "https://github.com/ykdojo/claude-code-tips/commit/6014479e93236a20eecade1b8144f82aac2ec8db",
+      "https://github.com/ykdojo/claude-code-tips/commit/7646fef04cba2a1072b69e7d6bc2aba3f750ccd7",
+      "https://github.com/ykdojo/claude-code-tips/commit/90ea59e066c5499e0d8b3e73cca10592895fdedc",
+      "https://github.com/ykdojo/claude-code-tips/commit/db76467afb9f4cf57c2f25dfd2266ab59d1003c0",
+      "https://github.com/ykdojo/claude-code-tips/commits/main/",
+      "https://github.com/ykdojo/claude-code-tips/commits?author=ykdojo",
+      "https://github.com/ykdojo/claude-code-tips/deployments",
+      "https://github.com/ykdojo/claude-code-tips/deployments/github-pages",
+      "https://github.com/ykdojo/claude-code-tips/fork",
+      "https://github.com/ykdojo/claude-code-tips/forks",
+      "https://github.com/ykdojo/claude-code-tips/graphs/contributors",
+      "https://github.com/ykdojo/claude-code-tips/issues",
+      "https://github.com/ykdojo/claude-code-tips/projects",
+      "https://github.com/ykdojo/claude-code-tips/pull/45",
+      "https://github.com/ykdojo/claude-code-tips/pull/53",
+      "https://github.com/ykdojo/claude-code-tips/pulls",
+      "https://github.com/ykdojo/claude-code-tips/pulse",
+      "https://github.com/ykdojo/claude-code-tips/releases",
+      "https://github.com/ykdojo/claude-code-tips/releases/tag/v0.26.30",
+      "https://github.com/ykdojo/claude-code-tips/search?l=html",
+      "https://github.com/ykdojo/claude-code-tips/search?l=javascript",
+      "https://github.com/ykdojo/claude-code-tips/search?l=shell",
+      "https://github.com/ykdojo/claude-code-tips/security",
+      "https://github.com/ykdojo/claude-code-tips/stargazers",
+      "https://github.com/ykdojo/claude-code-tips/tags",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/.claude-plugin",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/assets",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/content",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/scripts",
+      "https://github.com/ykdojo/claude-code-tips/tree/main/skills",
+      "https://github.com/ykdojo/claude-code-tips/watchers",
+      "https://github.com/ykdojo/claude-controls-mac",
+      "https://github.com/ykdojo/paper-search",
+      "https://github.com/ykdojo/safeclaw",
+      "https://github.com/ykdojo/super-voice-assistant",
+      "https://goodsnooze.gumroad.com/l/macwhisper",
+      "https://superwhisper.com/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1q92wwv/merged_commands_and_skills_in_213_update/",
+      "https://www.youtube.com/watch?v=hiISl558JGE",
+      "https://x.com/bcherny/status/2032238378389840018",
+      "https://ykdojo.github.io/claude-code-tips/content/spectrum-slides.html"
+    ],
+    "embeddedImages": [
+      {
+        "page": 4,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-004-image-01.png",
+        "bytes": 1942665
+      },
+      {
+        "page": 7,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-007-image-01.png",
+        "bytes": 1180012
+      },
+      {
+        "page": 10,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-010-image-01.png",
+        "bytes": 217862
+      },
+      {
+        "page": 12,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-012-image-01.png",
+        "bytes": 30618
+      },
+      {
+        "page": 13,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-013-image-01.png",
+        "bytes": 18490
+      },
+      {
+        "page": 23,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-023-image-01.png",
+        "bytes": 216824
+      },
+      {
+        "page": 25,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-025-image-01.png",
+        "bytes": 59503
+      },
+      {
+        "page": 26,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-026-image-01.png",
+        "bytes": 227274
+      },
+      {
+        "page": 28,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-028-image-01.png",
+        "bytes": 417671
+      },
+      {
+        "page": 36,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-036-image-01.jpg",
+        "bytes": 174430
+      },
+      {
+        "page": 39,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-039-image-01.png",
+        "bytes": 115993
+      },
+      {
+        "page": 40,
+        "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-040-image-01.png",
+        "bytes": 115993
+      }
+    ],
+    "extractedText": "content/pdf-extracted/pdf-ykdojo-repo.md"
+  }
+]

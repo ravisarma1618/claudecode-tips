@@ -1,0 +1,1020 @@
+{
+  "workflows": [
+    {
+      "id": "wf-new-project",
+      "title": "Starting a new project",
+      "objective": "Create the smallest validated foundation.",
+      "preconditions": [
+        "Problem and user are named",
+        "Workspace and safety boundaries are known"
+      ],
+      "steps": [
+        "Interview for outcomes and non-goals",
+        "Research only decisions that affect the first slice",
+        "Compare three approaches, simplest first",
+        "Write a short spec with at most three milestones",
+        "Scaffold and prove one end-to-end path",
+        "Add repository instructions only for non-obvious commands",
+        "Commit a clean baseline"
+      ],
+      "prompt": "We are starting [PROJECT]. First ask only questions whose answers materially change the architecture. Then propose three approaches from simplest to most extensible, with tradeoffs. After I choose, write a three-milestone spec. Do not implement yet.",
+      "checks": [
+        "A real user path works",
+        "Build and tests run from documented commands",
+        "No secret or generated artifact is committed"
+      ],
+      "failures": [
+        "Overbuilding infrastructure",
+        "Coding before choosing constraints"
+      ],
+      "recovery": "Return to the smallest end-to-end slice and defer speculative components.",
+      "sourceIds": [
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "id": "wf-unfamiliar-repo",
+      "title": "Understanding an unfamiliar repository",
+      "objective": "Create an evidence-linked execution map.",
+      "preconditions": [
+        "Repository is readable",
+        "Question or feature area is known"
+      ],
+      "steps": [
+        "Read CLAUDE.md and top-level docs",
+        "Inspect manifests and commands",
+        "Trace one representative entry point",
+        "Locate conventions and adjacent tests",
+        "Inspect recent relevant history",
+        "Record uncertainties and likely change surface"
+      ],
+      "prompt": "Map [BEHAVIOR] through this repository. Cite files and symbols for every claim. Identify entry points, data flow, invariants, tests, commands, and uncertainties. Do not edit.",
+      "checks": [
+        "Map cites real paths",
+        "Commands exist",
+        "Unknowns are explicit"
+      ],
+      "failures": [
+        "Reading everything",
+        "Inventing architecture from names"
+      ],
+      "recovery": "Narrow to one request path and verify each hop in code.",
+      "sourceIds": [
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "id": "wf-plan-feature",
+      "title": "Planning a feature",
+      "objective": "Produce reviewable behavioral slices.",
+      "preconditions": [
+        "Current behavior mapped",
+        "Acceptance criteria available"
+      ],
+      "steps": [
+        "Restate outcome and non-goals",
+        "Find analogous implementation",
+        "Compare options",
+        "Resolve material decisions",
+        "Split into verified slices",
+        "Name files, checks, and rollback points"
+      ],
+      "prompt": "Plan [FEATURE] after inspecting the relevant code. Preserve [INVARIANTS]. Compare options, recommend one, and split it into independently testable slices. Include files, tests, risks, and non-goals. Do not edit.",
+      "checks": [
+        "Every step has evidence",
+        "Dependencies are ordered",
+        "Plan avoids speculative scope"
+      ],
+      "failures": [
+        "Generic task list",
+        "One giant implementation step"
+      ],
+      "recovery": "Rewrite each step as a demonstrable behavior.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "id": "wf-implement",
+      "title": "Implementing a feature",
+      "objective": "Deliver behavior in controlled increments.",
+      "preconditions": [
+        "Plan approved",
+        "Baseline checks known"
+      ],
+      "steps": [
+        "Confirm clean baseline",
+        "Implement first behavioral slice",
+        "Run focused checks",
+        "Inspect diff and course-correct",
+        "Repeat slices",
+        "Run broad suite and manual acceptance",
+        "Summarize evidence and risks"
+      ],
+      "prompt": "Implement only slice [N] of the approved plan. Follow nearby patterns, avoid unrelated refactors, run [FOCUSED_CHECKS], and stop with a diff summary and open questions.",
+      "checks": [
+        "Acceptance criteria pass",
+        "Diff matches scope",
+        "Regression coverage exists"
+      ],
+      "failures": [
+        "Bundled refactor",
+        "Silent contract changes"
+      ],
+      "recovery": "Revert or isolate the current slice, restate constraints, and retry smaller.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "id": "wf-debug",
+      "title": "Debugging",
+      "objective": "Prove the root cause and retain a regression guard.",
+      "preconditions": [
+        "Symptom described",
+        "Environment accessible"
+      ],
+      "steps": [
+        "Capture exact symptom",
+        "Reproduce reliably",
+        "Reduce the case",
+        "List competing hypotheses",
+        "Collect discriminating evidence",
+        "Fix the cause minimally",
+        "Run regression and broad checks"
+      ],
+      "prompt": "Investigate [SYMPTOM]. Do not edit until you have a reproduction and at least two falsifiable hypotheses. Cite logs/code for the leading cause, then propose the smallest fix and regression test.",
+      "checks": [
+        "Old code fails reproduction",
+        "New code passes",
+        "Cause explains observed evidence"
+      ],
+      "failures": [
+        "Guess-and-patch",
+        "Trusting confidence claims"
+      ],
+      "recovery": "Discard unsupported edits and restart from the nearest observable boundary.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo",
+        "pdf-reddit-25"
+      ]
+    },
+    {
+      "id": "wf-refactor",
+      "title": "Refactoring",
+      "objective": "Improve structure without changing behavior.",
+      "preconditions": [
+        "Behavior protected by tests",
+        "Refactor goal measurable"
+      ],
+      "steps": [
+        "Define preserved behavior",
+        "Add characterization tests if needed",
+        "Make one structural move",
+        "Run focused checks",
+        "Inspect semantic diff",
+        "Repeat",
+        "Benchmark if performance-sensitive"
+      ],
+      "prompt": "Refactor [TARGET] to improve [MEASURE]. Preserve public behavior and avoid feature changes. First identify coverage gaps; then make small steps, running [CHECKS] after each.",
+      "checks": [
+        "Public behavior unchanged",
+        "Tests remain meaningful",
+        "Complexity goal improved"
+      ],
+      "failures": [
+        "Refactor plus feature",
+        "Broad rewrite without characterization"
+      ],
+      "recovery": "Restore last green commit and split the structural move further.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "id": "wf-tests",
+      "title": "Writing and running tests",
+      "objective": "Build trustworthy feedback rather than decorative coverage.",
+      "preconditions": [
+        "Behavior and failure mode known"
+      ],
+      "steps": [
+        "Choose the lowest useful test seam",
+        "Write a failing behavior assertion",
+        "Verify it fails for the right reason",
+        "Implement minimally",
+        "Run focused test",
+        "Run broader checks",
+        "Review test for vacuity and brittleness"
+      ],
+      "prompt": "Write a regression test for [BEHAVIOR]. First show why it fails on current code. Assert public outcomes, not implementation trivia. Then implement the smallest fix and run [SUITE].",
+      "checks": [
+        "Test failed before fix",
+        "Test detects a real regression",
+        "No unconditional or tautological assertion"
+      ],
+      "failures": [
+        "Tests that always pass",
+        "Mocking away the bug"
+      ],
+      "recovery": "Move the assertion closer to the observable contract.",
+      "sourceIds": [
+        "pdf-ykdojo-repo",
+        "pdf-linkedin-32",
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "id": "wf-review",
+      "title": "Reviewing changes",
+      "objective": "Find requirement, correctness, safety, and maintainability defects.",
+      "preconditions": [
+        "Stable diff",
+        "Requirements available"
+      ],
+      "steps": [
+        "Read requirement without author rationale",
+        "Inspect status and complete diff",
+        "Trace affected callers",
+        "Run checks independently",
+        "Probe edge and failure cases",
+        "Rank evidenced findings",
+        "Document residual risk"
+      ],
+      "prompt": "Review the current diff against [REQUIREMENT]. Prioritize correctness, security, data loss, concurrency, and missing tests. Cite files/lines and explain reproduction. Do not edit.",
+      "checks": [
+        "Every finding has evidence",
+        "Generated and config files included",
+        "No unrelated user changes blamed"
+      ],
+      "failures": [
+        "Style-only review",
+        "Author self-certification"
+      ],
+      "recovery": "Use a fresh session and ask it to falsify the implementation.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "id": "wf-pr",
+      "title": "Preparing a pull request",
+      "objective": "Create a reviewable, evidence-backed draft PR.",
+      "preconditions": [
+        "Diff reviewed",
+        "Checks green"
+      ],
+      "steps": [
+        "Confirm branch and remote",
+        "Separate unrelated changes",
+        "Commit coherently",
+        "Write summary and rationale",
+        "List tests and manual evidence",
+        "State risks and rollout",
+        "Open draft; review rendered diff"
+      ],
+      "prompt": "Prepare a draft PR for [CHANGE]. First inspect the full branch diff. Draft a concise summary, behavioral changes, test evidence, risks, and rollout notes. Do not push until I approve.",
+      "checks": [
+        "PR diff is scoped",
+        "Commands/results are accurate",
+        "No secrets or debug artifacts"
+      ],
+      "failures": [
+        "Auto-pushing",
+        "Claiming unrun tests"
+      ],
+      "recovery": "Keep the PR draft, amend commits and description, rerun checks.",
+      "sourceIds": [
+        "pdf-ykdojo-repo",
+        "pdf-linkedin-32",
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "id": "wf-large-codebase",
+      "title": "Handling a large codebase",
+      "objective": "Find relevant context without flooding the main session.",
+      "preconditions": [
+        "Concrete question",
+        "Search tools available"
+      ],
+      "steps": [
+        "Start from symbols and execution boundaries",
+        "Use targeted search before broad reads",
+        "Delegate independent maps to read-only subagents",
+        "Demand file-linked summaries",
+        "Integrate a minimal working set",
+        "Refresh context between concerns"
+      ],
+      "prompt": "For [QUESTION], use targeted search and delegate at most [N] independent read-only investigations. Return one evidence map with paths, symbols, uncertainties, and the minimal files needed next.",
+      "checks": [
+        "No overlapping delegation",
+        "Claims cite code",
+        "Main context receives summaries, not raw dumps"
+      ],
+      "failures": [
+        "Repository-wide reads",
+        "Parallel edits to shared files"
+      ],
+      "recovery": "Collapse to one vertical path and one owner.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo",
+        "pdf-reddit-25"
+      ]
+    },
+    {
+      "id": "wf-context",
+      "title": "Managing context",
+      "objective": "Preserve relevant evidence while removing noise.",
+      "preconditions": [
+        "Task boundary visible"
+      ],
+      "steps": [
+        "Use /clear between unrelated tasks",
+        "Use /btw for disposable questions",
+        "Compact with preservation instructions",
+        "Name durable sessions",
+        "Write handoffs before reset",
+        "Keep CLAUDE.md stable and short"
+      ],
+      "prompt": "Create a handoff for a fresh session: goal, constraints, decisions and rationale, changed files, commands/results, failed approaches, open risks, and exact next action. Verify it against the repository.",
+      "checks": [
+        "Handoff is current",
+        "Critical commands and files preserved",
+        "Old failures are labeled"
+      ],
+      "failures": [
+        "Clearing without state",
+        "Compacting noise into permanent memory"
+      ],
+      "recovery": "Reconstruct from Git, test output, and local session history.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo",
+        "pdf-ruben-27",
+        "pdf-reddit-25"
+      ]
+    },
+    {
+      "id": "wf-recovery",
+      "title": "Recovering from a poor trajectory",
+      "objective": "Stop compounding mistakes and restart with better evidence.",
+      "preconditions": [
+        "Deviation recognized"
+      ],
+      "steps": [
+        "Press Esc and prevent further actions",
+        "Identify violated constraint",
+        "Inspect status/diff and external side effects",
+        "Rewind, undo, or revert exact changes",
+        "Record useful discoveries",
+        "Start fresh after repeated correction",
+        "Re-run baseline checks"
+      ],
+      "prompt": "Stop. The trajectory violates [CONSTRAINT]. Inspect current status and explain exactly what changed and what external actions occurred. Propose the safest targeted recovery; do not execute it until reviewed.",
+      "checks": [
+        "Unrelated user work preserved",
+        "External effects accounted for",
+        "Baseline restored"
+      ],
+      "failures": [
+        "Blind rollback",
+        "Continuing after two failed corrections"
+      ],
+      "recovery": "Use Git plus manual inspection; checkpoints do not cover every Bash/external change.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ruben-27"
+      ]
+    },
+    {
+      "id": "wf-parallel",
+      "title": "Using multiple agents or parallel work",
+      "objective": "Increase throughput without conflicting state.",
+      "preconditions": [
+        "Dependency graph clear",
+        "Integration owner named"
+      ],
+      "steps": [
+        "Separate independent tasks",
+        "Choose subagents for reads and worktrees for writes",
+        "Set non-overlapping scopes",
+        "Define output contracts",
+        "Limit simultaneous streams",
+        "Integrate one branch at a time",
+        "Run combined checks"
+      ],
+      "prompt": "Decompose [TASK] into independent work. Parallelize only non-overlapping scopes; assign each agent an evidence/output contract. Keep integration and shared-file decisions with the lead.",
+      "checks": [
+        "Write ownership unique",
+        "Branches isolated",
+        "Integrated suite passes"
+      ],
+      "failures": [
+        "Agents editing same checkout",
+        "No integration owner"
+      ],
+      "recovery": "Pause writers, reconcile a single baseline, then reassign narrower scopes.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo",
+        "pdf-linkedin-32"
+      ]
+    },
+    {
+      "id": "wf-automation",
+      "title": "Safely automating repeated work",
+      "objective": "Encode a proven workflow with bounded authority.",
+      "preconditions": [
+        "Manual loop reliable",
+        "Failure modes known"
+      ],
+      "steps": [
+        "Define schema and success",
+        "Start read-only",
+        "Limit paths, tools, time, and network",
+        "Validate structured output",
+        "Require approval for mutation",
+        "Log and monitor",
+        "Review permissions and drift"
+      ],
+      "prompt": "Design a non-interactive automation for [WORKFLOW]. Begin read-only. Specify inputs, output schema, tools, timeouts, forbidden actions, validation, human gates, and rollback. Do not implement until threat-modeled.",
+      "checks": [
+        "Fails closed",
+        "Outputs validate",
+        "No implicit production write"
+      ],
+      "failures": [
+        "Unbounded agent loop",
+        "Automation from an unproven prompt"
+      ],
+      "recovery": "Disable trigger, preserve logs, restore last known output, return to manual loop.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo",
+        "pdf-reddit-25"
+      ]
+    },
+    {
+      "id": "wf-security",
+      "title": "Security review",
+      "objective": "Find exploitable behavior with evidence.",
+      "preconditions": [
+        "Threat boundary named",
+        "Diff or component available"
+      ],
+      "steps": [
+        "Map trust boundaries and assets",
+        "Trace untrusted input",
+        "Review authn/authz and secrets",
+        "Test injection and failure paths",
+        "Check dependencies/config",
+        "Rank by exploitability",
+        "Recommend minimal mitigations"
+      ],
+      "prompt": "Review [SCOPE] as a security engineer. Map trust boundaries, then inspect injection, authn/authz, secrets, unsafe deserialization, data exposure, and command execution. Cite code and provide a realistic exploit path; do not invent findings.",
+      "checks": [
+        "Findings reproducible",
+        "Permissions least-privilege",
+        "No secrets emitted"
+      ],
+      "failures": [
+        "Generic checklist only",
+        "Granting reviewer write access"
+      ],
+      "recovery": "Use a fresh read-only reviewer and validate high-severity findings manually.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-reddit-25"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "pr-repo",
+      "category": "Repository analysis",
+      "title": "Evidence map",
+      "text": "Map [BEHAVIOR] through this repository. Cite paths and symbols; identify entry points, data flow, invariants, tests, commands, and uncertainties. Do not edit.",
+      "guidance": "Use before unfamiliar work."
+    },
+    {
+      "id": "pr-plan",
+      "category": "Planning",
+      "title": "Option-first plan",
+      "text": "For [OUTCOME], inspect current code, compare three options from simplest first, recommend one, and produce verified behavioral slices with files, tests, risks, and non-goals. Do not edit.",
+      "guidance": "Review before implementation."
+    },
+    {
+      "id": "pr-feature",
+      "category": "Feature implementation",
+      "title": "One slice",
+      "text": "Implement only [SLICE]. Preserve [INVARIANTS], follow adjacent patterns, avoid unrelated refactors, run [CHECKS], and report the diff plus residual risks.",
+      "guidance": "Keeps scope bounded."
+    },
+    {
+      "id": "pr-debug",
+      "category": "Debugging",
+      "title": "Falsifiable diagnosis",
+      "text": "Reproduce [SYMPTOM]. Before editing, give competing hypotheses and the evidence that would distinguish them. Prove the leading cause, add a regression test, then make the smallest fix.",
+      "guidance": "Reject confident guesses."
+    },
+    {
+      "id": "pr-refactor",
+      "category": "Refactoring",
+      "title": "Behavior-preserving refactor",
+      "text": "Refactor [TARGET] to improve [MEASURE] while preserving [CONTRACT]. Add characterization coverage if needed; make small steps and run [CHECKS] after each.",
+      "guidance": "Separate from feature work."
+    },
+    {
+      "id": "pr-test",
+      "category": "Testing",
+      "title": "Meaningful regression",
+      "text": "Write a regression test for [BEHAVIOR]. Demonstrate it fails for the correct reason before the fix. Assert public outcomes and review the test for vacuity and brittleness.",
+      "guidance": "Close the feedback loop."
+    },
+    {
+      "id": "pr-arch",
+      "category": "Architecture",
+      "title": "Decision record",
+      "text": "Evaluate [DECISION] under [CONSTRAINTS]. Compare the simplest viable options, cite repository evidence, list reversibility and migration cost, and write a short ADR recommendation.",
+      "guidance": "Use for consequential choices."
+    },
+    {
+      "id": "pr-review",
+      "category": "Code review",
+      "title": "Fresh-context review",
+      "text": "Review the diff against [REQUIREMENT]. Prioritize correctness, security, data loss, concurrency, and missing tests. Cite exact evidence and reproduction; omit unsupported speculation.",
+      "guidance": "Run in a fresh session."
+    },
+    {
+      "id": "pr-docs",
+      "category": "Documentation",
+      "title": "Docs from behavior",
+      "text": "Update documentation for [CHANGE] using verified commands and current behavior. Identify stale claims, add one working example, and do not claim checks that were not run.",
+      "guidance": "Verify examples."
+    },
+    {
+      "id": "pr-security",
+      "category": "Security review",
+      "title": "Threat-boundary review",
+      "text": "Map trust boundaries for [SCOPE], then inspect untrusted input, authn/authz, secrets, injection, data exposure, and command execution. Rank only evidenced findings by exploitability.",
+      "guidance": "Keep reviewer read-only."
+    },
+    {
+      "id": "pr-performance",
+      "category": "Performance analysis",
+      "title": "Measure before optimize",
+      "text": "Investigate [PERFORMANCE_SYMPTOM]. Establish a reproducible baseline and profile before editing. Compare hypotheses, change one variable, and report before/after data with uncertainty.",
+      "guidance": "Avoid intuition-only optimization."
+    },
+    {
+      "id": "pr-handoff",
+      "category": "Context handoff",
+      "title": "Durable handoff",
+      "text": "Write a handoff containing goal, constraints, decisions, changed files, commands/results, failed approaches, open risks, and exact next action. Verify it against repository state.",
+      "guidance": "Use before clearing context."
+    },
+    {
+      "id": "pr-recovery",
+      "category": "Session recovery",
+      "title": "Trajectory reset",
+      "text": "Stop. [CONSTRAINT] was violated. Inspect status and external effects, explain exactly what happened, and propose a targeted recovery that preserves unrelated work. Do not execute yet.",
+      "guidance": "Use at first clear deviation."
+    },
+    {
+      "id": "pr-pr",
+      "category": "Pull-request preparation",
+      "title": "Evidence-backed draft PR",
+      "text": "Inspect the complete branch diff for [CHANGE]. Draft summary, behavioral changes, verification actually run, risks, and rollout. Identify unrelated edits. Do not push until approved.",
+      "guidance": "Prefer a draft gate."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dt-plan",
+      "question": "Should I ask for a plan first?",
+      "rules": [
+        "If the change crosses components, affects data/contracts, or the repo is unfamiliar → plan first.",
+        "If it is localized, reversible, and directly testable → edit with a brief mini-plan."
+      ]
+    },
+    {
+      "id": "dt-split",
+      "question": "Should I split this task?",
+      "rules": [
+        "If one success check cannot cover it or failures are hard to localize → split by behavior.",
+        "If slices would require constant shared-state coordination → keep one owner."
+      ]
+    },
+    {
+      "id": "dt-session",
+      "question": "Should I start a fresh session?",
+      "rules": [
+        "New topic, repeated forgotten constraints, or two failed corrections → write a handoff and start fresh.",
+        "Same coherent investigation with useful evidence → continue or compact selectively."
+      ]
+    },
+    {
+      "id": "dt-subagent",
+      "question": "Should I use a subagent?",
+      "rules": [
+        "Independent, read-heavy, specialist, or noisy task with a concise output → use one.",
+        "Shared files, rapid back-and-forth, or integration decisions → keep central."
+      ]
+    },
+    {
+      "id": "dt-claudemd",
+      "question": "Should I update CLAUDE.md?",
+      "rules": [
+        "Stable non-obvious rule repeated across tasks → add concise guidance at the narrowest scope.",
+        "Temporary state, obvious practice, or a one-off correction → do not add."
+      ]
+    },
+    {
+      "id": "dt-mcp",
+      "question": "Should I use MCP?",
+      "rules": [
+        "Needed external capability lacks a good CLI/API path and has clear permissions → consider MCP.",
+        "A direct CLI works or integration cost exceeds repeated value → skip it."
+      ]
+    },
+    {
+      "id": "dt-tests-first",
+      "question": "Should I write tests first?",
+      "rules": [
+        "Bug, stable behavioral contract, or risky refactor → usually write regression/characterization first.",
+        "Exploratory spike with unknown shape → prototype, then discard or backfill before production."
+      ]
+    },
+    {
+      "id": "dt-refactor-first",
+      "question": "Should I refactor before the feature?",
+      "rules": [
+        "A small prerequisite unlocks a test seam and can be behavior-preserving → separate refactor first.",
+        "Broad cleanup is merely attractive → ship the smallest feature slice without it."
+      ]
+    },
+    {
+      "id": "dt-permission",
+      "question": "Should I permit automatic command execution?",
+      "rules": [
+        "Exact, reversible, local command in a constrained environment → narrowly allowlist.",
+        "Push, deploy, deletion, credentials, unknown network, or broad path → retain approval or isolate."
+      ]
+    },
+    {
+      "id": "dt-stuck",
+      "question": "Is the agent stuck or merely exploring?",
+      "rules": [
+        "New evidence and narrowing hypotheses → exploring; set a checkpoint.",
+        "Repeating tools, explanations, or failed edits without new evidence → stop, summarize, and reset."
+      ]
+    }
+  ],
+  "antiPatterns": [
+    {
+      "title": "The vague vibe prompt",
+      "symptoms": "Large surprising diff and subjective completion claims.",
+      "root": "No outcome, constraints, or evidence target.",
+      "why": "The solution space is unbounded.",
+      "correction": "Rewrite as an executable brief.",
+      "prevention": "Use the prompt checklist.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ruben-27"
+      ]
+    },
+    {
+      "title": "One-shotting a large feature",
+      "symptoms": "Many files change before anything runs.",
+      "root": "Task exceeds one feedback loop.",
+      "why": "Errors compound across assumptions.",
+      "correction": "Split by independently verifiable behavior.",
+      "prevention": "Approve milestones, not a monolith.",
+      "sourceIds": [
+        "pdf-ykdojo-repo",
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "title": "Context hoarding",
+      "symptoms": "Forgotten constraints, contradictions, repeated correction.",
+      "root": "Unrelated history and failed paths remain active.",
+      "why": "Relevant evidence loses attention.",
+      "correction": "Handoff, clear, or selective compact.",
+      "prevention": "One coherent topic per session.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ruben-27",
+        "pdf-reddit-25"
+      ]
+    },
+    {
+      "title": "Confidence as verification",
+      "symptoms": "The agent says it double-checked but supplies no evidence.",
+      "root": "Self-assessment replaces observation.",
+      "why": "Plausibility is correlated with the same mistake.",
+      "correction": "Run a reproduction, test, typecheck, diff, or independent review.",
+      "prevention": "Name checks in the prompt.",
+      "sourceIds": [
+        "pdf-reddit-25",
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "title": "The encyclopedia CLAUDE.md",
+      "symptoms": "Rules are ignored and every session starts bloated.",
+      "root": "Stable constraints mixed with obvious or stale material.",
+      "why": "Important instructions are diluted.",
+      "correction": "Prune, scope, and test rules.",
+      "prevention": "Add only recurring non-obvious guidance.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "title": "Permission fatigue",
+      "symptoms": "Every approval is clicked without reading.",
+      "root": "No risk-based permission design.",
+      "why": "The safety gate becomes ceremonial.",
+      "correction": "Allowlist exact safe commands and sandbox risky work.",
+      "prevention": "Audit approvals and keep irreversible actions manual.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "title": "Parallel collision",
+      "symptoms": "Agents overwrite or repeatedly rebase each other.",
+      "root": "Overlapping write scopes.",
+      "why": "Coordination exceeds parallel benefit.",
+      "correction": "Use worktrees and one integration owner.",
+      "prevention": "Parallelize independent nodes only.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "title": "Refactor smuggling",
+      "symptoms": "Feature diff includes broad cleanup.",
+      "root": "Aesthetic improvement is bundled with behavior.",
+      "why": "Review and rollback become ambiguous.",
+      "correction": "Separate behavior-preserving commits.",
+      "prevention": "Declare non-goals.",
+      "sourceIds": [
+        "pdf-official-best-practices"
+      ]
+    },
+    {
+      "title": "Plugin maximalism",
+      "symptoms": "High context cost, unclear triggers, broad permissions.",
+      "root": "Extensions installed without a measured need.",
+      "why": "Maintenance and attack surface grow.",
+      "correction": "Remove unused integrations; choose the smallest mechanism.",
+      "prevention": "Audit context and permissions.",
+      "sourceIds": [
+        "pdf-claudemd-masterclass",
+        "pdf-reddit-25",
+        "pdf-ykdojo-repo"
+      ]
+    },
+    {
+      "title": "Automating an unproven loop",
+      "symptoms": "Unattended retries amplify wrong edits.",
+      "root": "Workflow failure modes were never characterized.",
+      "why": "Automation scales ambiguity.",
+      "correction": "Return to a supervised, read-only loop.",
+      "prevention": "Automate only after reliable manual repetitions.",
+      "sourceIds": [
+        "pdf-official-best-practices",
+        "pdf-ykdojo-repo"
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "id": "before-start",
+      "title": "Before starting",
+      "items": [
+        "Name the user-visible outcome",
+        "Confirm repository and branch",
+        "Read project instructions",
+        "Identify risk and reversibility",
+        "Define the first evidence target"
+      ]
+    },
+    {
+      "id": "before-prompt",
+      "title": "Before prompting",
+      "items": [
+        "Include context and starting evidence",
+        "State constraints and non-goals",
+        "Define verification",
+        "Use placeholders deliberately",
+        "Invite only material questions"
+      ]
+    },
+    {
+      "id": "before-edit",
+      "title": "Before editing",
+      "items": [
+        "Map relevant path",
+        "Check analogous code",
+        "Confirm clean baseline",
+        "Review plan",
+        "Protect unrelated user changes"
+      ]
+    },
+    {
+      "id": "before-refactor",
+      "title": "Before refactoring",
+      "items": [
+        "Define preserved behavior",
+        "Measure the improvement goal",
+        "Add characterization coverage",
+        "Separate feature changes",
+        "Choose a rollback point"
+      ]
+    },
+    {
+      "id": "before-command",
+      "title": "Before running commands",
+      "items": [
+        "Understand side effects",
+        "Resolve exact paths",
+        "Check credentials and network",
+        "Prefer narrow reversible commands",
+        "Decide whether approval is needed"
+      ]
+    },
+    {
+      "id": "before-commit",
+      "title": "Before committing",
+      "items": [
+        "Inspect status and full diff",
+        "Remove debug artifacts",
+        "Run documented checks",
+        "Separate unrelated edits",
+        "Write an intentional message"
+      ]
+    },
+    {
+      "id": "before-pr",
+      "title": "Before opening a pull request",
+      "items": [
+        "Review branch diff",
+        "Confirm tests actually run",
+        "Document behavior and risks",
+        "Check generated/config files",
+        "Open as draft when uncertain"
+      ]
+    },
+    {
+      "id": "before-merge",
+      "title": "Before merging",
+      "items": [
+        "Resolve review findings",
+        "Rebase/update safely",
+        "Run final required checks",
+        "Confirm rollout and rollback",
+        "Verify approvals"
+      ]
+    },
+    {
+      "id": "before-deploy",
+      "title": "Before deployment",
+      "items": [
+        "Confirm environment and version",
+        "Review migrations",
+        "Back up where needed",
+        "Set monitoring and rollback",
+        "Keep credentials out of logs"
+      ]
+    },
+    {
+      "id": "after-deploy",
+      "title": "After deployment",
+      "items": [
+        "Run smoke checks",
+        "Inspect errors and key metrics",
+        "Verify user-visible behavior",
+        "Record deviations",
+        "Close or execute rollback"
+      ]
+    },
+    {
+      "id": "debugging",
+      "title": "Debugging",
+      "items": [
+        "Capture exact symptom",
+        "Reproduce reliably",
+        "List competing hypotheses",
+        "Collect discriminating evidence",
+        "Retain a regression test"
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing",
+      "items": [
+        "Test observable behavior",
+        "Verify failure before fix",
+        "Check edge and error paths",
+        "Avoid vacuous assertions",
+        "Run focused then broad suites"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "items": [
+        "Map trust boundaries",
+        "Trace untrusted input",
+        "Check authn and authz",
+        "Scan secrets and injection",
+        "Limit tool permissions"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture review",
+      "items": [
+        "State constraints",
+        "Prefer simplest viable design",
+        "Check reversibility",
+        "Inspect coupling and data flow",
+        "Record meaningful tradeoffs"
+      ]
+    },
+    {
+      "id": "handoff",
+      "title": "Context handoff",
+      "items": [
+        "Goal and constraints",
+        "Decisions and rationale",
+        "Changed files",
+        "Commands and results",
+        "Failures, risks, and next action"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Agentic loop",
+      "definition": "A cycle in which the model observes state, acts with tools, checks results, and adjusts."
+    },
+    {
+      "term": "Context window",
+      "definition": "The finite working information available to a model during a session."
+    },
+    {
+      "term": "Compaction",
+      "definition": "Summarizing conversation history to free context while preserving selected state."
+    },
+    {
+      "term": "CLAUDE.md",
+      "definition": "A project instruction file loaded by Claude Code, with scope determined by its location."
+    },
+    {
+      "term": "Skill",
+      "definition": "An on-demand folder of instructions, references, and optional scripts for a reusable method."
+    },
+    {
+      "term": "Hook",
+      "definition": "A deterministic command triggered at a Claude Code lifecycle event."
+    },
+    {
+      "term": "MCP",
+      "definition": "Model Context Protocol, a standard for exposing external tools and data to models."
+    },
+    {
+      "term": "Subagent",
+      "definition": "A delegated assistant running with separate context and configurable tools."
+    },
+    {
+      "term": "Worktree",
+      "definition": "A Git working directory attached to a branch, useful for isolated concurrent work."
+    },
+    {
+      "term": "Checkpoint",
+      "definition": "A Claude Code snapshot for rewinding supported conversation and edit state; it is not a Git replacement."
+    },
+    {
+      "term": "Blast radius",
+      "definition": "The maximum scope of damage a mistake or compromised action can cause."
+    },
+    {
+      "term": "Behavioral slice",
+      "definition": "A small end-to-end increment with an independently observable success condition."
+    }
+  ]
+}

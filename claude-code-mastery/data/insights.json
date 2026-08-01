@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "foundation-001",
+    "title": "Treat Claude Code as an agent with a feedback loop",
+    "summary": "Give it a goal, let it inspect and act, then require observable verification.",
+    "explanation": "Agentic coding is strongest when exploration, implementation, and verification form a closed loop rather than a single answer.",
+    "whyItWorks": "Tools expose real repository state and tests provide correction signals.",
+    "whenToUse": [
+      "Any code change",
+      "Debugging",
+      "Automation"
+    ],
+    "whenNotToUse": [
+      "When no safe verification exists without human review"
+    ],
+    "example": "Implement the parser, run focused tests, inspect the diff, then run the suite.",
+    "mistakes": [
+      "Accepting plausible prose as proof",
+      "Giving no success criterion"
+    ],
+    "advancedVariation": "Have a fresh reviewer session challenge the result.",
+    "level": "foundation",
+    "difficulty": 1,
+    "impact": 10,
+    "topics": [
+      "verification",
+      "mental-model"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "prompting-001",
+    "title": "Write prompts as executable briefs",
+    "summary": "State outcome, context, constraints, boundaries, and verification.",
+    "explanation": "A useful prompt narrows the solution space while leaving implementation judgment to the agent.",
+    "whyItWorks": "The agent can distinguish required behavior from incidental implementation preferences.",
+    "whenToUse": [
+      "Features",
+      "Refactors",
+      "Investigations"
+    ],
+    "whenNotToUse": [
+      "Tiny obvious edits where the repository already supplies context"
+    ],
+    "example": "Add rate limiting to POST /login; preserve the public API; follow existing middleware; add focused tests; do not change dependencies; report commands and residual risks.",
+    "mistakes": [
+      "Vague adjectives",
+      "Prescribing every line",
+      "Omitting non-goals"
+    ],
+    "advancedVariation": "Ask Claude to interview you only for decisions that materially change the solution.",
+    "level": "foundation",
+    "difficulty": 1,
+    "impact": 10,
+    "topics": [
+      "prompting",
+      "planning"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ruben-27",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "planning-001",
+    "title": "Explore before editing",
+    "summary": "Ask Claude to map relevant code and propose options before a consequential change.",
+    "explanation": "Planning mode separates reconnaissance and design decisions from mutation.",
+    "whyItWorks": "Repository evidence can invalidate assumptions before they become code.",
+    "whenToUse": [
+      "Unfamiliar repositories",
+      "Multi-file features",
+      "Architecture changes"
+    ],
+    "whenNotToUse": [
+      "One-line, well-localized fixes"
+    ],
+    "example": "Explain the request path, identify tests and conventions, then give three solutions from simplest to most extensible.",
+    "mistakes": [
+      "Planning without reading code",
+      "Treating the first plan as final"
+    ],
+    "advancedVariation": "Use spec → milestone → task list → code, reviewing each boundary.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "planning",
+      "repository"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "source-supported"
+  },
+  {
+    "id": "scope-001",
+    "title": "Decompose work until each unit is verifiable",
+    "summary": "Split large tasks into coherent steps with independent evidence.",
+    "explanation": "Task size should be limited by reasoning and verification complexity, not merely lines changed.",
+    "whyItWorks": "Smaller loops reduce hidden assumptions and make recovery cheap.",
+    "whenToUse": [
+      "Large features",
+      "Cross-stack work",
+      "Repeated failures"
+    ],
+    "whenNotToUse": [
+      "When splitting creates artificial interfaces and coordination overhead"
+    ],
+    "example": "First add the data model and tests, then API behavior, then UI, then end-to-end coverage.",
+    "mistakes": [
+      "One-shotting an app",
+      "Splitting by arbitrary files"
+    ],
+    "advancedVariation": "Assign isolated research units to subagents while one session owns integration.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 10,
+    "topics": [
+      "planning",
+      "context",
+      "subagents"
+    ],
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "context-001",
+    "title": "Keep context fresh and task-specific",
+    "summary": "Clear between unrelated tasks and compact deliberately during long work.",
+    "explanation": "Irrelevant history, failed approaches, and noisy tool output compete with current evidence.",
+    "whyItWorks": "A clean context improves attention to current constraints.",
+    "whenToUse": [
+      "Topic changes",
+      "After repeated correction",
+      "Long sessions"
+    ],
+    "whenNotToUse": [
+      "Mid-investigation before recording critical state"
+    ],
+    "example": "Create a handoff with goal, decisions, changed files, tests, failures, and next step; then start fresh.",
+    "mistakes": [
+      "Dragging unrelated work forward",
+      "Clearing without a handoff"
+    ],
+    "advancedVariation": "Use /compact with preservation instructions or rewind to summarize only part of a session.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 10,
+    "topics": [
+      "context",
+      "sessions"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-ruben-27",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "context-002",
+    "title": "Course-correct early",
+    "summary": "Stop an incorrect trajectory before it accumulates edits and misleading context.",
+    "explanation": "Esc interrupts while preserving context; rewind can restore conversation or code state.",
+    "whyItWorks": "Early correction avoids reasoning built on a false premise.",
+    "whenToUse": [
+      "Wrong file",
+      "Scope creep",
+      "Repeated misunderstanding"
+    ],
+    "whenNotToUse": [
+      "Normal exploration that is gathering useful evidence"
+    ],
+    "example": "Stop, state the violated constraint, ask for a revised plan, then proceed only after reviewing it.",
+    "mistakes": [
+      "Waiting until the full change is done",
+      "Repeating 'wrong' without new evidence"
+    ],
+    "advancedVariation": "After two failed corrections, start clean with a prompt incorporating what was learned.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "recovery",
+      "context"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ruben-27"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "memory-001",
+    "title": "Keep CLAUDE.md concise, concrete, and tested",
+    "summary": "Record stable project-specific instructions, not an encyclopedia.",
+    "explanation": "Include commands Claude cannot infer, style exceptions, workflow rules, and non-obvious gotchas; prune stale guidance.",
+    "whyItWorks": "Short, specific instructions are easier to follow and cost less context.",
+    "whenToUse": [
+      "A rule recurs",
+      "Team conventions are non-obvious"
+    ],
+    "whenNotToUse": [
+      "Temporary task state",
+      "File-by-file codebase descriptions"
+    ],
+    "example": "Commands: npm test -- --runInBand. Never edit generated clients; run npm run generate instead.",
+    "mistakes": [
+      "Adding generic advice",
+      "Never reviewing the file"
+    ],
+    "advancedVariation": "Use scoped child files and imports; keep personal overrides local.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "claude-md",
+      "context",
+      "teams"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "tools-001",
+    "title": "Prefer direct CLI tools with compact output",
+    "summary": "Let Claude use established CLIs and request only the slice of output needed.",
+    "explanation": "Tools such as gh, git, test runners, and cloud CLIs expose structured, reproducible state.",
+    "whyItWorks": "Compact commands reduce copying and context noise.",
+    "whenToUse": [
+      "GitHub",
+      "CI",
+      "Cloud diagnostics"
+    ],
+    "whenNotToUse": [
+      "When credentials or write scope are unclear"
+    ],
+    "example": "Use gh run view for the failing job instead of streaming an entire log.",
+    "mistakes": [
+      "Pasting thousands of log lines",
+      "Granting broad permissions"
+    ],
+    "advancedVariation": "Poll long jobs with bounded backoff and concise status commands.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 8,
+    "topics": [
+      "terminal",
+      "tokens",
+      "git"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "testing-001",
+    "title": "Provide a trustworthy verification target",
+    "summary": "Tests, types, lint, runtime probes, and visual checks turn autonomy into a bounded loop.",
+    "explanation": "Claude can iterate independently only when it can observe whether the result meets the requirement.",
+    "whyItWorks": "Objective feedback catches errors that self-assessment misses.",
+    "whenToUse": [
+      "All autonomous edits"
+    ],
+    "whenNotToUse": [
+      "Never omit human judgment for high-risk behavior"
+    ],
+    "example": "Reproduce the bug with a failing test, implement the smallest fix, run focused then broad checks.",
+    "mistakes": [
+      "Tests that only assert implementation details",
+      "Letting Claude write vacuous tests"
+    ],
+    "advancedVariation": "Use tmux or browser automation to close loops around interactive systems.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 10,
+    "topics": [
+      "testing",
+      "verification",
+      "debugging"
+    ],
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "git-001",
+    "title": "Use Git as the durable safety boundary",
+    "summary": "Review diffs, make intentional commits, and use draft PRs for a reversible review gate.",
+    "explanation": "Claude checkpoints are useful but do not capture every external or Bash-made change; Git remains the durable record.",
+    "whyItWorks": "Small commits reveal scope and make rollback and review straightforward.",
+    "whenToUse": [
+      "Every repository change"
+    ],
+    "whenNotToUse": [
+      "Do not commit secrets or broken intermediate states to shared branches"
+    ],
+    "example": "Inspect status and diff, run checks, commit one coherent change, then open a draft PR.",
+    "mistakes": [
+      "Auto-allowing push",
+      "Bundling unrelated edits"
+    ],
+    "advancedVariation": "Use a fresh session to review the diff without authoring bias.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 10,
+    "topics": [
+      "git",
+      "review",
+      "safety"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "parallel-001",
+    "title": "Isolate parallel edits with worktrees",
+    "summary": "Give concurrent sessions separate branches and directories.",
+    "explanation": "Worktrees prevent filesystem collisions while retaining one repository object store.",
+    "whyItWorks": "Each agent owns a clear branch and working directory.",
+    "whenToUse": [
+      "Independent features",
+      "Experiments",
+      "Writer/reviewer patterns"
+    ],
+    "whenNotToUse": [
+      "Tightly coupled edits to the same files"
+    ],
+    "example": "One worktree implements; another, with fresh context, reviews or writes tests.",
+    "mistakes": [
+      "Parallel agents editing one checkout",
+      "Too many active tasks"
+    ],
+    "advancedVariation": "Limit human coordination load to roughly three or four active streams.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 8,
+    "topics": [
+      "subagents",
+      "git",
+      "parallel"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "subagents-001",
+    "title": "Delegate context-heavy, isolated research",
+    "summary": "Use subagents for independent reads or specialist reviews, not for arbitrary fragmentation.",
+    "explanation": "A subagent gets a separate context and can return a concise result to the main thread.",
+    "whyItWorks": "Verbose exploration does not crowd the integration context.",
+    "whenToUse": [
+      "Large codebase mapping",
+      "Security review",
+      "Independent hypotheses"
+    ],
+    "whenNotToUse": [
+      "Tasks requiring constant shared-state coordination"
+    ],
+    "example": "Ask one subagent to map auth flows and another to inspect tests; keep implementation ownership central.",
+    "mistakes": [
+      "Overlapping write scopes",
+      "No output contract"
+    ],
+    "advancedVariation": "Specify allowed tools, scope, evidence format, and stopping condition.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 8,
+    "topics": [
+      "subagents",
+      "context",
+      "parallel"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "skills-001",
+    "title": "Package recurring expertise as a skill",
+    "summary": "A skill combines a concise trigger description with on-demand instructions, references, and scripts.",
+    "explanation": "Use skills for repeatable domain methods that should load only when relevant.",
+    "whyItWorks": "Progressive disclosure avoids placing every workflow in global context.",
+    "whenToUse": [
+      "Repeated procedures",
+      "Specialized formats",
+      "Team playbooks"
+    ],
+    "whenNotToUse": [
+      "One-off prompts",
+      "Rules needed in every session"
+    ],
+    "example": "A security-review skill defines scope, checks, evidence format, and safe scripts.",
+    "mistakes": [
+      "A glorified vague prompt",
+      "Installing large untrusted bundles blindly"
+    ],
+    "advancedVariation": "Disable automatic invocation for workflows with side effects.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 8,
+    "topics": [
+      "skills",
+      "automation",
+      "context"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-claudemd-masterclass",
+      "pdf-ykdojo-repo"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "extensions-001",
+    "title": "Choose extensions by the missing capability",
+    "summary": "Use CLAUDE.md for always-on rules, skills for on-demand methods, subagents for isolated work, hooks for deterministic events, and MCP for external capabilities.",
+    "explanation": "Each extension solves a different context, execution, or integration problem.",
+    "whyItWorks": "Matching the mechanism prevents context bloat and surprising side effects.",
+    "whenToUse": [
+      "Extending Claude Code"
+    ],
+    "whenNotToUse": [
+      "When a direct prompt or CLI is sufficient"
+    ],
+    "example": "Format after edits with a hook; access an internal ticket system through MCP; keep API conventions in a skill.",
+    "mistakes": [
+      "Turning every preference into a plugin",
+      "Loading unused MCP tools"
+    ],
+    "advancedVariation": "Audit extension permissions and context cost periodically.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "mcp",
+      "hooks",
+      "skills",
+      "claude-md"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "permissions-001",
+    "title": "Increase autonomy with boundaries, not trust alone",
+    "summary": "Allowlist narrow commands, use auto review where suitable, and isolate risky autonomous work.",
+    "explanation": "Permission fatigue makes repeated clicking ineffective; scoped permissions and sandboxing preserve meaningful review.",
+    "whyItWorks": "The blast radius is constrained even if the agent or input is wrong.",
+    "whenToUse": [
+      "Repeated safe commands",
+      "Long autonomous work"
+    ],
+    "whenNotToUse": [
+      "Unknown infrastructure or secrets without isolation"
+    ],
+    "example": "Allow npm test, keep push and deployment manual, and run experimental scripts in a disposable container.",
+    "mistakes": [
+      "Broad wildcard permissions",
+      "Skipping permissions on the host"
+    ],
+    "advancedVariation": "Use hooks to block sensitive paths and audit approved commands.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 10,
+    "topics": [
+      "permissions",
+      "security",
+      "automation"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "debugging-001",
+    "title": "Debug from evidence, not confidence",
+    "summary": "Reproduce, localize, form competing hypotheses, instrument, and falsify.",
+    "explanation": "Requests for confidence or 'double-checking' are weaker than obtaining external evidence.",
+    "whyItWorks": "Logs, tests, history, and minimal reproductions distinguish causes from plausible stories.",
+    "whenToUse": [
+      "Bugs",
+      "CI failures",
+      "Flaky behavior"
+    ],
+    "whenNotToUse": [
+      "Do not add permanent instrumentation without review"
+    ],
+    "example": "Identify the first bad commit with git bisect driven by an automated reproduction.",
+    "mistakes": [
+      "Accepting the first root cause",
+      "Changing code before reproducing"
+    ],
+    "advancedVariation": "Ask a fresh session to falsify the leading hypothesis.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 10,
+    "topics": [
+      "debugging",
+      "verification",
+      "git"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "instructor-interpretation"
+  },
+  {
+    "id": "review-001",
+    "title": "Review outputs at multiple levels",
+    "summary": "Check requirement fit, architecture, diff, tests, runtime behavior, and residual risk.",
+    "explanation": "Passing tests can coexist with scope creep, weak tests, security faults, or poor maintainability.",
+    "whyItWorks": "Independent evidence covers different failure classes.",
+    "whenToUse": [
+      "Before commit",
+      "Before PR",
+      "Before merge"
+    ],
+    "whenNotToUse": [
+      "Never rely solely on self-review for high-risk changes"
+    ],
+    "example": "Have Claude summarize changed behavior and risks, then independently inspect the diff and execute checks.",
+    "mistakes": [
+      "Reviewing only green CI",
+      "Letting the authoring context be the only reviewer"
+    ],
+    "advancedVariation": "Use a writer/reviewer session pair.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 10,
+    "topics": [
+      "review",
+      "verification",
+      "security"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "automation-001",
+    "title": "Automate only a proven loop",
+    "summary": "First make the workflow observable and reliable; then encode it with narrow inputs and failure boundaries.",
+    "explanation": "Non-interactive mode, hooks, and scripts amplify both correctness and mistakes.",
+    "whyItWorks": "A mature loop has known preconditions, outputs, and recovery paths.",
+    "whenToUse": [
+      "Repeated reviews",
+      "CI triage",
+      "Documentation checks"
+    ],
+    "whenNotToUse": [
+      "Ambiguous high-impact decisions"
+    ],
+    "example": "Run claude -p with structured output for a read-only CI report, validate the schema, and require human approval for edits.",
+    "mistakes": [
+      "Automation before measurement",
+      "Unbounded write access"
+    ],
+    "advancedVariation": "Fan out read-only analysis and aggregate results through a deterministic validator.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 9,
+    "topics": [
+      "automation",
+      "security",
+      "hooks"
+    ],
+    "sourceIds": [
+      "pdf-official-best-practices",
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "visual-001",
+    "title": "Use visual references and browser evidence for UI work",
+    "summary": "A screenshot communicates layout intent; browser inspection verifies actual behavior.",
+    "explanation": "Text specifications often omit spatial relationships and responsive behavior.",
+    "whyItWorks": "Visual references constrain design while screenshots, DOM state, and console logs expose regressions.",
+    "whenToUse": [
+      "Frontend implementation",
+      "Visual debugging"
+    ],
+    "whenNotToUse": [
+      "Do not substitute screenshots for accessible text extraction or semantic tests"
+    ],
+    "example": "Supply a reference image, implement semantically, then verify at desktop and mobile sizes.",
+    "mistakes": [
+      "Coordinate-only automation",
+      "Ignoring accessibility tree and console"
+    ],
+    "advancedVariation": "Prefer DOM/accessibility-tree interactions for functional tests and screenshots for visual review.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 7,
+    "topics": [
+      "frontend",
+      "testing",
+      "browser"
+    ],
+    "sourceIds": [
+      "pdf-ruben-27",
+      "pdf-reddit-25",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "agentic-architecture",
+    "title": "Design the harness, not just the prompt",
+    "summary": "The harness is the surrounding system that supplies context, tools, state, evaluation, retries, permissions, and observability.",
+    "explanation": "The harness is the surrounding system that supplies context, tools, state, evaluation, retries, permissions, and observability.",
+    "whyItWorks": "A strong model inside a weak harness still loops, loses state, or takes unsafe actions.",
+    "whenToUse": [
+      "Use when moving from a demo to repeated or production work."
+    ],
+    "whenNotToUse": [
+      "Do not build a platform before a simple verified loop proves the need."
+    ],
+    "example": "Model → context assembly → tool call → state update → evaluator → bounded retry.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "agentic-architecture"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "state-memory",
+    "title": "Separate context, state, and memory",
+    "summary": "Context is what the model sees now; state is where the workflow is; memory is what should survive into later runs.",
+    "explanation": "Context is what the model sees now; state is where the workflow is; memory is what should survive into later runs.",
+    "whyItWorks": "Separating them prevents a transcript from becoming an unreliable database.",
+    "whenToUse": [
+      "Use for multi-step or resumed work."
+    ],
+    "whenNotToUse": [
+      "A small single-turn task may need none of them."
+    ],
+    "example": "Context: relevant files. State: task 3 of 7. Memory: confirmed repository convention.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "state-memory"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15",
+      "pdf-ralph-loop"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "tool-design",
+    "title": "Treat tools as typed, observable interfaces",
+    "summary": "A good agent tool has a narrow action, explicit inputs, structured output, predictable errors, and the least authority required.",
+    "explanation": "A good agent tool has a narrow action, explicit inputs, structured output, predictable errors, and the least authority required.",
+    "whyItWorks": "Clear interfaces reduce hallucinated calls and make failures debuggable.",
+    "whenToUse": [
+      "Use whenever Claude reaches an API, CLI, MCP, browser, or custom script."
+    ],
+    "whenNotToUse": [
+      "Do not wrap a reliable CLI without a measurable benefit."
+    ],
+    "example": "Prefer get_issue(id) over a generic shell string that can do anything.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "productive",
+    "difficulty": 2,
+    "impact": 9,
+    "topics": [
+      "tool-design"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "orchestration",
+    "title": "Orchestrate dependencies; parallelize independence",
+    "summary": "Orchestration chooses order, ownership, handoffs, and integration across workers. Multi-agent systems help only when jobs are genuinely separable.",
+    "explanation": "Orchestration chooses order, ownership, handoffs, and integration across workers. Multi-agent systems help only when jobs are genuinely separable.",
+    "whyItWorks": "Explicit dependencies prevent duplicated work and conflicting writes.",
+    "whenToUse": [
+      "Use for independent research, review, or isolated branches."
+    ],
+    "whenNotToUse": [
+      "Keep tightly coupled design decisions with one owner."
+    ],
+    "example": "Researcher → planner → writer, while independent security and test reviews fan out.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "orchestration"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "guardrails-hitl",
+    "title": "Put human gates at consequential boundaries",
+    "summary": "Guardrails constrain what can happen; permissions constrain authority; human-in-the-loop gates reserve irreversible judgment for a person.",
+    "explanation": "Guardrails constrain what can happen; permissions constrain authority; human-in-the-loop gates reserve irreversible judgment for a person.",
+    "whyItWorks": "Safety comes from bounded consequences, not model confidence.",
+    "whenToUse": [
+      "Use for writes, money, secrets, deployment, deletion, or external communication."
+    ],
+    "whenNotToUse": [
+      "Avoid approval prompts for harmless deterministic reads that create fatigue."
+    ],
+    "example": "Read automatically; draft a change; require approval before push or deploy.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "guardrails-hitl"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "evals-observability",
+    "title": "Evaluate outcomes and trace the path",
+    "summary": "Evals measure whether tasks succeed; observability records prompts, tool calls, state transitions, cost, latency, and failures so you can explain why.",
+    "explanation": "Evals measure whether tasks succeed; observability records prompts, tool calls, state transitions, cost, latency, and failures so you can explain why.",
+    "whyItWorks": "Without both, failures look random and improvements are anecdotes.",
+    "whenToUse": [
+      "Use for repeated automation and production agents."
+    ],
+    "whenNotToUse": [
+      "A one-off local edit may only need tests and a diff."
+    ],
+    "example": "Track task success, invalid tool calls, retries, human overrides, time, and cost.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "evals-observability"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "stopping-recovery",
+    "title": "Define stopping, retry, and escalation conditions",
+    "summary": "Every loop needs success, failure, budget, timeout, and human-escalation exits. Reflection must compare evidence to a measurable rule.",
+    "explanation": "Every loop needs success, failure, budget, timeout, and human-escalation exits. Reflection must compare evidence to a measurable rule.",
+    "whyItWorks": "An agent that can continue but cannot decide when to stop is an incident generator.",
+    "whenToUse": [
+      "Use for any repeated or unattended loop."
+    ],
+    "whenNotToUse": [
+      "Do not loop ambiguous creative work without review checkpoints."
+    ],
+    "example": "Stop on verified acceptance; fail after N attempts or budget; escalate on permission or uncertainty.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "stopping-recovery"
+    ],
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15",
+      "pdf-ralph-loop"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "ralph-loop",
+    "title": "Use Ralph loops only for atomic, verifiable work",
+    "summary": "A Ralph loop repeatedly selects an unfinished task, works, tests, records progress, and continues until a machine-checkable completion condition or hard stop.",
+    "explanation": "A Ralph loop repeatedly selects an unfinished task, works, tests, records progress, and continues until a machine-checkable completion condition or hard stop.",
+    "whyItWorks": "Fresh iterations plus file-based state can recover from failures without carrying a decaying transcript.",
+    "whenToUse": [
+      "Use for long tasks decomposed into single-iteration stories with reliable tests."
+    ],
+    "whenNotToUse": [
+      "Avoid vague goals, unsafe host access, subjective design, or tasks without budgets."
+    ],
+    "example": "PRD → prd.json passes flags → one story → tests → progress.txt → next iteration.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "ralph-loop"
+    ],
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "claudemd-hierarchy",
+    "title": "Layer CLAUDE.md at the narrowest useful scope",
+    "summary": "Global, repository, local, and nested instructions should contain only stable rules appropriate to their scope.",
+    "explanation": "Global, repository, local, and nested instructions should contain only stable rules appropriate to their scope.",
+    "whyItWorks": "Scoped progressive disclosure keeps core context small while making specialized guidance available where used.",
+    "whenToUse": [
+      "Use for monorepos, team conventions, and repeated project commands."
+    ],
+    "whenNotToUse": [
+      "Do not use it as a linter, task log, or dump of every file."
+    ],
+    "example": "Root holds shared commands; frontend/backend child files hold subsystem exceptions; personal notes stay local.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "advanced",
+    "difficulty": 3,
+    "impact": 9,
+    "topics": [
+      "claudemd-hierarchy"
+    ],
+    "sourceIds": [
+      "pdf-claudemd-masterclass",
+      "pdf-official-best-practices"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "hooks-enforcement",
+    "title": "Let hooks enforce deterministic policy",
+    "summary": "CLAUDE.md explains a rule; a hook executes or blocks deterministic behavior at the correct lifecycle event.",
+    "explanation": "CLAUDE.md explains a rule; a hook executes or blocks deterministic behavior at the correct lifecycle event.",
+    "whyItWorks": "Machines are better than prose at formatting, secret-path blocking, and required checks.",
+    "whenToUse": [
+      "Use for stable fast checks with predictable exit status."
+    ],
+    "whenNotToUse": [
+      "Avoid slow, flaky, destructive, or opaque hook actions."
+    ],
+    "example": "Post-edit format; pre-command reject sensitive paths; stop hook verify completion.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 9,
+    "topics": [
+      "hooks-enforcement"
+    ],
+    "sourceIds": [
+      "pdf-claudemd-masterclass",
+      "pdf-reddit-25"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "knowledge-graph",
+    "title": "Build a provenance-linked knowledge graph",
+    "summary": "A graph turns isolated documents into connected concepts; an Obsidian vault makes the map browsable by Claude Code and people.",
+    "explanation": "A graph turns isolated documents into connected concepts; an Obsidian vault makes the map browsable by Claude Code and people.",
+    "whyItWorks": "Edges expose relationships file-by-file search misses, while source backlinks constrain hallucinated synthesis.",
+    "whenToUse": [
+      "Use for large related document collections and recurring research."
+    ],
+    "whenNotToUse": [
+      "Avoid generating hundreds of bare notes without a retrieval or review workflow."
+    ],
+    "example": "Ingest docs → extract ideas/edges → export isolated vault → enrich notes → link each node to source → merge reversibly.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 9,
+    "topics": [
+      "knowledge-graph"
+    ],
+    "sourceIds": [
+      "pdf-graphify-obsidian"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "daily-interface",
+    "title": "Optimize daily interface and feedback ergonomics",
+    "summary": "Status lines, slash commands, aliases, voice input, compact output, session search, background work, and browser tools reduce coordination friction.",
+    "explanation": "Status lines, slash commands, aliases, voice input, compact output, session search, background work, and browser tools reduce coordination friction.",
+    "whyItWorks": "Small reductions in repeated interaction cost compound across many sessions.",
+    "whenToUse": [
+      "Adopt after observing a repeated bottleneck."
+    ],
+    "whenNotToUse": [
+      "Do not install every customization or patch the CLI without accepting maintenance risk."
+    ],
+    "example": "Show branch/context status, dictate rich briefs, background long commands, and search local history.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 9,
+    "topics": [
+      "daily-interface"
+    ],
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25",
+      "pdf-linkedin-32"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  },
+  {
+    "id": "research-writing-devops",
+    "title": "Use Claude Code as a universal tool orchestrator—with review",
+    "summary": "Claude Code can research, write Markdown, inspect CI, drive CLIs, test browsers, create artifacts, and connect remote workflows.",
+    "explanation": "Claude Code can research, write Markdown, inspect CI, drive CLIs, test browsers, create artifacts, and connect remote workflows.",
+    "whyItWorks": "The terminal provides a common interface to durable files and established tools.",
+    "whenToUse": [
+      "Use when the task has accessible evidence and a verifiable output."
+    ],
+    "whenNotToUse": [
+      "Do not treat generated research, prose, or operational changes as self-verifying."
+    ],
+    "example": "Draft in Markdown, preserve links, investigate CI from logs/history, verify visually, then create a draft PR.",
+    "mistakes": [
+      "Using the concept without a success measure",
+      "Expanding authority before proving the loop"
+    ],
+    "advancedVariation": "Combine this concept with independent evaluation and a strict resource budget.",
+    "level": "expert",
+    "difficulty": 4,
+    "impact": 9,
+    "topics": [
+      "research-writing-devops"
+    ],
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32",
+      "pdf-ruben-27"
+    ],
+    "evidenceType": "cross-source-synthesis"
+  }
+]

@@ -1,0 +1,3583 @@
+[
+  {
+    "topicId": "found-goal-vs-task",
+    "nuance": "A goal persists across observations; a task has an endpoint. Teach explicit stop conditions with goals.",
+    "records": [
+      {
+        "recordId": "a15-agent",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Agent as a persistent goal",
+        "pages": [
+          5,
+          7
+        ],
+        "evidence": "A one-shot task returns an answer; an agent owns a goal and continues choosing actions until a stopping condition is met. The article grounds later concepts in a newsletter analytics goal.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "found-agent-loop",
+    "nuance": "Separate loop stages and show how external evidence changes the next action.",
+    "records": [
+      {
+        "recordId": "a15-loop",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Observe-decide-act-check loop",
+        "pages": [
+          8,
+          10
+        ],
+        "evidence": "The worked analytics sequence pulls performance data, compares it with a target, acts on the weakest subject line or segment, then checks evidence again. The check stage is what distinguishes iterative work from a single prompt.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "off-explore-plan-code",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Explore, plan, implement, commit",
+        "pages": [
+          4,
+          6
+        ],
+        "evidence": "Use plan mode to read relevant code and constraints without changes, create/edit a plan, implement with tests, then commit/open a PR. Skip planning overhead when the entire diff is obvious and small.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "found-reflection-rule",
+    "nuance": "Reflection is not open-ended self-critique; it compares output with a named criterion.",
+    "records": [
+      {
+        "recordId": "a15-reflection",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Reflection as a measurable rule",
+        "pages": [
+          12
+        ],
+        "evidence": "Reflection should compare output with a criterion or evidence, not ask whether the result merely feels good. A correction loop needs a concrete discrepancy to fix.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "found-stopping",
+    "nuance": "Distinguish completion, budget, time, error, risk, and escalation stops.",
+    "records": [
+      {
+        "recordId": "a15-stop",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Stopping conditions",
+        "pages": [
+          21
+        ],
+        "evidence": "Every agent needs an explicit definition of done, failure, timeout or escalation; otherwise it may stop early or loop indefinitely.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-safety",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Iteration and cost controls",
+        "pages": [
+          30,
+          34
+        ],
+        "evidence": "Set max iterations, begin with a small attended run, monitor token cost and stop on repeated non-progress. Autonomous execution needs safe permissions and rollbackable commits.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "found-harness",
+    "nuance": "The harness is the environment of tools, context, permissions, feedback, and state—not the model alone.",
+    "records": [
+      {
+        "recordId": "a10-harness",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Harness engineering",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence": "The model is only one component. A production harness supplies prompts, model routing, tool access through MCP or equivalent interfaces, sandboxed execution, state, retries, validation, and observability. The article frames reliability as a systems problem rather than a prompt-only problem.",
+        "details": [
+          "Separate reasoning from execution infrastructure.",
+          "Use sandboxed runtimes for code execution.",
+          "Treat prompt, tools, state, validation and tracing as one engineered runtime."
+        ],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "found-loop-engineering",
+    "nuance": "General loop design must remain separate from the source-specific Ralph implementation.",
+    "records": [
+      {
+        "recordId": "a10-loop",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Loop engineering",
+        "pages": [
+          6,
+          7
+        ],
+        "evidence": "An agent repeatedly observes, reasons, acts and receives consequences. Reliable loops need observable outcomes, verification, bounded retries, explicit iteration and cost ceilings, failure classification, and a termination rule enforced in code.",
+        "details": [],
+        "warnings": [
+          "A request in the prompt to stop is weaker than an enforced ceiling.",
+          "Unbounded retry loops can spend indefinitely without improving."
+        ],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-executable-brief",
+    "nuance": "Teach outcome, evidence, constraints, non-goals, ambiguity policy, and verification as distinct fields.",
+    "records": [
+      {
+        "recordId": "ontology-prompt-executable-brief-pdf-official-best-practices",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Executable prompt briefs",
+        "pages": [
+          2,
+          3,
+          6,
+          7
+        ],
+        "evidence": "Teach outcome, evidence, constraints, non-goals, ambiguity policy, and verification as distinct fields.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "ontology-prompt-executable-brief-pdf-ruben-27",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Executable prompt briefs",
+        "pages": [
+          11,
+          14,
+          15
+        ],
+        "evidence": "Teach outcome, evidence, constraints, non-goals, ambiguity policy, and verification as distinct fields.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-clarifying-questions",
+    "nuance": "Ask questions only when answers alter scope, architecture, risk, or acceptance criteria.",
+    "records": [
+      {
+        "recordId": "rub-08",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Ask Claude to interview you",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "When requirements are unclear, ask Claude to pose targeted questions and offer selectable options before producing the artifact.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-spec-first",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Interview and specification workflow",
+        "pages": [
+          16,
+          18
+        ],
+        "evidence": "For ambiguous substantial work, ask Claude to interview the user, write a specification/plan to a file, review it, then execute in a fresh session with clean context.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-voice-context",
+    "nuance": "Messy dictation can preserve constraints, contradictions, and failed attempts; require clarification and a written brief afterward.",
+    "records": [
+      {
+        "recordId": "r25-02",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Use voice for rich prompts",
+        "pages": [
+          3,
+          5
+        ],
+        "evidence": "Dictation lowers the cost of providing goals, constraints and history. The author built separate live and prerecorded transcription workflows; commenters mention Windows Win+H and workplace restrictions on third-party voice tools.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-05",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Dictate messy, comprehensive context",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence": "Speak the goal, constraints, attempts and desired result at length; end by telling Claude these are messy notes and to ask clarifying questions where needed.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-visual-reference",
+    "nuance": "Use a visual reference to communicate layout, then specify what to copy and what not to copy.",
+    "records": [
+      {
+        "recordId": "rub-12",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Send screenshots instead of vague visual descriptions",
+        "pages": [
+          20
+        ],
+        "evidence": "A screenshot communicates layout, spacing and visual hierarchy more directly than prose; pair it with explicit comparison and verification instructions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-edit-before-bad-answer",
+    "nuance": "Ruben recommends editing the earlier prompt; YK describes fork/half-clone. Present both as trajectory repair patterns.",
+    "records": [
+      {
+        "recordId": "r25-23",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Clone or half-clone conversations",
+        "pages": [
+          19,
+          20
+        ],
+        "evidence": "Branch from a useful point to explore alternatives without contaminating the original trajectory; the post supplies a custom slash-command installation via symlink.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-04",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Edit the earlier prompt after a bad answer",
+        "pages": [
+          10,
+          11
+        ],
+        "evidence": "Return to the prompt before the bad trajectory, improve it and regenerate, rather than adding repeated corrective messages to polluted context.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-session-control",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Stop, rewind and clear",
+        "pages": [
+          18,
+          20
+        ],
+        "evidence": "Esc stops mid-action while preserving context. Esc twice or /rewind restores conversation, code, both, or summarizes from a checkpoint. /clear resets unrelated or correction-polluted work; after more than two failed corrections, restart with a better prompt.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-negative-feedback",
+    "nuance": "A concrete rejected example can constrain taste better than vague positive adjectives.",
+    "records": [
+      {
+        "recordId": "rub-17",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Provide negative preference feedback",
+        "pages": [
+          24
+        ],
+        "evidence": "Tell Claude specifically what style or behavior you dislike so it can revise and, where appropriate, encode a durable preference.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-abstraction-level",
+    "nuance": "Too low-level micromanages; too high-level removes invariants and verification.",
+    "records": [
+      {
+        "recordId": "li-31",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Choose the right abstraction level",
+        "pages": [
+          43,
+          44
+        ],
+        "evidence": "Describe intent at a high level when Claude can safely discover implementation detail; provide lower-level constraints when correctness, architecture or risk demands control. Too vague causes drift; too prescriptive blocks better solutions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "prompt-plan-vs-prototype",
+    "nuance": "Use spikes for unknowns and plans for dependencies; do not turn either into dogma.",
+    "records": [
+      {
+        "recordId": "yk-39",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Plan, but prototype quickly",
+        "pages": [
+          45
+        ],
+        "evidence": "Use planning where dependencies/risk justify it, and a small reversible prototype where uncertainty is best resolved by evidence. Planning and prototyping are complementary.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "repo-map",
+    "nuance": "Require file-backed claims about entry points, flows, tests, and conventions.",
+    "records": [
+      {
+        "recordId": "ontology-repo-map-pdf-official-best-practices",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Map an unfamiliar repository",
+        "pages": [
+          4,
+          5,
+          14
+        ],
+        "evidence": "Require file-backed claims about entry points, flows, tests, and conventions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "ontology-repo-map-pdf-claudemd-masterclass",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Map an unfamiliar repository",
+        "pages": [
+          26,
+          27
+        ],
+        "evidence": "Require file-backed claims about entry points, flows, tests, and conventions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "repo-decomposition",
+    "nuance": "Split on independently verifiable outcomes and real dependencies, not arbitrary file counts.",
+    "records": [
+      {
+        "recordId": "a15-decompose",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Planning and task decomposition",
+        "pages": [
+          10,
+          11
+        ],
+        "evidence": "Split work where real dependencies exist and show each step rather than leaping to a conclusion. Do not manufacture a complex plan for a simple independent task.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "r25-03",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Break large problems into smaller deliverables",
+        "pages": [
+          4,
+          5
+        ],
+        "evidence": "Ask Claude to create or execute bounded pieces sequentially so each can be inspected and corrected before errors compound.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "repo-index-large",
+    "nuance": "Generate navigational indexes, cite them from CLAUDE.md, and keep them refreshable.",
+    "records": [
+      {
+        "recordId": "ontology-repo-index-large-pdf-claudemd-masterclass",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Large-codebase index files",
+        "pages": [
+          26,
+          27
+        ],
+        "evidence": "Generate navigational indexes, cite them from CLAUDE.md, and keep them refreshable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "repo-simplify",
+    "nuance": "After correctness, ask for a simplification pass constrained by tests and public behavior.",
+    "records": [
+      {
+        "recordId": "yk-40",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Simplify overcomplicated code",
+        "pages": [
+          46
+        ],
+        "evidence": "After achieving correctness, ask Claude to identify unnecessary abstraction and reduce complexity while preserving behavior through tests.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "context-engineering",
+    "nuance": "Select, structure, refresh, and remove context; more context is not automatically better.",
+    "records": [
+      {
+        "recordId": "a10-context",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Context engineering",
+        "pages": [
+          7,
+          8
+        ],
+        "evidence": "Context is a deliberately assembled working set, not a dump of everything available. More tokens can reduce performance when irrelevant or stale information competes with current constraints. Retrieval, compression, ordering and deletion are core operations.",
+        "details": [
+          "Select information for the current decision.",
+          "Preserve current goals, constraints and state.",
+          "Remove stale tool output and redundant prose."
+        ],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-context",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Context-window management",
+        "pages": [
+          14
+        ],
+        "evidence": "Context is finite; include current goal, necessary data, constraints and prior decisions, while excluding irrelevant history. Overflow and noise reduce reasoning quality.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-context-constraint",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Context is the fundamental constraint",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "Conversation messages, files and command output all consume context; quality can degrade as it fills. Track usage and treat every read/output as spending a finite reasoning resource.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-specific-context",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Provide specific context",
+        "pages": [
+          6,
+          8
+        ],
+        "evidence": "Name the file, scenario, constraints, existing pattern and desired verification. Reference files with @, paste images, provide URLs, pipe data or instruct Claude to retrieve needed context with Bash/MCP.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "context-freshness",
+    "nuance": "Treat Ruben's turn counts as anecdotal, not product guarantees; teach symptom-based reset decisions.",
+    "records": [
+      {
+        "recordId": "r25-05",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Keep context fresh and condensed",
+        "pages": [
+          6
+        ],
+        "evidence": "Context behaves like a perishable working set: stale history and raw output crowd out the current objective. Start fresh or compact around an explicit focus.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-07",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Start a fresh chat when performance degrades",
+        "pages": [
+          13,
+          14
+        ],
+        "evidence": "Repeated correction and long histories can reduce quality. Preserve a concise handoff and restart instead of fighting accumulated mistakes.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "context-compact-handoff",
+    "nuance": "A handoff preserves goal, completed work, decisions, remaining tasks, verification, and hazards.",
+    "records": [
+      {
+        "recordId": "r25-08",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Compact proactively",
+        "pages": [
+          8,
+          9
+        ],
+        "evidence": "Run compaction before context is nearly exhausted and tell the summarizer which goal, files, decisions and remaining work must survive.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-compaction",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Aggressive but deliberate context management",
+        "pages": [
+          19,
+          20
+        ],
+        "evidence": "Use /clear between tasks, /compact with preservation instructions, partial rewind/summarize for selected history, CLAUDE.md compaction rules for critical file/test state, and /btw for disposable questions that should not enter history.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "context-history-search",
+    "nuance": "Teach safe local search and extracting user messages without leaking session data.",
+    "records": [
+      {
+        "recordId": "r25-13",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Search conversation history",
+        "pages": [
+          13,
+          14
+        ],
+        "evidence": "Use saved local history or ask Claude to find prior discussion about a topic instead of re-explaining from memory.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "memory-architecture",
+    "nuance": "Separate working context, durable instructions, episodic progress, and external knowledge.",
+    "records": [
+      {
+        "recordId": "a10-memory",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Memory architecture",
+        "pages": [
+          9,
+          10
+        ],
+        "evidence": "Memory should retain durable decisions, rationales, preferences and unresolved work—not entire transcripts. The design must distinguish working context from long-term memory and provide retrieval, update, deduplication and expiry policies.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-memory",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Selective memory",
+        "pages": [
+          13
+        ],
+        "evidence": "Decide deliberately what carries into future runs. A stateless analytics calculation may need no durable memory; preferences, decisions or recurring operating rules may.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "state-management",
+    "nuance": "Represent queued, active, blocked, verified, failed, and done states explicitly.",
+    "records": [
+      {
+        "recordId": "a15-state",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Explicit state management",
+        "pages": [
+          15
+        ],
+        "evidence": "Multi-step work needs a machine-readable record of what is pending, in progress, completed or blocked so the agent does not confuse conversation history with current state.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "context-connectors-cost",
+    "nuance": "Ruben's token-cost claim is source-specific and time-sensitive; teach least-context connector selection and purposeful combinations.",
+    "records": [
+      {
+        "recordId": "rub-06",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Disable unused connectors",
+        "pages": [
+          12,
+          13
+        ],
+        "evidence": "Keep only actively needed connectors enabled to reduce irrelevant tool choices and data exposure.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-16",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Combine connectors for cross-system synthesis",
+        "pages": [
+          23
+        ],
+        "evidence": "For a substantial email, combine Slack context, Drive documents and other authorized sources so the output reflects multiple systems. Minimize connector scope and verify citations.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-18",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Open and work from Drive files",
+        "pages": [
+          24
+        ],
+        "evidence": "Use an authorized Drive connector to ground work in existing files rather than copying fragments manually.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "context-projects-fit",
+    "nuance": "Preserve as Ruben's workflow opinion: fixed recurring corpus benefits from Projects; blank context may help novelty.",
+    "records": [
+      {
+        "recordId": "rub-01",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Do not overload Projects",
+        "pages": [
+          4,
+          6
+        ],
+        "evidence": "Loading many files into a Project can make every answer a remix of broad context. Projects remain useful for stable, bounded corpora such as contracts or standard procedures; use targeted retrieval or a fresh context for other work.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-mental-model",
+    "nuance": "Teach what belongs, what does not, and how instructions become stale.",
+    "records": [
+      {
+        "recordId": "li-29",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Keep CLAUDE.md concise",
+        "pages": [
+          42
+        ],
+        "evidence": "Store only high-value persistent project instructions and review them periodically; bloated memory consumes context and dilutes rules.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-claudemd",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Write an effective CLAUDE.md",
+        "pages": [
+          8,
+          10
+        ],
+        "evidence": "Run /init for a baseline, then retain commands, style and workflow rules Claude cannot infer. Keep it short and human-readable; test with /context, prune low-value lines, use emphasis sparingly and import supporting files with @path.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-system",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "CLAUDE.md as project-level system context",
+        "pages": [
+          3,
+          7
+        ],
+        "evidence": "CLAUDE.md tells Claude what code alone cannot: stack, structure, commands, conventions and boundaries. Instructions have persistent high priority, so every line consumes attention and 'less is more.'",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-mental",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Three-part mental model",
+        "pages": [
+          7,
+          8
+        ],
+        "evidence": "Project memory preserves setup across sessions; operational boundaries state rules not to break; context primer prevents a blank start.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-hierarchy",
+    "nuance": "Show load scopes and place rules at the narrowest stable level.",
+    "records": [
+      {
+        "recordId": "cmd-hierarchy",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Hierarchical loading",
+        "pages": [
+          8,
+          10
+        ],
+        "evidence": "Global, project-root and nested directory CLAUDE.md files layer instructions. A monorepo can keep shared rules at root and backend/frontend-specific rules near their code.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-progressive-disclosure",
+    "nuance": "Keep the root concise; link conditional detail and indexes instead of preloading everything.",
+    "records": [
+      {
+        "recordId": "cmd-less",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Less is more",
+        "pages": [
+          15,
+          18
+        ],
+        "evidence": "Overlong instructions compete and become stale. Keep key folders, commands and bug-causing conventions; remove onboarding prose and information discoverable from the repository.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-progressive",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Progressive disclosure with agent_docs",
+        "pages": [
+          19,
+          21
+        ],
+        "evidence": "Keep a concise index in CLAUDE.md that points to focused documents for testing, database work or deployment; load detail only when the task needs it.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-workflows",
+    "nuance": "Encode ordered procedures plus checks for recurring repository operations.",
+    "records": [
+      {
+        "recordId": "cmd-workflows",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Encode repeatable workflows",
+        "pages": [
+          29
+        ],
+        "evidence": "For endpoint creation and database migrations, specify ordered steps including analogous-code search, schema/model changes, implementation, tests, documentation, upgrade and rollback checks.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-conditional",
+    "nuance": "Load special rules only when the file, task, or tool condition applies.",
+    "records": [
+      {
+        "recordId": "cmd-environments",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Context-specific instruction files",
+        "pages": [
+          30,
+          32
+        ],
+        "evidence": "Distinct phases or areas can have scoped rules—development/deployment, frontend/backend—and MCP guidance can state read-only production access and prohibit writes.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-maintenance",
+    "nuance": "Update with PRs, capture discoveries, review periodically, and version changes.",
+    "records": [
+      {
+        "recordId": "cmd-maintain",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Maintain CLAUDE.md as code",
+        "pages": [
+          36,
+          38
+        ],
+        "evidence": "Update with PRs, capture discoveries using #, review quarterly, remove stale material, commit to version control and include instruction review in the PR checklist.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-taxonomy",
+    "nuance": "Decision must be based on automatic context, invocation, determinism, reuse, and external access.",
+    "records": [
+      {
+        "recordId": "r25-25",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Choose CLAUDE.md, skills, commands and plugins by lifecycle",
+        "pages": [
+          21,
+          22
+        ],
+        "evidence": "CLAUDE.md carries project-wide persistent rules; a skill packages reusable domain knowledge/workflow; a slash command is an explicitly invoked prompt; a plugin distributes a bundle that may include skills, commands, hooks, agents or integrations.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-foundation",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "CLAUDE.md, hooks, subagents and MCP are complementary",
+        "pages": [
+          39,
+          40
+        ],
+        "evidence": "CLAUDE.md establishes rules/context; hooks execute invariants; subagents isolate specialist work; MCP extends access. Do not collapse all four into one mechanism.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-skills",
+    "nuance": "Sources disagree in scope: Hamza/YK emphasize reuse; Ruben advises fixed repeated tasks rather than creative work.",
+    "records": [
+      {
+        "recordId": "a15-skills",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Reusable skills",
+        "pages": [
+          22
+        ],
+        "evidence": "Turn a repeated, stable procedure into a reusable capability rather than rebuilding the instructions in every conversation. Creative or novel work may not benefit from rigid packaging.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-20",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Skills are for repeated tasks",
+        "pages": [
+          26
+        ],
+        "evidence": "Package repeatable, stable procedures as skills; do not constrain genuinely creative or one-off work with an over-specific template.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-hooks-skills",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Use hooks for invariants and skills for reusable expertise",
+        "pages": [
+          12,
+          13
+        ],
+        "evidence": "Hooks deterministically run scripts at lifecycle events and are appropriate for zero-exception checks or blocks. Skills under .claude/skills package domain knowledge and workflows.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-hooks",
+    "nuance": "Use hooks for machine-enforceable checks, not vague judgment; explain failure and bypass paths.",
+    "records": [
+      {
+        "recordId": "cmd-hooks",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Hooks enforce deterministic rules",
+        "pages": [
+          33,
+          34
+        ],
+        "evidence": "Use hooks for formatting, validation or prohibitions that must run every time; do not spend model reasoning on deterministic operations.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-mcp",
+    "nuance": "Document server purpose, capabilities, authentication, allowed operations, and fallback.",
+    "records": [
+      {
+        "recordId": "ontology-extensions-mcp-pdf-claudemd-masterclass",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "MCP selection and documentation",
+        "pages": [
+          30,
+          31,
+          32
+        ],
+        "evidence": "Document server purpose, capabilities, authentication, allowed operations, and fallback.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-slash-status-alias",
+    "nuance": "These are distinct ergonomics: visibility, command recall, shell launch, and prompt editing.",
+    "records": [
+      {
+        "recordId": "r25-00",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Customize the status line",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "Expose current model/session context and rate-limit information in the terminal so resource pressure is visible during work.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "r25-01",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Learn essential slash commands",
+        "pages": [
+          1,
+          3
+        ],
+        "evidence": "The post highlights built-in commands for context, usage and session control rather than treating the prompt box as the only interface.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "r25-07",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Terminal aliases",
+        "pages": [
+          7,
+          8
+        ],
+        "evidence": "Create short aliases for common Claude startup/resume combinations to reduce friction, while keeping flags understandable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "r25-10",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Efficiently edit long prompts",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence": "Use Cmd+A or Ctrl+A and terminal line-editing/navigation instead of laboriously deleting a bad prompt character by character.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-38",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Navigate and edit the input box",
+        "pages": [
+          44,
+          45
+        ],
+        "evidence": "Learn multiline input, cursor movement, selection and history so detailed prompts can be edited before submission rather than corrected afterward.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "extensions-dx-setup-accounts",
+    "nuance": "Later YK tips appear in the index but extracted PDF detail is limited; flag exact coverage limitation.",
+    "records": [
+      {
+        "recordId": "yk-44",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Install the dx plugin",
+        "pages": [
+          6
+        ],
+        "evidence": "The index recommends a named plugin, but its behavior and installation detail are not present in the captured pages. Do not teach it without verifying the plugin source.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      },
+      {
+        "recordId": "yk-45",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Quick setup script",
+        "pages": [
+          6
+        ],
+        "evidence": "The index references a setup script, but the saved PDF ends before the detailed section. Flag as missing rather than invent commands.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      },
+      {
+        "recordId": "yk-46",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Switch between Claude accounts",
+        "pages": [
+          6
+        ],
+        "evidence": "The index references account switching, but detailed instructions are absent from the saved page range. This also raises policy/credential concerns and needs current official verification.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-interface-design",
+    "nuance": "Teach narrow schemas, descriptive errors, idempotency, observability, and safe defaults.",
+    "records": [
+      {
+        "recordId": "a10-tools",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Tool design",
+        "pages": [
+          8,
+          9
+        ],
+        "evidence": "Tool reliability depends on narrow, unambiguous names, schemas and descriptions. Overlapping tools or loosely defined arguments make the model choose the wrong operation or emit unparsable calls. Validation and useful error messages allow recovery.",
+        "details": [],
+        "warnings": [
+          "Do not expose a giant ambiguous tool surface.",
+          "Do not blame the model before inspecting tool schemas and error feedback."
+        ],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-tools",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Tool use",
+        "pages": [
+          12,
+          13
+        ],
+        "evidence": "A language model can advise, while an agent with tools can fetch data, modify artifacts and verify results. Grant only the tools required for the goal and make outputs observable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-cli-mcp",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Prefer CLI, connect MCP where it adds capability",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence": "CLIs are context-efficient for external services; install gh for GitHub. Add MCP servers for systems such as Notion, Figma or databases when structured integration is needed.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-terminal-output",
+    "nuance": "Use tmux or logs to send, capture, inspect, and bound long-running commands.",
+    "records": [
+      {
+        "recordId": "r25-06",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Capture terminal output",
+        "pages": [
+          6,
+          7
+        ],
+        "evidence": "Pipe, redirect or capture command output so Claude can inspect it as evidence instead of relying on a human description.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-realpath",
+    "nuance": "Absolute paths reduce ambiguity across processes, containers, and automation.",
+    "records": [
+      {
+        "recordId": "r25-24",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Use absolute paths",
+        "pages": [
+          20,
+          21
+        ],
+        "evidence": "Resolve external file paths with realpath before referencing them so the agent and shell operate on the intended target.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-browser-research",
+    "nuance": "Separate source retrieval, browser interaction, alternate legitimate access, evidence capture, and citation.",
+    "records": [
+      {
+        "recordId": "r25-11",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Fallback retrieval for blocked sites",
+        "pages": [
+          12
+        ],
+        "evidence": "The post suggests a second CLI/model when a site blocks Claude's fetch path. Treat this as a retrieval fallback, validate provenance, and do not use it to evade access restrictions.",
+        "details": [],
+        "warnings": [
+          "This is anecdotal tool advice, not an official Claude Code guarantee."
+        ],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-26",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Claude Code as a research tool",
+        "pages": [
+          40
+        ],
+        "evidence": "Research through CLI retrieval, local files and structured notes; require source links and distinguish retrieved evidence from synthesis.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-artifacts-miniapps",
+    "nuance": "Distinguish static visualization, interactive data, persisted state, and embedding Claude.",
+    "records": [
+      {
+        "recordId": "rub-13",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Build personalized mini-apps",
+        "pages": [
+          20,
+          21
+        ],
+        "evidence": "Turn recurring personal data or decisions into small interactive artifacts rather than repeatedly asking for static prose.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-14",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Embed Claude in a mini-app",
+        "pages": [
+          21,
+          22
+        ],
+        "evidence": "The article demonstrates an artifact that includes Claude-backed interaction and can be shared by link. Treat external sharing and data access as security design concerns.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-22",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Make data interactive",
+        "pages": [
+          28
+        ],
+        "evidence": "Convert analysis into a small interface where the user can filter, compare or test scenarios rather than delivering a static report only.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-33",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Use artifacts",
+        "pages": [
+          41
+        ],
+        "evidence": "Build inspectable interactive outputs instead of prose when the task benefits from exploration, sharing or visualization.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-html-infographics",
+    "nuance": "Teach as Ruben's practical workaround; do not generalize the claim that Claude cannot generate images across products or time.",
+    "records": [
+      {
+        "recordId": "rub-03",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Generate editable HTML infographics",
+        "pages": [
+          8,
+          10
+        ],
+        "evidence": "Instead of asking for a raster image, provide a visual reference and ask Claude to code an HTML-like infographic. Benefits include editable layout and correctly rendered text.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "tool-universal-interface",
+    "nuance": "Power comes from composable shell/files/API access; risk grows with ambient authority.",
+    "records": [
+      {
+        "recordId": "li-30",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Use Claude Code as a universal interface",
+        "pages": [
+          42,
+          43
+        ],
+        "evidence": "A terminal agent can coordinate files, CLIs and services through a shared text interface. The durable principle is composition through existing tools, not replacing every specialized UI.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-targets",
+    "nuance": "Match verification to claim: tests, types, lint, runtime, UI screenshot, diff, logs, or human judgment.",
+    "records": [
+      {
+        "recordId": "li-27",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Use multiple verification modes",
+        "pages": [
+          40,
+          41
+        ],
+        "evidence": "Verification is task-specific: tests and type checks for code, Playwright/screenshots for UI, CLI/API queries for deployments, and independent review for reasoning.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-verification",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Give Claude an executable verification target",
+        "pages": [
+          2,
+          3
+        ],
+        "evidence": "Provide tests, build/lint exit codes, fixture diffs or screenshot comparisons. Ask for evidence—the command and output—not a success assertion. Escalation options are prompt-level iteration, /goal, deterministic Stop hooks, and fresh-context verification subagents.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-write-test-cycle",
+    "nuance": "A command running is not evidence; capture its result and compare it with expectation.",
+    "records": [
+      {
+        "recordId": "r25-09",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Complete the write-test-observe cycle",
+        "pages": [
+          9,
+          11
+        ],
+        "evidence": "For autonomous work, Claude must launch the program/test, send input, capture output and compare it with expectations. The tmux example creates a detached session, sends commands, captures the pane and terminates the session.",
+        "details": [],
+        "warnings": [
+          "Prefer Playwright for browser-visible behavior instead of inferring UI success."
+        ],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-tdd",
+    "nuance": "Write and observe failing tests, commit intent, then implement; guard against tests that merely mirror implementation.",
+    "records": [
+      {
+        "recordId": "yk-34",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Write many tests and use TDD",
+        "pages": [
+          41,
+          42
+        ],
+        "evidence": "Write tests first, confirm they fail, commit them, then implement until they pass. Tests give the agent a durable objective signal and make autonomous iteration safer.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-diff-review",
+    "nuance": "Separate author and reviewer context; review behavior, scope, tests, security, and hidden assumptions.",
+    "records": [
+      {
+        "recordId": "off-fresh-review",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Fresh-context diff review",
+        "pages": [
+          25,
+          26
+        ],
+        "evidence": "Have a subagent review the diff against explicit criteria or PLAN.md, or run the bundled code-review skill. A reviewer without the implementing rationale is more likely to notice unjustified assumptions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-evals",
+    "nuance": "Use representative tasks, measurable graders, regression sets, and failure taxonomy—not demo anecdotes.",
+    "records": [
+      {
+        "recordId": "a10-evals",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Agent evaluations",
+        "pages": [
+          12,
+          13
+        ],
+        "evidence": "Traditional exact-output tests do not cover nondeterministic, multi-step agents. Evaluate task completion, tool choice, trajectory quality, safety, cost, latency and recovery over a representative scenario set; retain traces to diagnose regressions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "verify-observability",
+    "nuance": "Record tool calls, state transitions, decisions, latency, cost, errors, and artifacts while protecting secrets.",
+    "records": [
+      {
+        "recordId": "a10-observability",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Observability and tracing",
+        "pages": [
+          15,
+          16
+        ],
+        "evidence": "Capture prompt/model versions, tool calls and results, state transitions, latency, token/cost data, errors and final outcomes. Historical traces turn questions about a bad run into queries and enable replay, comparison and root-cause analysis.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-observability",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Observability",
+        "pages": [
+          20
+        ],
+        "evidence": "Require a visible record of steps, evidence and decisions so a human can understand what happened and diagnose a failure.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "git-gh-workflow",
+    "nuance": "Git supplies checkpoints, diffs, blame, branch isolation, and reviewable history—not just backup.",
+    "records": [
+      {
+        "recordId": "r25-04",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Use Git and GitHub CLI as the recovery/control layer",
+        "pages": [
+          5,
+          6
+        ],
+        "evidence": "Let Claude inspect diffs, commits, issues and pull requests with git and gh. Commit coherent checkpoints so failed trajectories are recoverable and reviewable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "off-gh-workflow",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "End-to-end GitHub issue workflow",
+        "pages": [
+          13,
+          15
+        ],
+        "evidence": "Fetch the issue, understand it, search relevant code, implement, test, lint/type-check, write a descriptive commit, push and open a PR.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "git-worktrees",
+    "nuance": "Assign branch, directory, files, and integration owner; worktrees do not prevent semantic collisions.",
+    "records": [
+      {
+        "recordId": "r25-16",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Git worktrees for parallel branches",
+        "pages": [
+          16
+        ],
+        "evidence": "Create isolated working directories for concurrent Claude sessions so file edits do not collide while branches remain in one repository.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "git-interactive-pr",
+    "nuance": "Fetch review context, inspect each comment against code, implement selectively, rerun checks, and summarize dispositions.",
+    "records": [
+      {
+        "recordId": "li-25",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Interactive pull-request reviews",
+        "pages": [
+          39,
+          40
+        ],
+        "evidence": "Use gh to inspect PR metadata/diff/comments, discuss findings with Claude, apply selected changes and re-run checks. Review remains interactive rather than blindly accepting all suggestions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "git-devops-ci",
+    "nuance": "Read pipeline config and logs, reproduce narrowly, preserve deployment boundaries, and avoid blind retries.",
+    "records": [
+      {
+        "recordId": "li-28",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Claude Code as a DevOps engineer",
+        "pages": [
+          41,
+          42
+        ],
+        "evidence": "Claude can inspect logs, deployment configuration and cloud CLIs, but production commands require scoped credentials, explicit target confirmation and post-action checks.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "permissions-guardrails",
+    "nuance": "Separate policy statements from technical enforcement and test both allow and deny paths.",
+    "records": [
+      {
+        "recordId": "a10-guardrails",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Guardrails and permissions",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence": "Use least privilege, allowlists for known-safe operations, explicit approval for irreversible actions, sandboxing, limits and audit logs. Guardrails should be enforced outside the model where possible.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-guardrails",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Guardrails",
+        "pages": [
+          16
+        ],
+        "evidence": "Define rules the agent cannot cross, such as not publishing, sending, deleting or changing client-facing material without validation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "permissions-hitl",
+    "nuance": "Place gates at irreversible, external, costly, ambiguous, or security-sensitive transitions.",
+    "records": [
+      {
+        "recordId": "a10-hitl",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Human-in-the-loop design",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Human involvement should be placed at high-risk, ambiguous or irreversible decision points. Too many approvals cause fatigue and rubber-stamping, so gates must be meaningful and present enough evidence for a quick decision.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-permissions",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Permissions and human approval",
+        "pages": [
+          17
+        ],
+        "evidence": "Permission boundaries decide which actions are automatic and which require review. Client-facing or irreversible work should retain a human decision point.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "permissions-risk-tier",
+    "nuance": "Match permission mode and isolation to blast radius; never teach blanket bypass as a default.",
+    "records": [
+      {
+        "recordId": "off-permissions",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Configure permissions by risk",
+        "pages": [
+          10,
+          11
+        ],
+        "evidence": "Use auto mode for classification, /permissions for known commands and domains, and /sandbox for OS isolation. Default prompts guard file writes, Bash and MCP actions; allowlist repeated safe operations rather than bypassing all checks.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-safety",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Iteration and cost controls",
+        "pages": [
+          30,
+          34
+        ],
+        "evidence": "Set max iterations, begin with a small attended run, monitor token cost and stop on repeated non-progress. Autonomous execution needs safe permissions and rollbackable commits.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "permissions-isolation",
+    "nuance": "Isolation reduces host risk but does not remove credential, network, data, or supply-chain risk.",
+    "records": [
+      {
+        "recordId": "r25-21",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Isolate risky long-running automation",
+        "pages": [
+          17,
+          18
+        ],
+        "evidence": "Run an inner Claude process in a container or dedicated machine, optionally controlled by an outer session through tmux. Isolation is the safety boundary when permissions are broad.",
+        "details": [],
+        "warnings": [
+          "Never use broad permission bypass on the host or with valuable credentials/data.",
+          "Container isolation must include filesystem, secret and network boundaries."
+        ],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "permissions-auto-mode",
+    "nuance": "Teach prerequisites, approved commands, scope, monitoring, and abort conditions; product behavior may change.",
+    "records": [
+      {
+        "recordId": "yk-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Use auto mode",
+        "pages": [
+          40
+        ],
+        "evidence": "Let the permission classifier approve low-risk actions while preserving review for risky operations; this reduces approval fatigue without a blanket bypass.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "parallel-orchestration",
+    "nuance": "Compare sequential, parallel, router, supervisor, reviewer, and escalation patterns.",
+    "records": [
+      {
+        "recordId": "a10-orchestration",
+        "sourceId": "pdf-agentic-10",
+        "sourceTitle": "10 Agentic AI Concepts You Need to Master Before 2027",
+        "title": "Orchestration patterns",
+        "pages": [
+          10,
+          11
+        ],
+        "evidence": "Useful patterns include sequential pipelines, routing, parallel fan-out, evaluator/optimizer loops and supervisor/worker structures. Multi-agent diagrams are easy to over-apply; add agents only when roles, contexts or tools genuinely need separation.",
+        "details": [],
+        "warnings": [
+          "Coordination overhead can outweigh parallelism.",
+          "A single capable agent plus tools is often simpler."
+        ],
+        "confidence": "high"
+      },
+      {
+        "recordId": "a15-orchestration",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Orchestration",
+        "pages": [
+          18
+        ],
+        "evidence": "Orchestration coordinates order, handoffs and shared state when more than one specialist or tool must contribute. It is unnecessary overhead for a task one agent can complete cleanly.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "parallel-multi-agent-roles",
+    "nuance": "Ruben describes Cowork parallelism; general teaching must cover distinct outputs, handoffs, reviewer independence, and merge cost.",
+    "records": [
+      {
+        "recordId": "a15-multiagent",
+        "sourceId": "pdf-agentic-15",
+        "sourceTitle": "15 Agentic AI Concepts Everyone Needs",
+        "title": "Multi-agent role separation",
+        "pages": [
+          19
+        ],
+        "evidence": "Assign different jobs—such as researcher, writer and reviewer—when independent contexts or perspectives improve the result. Define inputs, outputs and handoff contracts.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-subagents-plugins",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Custom subagents and plugins",
+        "pages": [
+          14,
+          16
+        ],
+        "evidence": "Subagents have isolated context and tool permissions; delegate file-heavy investigation or specialist review and request line-specific fixes. Plugins bundle skills, hooks, subagents and MCP; typed-language code-intelligence plugins improve symbol navigation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-investigation-subagent",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Keep investigation out of the main context",
+        "pages": [
+          20,
+          21
+        ],
+        "evidence": "Delegate broad codebase exploration to subagents; they return a compact finding set. Also use a fresh subagent to check edge cases after implementation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-subagents",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "CLAUDE.md primes subagents",
+        "pages": [
+          34,
+          36
+        ],
+        "evidence": "Specialist subagents run in isolated contexts; concise project instructions let them understand conventions without inheriting the full main conversation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "parallel-boundaries",
+    "nuance": "Define ownership, shared contracts, branch/worktree, completion artifact, and integrator.",
+    "records": [
+      {
+        "recordId": "r25-14",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Use terminal tabs for concurrent workstreams",
+        "pages": [
+          14
+        ],
+        "evidence": "Keep persistent utilities and independent tasks in separate named tabs so context and processes remain visible and do not interfere.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-parallel",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Parallel sessions by coordination need",
+        "pages": [
+          23,
+          25
+        ],
+        "evidence": "Options range from manual worktrees and desktop-managed sessions to cloud sessions and coordinated agent teams. Isolate edits, assign non-overlapping ownership and use writer/reviewer separation for quality.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "parallel-background",
+    "nuance": "Background work needs identifiers, bounded polling, captured output, cancellation, and final verification.",
+    "records": [
+      {
+        "recordId": "yk-36",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Run Bash commands and subagents in background",
+        "pages": [
+          43
+        ],
+        "evidence": "Parallelize independent investigations or long commands while the main session continues. Track ownership and collect results before integration.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-fit",
+    "nuance": "Use for bounded, testable, file-observable iteration; avoid ambiguous taste, unsafe external effects, and weak verification.",
+    "records": [
+      {
+        "recordId": "ralph-two-problems",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Verification and fresh-context rationale",
+        "pages": [
+          7,
+          10
+        ],
+        "evidence": "Claude can stop when code looks complete and degrade as a long context fills. Ralph forces a completion signal tied to checks and lets each iteration inspect durable files from a cleaner context.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-not",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "What Ralph is not",
+        "pages": [
+          16,
+          17
+        ],
+        "evidence": "It is not magic, not a substitute for task design, not identical to every loop implementation and not appropriate for every task. Use it for complex multi-step work with verifiable completion.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-core",
+    "nuance": "A completion promise is a control token, not proof; the hook recycles work until bounded conditions are met.",
+    "records": [
+      {
+        "recordId": "ralph-core",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Ralph core loop",
+        "pages": [
+          2,
+          11
+        ],
+        "evidence": "Ralph repeatedly sends a prompt to Claude rather than accepting the first perceived completion. Failure is expected; artifacts left in files become evidence for the next iteration. The basic historical form is a Bash while loop; the Anthropic plugin form uses a Stop hook.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-stop-hook",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Stop-hook flow",
+        "pages": [
+          11,
+          12
+        ],
+        "evidence": "Prompt plus completion promise enters the loop; Claude works and attempts to exit; the hook scans output; absent promise causes the prompt to be fed back; present promise ends the run.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-prd-tasks",
+    "nuance": "Each task needs acceptance criteria, dependencies, priority, and machine-checkable completion.",
+    "records": [
+      {
+        "recordId": "ralph-prd",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Generate and review a PRD",
+        "pages": [
+          17,
+          20
+        ],
+        "evidence": "Describe product goal, users, scope, constraints, acceptance criteria and non-goals; have Claude structure the PRD, then review it before task generation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-tasklist",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Atomic task list in prd.json",
+        "pages": [
+          20,
+          23
+        ],
+        "evidence": "Break the PRD into small priority-ordered tasks with stable IDs, descriptions, acceptance criteria and passes:false. Each iteration selects one incomplete item and changes the flag only after checks pass.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-memory",
+    "nuance": "Separate chronological execution log from durable project patterns and gotchas.",
+    "records": [
+      {
+        "recordId": "ralph-memory",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Three-part state architecture",
+        "pages": [
+          13,
+          14
+        ],
+        "evidence": "prd.json stores atomic tasks and passes flags; progress.txt is short-term iteration memory; agents.md stores longer-lived project patterns. This separates task truth, run notes and durable knowledge.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-progress",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Progress log",
+        "pages": [
+          23,
+          25
+        ],
+        "evidence": "Append concise work completed, tests, failures, blockers and next-step learning after each iteration. Do not turn the file into a full transcript.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-agents",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Durable agents.md knowledge",
+        "pages": [
+          25,
+          27
+        ],
+        "evidence": "Promote stable codebase patterns or constraints from run notes into durable agent guidance; avoid storing temporary sprint state there.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-feedback",
+    "nuance": "Tests, lint, builds, task state, git history, and memory become feedback channels.",
+    "records": [
+      {
+        "recordId": "ralph-promise",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Completion promise must encode real done",
+        "pages": [
+          14,
+          16
+        ],
+        "evidence": "The promise is only safe when the prompt defines binary, independently verifiable criteria. A vague promise creates an expensive loop or premature success; require tests and task flags before emitting it.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-feedback",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Feedback loops inside the prompt",
+        "pages": [
+          27,
+          30
+        ],
+        "evidence": "Require tests, type checks and lint after each bounded change. The agent must read failures and correct them before marking a task passed.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-safety",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Iteration and cost controls",
+        "pages": [
+          30,
+          34
+        ],
+        "evidence": "Set max iterations, begin with a small attended run, monitor token cost and stop on repeated non-progress. Autonomous execution needs safe permissions and rollbackable commits.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-levels",
+    "nuance": "Progress autonomy only after success at lower levels; add iteration, cost, time, and error budgets.",
+    "records": [
+      {
+        "recordId": "ralph-level1",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Level 1: single supervised iteration",
+        "pages": [
+          32,
+          35
+        ],
+        "evidence": "Watch one iteration end-to-end to learn artifact changes, test behavior, failure shape and token cost before automating repetition.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-level2",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Level 2: attended loop",
+        "pages": [
+          35,
+          39
+        ],
+        "evidence": "Run a bounded multi-iteration loop while checking task flags, progress updates and emerging patterns. Pause and repair the prompt/PRD when drift appears. Advance only after several observed loops and many iterations.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-level3",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Level 3: unattended overnight",
+        "pages": [
+          39,
+          43
+        ],
+        "evidence": "Prerequisites include a proven attended history, atomic PRD, built-in tests/types/lint, restricted environment, rollback points, max iterations (article suggests 30-50), and notification. Morning review checks prd.json, progress.txt, git history, tests and the feature; 100% completion is not assumed.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "ralph-patterns",
+    "nuance": "Teach four patterns separately; multi-persona review is not equivalent to independent external evaluation.",
+    "records": [
+      {
+        "recordId": "ralph-feature",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Pattern 1: feature builder",
+        "pages": [
+          43,
+          46
+        ],
+        "evidence": "Select highest-priority passes:false task, implement only it, run checks, set passes:true only on success, append progress and emit COMPLETE only when all tasks pass.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-green",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Pattern 2: test-until-green",
+        "pages": [
+          46,
+          47
+        ],
+        "evidence": "Add or repair tests in tiny units, run coverage/test feedback and improve one function per iteration so failures stay attributable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-persona",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Pattern 3: multi-persona review",
+        "pages": [
+          47,
+          50
+        ],
+        "evidence": "Review the same artifact through roles such as security engineer, solution architect and QA; record findings and corrections. Personas are perspectives inside a controlled loop, not proof of correctness.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-poc",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Pattern 4: proof-of-concept validator",
+        "pages": [
+          50,
+          52
+        ],
+        "evidence": "Prioritize whether the risky architectural idea works; explicitly defer comprehensive tests and edge handling until viability is established. Use for architecture validation, not production readiness.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "ralph-choose",
+        "sourceId": "pdf-ralph-loop",
+        "sourceTitle": "Claude Code Ralph Loop: From Basic Prompts to Autonomous Overnight Builds",
+        "title": "Choose and combine patterns",
+        "pages": [
+          52,
+          53
+        ],
+        "evidence": "Match the loop to the outcome: feature builder for scoped delivery, test-until-green for coverage, multi-persona for review breadth, POC for uncertainty reduction. Patterns can be sequenced, such as build then review.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "automation-noninteractive",
+    "nuance": "Cover one-off queries, structured output, streaming, exit codes, idempotency, and secret handling.",
+    "records": [
+      {
+        "recordId": "off-headless",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Non-interactive automation",
+        "pages": [
+          22,
+          23
+        ],
+        "evidence": "Use claude -p in scripts, CI or hooks; choose machine-readable output and scope tools. Session persistence is default unless disabled.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "automation-backoff",
+    "nuance": "Polling needs maximum attempts, increasing intervals, success predicate, error exit, and final capture.",
+    "records": [
+      {
+        "recordId": "r25-17",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Manual exponential backoff",
+        "pages": [
+          16
+        ],
+        "evidence": "For long-running or rate-limited jobs, increase delays between retries and cap attempts rather than hammering the same operation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "automation-of-automation",
+    "nuance": "Source index names the tip but extracted PDF lacks full body; retain as a coverage limitation and avoid invented detail.",
+    "records": [
+      {
+        "recordId": "yk-41",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Automation of automation",
+        "pages": [
+          6
+        ],
+        "evidence": "When a repeated manual process is stable, ask Claude to create the script, hook or skill that automates future instances; validate the automation on a bounded case.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "automation-remote-control",
+    "nuance": "Teach authentication, session visibility, network exposure, emergency stop, and audit trail.",
+    "records": [
+      {
+        "recordId": "yk-32",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Control Claude Code from a phone",
+        "pages": [
+          40,
+          41
+        ],
+        "evidence": "Remote control can keep long-running work accessible away from the desktop, but requires authenticated transport, session isolation and protection against exposed terminals.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-graph-model",
+    "nuance": "A graph adds relationships and centrality; it does not guarantee truth or relevance.",
+    "records": [
+      {
+        "recordId": "graph-problem",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "File-by-file search misses relationships",
+        "pages": [
+          3,
+          4
+        ],
+        "evidence": "A directory of many disconnected documents forces repeated search and obscures links among ideas. A graph layer makes connections and central concepts visible.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "graph-map",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Graphify documents into connected concepts",
+        "pages": [
+          6,
+          8
+        ],
+        "evidence": "Graphify represents ideas as nodes and relationships as links; larger connected nodes can indicate centrality. A graph is a navigation aid, not proof that a concept is important or correct.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-obsidian-import",
+    "nuance": "Compare standalone vault, deletable folder, selected notes, and direct integration; stage before merging.",
+    "records": [
+      {
+        "recordId": "graph-vault",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Generate an Obsidian vault",
+        "pages": [
+          8,
+          9
+        ],
+        "evidence": "Convert each idea into an individual linked note. Begin in a separate disposable vault so generated structure can be inspected or removed safely before merging into personal notes.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "graph-merge",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Merge as an isolated folder",
+        "pages": [
+          11
+        ],
+        "evidence": "After review, place the generated vault inside the main vault in its own folder, preserving a simple rollback/delete boundary.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-provenance",
+    "nuance": "Bare linked notes need source content and origin backlinks to support verification.",
+    "records": [
+      {
+        "recordId": "graph-provenance",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Link every note to source documents",
+        "pages": [
+          10
+        ],
+        "evidence": "Copy/source the underlying documents and add backlinks so each synthesized note can be traced to evidence. Without provenance, a polished graph becomes an unverifiable derivative.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-retrieval-cadence",
+    "nuance": "A commenter identifies an unresolved limitation: storage without a resurfacing routine becomes a graveyard.",
+    "records": [
+      {
+        "recordId": "graph-review",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Knowledge graphs need a revisit policy",
+        "pages": [
+          13
+        ],
+        "evidence": "The closing discussion asks how users decide what to revisit daily or weekly. The source does not answer; the curriculum should add review queues, freshness and orphan-note checks as instructor synthesis.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "practice-writing-markdown",
+    "nuance": "Use files, diffs, version control, and structured Markdown for non-code work; Notion paste preservation is a narrow tactic.",
+    "records": [
+      {
+        "recordId": "r25-18",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Claude Code as a writing partner",
+        "pages": [
+          16,
+          17
+        ],
+        "evidence": "Provide source material and an intended structure, draft in Markdown, review the diff and iterate. The filesystem makes versions and references inspectable.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "r25-19",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Markdown as the interchange format",
+        "pages": [
+          17
+        ],
+        "evidence": "Use Markdown for portable structured notes, prompts, plans and drafts that are readable by humans, version control and Claude.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "r25-20",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Preserve links when moving content",
+        "pages": [
+          17
+        ],
+        "evidence": "The author uses Notion as an intermediate destination because rich link context can be lost in some paste paths.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "practice-personal-workflow",
+    "nuance": "Measure friction before adding tooling; maintain and remove customizations that no longer pay off.",
+    "records": [
+      {
+        "recordId": "r25-12",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Invest in personal workflow tooling",
+        "pages": [
+          12,
+          13
+        ],
+        "evidence": "Build or adapt the small tools that remove repeated friction—voice transcription, aliases, scripts and environment presets—rather than waiting for a universal workflow.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "off-judgment",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Develop judgment from observed outcomes",
+        "pages": [
+          28,
+          29
+        ],
+        "evidence": "Notice which prompt structure, context and mode produced good work; diagnose failures; learn when accumulated history is valuable versus when it is noise.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "li-00-24",
+        "sourceId": "pdf-linkedin-32",
+        "sourceTitle": "32 Claude Code Tips: From Basics to Advanced",
+        "title": "Tips 0-24: core YK workflow set",
+        "pages": [
+          1,
+          39
+        ],
+        "evidence": "Covers status line, voice, decomposition, Git/GitHub CLI, fresh context, captured terminal output, aliases, proactive compaction, tmux verification, input editing, blocked-site fallback, workflow investment, history search, terminal tabs, system-prompt slimming, worktrees, retry backoff, writing, Markdown, link-preserving paste, isolated automation, deliberate practice, conversation branching, absolute paths, and choosing CLAUDE.md/skills/commands/plugins.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "practice-learning",
+    "nuance": "Practice on real work, keep evidence of failures and reusable discoveries, contribute improvements, and continue learning.",
+    "records": [
+      {
+        "recordId": "r25-22",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Learn through sustained use",
+        "pages": [
+          19
+        ],
+        "evidence": "Workflow skill develops by noticing recurring friction, testing a change and retaining what works; reading tip lists is insufficient without deliberate practice.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-35",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Be braver in unknown code through iteration",
+        "pages": [
+          42,
+          43
+        ],
+        "evidence": "Use checkpoints and verification to attempt unfamiliar work, inspect failure and iterate; do not confuse courage with unbounded production risk.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-42",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Share knowledge",
+        "pages": [
+          6
+        ],
+        "evidence": "Document useful workflows and contribute improvements so team practice compounds rather than remaining private prompt lore.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-43",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Keep learning",
+        "pages": [
+          6
+        ],
+        "evidence": "Treat techniques as hypotheses and update the operating manual as product capabilities and observed results change.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "yk-00-31",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Tips 0-31: expanded canonical YK set",
+        "pages": [
+          4,
+          40
+        ],
+        "evidence": "Contains the detailed versions of status line, slash commands, voice, task splitting, Git/gh, context freshness, output capture, aliases, compaction, tmux write-test cycles, prompt editing, workflow tooling, history, tabs, worktrees, retry backoff, writing/Markdown, isolation, practice, conversation forks, realpath, extension choice, PR review, research, verification, DevOps, concise CLAUDE.md, universal interface, abstraction and auto mode.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "practice-personal-software",
+    "nuance": "Lower implementation cost makes narrow personal tools viable; maintenance, privacy, and data portability still matter.",
+    "records": [
+      {
+        "recordId": "yk-37",
+        "sourceId": "pdf-ykdojo-repo",
+        "sourceTitle": "ykdojo/claude-code-tips: 40+ tips",
+        "title": "Personalized software",
+        "pages": [
+          43,
+          44
+        ],
+        "evidence": "Low-cost generation makes narrow tools for an individual workflow practical; retain maintainability and data-safety expectations.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "context-session-resume",
+    "nuance": "Session naming aids retrieval; resumption still requires checking goal, repository state, prior decisions, and remaining verification.",
+    "records": [
+      {
+        "recordId": "off-resume",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Name and resume sessions",
+        "pages": [
+          21,
+          22
+        ],
+        "evidence": "Treat named sessions like workstream branches. Continue the latest with claude --continue or choose one with claude --resume; checkpoints survive closing and resuming.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "automation-fanout",
+    "nuance": "Use a stable input set, one isolated invocation per item, structured results, concurrency bounds, retry policy, and aggregation.",
+    "records": [
+      {
+        "recordId": "off-fanout",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Fan-out batch work",
+        "pages": [
+          24,
+          25
+        ],
+        "evidence": "Call claude -p for independent items, constrain allowed tools, collect structured outputs and synthesize only after all workers finish. Suitable for large migrations or analyses with separable units.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-why-how-what",
+    "nuance": "Explain project purpose and architecture, operational commands, and repository map without turning the file into exhaustive documentation.",
+    "records": [
+      {
+        "recordId": "cmd-why-how-what",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Organize content as WHY, HOW and WHAT",
+        "pages": [
+          11,
+          15
+        ],
+        "evidence": "WHY explains purpose/architecture, HOW supplies commands and workflows, WHAT lists critical conventions and boundaries. Example material includes API prefixes, formatting, tests and schema conventions.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "cmd-structure",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Clear Markdown sections",
+        "pages": [
+          27,
+          28
+        ],
+        "evidence": "Use headers for project map, commands, conventions, testing and constraints so unrelated instructions do not bleed together.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "instructions-creation",
+    "nuance": "Compare generated initialization, manual authoring, and incremental memory capture; review generated claims against the repository.",
+    "records": [
+      {
+        "recordId": "cmd-create",
+        "sourceId": "pdf-claudemd-masterclass",
+        "sourceTitle": "CLAUDE.md Masterclass: With Hooks, Subagents & Pro Automation",
+        "title": "Three creation methods",
+        "pages": [
+          22,
+          26
+        ],
+        "evidence": "Generate a baseline with /init, create manually for precise control, and use # during work to capture newly discovered rules. Recommended sequence: /init, manual refinement, continuous additions with later pruning.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-corpus-ingest",
+    "nuance": "Define canonical sources, retrieval boundaries, document identity, update date, and failed acquisitions before graph construction.",
+    "records": [
+      {
+        "recordId": "graph-ingest",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Acquire an authoritative corpus",
+        "pages": [
+          5,
+          6
+        ],
+        "evidence": "The example asks Claude Code to download official Claude Code documentation before graphing it. The run reportedly retrieves 171 pages and self-corrects a coding error; source quality matters more than graph appearance.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "knowledge-node-enrichment",
+    "nuance": "A title and backlinks are not a useful note; add source-grounded explanation, relationship meaning, and provenance without inventing content.",
+    "records": [
+      {
+        "recordId": "graph-bare-nodes",
+        "sourceId": "pdf-graphify-obsidian",
+        "sourceTitle": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+        "title": "Repair bare or weakly connected notes",
+        "pages": [
+          9,
+          10
+        ],
+        "evidence": "Inspect the graph for unhelpful nodes or missing relationships and give a focused correction prompt rather than accepting the first generated network.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "recovery-common-failures",
+    "nuance": "Classify context overload, vague requests, unchecked output, runaway scope, repeated failed edits, and unsafe automation; choose rewind, clarify, isolate, re-plan, or restart accordingly.",
+    "records": [
+      {
+        "recordId": "off-failures",
+        "sourceId": "pdf-official-best-practices",
+        "sourceTitle": "Best practices for Claude Code",
+        "title": "Common failure patterns",
+        "pages": [
+          27,
+          28
+        ],
+        "evidence": "Avoid kitchen-sink sessions, repeated corrections, overlong CLAUDE.md, trust without verification, and unbounded investigation. Fix with clear task boundaries, fresh context, pruning, executable checks and subagents.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "topicId": "source-system-prompt-slimming",
+    "nuance": "This is risky anecdotal customization that can remove safety or product assumptions and become stale after upgrades; teach only with warnings and a reversible alternative.",
+    "records": [
+      {
+        "recordId": "r25-15",
+        "sourceId": "pdf-reddit-25",
+        "sourceTitle": "25 Claude Code Tips from 11 Months of Intense Use",
+        "title": "Slim the system prompt carefully",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "The author describes patching/removing generic system material to save context. This is an advanced, brittle optimization that can weaken safety or break after updates and should not be taught as a default practice.",
+        "details": [],
+        "warnings": [
+          "Unsupported modification of product internals.",
+          "Potential safety and maintenance cost."
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "source-model-routing",
+    "nuance": "Model names, pricing, and availability are time-sensitive. Preserve Ruben's principle—spend more reasoning on framing—without presenting current names as durable guidance.",
+    "records": [
+      {
+        "recordId": "rub-02",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Use stronger reasoning early, cheaper execution later",
+        "pages": [
+          6,
+          8
+        ],
+        "evidence": "The author recommends a high-effort model for the initial direction, then switching to a less expensive capable model during execution. Model names are time-sensitive; retain the routing principle, not the exact product recommendation.",
+        "details": [],
+        "warnings": [
+          "Specific model names/tiers may become obsolete."
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "source-cowork-code",
+    "nuance": "Product comparison is Ruben's dated opinion; extract the durable distinction between coding tools and multi-agent knowledge-work coordination.",
+    "records": [
+      {
+        "recordId": "rub-09",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Prefer Code for artifact-building workflows",
+        "pages": [
+          15,
+          16
+        ],
+        "evidence": "The author finds the Code surface more capable for building files/apps because it can work directly with a project. This is experiential, not a universal product comparison.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-10",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Use Cowork for broad parallel non-coding tasks",
+        "pages": [
+          16,
+          18
+        ],
+        "evidence": "The article positions Cowork for large jobs where multiple Claude workers can prepare deliverables in parallel; small tasks may not justify it.",
+        "details": [],
+        "warnings": [
+          "Product surface and behavior are time-sensitive."
+        ],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-11",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Configure Cowork with a setup skill",
+        "pages": [
+          18,
+          19
+        ],
+        "evidence": "A setup-cowork skill interviews the user about preferences, styles and working methods to create reusable configuration.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "topicId": "source-enterprise-seats",
+    "nuance": "Pricing, thresholds, and privacy comparisons are high-change claims. Cite and date them; require current official verification before operational decisions.",
+    "records": [
+      {
+        "recordId": "rub-15",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Team seat-count advice",
+        "pages": [
+          22
+        ],
+        "evidence": "The author recommends staying under a particular seat threshold; this is commercial/time-sensitive and lacks enough durable technical rationale for a mastery lesson.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      },
+      {
+        "recordId": "rub-26",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Enterprise safety comparison claim",
+        "pages": [
+          30
+        ],
+        "evidence": "The author makes a broad safety comparison tied to Google usage. The PDF does not provide a formal security analysis; exclude the claim or label it opinion.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "topicId": "source-creative-opinions",
+    "nuance": "Includes writing-style, Research mode, loop-engineering, platform-switching, and commercial-success opinions. Teach as provocative heuristics, not facts.",
+    "records": [
+      {
+        "recordId": "rub-19",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Vibecoding is not a business model",
+        "pages": [
+          25
+        ],
+        "evidence": "Fast app generation does not replace product discovery, distribution, reliability, security or willingness-to-pay. Teach outcome validation alongside code generation.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-21",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Research-mode skepticism",
+        "pages": [
+          27
+        ],
+        "evidence": "The author reports low usage of a named Research mode. This is opinion and product telemetry is not supplied; do not present it as fact.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      },
+      {
+        "recordId": "rub-23",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Remove generic AI writing signals",
+        "pages": [
+          28
+        ],
+        "evidence": "Use concrete voice, source-specific details and editorial revision rather than accepting generic polished prose.",
+        "details": [],
+        "warnings": [],
+        "confidence": "high"
+      },
+      {
+        "recordId": "rub-24",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Avoid technique-chasing",
+        "pages": [
+          29
+        ],
+        "evidence": "The author dismisses trend-driven jargon such as loop engineering. Reconcile this with the engineering source: ignore jargon for simple personal work, but bounded loops and observability matter for unattended production systems.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-25",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "Do not constantly switch tools",
+        "pages": [
+          29
+        ],
+        "evidence": "Depth with one primary tool can beat repeated migration driven by hype; use another tool when a concrete requirement justifies it.",
+        "details": [],
+        "warnings": [],
+        "confidence": "medium"
+      },
+      {
+        "recordId": "rub-27",
+        "sourceId": "pdf-ruben-27",
+        "sourceTitle": "27 Claude tips after 1,800 hours",
+        "title": "AI-assisted mathematical discovery anecdote",
+        "pages": [
+          30,
+          31
+        ],
+        "evidence": "A closing anecdote illustrates rapidly expanding capability but does not translate into a Claude Code operating practice without external verification.",
+        "details": [],
+        "warnings": [],
+        "confidence": "low"
+      }
+    ]
+  }
+]

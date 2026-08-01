@@ -1,0 +1,416 @@
+[
+  {
+    "topic": "Agent goals",
+    "lessonId": "lesson-agent-loop",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Agent loop",
+    "lessonId": "lesson-agent-loop",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Harness engineering",
+    "lessonId": "lesson-agentic-harness",
+    "sourceIds": [
+      "pdf-agentic-10"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Loop engineering",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Context engineering",
+    "lessonId": "lesson-context",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Tool design and use",
+    "lessonId": "lesson-tool-design",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Memory architecture",
+    "lessonId": "lesson-state-memory",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "State management",
+    "lessonId": "lesson-state-memory",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Planning and decomposition",
+    "lessonId": "lesson-plan-slices",
+    "sourceIds": [
+      "pdf-agentic-15",
+      "pdf-ykdojo-repo"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Reflection",
+    "lessonId": "lesson-stopping-recovery",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Orchestration",
+    "lessonId": "lesson-orchestration",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Multi-agent systems",
+    "lessonId": "lesson-orchestration",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Guardrails",
+    "lessonId": "lesson-guardrails-human",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Permissions",
+    "lessonId": "lesson-guardrails-human",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Human in the loop",
+    "lessonId": "lesson-guardrails-human",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Evals",
+    "lessonId": "lesson-evals-observability",
+    "sourceIds": [
+      "pdf-agentic-10"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Observability and tracing",
+    "lessonId": "lesson-evals-observability",
+    "sourceIds": [
+      "pdf-agentic-10",
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Stopping conditions",
+    "lessonId": "lesson-stopping-recovery",
+    "sourceIds": [
+      "pdf-agentic-15"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Skills",
+    "lessonId": "lesson-hooks-subagents",
+    "sourceIds": [
+      "pdf-agentic-15",
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Ralph loop core mechanism",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "PRD and atomic prd.json tasks",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "progress.txt and agents.md memory",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Completion promise and stop hook",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Ralph safety and when not to use",
+    "lessonId": "lesson-ralph-loop",
+    "sourceIds": [
+      "pdf-ralph-loop"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "CLAUDE.md mental model",
+    "lessonId": "lesson-claudemd",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "CLAUDE.md hierarchy and monorepos",
+    "lessonId": "lesson-claudemd-layers",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Progressive disclosure and modular instructions",
+    "lessonId": "lesson-claudemd-layers",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Hooks",
+    "lessonId": "lesson-hooks-subagents",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Subagents",
+    "lessonId": "lesson-hooks-subagents",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "MCP documentation and selection",
+    "lessonId": "lesson-hooks-subagents",
+    "sourceIds": [
+      "pdf-claudemd-masterclass"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Status line and slash commands",
+    "lessonId": "lesson-daily-interface",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-reddit-25"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Voice input",
+    "lessonId": "lesson-daily-interface",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-ruben-27"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Terminal aliases/output/input editing",
+    "lessonId": "lesson-daily-interface",
+    "sourceIds": [
+      "pdf-ykdojo-repo"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Session history, fork, compact, handoff",
+    "lessonId": "lesson-context",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Git, GitHub, PRs, worktrees",
+    "lessonId": "lesson-git-review",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Write-test-verification cycle and TDD",
+    "lessonId": "lesson-debug-evidence",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-official-best-practices"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Background commands and bounded polling",
+    "lessonId": "lesson-automation",
+    "sourceIds": [
+      "pdf-ykdojo-repo"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Containers and isolated autonomy",
+    "lessonId": "lesson-permissions",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Research and writing in Markdown",
+    "lessonId": "lesson-research-writing-devops",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-ruben-27"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Browser automation and visual verification",
+    "lessonId": "lesson-research-writing-devops",
+    "sourceIds": [
+      "pdf-reddit-25",
+      "pdf-ykdojo-repo"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "CI and DevOps investigation",
+    "lessonId": "lesson-research-writing-devops",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-linkedin-32"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Artifacts, remote/phone, universal interface",
+    "lessonId": "lesson-research-writing-devops",
+    "sourceIds": [
+      "pdf-ykdojo-repo",
+      "pdf-ruben-27"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Graphify concept graph",
+    "lessonId": "lesson-knowledge-graph",
+    "sourceIds": [
+      "pdf-graphify-obsidian"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Obsidian vault export and safe import",
+    "lessonId": "lesson-knowledge-graph",
+    "sourceIds": [
+      "pdf-graphify-obsidian"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Knowledge provenance and source backlinks",
+    "lessonId": "lesson-knowledge-graph",
+    "sourceIds": [
+      "pdf-graphify-obsidian"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Fresh sessions and context decay",
+    "lessonId": "lesson-context",
+    "sourceIds": [
+      "pdf-ruben-27",
+      "pdf-ykdojo-repo"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Clarifying questions and negative examples",
+    "lessonId": "lesson-prompt-briefs",
+    "sourceIds": [
+      "pdf-ruben-27"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Official explore-plan-implement-commit workflow",
+    "lessonId": "lesson-plan-slices",
+    "sourceIds": [
+      "pdf-official-best-practices"
+    ],
+    "status": "covered"
+  },
+  {
+    "topic": "Non-interactive mode and parallel sessions",
+    "lessonId": "lesson-automation",
+    "sourceIds": [
+      "pdf-official-best-practices"
+    ],
+    "status": "covered"
+  }
+]

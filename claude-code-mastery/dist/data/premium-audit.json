@@ -1,0 +1,5156 @@
+{
+  "auditedAt": "2026-07-31T22:23:16.425Z",
+  "rubric": "PREMIUM_QUALITY_RUBRIC.md",
+  "topics": 95,
+  "passed": 95,
+  "failed": 0,
+  "highPriorityFailures": [],
+  "failureCounts": {},
+  "limitations": [
+    "Similarity and vocabulary checks are editorial rejection heuristics, not semantic proof.",
+    "Commands are required only for procedural domains; a human must still judge whether the chosen artifact is the right one.",
+    "Valid page numbers prove traceability, not faithful interpretation of the source."
+  ],
+  "results": [
+    {
+      "id": "found-goal-vs-task",
+      "title": "Persistent goals versus finite tasks",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "goal",
+          "persists",
+          "across",
+          "observations",
+          "task",
+          "endpoint.",
+          "teach",
+          "stop",
+          "conditions",
+          "goals."
+        ],
+        "coveredTerms": [
+          "goal",
+          "persists",
+          "across",
+          "observations",
+          "task",
+          "endpoint.",
+          "teach",
+          "stop",
+          "conditions",
+          "goals."
+        ],
+        "mechanismTerms": [
+          "goal",
+          "persists",
+          "across",
+          "observations",
+          "task",
+          "endpoint.",
+          "teach",
+          "stop",
+          "conditions",
+          "goals."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "found-agent-loop",
+      "title": "Observe–decide–act–check loop",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "separate",
+          "stages",
+          "show",
+          "external",
+          "changes",
+          "next",
+          "action."
+        ],
+        "coveredTerms": [
+          "separate",
+          "stages",
+          "show",
+          "external",
+          "changes",
+          "next",
+          "action."
+        ],
+        "mechanismTerms": [
+          "separate",
+          "stages",
+          "show",
+          "external",
+          "changes",
+          "next",
+          "action."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "found-reflection-rule",
+      "title": "Reflection as a measurable correction rule",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "open-ended",
+          "self-critique",
+          "compares",
+          "criterion."
+        ],
+        "coveredTerms": [
+          "open-ended",
+          "self-critique",
+          "compares",
+          "criterion."
+        ],
+        "mechanismTerms": [
+          "open-ended",
+          "self-critique",
+          "compares",
+          "criterion."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "found-stopping",
+      "title": "Explicit stopping conditions",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "distinguish",
+          "completion",
+          "budget",
+          "time",
+          "error",
+          "risk",
+          "escalation",
+          "stops."
+        ],
+        "coveredTerms": [
+          "distinguish",
+          "completion",
+          "budget",
+          "time",
+          "error",
+          "risk",
+          "escalation",
+          "stops."
+        ],
+        "mechanismTerms": [
+          "distinguish",
+          "completion",
+          "budget",
+          "time",
+          "error",
+          "risk",
+          "escalation",
+          "stops."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "found-harness",
+      "title": "Harness engineering",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "environment",
+          "tools",
+          "context",
+          "permissions",
+          "feedback",
+          "model",
+          "alone."
+        ],
+        "coveredTerms": [
+          "environment",
+          "tools",
+          "context",
+          "permissions",
+          "feedback",
+          "model",
+          "alone."
+        ],
+        "mechanismTerms": [
+          "environment",
+          "tools",
+          "context",
+          "permissions",
+          "feedback",
+          "model",
+          "alone."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "found-loop-engineering",
+      "title": "Loop engineering",
+      "domain": "agent-foundations",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "general",
+          "design",
+          "remain",
+          "separate",
+          "source-specific",
+          "ralph",
+          "implementation."
+        ],
+        "coveredTerms": [
+          "general",
+          "design",
+          "remain",
+          "separate",
+          "source-specific",
+          "ralph",
+          "implementation."
+        ],
+        "mechanismTerms": [
+          "general",
+          "design",
+          "remain",
+          "separate",
+          "source-specific",
+          "ralph",
+          "implementation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-executable-brief",
+      "title": "Executable prompt briefs",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "outcome",
+          "constraints",
+          "non-goals",
+          "ambiguity",
+          "policy",
+          "verification",
+          "distinct",
+          "fields."
+        ],
+        "coveredTerms": [
+          "teach",
+          "outcome",
+          "constraints",
+          "non-goals",
+          "ambiguity",
+          "policy",
+          "verification",
+          "distinct",
+          "fields."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "outcome",
+          "constraints",
+          "non-goals",
+          "ambiguity",
+          "policy",
+          "verification",
+          "distinct",
+          "fields."
+        ],
+        "sharedBoilerplateSentences": [],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-clarifying-questions",
+      "title": "AskUserQuestion and material ambiguity",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "questions",
+          "answers",
+          "alter",
+          "scope",
+          "architecture",
+          "risk",
+          "acceptance",
+          "criteria."
+        ],
+        "coveredTerms": [
+          "questions",
+          "answers",
+          "alter",
+          "scope",
+          "architecture",
+          "risk",
+          "acceptance",
+          "criteria."
+        ],
+        "mechanismTerms": [
+          "questions",
+          "answers",
+          "alter",
+          "scope",
+          "architecture",
+          "risk",
+          "acceptance",
+          "criteria."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-voice-context",
+      "title": "Voice input for high-bandwidth context",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "messy",
+          "dictation",
+          "preserve",
+          "constraints",
+          "contradictions",
+          "failed",
+          "attempts",
+          "require",
+          "clarification",
+          "written",
+          "brief",
+          "afterward."
+        ],
+        "coveredTerms": [
+          "messy",
+          "dictation",
+          "preserve",
+          "constraints",
+          "contradictions",
+          "failed",
+          "attempts",
+          "require",
+          "clarification",
+          "written",
+          "brief",
+          "afterward."
+        ],
+        "mechanismTerms": [
+          "messy",
+          "dictation",
+          "preserve",
+          "constraints",
+          "contradictions",
+          "failed",
+          "attempts",
+          "require",
+          "clarification",
+          "written",
+          "brief",
+          "afterward."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "prompt-visual-reference",
+      "title": "Screenshots as design evidence",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "visual",
+          "reference",
+          "communicate",
+          "layout",
+          "specify",
+          "what",
+          "copy",
+          "copy."
+        ],
+        "coveredTerms": [
+          "visual",
+          "reference",
+          "communicate",
+          "layout",
+          "specify",
+          "what",
+          "copy",
+          "copy."
+        ],
+        "mechanismTerms": [
+          "visual",
+          "reference",
+          "communicate",
+          "layout",
+          "specify",
+          "what",
+          "copy",
+          "copy."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-edit-before-bad-answer",
+      "title": "Edit or branch before a bad trajectory",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "ruben",
+          "recommends",
+          "editing",
+          "earlier",
+          "prompt",
+          "describes",
+          "fork/half-clone.",
+          "present",
+          "both",
+          "repair",
+          "patterns."
+        ],
+        "coveredTerms": [
+          "ruben",
+          "recommends",
+          "editing",
+          "earlier",
+          "prompt",
+          "describes",
+          "fork/half-clone.",
+          "present",
+          "both",
+          "repair",
+          "patterns."
+        ],
+        "mechanismTerms": [
+          "ruben",
+          "recommends",
+          "editing",
+          "earlier",
+          "prompt",
+          "describes",
+          "fork/half-clone.",
+          "present",
+          "both",
+          "repair",
+          "patterns."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-negative-feedback",
+      "title": "Share dislikes and negative examples",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "rejected",
+          "example",
+          "constrain",
+          "taste",
+          "better",
+          "than",
+          "vague",
+          "positive",
+          "adjectives."
+        ],
+        "coveredTerms": [
+          "rejected",
+          "example",
+          "constrain",
+          "taste",
+          "better",
+          "than",
+          "vague",
+          "positive",
+          "adjectives."
+        ],
+        "mechanismTerms": [
+          "rejected",
+          "example",
+          "constrain",
+          "taste",
+          "better",
+          "than",
+          "vague",
+          "positive",
+          "adjectives."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-abstraction-level",
+      "title": "Choose the right abstraction level",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "low-level",
+          "micromanages",
+          "high-level",
+          "removes",
+          "invariants",
+          "verification."
+        ],
+        "coveredTerms": [
+          "low-level",
+          "micromanages",
+          "high-level",
+          "removes",
+          "invariants",
+          "verification."
+        ],
+        "mechanismTerms": [
+          "low-level",
+          "micromanages",
+          "high-level",
+          "removes",
+          "invariants",
+          "verification."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "prompt-plan-vs-prototype",
+      "title": "Plan deliberately and prototype quickly",
+      "domain": "prompting",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "spikes",
+          "unknowns",
+          "plans",
+          "dependencies",
+          "turn",
+          "either",
+          "dogma."
+        ],
+        "coveredTerms": [
+          "spikes",
+          "unknowns",
+          "plans",
+          "dependencies",
+          "turn",
+          "either",
+          "dogma."
+        ],
+        "mechanismTerms": [
+          "spikes",
+          "unknowns",
+          "plans",
+          "dependencies",
+          "turn",
+          "either",
+          "dogma."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "repo-map",
+      "title": "Map an unfamiliar repository",
+      "domain": "repository",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "require",
+          "file-backed",
+          "claims",
+          "about",
+          "entry",
+          "points",
+          "flows",
+          "tests",
+          "conventions."
+        ],
+        "coveredTerms": [
+          "require",
+          "file-backed",
+          "claims",
+          "about",
+          "entry",
+          "points",
+          "flows",
+          "tests",
+          "conventions."
+        ],
+        "mechanismTerms": [
+          "require",
+          "file-backed",
+          "claims",
+          "about",
+          "entry",
+          "points",
+          "flows",
+          "tests",
+          "conventions."
+        ],
+        "sharedBoilerplateSentences": [],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "repo-decomposition",
+      "title": "Dependency-aware task decomposition",
+      "domain": "repository",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "split",
+          "independently",
+          "verifiable",
+          "outcomes",
+          "real",
+          "dependencies",
+          "arbitrary",
+          "file",
+          "counts."
+        ],
+        "coveredTerms": [
+          "split",
+          "independently",
+          "verifiable",
+          "outcomes",
+          "real",
+          "dependencies",
+          "arbitrary",
+          "file",
+          "counts."
+        ],
+        "mechanismTerms": [
+          "split",
+          "independently",
+          "verifiable",
+          "outcomes",
+          "real",
+          "dependencies",
+          "arbitrary",
+          "file",
+          "counts."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "repo-index-large",
+      "title": "Large-codebase index files",
+      "domain": "repository",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "generate",
+          "navigational",
+          "indexes",
+          "cite",
+          "them",
+          "claude.md",
+          "refreshable."
+        ],
+        "coveredTerms": [
+          "generate",
+          "navigational",
+          "indexes",
+          "cite",
+          "them",
+          "claude.md",
+          "refreshable."
+        ],
+        "mechanismTerms": [
+          "generate",
+          "navigational",
+          "indexes",
+          "cite",
+          "them",
+          "claude.md",
+          "refreshable."
+        ],
+        "sharedBoilerplateSentences": [],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "repo-simplify",
+      "title": "Simplify overcomplicated generated code",
+      "domain": "repository",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "after",
+          "correctness",
+          "simplification",
+          "pass",
+          "constrained",
+          "tests",
+          "public",
+          "behavior."
+        ],
+        "coveredTerms": [
+          "after",
+          "correctness",
+          "simplification",
+          "pass",
+          "constrained",
+          "tests",
+          "public",
+          "behavior."
+        ],
+        "mechanismTerms": [
+          "after",
+          "correctness",
+          "simplification",
+          "pass",
+          "constrained",
+          "tests",
+          "public",
+          "behavior."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-engineering",
+      "title": "Context engineering",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "select",
+          "structure",
+          "refresh",
+          "remove",
+          "more",
+          "automatically",
+          "better."
+        ],
+        "coveredTerms": [
+          "select",
+          "structure",
+          "refresh",
+          "remove",
+          "more",
+          "automatically",
+          "better."
+        ],
+        "mechanismTerms": [
+          "select",
+          "structure",
+          "refresh",
+          "remove",
+          "more",
+          "automatically",
+          "better."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "context-freshness",
+      "title": "Fresh sessions and context decay",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "treat",
+          "ruben",
+          "turn",
+          "counts",
+          "anecdotal",
+          "product",
+          "guarantees",
+          "teach",
+          "symptom-based",
+          "reset",
+          "decisions."
+        ],
+        "coveredTerms": [
+          "treat",
+          "ruben",
+          "turn",
+          "counts",
+          "anecdotal",
+          "product",
+          "guarantees",
+          "teach",
+          "symptom-based",
+          "reset",
+          "decisions."
+        ],
+        "mechanismTerms": [
+          "treat",
+          "ruben",
+          "turn",
+          "counts",
+          "anecdotal",
+          "product",
+          "guarantees",
+          "teach",
+          "symptom-based",
+          "reset",
+          "decisions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-compact-handoff",
+      "title": "Proactive compaction and handoff documents",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "preserves",
+          "goal",
+          "completed",
+          "decisions",
+          "remaining",
+          "tasks",
+          "verification",
+          "hazards."
+        ],
+        "coveredTerms": [
+          "preserves",
+          "goal",
+          "completed",
+          "decisions",
+          "remaining",
+          "tasks",
+          "verification",
+          "hazards."
+        ],
+        "mechanismTerms": [
+          "preserves",
+          "goal",
+          "completed",
+          "decisions",
+          "remaining",
+          "tasks",
+          "verification",
+          "hazards."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-history-search",
+      "title": "Search conversation history",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "safe",
+          "local",
+          "extracting",
+          "user",
+          "messages",
+          "without",
+          "leaking",
+          "session",
+          "data."
+        ],
+        "coveredTerms": [
+          "teach",
+          "safe",
+          "local",
+          "extracting",
+          "user",
+          "messages",
+          "without",
+          "leaking",
+          "session",
+          "data."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "safe",
+          "local",
+          "extracting",
+          "user",
+          "messages",
+          "without",
+          "leaking",
+          "session",
+          "data."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "memory-architecture",
+      "title": "Memory architecture and retention policy",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "separate",
+          "working",
+          "context",
+          "durable",
+          "instructions",
+          "episodic",
+          "progress",
+          "external",
+          "knowledge."
+        ],
+        "coveredTerms": [
+          "separate",
+          "working",
+          "context",
+          "durable",
+          "instructions",
+          "episodic",
+          "progress",
+          "external",
+          "knowledge."
+        ],
+        "mechanismTerms": [
+          "separate",
+          "working",
+          "context",
+          "durable",
+          "instructions",
+          "episodic",
+          "progress",
+          "external",
+          "knowledge."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "state-management",
+      "title": "Explicit task state management",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "represent",
+          "queued",
+          "active",
+          "blocked",
+          "verified",
+          "failed",
+          "done",
+          "states",
+          "explicitly."
+        ],
+        "coveredTerms": [
+          "represent",
+          "queued",
+          "active",
+          "blocked",
+          "verified",
+          "failed",
+          "done",
+          "states",
+          "explicitly."
+        ],
+        "mechanismTerms": [
+          "represent",
+          "queued",
+          "active",
+          "blocked",
+          "verified",
+          "failed",
+          "done",
+          "states",
+          "explicitly."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-connectors-cost",
+      "title": "Connector selection and context cost",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "ruben",
+          "token-cost",
+          "claim",
+          "source-specific",
+          "time-sensitive",
+          "teach",
+          "least-context",
+          "purposeful",
+          "combinations."
+        ],
+        "coveredTerms": [
+          "ruben",
+          "token-cost",
+          "claim",
+          "source-specific",
+          "time-sensitive",
+          "teach",
+          "least-context",
+          "purposeful",
+          "combinations."
+        ],
+        "mechanismTerms": [
+          "ruben",
+          "token-cost",
+          "claim",
+          "source-specific",
+          "time-sensitive",
+          "teach",
+          "least-context",
+          "purposeful",
+          "combinations."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-projects-fit",
+      "title": "Projects for fixed material versus creative work",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "preserve",
+          "ruben",
+          "workflow",
+          "opinion",
+          "recurring",
+          "corpus",
+          "benefits",
+          "blank",
+          "context",
+          "help",
+          "novelty."
+        ],
+        "coveredTerms": [
+          "preserve",
+          "ruben",
+          "workflow",
+          "opinion",
+          "recurring",
+          "corpus",
+          "benefits",
+          "blank",
+          "context",
+          "help",
+          "novelty."
+        ],
+        "mechanismTerms": [
+          "preserve",
+          "ruben",
+          "workflow",
+          "opinion",
+          "recurring",
+          "corpus",
+          "benefits",
+          "blank",
+          "context",
+          "help",
+          "novelty."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-mental-model",
+      "title": "Use CLAUDE.md as project memory, boundary, and primer",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "what",
+          "belongs",
+          "instructions",
+          "become",
+          "stale."
+        ],
+        "coveredTerms": [
+          "teach",
+          "what",
+          "belongs",
+          "instructions",
+          "become",
+          "stale."
+        ],
+        "mechanismTerms": [
+          "instructions",
+          "become",
+          "stale."
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-hierarchy",
+      "title": "Place instructions at the narrowest stable scope",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "claude.md",
+          "hierarchy",
+          "scopes",
+          "monorepos",
+          "show",
+          "load",
+          "rules",
+          "level."
+        ],
+        "coveredTerms": [
+          "claude.md",
+          "hierarchy",
+          "scopes",
+          "show",
+          "load",
+          "rules",
+          "level."
+        ],
+        "mechanismTerms": [
+          "claude.md",
+          "load",
+          "rules"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "instructions-progressive-disclosure",
+      "title": "Reveal detailed instructions only when needed",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "progressive",
+          "disclosure",
+          "modular",
+          "root",
+          "concise",
+          "link",
+          "conditional",
+          "detail",
+          "indexes",
+          "instead",
+          "preloading",
+          "everything."
+        ],
+        "coveredTerms": [
+          "progressive",
+          "disclosure",
+          "root",
+          "concise",
+          "link",
+          "conditional",
+          "detail",
+          "indexes",
+          "instead",
+          "preloading",
+          "everything."
+        ],
+        "mechanismTerms": [
+          "root",
+          "link",
+          "conditional"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "instructions-workflows",
+      "title": "Encode repeatable workflows as ordered, verifiable procedures",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "executable",
+          "workflow",
+          "definitions",
+          "claude.md",
+          "plus",
+          "checks",
+          "recurring",
+          "repository",
+          "operations."
+        ],
+        "coveredTerms": [
+          "executable",
+          "workflow",
+          "definitions",
+          "claude.md",
+          "plus",
+          "checks",
+          "recurring",
+          "repository",
+          "operations."
+        ],
+        "mechanismTerms": [
+          "executable",
+          "workflow",
+          "definitions",
+          "claude.md",
+          "checks",
+          "recurring",
+          "repository"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-conditional",
+      "title": "Apply special rules only under the right condition",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "conditional",
+          "path-specific",
+          "instructions",
+          "load",
+          "file",
+          "task",
+          "tool",
+          "applies."
+        ],
+        "coveredTerms": [
+          "conditional",
+          "instructions",
+          "load",
+          "file",
+          "task",
+          "tool",
+          "applies."
+        ],
+        "mechanismTerms": [
+          "load",
+          "file",
+          "task"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-maintenance",
+      "title": "Maintain CLAUDE.md as versioned code",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "maintenance",
+          "version",
+          "control",
+          "update",
+          "capture",
+          "discoveries",
+          "review",
+          "periodically",
+          "changes."
+        ],
+        "coveredTerms": [
+          "maintenance",
+          "version",
+          "control",
+          "update",
+          "capture",
+          "discoveries",
+          "review",
+          "periodically",
+          "changes."
+        ],
+        "mechanismTerms": [
+          "maintenance",
+          "update",
+          "discoveries",
+          "review"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "extensions-taxonomy",
+      "title": "CLAUDE.md versus skills, commands, hooks, plugins, and MCP",
+      "domain": "extensions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "decision",
+          "based",
+          "automatic",
+          "context",
+          "invocation",
+          "determinism",
+          "reuse",
+          "external",
+          "access."
+        ],
+        "coveredTerms": [
+          "decision",
+          "based",
+          "automatic",
+          "context",
+          "invocation",
+          "determinism",
+          "reuse",
+          "external",
+          "access."
+        ],
+        "mechanismTerms": [
+          "decision",
+          "based",
+          "automatic",
+          "context",
+          "invocation",
+          "determinism",
+          "reuse",
+          "external",
+          "access."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "extensions-skills",
+      "title": "Skills as reusable capabilities",
+      "domain": "extensions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "sources",
+          "disagree",
+          "scope",
+          "hamza/yk",
+          "emphasize",
+          "reuse",
+          "ruben",
+          "advises",
+          "fixed",
+          "repeated",
+          "tasks",
+          "rather",
+          "than",
+          "creative",
+          "work."
+        ],
+        "coveredTerms": [
+          "sources",
+          "disagree",
+          "scope",
+          "hamza/yk",
+          "emphasize",
+          "reuse",
+          "ruben",
+          "advises",
+          "fixed",
+          "repeated",
+          "tasks",
+          "rather",
+          "than",
+          "creative",
+          "work."
+        ],
+        "mechanismTerms": [
+          "sources",
+          "disagree",
+          "scope",
+          "hamza/yk",
+          "emphasize",
+          "reuse",
+          "ruben",
+          "advises",
+          "fixed",
+          "repeated",
+          "tasks",
+          "rather",
+          "than",
+          "creative",
+          "work."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "extensions-hooks",
+      "title": "Hooks for deterministic enforcement",
+      "domain": "extensions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "machine-enforceable",
+          "checks",
+          "vague",
+          "judgment",
+          "explain",
+          "failure",
+          "bypass",
+          "paths."
+        ],
+        "coveredTerms": [
+          "machine-enforceable",
+          "checks",
+          "vague",
+          "judgment",
+          "explain",
+          "failure",
+          "bypass",
+          "paths."
+        ],
+        "mechanismTerms": [
+          "machine-enforceable",
+          "checks",
+          "vague",
+          "judgment",
+          "explain",
+          "failure",
+          "bypass",
+          "paths."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "extensions-mcp",
+      "title": "MCP selection and documentation",
+      "domain": "extensions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "document",
+          "server",
+          "purpose",
+          "capabilities",
+          "authentication",
+          "allowed",
+          "operations",
+          "fallback."
+        ],
+        "coveredTerms": [
+          "document",
+          "server",
+          "purpose",
+          "capabilities",
+          "authentication",
+          "allowed",
+          "operations",
+          "fallback."
+        ],
+        "mechanismTerms": [
+          "document",
+          "server",
+          "purpose",
+          "capabilities",
+          "authentication",
+          "allowed",
+          "operations",
+          "fallback."
+        ],
+        "sharedBoilerplateSentences": [],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "extensions-slash-status-alias",
+      "title": "Slash commands, status line, aliases, and input controls",
+      "domain": "daily-interface",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "these",
+          "distinct",
+          "ergonomics",
+          "visibility",
+          "command",
+          "recall",
+          "shell",
+          "launch",
+          "prompt",
+          "editing."
+        ],
+        "coveredTerms": [
+          "these",
+          "distinct",
+          "ergonomics",
+          "visibility",
+          "command",
+          "recall",
+          "shell",
+          "launch",
+          "prompt",
+          "editing."
+        ],
+        "mechanismTerms": [
+          "these",
+          "distinct",
+          "ergonomics",
+          "visibility",
+          "command",
+          "recall",
+          "shell",
+          "launch",
+          "prompt",
+          "editing."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "extensions-dx-setup-accounts",
+      "title": "dx plugin, quick setup, and multiple accounts",
+      "domain": "daily-interface",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "later",
+          "tips",
+          "appear",
+          "index",
+          "extracted",
+          "detail",
+          "limited",
+          "flag",
+          "exact",
+          "coverage",
+          "limitation."
+        ],
+        "coveredTerms": [
+          "later",
+          "tips",
+          "appear",
+          "index",
+          "extracted",
+          "detail",
+          "limited",
+          "flag",
+          "exact",
+          "coverage",
+          "limitation."
+        ],
+        "mechanismTerms": [
+          "later",
+          "tips",
+          "appear",
+          "index",
+          "extracted",
+          "detail",
+          "limited",
+          "flag",
+          "exact",
+          "coverage",
+          "limitation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "tool-interface-design",
+      "title": "Tool design and clear interfaces",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "narrow",
+          "schemas",
+          "descriptive",
+          "errors",
+          "idempotency",
+          "observability",
+          "safe",
+          "defaults."
+        ],
+        "coveredTerms": [
+          "teach",
+          "narrow",
+          "schemas",
+          "descriptive",
+          "errors",
+          "idempotency",
+          "observability",
+          "safe",
+          "defaults."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "narrow",
+          "schemas",
+          "descriptive",
+          "errors",
+          "idempotency",
+          "observability",
+          "safe",
+          "defaults."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "tool-terminal-output",
+      "title": "Capture terminal output as agent evidence",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "tmux",
+          "logs",
+          "send",
+          "inspect",
+          "bound",
+          "long-running",
+          "commands."
+        ],
+        "coveredTerms": [
+          "tmux",
+          "logs",
+          "send",
+          "inspect",
+          "bound",
+          "long-running",
+          "commands."
+        ],
+        "mechanismTerms": [
+          "tmux",
+          "logs",
+          "send",
+          "inspect",
+          "bound",
+          "long-running",
+          "commands."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "tool-realpath",
+      "title": "Use absolute paths with realpath",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "reduce",
+          "ambiguity",
+          "across",
+          "processes",
+          "containers",
+          "automation."
+        ],
+        "coveredTerms": [
+          "reduce",
+          "ambiguity",
+          "across",
+          "processes",
+          "containers",
+          "automation."
+        ],
+        "mechanismTerms": [
+          "reduce",
+          "ambiguity",
+          "across",
+          "processes",
+          "containers",
+          "automation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "tool-browser-research",
+      "title": "Browser research and blocked-site fallback",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "separate",
+          "retrieval",
+          "interaction",
+          "alternate",
+          "legitimate",
+          "access",
+          "capture",
+          "citation."
+        ],
+        "coveredTerms": [
+          "separate",
+          "retrieval",
+          "interaction",
+          "alternate",
+          "legitimate",
+          "access",
+          "capture",
+          "citation."
+        ],
+        "mechanismTerms": [
+          "separate",
+          "retrieval",
+          "interaction",
+          "alternate",
+          "legitimate",
+          "access",
+          "capture",
+          "citation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "tool-artifacts-miniapps",
+      "title": "Artifacts and persistent mini-apps",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "distinguish",
+          "static",
+          "visualization",
+          "interactive",
+          "data",
+          "persisted",
+          "embedding",
+          "claude."
+        ],
+        "coveredTerms": [
+          "distinguish",
+          "static",
+          "visualization",
+          "interactive",
+          "data",
+          "persisted",
+          "embedding",
+          "claude."
+        ],
+        "mechanismTerms": [
+          "distinguish",
+          "static",
+          "visualization",
+          "interactive",
+          "data",
+          "persisted",
+          "embedding",
+          "claude."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "tool-html-infographics",
+      "title": "HTML as an editable visual artifact",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "ruben",
+          "workaround",
+          "generalize",
+          "claim",
+          "claude",
+          "cannot",
+          "generate",
+          "images",
+          "across",
+          "products",
+          "time."
+        ],
+        "coveredTerms": [
+          "teach",
+          "ruben",
+          "workaround",
+          "generalize",
+          "claim",
+          "claude",
+          "cannot",
+          "generate",
+          "images",
+          "across",
+          "products",
+          "time."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "ruben",
+          "workaround",
+          "generalize",
+          "claim",
+          "claude",
+          "cannot",
+          "generate",
+          "images",
+          "across",
+          "products",
+          "time."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "tool-universal-interface",
+      "title": "Claude Code as a universal computer interface",
+      "domain": "tools",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "power",
+          "comes",
+          "composable",
+          "shell/files/api",
+          "access",
+          "risk",
+          "grows",
+          "ambient",
+          "authority."
+        ],
+        "coveredTerms": [
+          "power",
+          "comes",
+          "composable",
+          "shell/files/api",
+          "access",
+          "risk",
+          "grows",
+          "ambient",
+          "authority."
+        ],
+        "mechanismTerms": [
+          "power",
+          "comes",
+          "composable",
+          "shell/files/api",
+          "access",
+          "risk",
+          "grows",
+          "ambient",
+          "authority."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-targets",
+      "title": "Verification targets and evidence hierarchy",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "match",
+          "claim",
+          "tests",
+          "types",
+          "lint",
+          "runtime",
+          "screenshot",
+          "diff",
+          "logs",
+          "human",
+          "judgment."
+        ],
+        "coveredTerms": [
+          "match",
+          "claim",
+          "tests",
+          "types",
+          "lint",
+          "runtime",
+          "screenshot",
+          "diff",
+          "logs",
+          "human",
+          "judgment."
+        ],
+        "mechanismTerms": [
+          "match",
+          "claim",
+          "tests",
+          "types",
+          "lint",
+          "runtime",
+          "screenshot",
+          "diff",
+          "logs",
+          "human",
+          "judgment."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-write-test-cycle",
+      "title": "Closed write–test–inspect cycle",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "command",
+          "running",
+          "capture",
+          "compare",
+          "expectation."
+        ],
+        "coveredTerms": [
+          "command",
+          "running",
+          "capture",
+          "compare",
+          "expectation."
+        ],
+        "mechanismTerms": [
+          "command",
+          "running",
+          "capture",
+          "compare",
+          "expectation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-tdd",
+      "title": "Test-driven development with an agent",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "write",
+          "observe",
+          "failing",
+          "tests",
+          "commit",
+          "intent",
+          "implement",
+          "guard",
+          "against",
+          "merely",
+          "mirror",
+          "implementation."
+        ],
+        "coveredTerms": [
+          "write",
+          "observe",
+          "failing",
+          "tests",
+          "commit",
+          "intent",
+          "implement",
+          "guard",
+          "against",
+          "merely",
+          "mirror",
+          "implementation."
+        ],
+        "mechanismTerms": [
+          "write",
+          "observe",
+          "failing",
+          "tests",
+          "commit",
+          "intent",
+          "implement",
+          "guard",
+          "against",
+          "merely",
+          "mirror",
+          "implementation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-diff-review",
+      "title": "Diff review and independent reviewer sessions",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "separate",
+          "author",
+          "context",
+          "behavior",
+          "scope",
+          "tests",
+          "security",
+          "hidden",
+          "assumptions."
+        ],
+        "coveredTerms": [
+          "separate",
+          "author",
+          "context",
+          "behavior",
+          "scope",
+          "tests",
+          "security",
+          "hidden",
+          "assumptions."
+        ],
+        "mechanismTerms": [
+          "separate",
+          "author",
+          "context",
+          "behavior",
+          "scope",
+          "tests",
+          "security",
+          "hidden",
+          "assumptions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-evals",
+      "title": "Agent evaluation design",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "representative",
+          "tasks",
+          "measurable",
+          "graders",
+          "regression",
+          "sets",
+          "failure",
+          "taxonomy",
+          "demo",
+          "anecdotes."
+        ],
+        "coveredTerms": [
+          "representative",
+          "tasks",
+          "measurable",
+          "graders",
+          "regression",
+          "sets",
+          "failure",
+          "taxonomy",
+          "demo",
+          "anecdotes."
+        ],
+        "mechanismTerms": [
+          "representative",
+          "tasks",
+          "measurable",
+          "graders",
+          "regression",
+          "sets",
+          "failure",
+          "taxonomy",
+          "demo",
+          "anecdotes."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "verify-observability",
+      "title": "Observability and tracing",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "record",
+          "tool",
+          "calls",
+          "transitions",
+          "decisions",
+          "latency",
+          "cost",
+          "errors",
+          "artifacts",
+          "protecting",
+          "secrets."
+        ],
+        "coveredTerms": [
+          "record",
+          "tool",
+          "calls",
+          "transitions",
+          "decisions",
+          "latency",
+          "cost",
+          "errors",
+          "artifacts",
+          "protecting",
+          "secrets."
+        ],
+        "mechanismTerms": [
+          "record",
+          "tool",
+          "calls",
+          "transitions",
+          "decisions",
+          "latency",
+          "cost",
+          "errors",
+          "artifacts",
+          "protecting",
+          "secrets."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "git-gh-workflow",
+      "title": "Git and GitHub CLI as control surfaces",
+      "domain": "delivery",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "supplies",
+          "checkpoints",
+          "diffs",
+          "blame",
+          "branch",
+          "isolation",
+          "reviewable",
+          "history",
+          "just",
+          "backup."
+        ],
+        "coveredTerms": [
+          "supplies",
+          "checkpoints",
+          "diffs",
+          "blame",
+          "branch",
+          "isolation",
+          "reviewable",
+          "history",
+          "just",
+          "backup."
+        ],
+        "mechanismTerms": [
+          "supplies",
+          "checkpoints",
+          "diffs",
+          "blame",
+          "branch",
+          "isolation",
+          "reviewable",
+          "history",
+          "just",
+          "backup."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "git-worktrees",
+      "title": "Git worktrees for parallel branches",
+      "domain": "delivery",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "assign",
+          "branch",
+          "directory",
+          "files",
+          "integration",
+          "owner",
+          "prevent",
+          "semantic",
+          "collisions."
+        ],
+        "coveredTerms": [
+          "assign",
+          "branch",
+          "directory",
+          "files",
+          "integration",
+          "owner",
+          "prevent",
+          "semantic",
+          "collisions."
+        ],
+        "mechanismTerms": [
+          "assign",
+          "branch",
+          "directory",
+          "files",
+          "integration",
+          "owner",
+          "prevent",
+          "semantic",
+          "collisions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "git-interactive-pr",
+      "title": "Interactive pull-request review",
+      "domain": "delivery",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "fetch",
+          "context",
+          "inspect",
+          "each",
+          "comment",
+          "against",
+          "implement",
+          "selectively",
+          "rerun",
+          "checks",
+          "summarize",
+          "dispositions."
+        ],
+        "coveredTerms": [
+          "fetch",
+          "context",
+          "inspect",
+          "each",
+          "comment",
+          "against",
+          "implement",
+          "selectively",
+          "rerun",
+          "checks",
+          "summarize",
+          "dispositions."
+        ],
+        "mechanismTerms": [
+          "fetch",
+          "context",
+          "inspect",
+          "each",
+          "comment",
+          "against",
+          "implement",
+          "selectively",
+          "rerun",
+          "checks",
+          "summarize",
+          "dispositions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "git-devops-ci",
+      "title": "DevOps and CI investigation",
+      "domain": "delivery",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "read",
+          "pipeline",
+          "config",
+          "logs",
+          "reproduce",
+          "narrowly",
+          "preserve",
+          "deployment",
+          "boundaries",
+          "avoid",
+          "blind",
+          "retries."
+        ],
+        "coveredTerms": [
+          "read",
+          "pipeline",
+          "config",
+          "logs",
+          "reproduce",
+          "narrowly",
+          "preserve",
+          "deployment",
+          "boundaries",
+          "avoid",
+          "blind",
+          "retries."
+        ],
+        "mechanismTerms": [
+          "read",
+          "pipeline",
+          "config",
+          "logs",
+          "reproduce",
+          "narrowly",
+          "preserve",
+          "deployment",
+          "boundaries",
+          "avoid",
+          "blind",
+          "retries."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "permissions-guardrails",
+      "title": "Guardrails as enforceable boundaries",
+      "domain": "safety",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "separate",
+          "policy",
+          "statements",
+          "technical",
+          "enforcement",
+          "test",
+          "both",
+          "allow",
+          "deny",
+          "paths."
+        ],
+        "coveredTerms": [
+          "separate",
+          "policy",
+          "statements",
+          "technical",
+          "enforcement",
+          "test",
+          "both",
+          "allow",
+          "deny",
+          "paths."
+        ],
+        "mechanismTerms": [
+          "separate",
+          "policy",
+          "statements",
+          "technical",
+          "enforcement",
+          "test",
+          "both",
+          "allow",
+          "deny",
+          "paths."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "permissions-hitl",
+      "title": "Permissions and human approval gates",
+      "domain": "safety",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "place",
+          "irreversible",
+          "external",
+          "costly",
+          "ambiguous",
+          "security-sensitive",
+          "transitions."
+        ],
+        "coveredTerms": [
+          "place",
+          "irreversible",
+          "external",
+          "costly",
+          "ambiguous",
+          "security-sensitive",
+          "transitions."
+        ],
+        "mechanismTerms": [
+          "place",
+          "irreversible",
+          "external",
+          "costly",
+          "ambiguous",
+          "security-sensitive",
+          "transitions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "permissions-risk-tier",
+      "title": "Risk-tiered autonomy",
+      "domain": "safety",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "match",
+          "permission",
+          "mode",
+          "isolation",
+          "blast",
+          "radius",
+          "never",
+          "teach",
+          "blanket",
+          "bypass",
+          "default."
+        ],
+        "coveredTerms": [
+          "match",
+          "permission",
+          "mode",
+          "isolation",
+          "blast",
+          "radius",
+          "never",
+          "teach",
+          "blanket",
+          "bypass",
+          "default."
+        ],
+        "mechanismTerms": [
+          "match",
+          "permission",
+          "mode",
+          "isolation",
+          "blast",
+          "radius",
+          "never",
+          "teach",
+          "blanket",
+          "bypass",
+          "default."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "permissions-isolation",
+      "title": "Containers and isolated environments",
+      "domain": "safety",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "isolation",
+          "reduces",
+          "host",
+          "risk",
+          "remove",
+          "credential",
+          "network",
+          "data",
+          "supply-chain",
+          "risk."
+        ],
+        "coveredTerms": [
+          "isolation",
+          "reduces",
+          "host",
+          "risk",
+          "remove",
+          "credential",
+          "network",
+          "data",
+          "supply-chain",
+          "risk."
+        ],
+        "mechanismTerms": [
+          "isolation",
+          "reduces",
+          "host",
+          "risk",
+          "remove",
+          "credential",
+          "network",
+          "data",
+          "supply-chain",
+          "risk."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "permissions-auto-mode",
+      "title": "Auto mode with bounded scope",
+      "domain": "safety",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "prerequisites",
+          "approved",
+          "commands",
+          "monitoring",
+          "abort",
+          "conditions",
+          "product",
+          "behavior",
+          "change."
+        ],
+        "coveredTerms": [
+          "teach",
+          "prerequisites",
+          "approved",
+          "commands",
+          "monitoring",
+          "abort",
+          "conditions",
+          "product",
+          "behavior",
+          "change."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "prerequisites",
+          "approved",
+          "commands",
+          "monitoring",
+          "abort",
+          "conditions",
+          "product",
+          "behavior",
+          "change."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "parallel-orchestration",
+      "title": "Orchestration patterns",
+      "domain": "multi-agent",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "compare",
+          "sequential",
+          "parallel",
+          "router",
+          "supervisor",
+          "reviewer",
+          "escalation",
+          "patterns."
+        ],
+        "coveredTerms": [
+          "compare",
+          "sequential",
+          "parallel",
+          "router",
+          "supervisor",
+          "reviewer",
+          "escalation",
+          "patterns."
+        ],
+        "mechanismTerms": [
+          "compare",
+          "sequential",
+          "parallel",
+          "router",
+          "supervisor",
+          "reviewer",
+          "escalation",
+          "patterns."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "parallel-multi-agent-roles",
+      "title": "Role-specialized multi-agent systems",
+      "domain": "multi-agent",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "ruben",
+          "describes",
+          "cowork",
+          "parallelism",
+          "general",
+          "teaching",
+          "cover",
+          "distinct",
+          "outputs",
+          "handoffs",
+          "reviewer",
+          "independence",
+          "merge",
+          "cost."
+        ],
+        "coveredTerms": [
+          "ruben",
+          "describes",
+          "cowork",
+          "parallelism",
+          "general",
+          "teaching",
+          "cover",
+          "distinct",
+          "outputs",
+          "handoffs",
+          "reviewer",
+          "independence",
+          "merge",
+          "cost."
+        ],
+        "mechanismTerms": [
+          "ruben",
+          "describes",
+          "cowork",
+          "parallelism",
+          "general",
+          "teaching",
+          "cover",
+          "distinct",
+          "outputs",
+          "handoffs",
+          "reviewer",
+          "independence",
+          "merge",
+          "cost."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "parallel-boundaries",
+      "title": "Collision-free parallel work boundaries",
+      "domain": "multi-agent",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "define",
+          "ownership",
+          "shared",
+          "contracts",
+          "branch/worktree",
+          "completion",
+          "artifact",
+          "integrator."
+        ],
+        "coveredTerms": [
+          "define",
+          "ownership",
+          "shared",
+          "contracts",
+          "branch/worktree",
+          "completion",
+          "artifact",
+          "integrator."
+        ],
+        "mechanismTerms": [
+          "define",
+          "ownership",
+          "shared",
+          "contracts",
+          "branch/worktree",
+          "completion",
+          "artifact",
+          "integrator."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "parallel-background",
+      "title": "Background commands and subagents",
+      "domain": "multi-agent",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "needs",
+          "identifiers",
+          "bounded",
+          "polling",
+          "captured",
+          "cancellation",
+          "final",
+          "verification."
+        ],
+        "coveredTerms": [
+          "needs",
+          "identifiers",
+          "bounded",
+          "polling",
+          "captured",
+          "cancellation",
+          "final",
+          "verification."
+        ],
+        "mechanismTerms": [
+          "needs",
+          "identifiers",
+          "bounded",
+          "polling",
+          "captured",
+          "cancellation",
+          "final",
+          "verification."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "ralph-fit",
+      "title": "Decide when a Ralph loop fits",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "loops",
+          "they",
+          "bounded",
+          "testable",
+          "file-observable",
+          "iteration",
+          "avoid",
+          "ambiguous",
+          "taste",
+          "unsafe",
+          "external",
+          "effects",
+          "weak",
+          "verification."
+        ],
+        "coveredTerms": [
+          "bounded",
+          "testable",
+          "file-observable",
+          "iteration",
+          "avoid",
+          "ambiguous",
+          "taste",
+          "unsafe",
+          "external",
+          "effects",
+          "weak",
+          "verification."
+        ],
+        "mechanismTerms": [
+          "iteration",
+          "external",
+          "effects"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "ralph-core",
+      "title": "Understand the Ralph stop-hook mechanism",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "core",
+          "completion",
+          "promise",
+          "control",
+          "token",
+          "proof",
+          "hook",
+          "recycles",
+          "until",
+          "bounded",
+          "conditions",
+          "met."
+        ],
+        "coveredTerms": [
+          "core",
+          "completion",
+          "promise",
+          "control",
+          "token",
+          "proof",
+          "hook",
+          "recycles",
+          "until",
+          "bounded",
+          "conditions",
+          "met."
+        ],
+        "mechanismTerms": [
+          "core",
+          "completion",
+          "promise",
+          "control",
+          "token",
+          "hook",
+          "bounded"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "ralph-prd-tasks",
+      "title": "Turn a PRD into atomic prd.json tasks",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "each",
+          "task",
+          "needs",
+          "acceptance",
+          "criteria",
+          "dependencies",
+          "priority",
+          "machine-checkable",
+          "completion."
+        ],
+        "coveredTerms": [
+          "each",
+          "task",
+          "needs",
+          "acceptance",
+          "criteria",
+          "dependencies",
+          "priority",
+          "machine-checkable",
+          "completion."
+        ],
+        "mechanismTerms": [
+          "task",
+          "acceptance",
+          "criteria",
+          "dependencies",
+          "priority"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "ralph-memory",
+      "title": "Separate progress.txt from durable agents.md knowledge",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "iteration",
+          "memory",
+          "chronological",
+          "execution",
+          "project",
+          "patterns",
+          "gotchas."
+        ],
+        "coveredTerms": [
+          "iteration",
+          "memory",
+          "chronological",
+          "execution",
+          "project",
+          "patterns",
+          "gotchas."
+        ],
+        "mechanismTerms": [
+          "iteration",
+          "memory",
+          "execution"
+        ],
+        "sharedBoilerplateSentences": [
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "ralph-feedback",
+      "title": "Build feedback channels into every Ralph iteration",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "feedback-loop",
+          "architecture",
+          "tests",
+          "lint",
+          "builds",
+          "task",
+          "history",
+          "memory",
+          "become",
+          "channels."
+        ],
+        "coveredTerms": [
+          "tests",
+          "lint",
+          "builds",
+          "task",
+          "history",
+          "memory",
+          "become",
+          "channels."
+        ],
+        "mechanismTerms": [
+          "tests",
+          "lint",
+          "task"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "ralph-levels",
+      "title": "Earn progression from supervised to unattended Ralph loops",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "manual",
+          "attended",
+          "levels",
+          "progress",
+          "autonomy",
+          "after",
+          "success",
+          "lower",
+          "iteration",
+          "cost",
+          "time",
+          "error",
+          "budgets."
+        ],
+        "coveredTerms": [
+          "manual",
+          "attended",
+          "levels",
+          "progress",
+          "autonomy",
+          "after",
+          "success",
+          "lower",
+          "iteration",
+          "cost",
+          "time",
+          "error",
+          "budgets."
+        ],
+        "mechanismTerms": [
+          "manual",
+          "attended",
+          "levels",
+          "progress",
+          "after",
+          "iteration",
+          "cost",
+          "time",
+          "error"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "ralph-patterns",
+      "title": "Choose Ralph patterns by the kind of evidence you need",
+      "domain": "autonomy",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "feature",
+          "test",
+          "review",
+          "teach",
+          "four",
+          "separately",
+          "multi-persona",
+          "equivalent",
+          "independent",
+          "external",
+          "evaluation."
+        ],
+        "coveredTerms": [
+          "feature",
+          "test",
+          "review",
+          "teach",
+          "four",
+          "separately",
+          "multi-persona",
+          "equivalent",
+          "independent",
+          "external",
+          "evaluation."
+        ],
+        "mechanismTerms": [
+          "feature",
+          "test",
+          "review"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "automation-noninteractive",
+      "title": "Non-interactive and structured-output automation",
+      "domain": "automation",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "cover",
+          "one-off",
+          "queries",
+          "structured",
+          "streaming",
+          "exit",
+          "codes",
+          "idempotency",
+          "secret",
+          "handling."
+        ],
+        "coveredTerms": [
+          "cover",
+          "one-off",
+          "queries",
+          "structured",
+          "streaming",
+          "exit",
+          "codes",
+          "idempotency",
+          "secret",
+          "handling."
+        ],
+        "mechanismTerms": [
+          "cover",
+          "one-off",
+          "queries",
+          "structured",
+          "streaming",
+          "exit",
+          "codes",
+          "idempotency",
+          "secret",
+          "handling."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "automation-backoff",
+      "title": "Bounded polling and manual exponential backoff",
+      "domain": "automation",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "needs",
+          "maximum",
+          "attempts",
+          "increasing",
+          "intervals",
+          "success",
+          "predicate",
+          "error",
+          "exit",
+          "final",
+          "capture."
+        ],
+        "coveredTerms": [
+          "needs",
+          "maximum",
+          "attempts",
+          "increasing",
+          "intervals",
+          "success",
+          "predicate",
+          "error",
+          "exit",
+          "final",
+          "capture."
+        ],
+        "mechanismTerms": [
+          "needs",
+          "maximum",
+          "attempts",
+          "increasing",
+          "intervals",
+          "success",
+          "predicate",
+          "error",
+          "exit",
+          "final",
+          "capture."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "automation-of-automation",
+      "title": "Automation of automation",
+      "domain": "automation",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "index",
+          "names",
+          "extracted",
+          "lacks",
+          "full",
+          "body",
+          "retain",
+          "coverage",
+          "limitation",
+          "avoid",
+          "invented",
+          "detail."
+        ],
+        "coveredTerms": [
+          "index",
+          "names",
+          "extracted",
+          "lacks",
+          "full",
+          "body",
+          "retain",
+          "coverage",
+          "limitation",
+          "avoid",
+          "invented",
+          "detail."
+        ],
+        "mechanismTerms": [
+          "index",
+          "names",
+          "extracted",
+          "lacks",
+          "full",
+          "body",
+          "retain",
+          "coverage",
+          "limitation",
+          "avoid",
+          "invented",
+          "detail."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "automation-remote-control",
+      "title": "Remote and phone control",
+      "domain": "automation",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "teach",
+          "authentication",
+          "session",
+          "visibility",
+          "network",
+          "exposure",
+          "emergency",
+          "stop",
+          "audit",
+          "trail."
+        ],
+        "coveredTerms": [
+          "teach",
+          "authentication",
+          "session",
+          "visibility",
+          "network",
+          "exposure",
+          "emergency",
+          "stop",
+          "audit",
+          "trail."
+        ],
+        "mechanismTerms": [
+          "teach",
+          "authentication",
+          "session",
+          "visibility",
+          "network",
+          "exposure",
+          "emergency",
+          "stop",
+          "audit",
+          "trail."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "knowledge-graph-model",
+      "title": "Graphify concept graph model",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "adds",
+          "relationships",
+          "centrality",
+          "guarantee",
+          "truth",
+          "relevance."
+        ],
+        "coveredTerms": [
+          "adds",
+          "relationships",
+          "centrality",
+          "guarantee",
+          "truth",
+          "relevance."
+        ],
+        "mechanismTerms": [
+          "adds",
+          "relationships",
+          "centrality",
+          "guarantee",
+          "truth",
+          "relevance."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "knowledge-obsidian-import",
+      "title": "Obsidian export and reversible import",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "compare",
+          "standalone",
+          "vault",
+          "deletable",
+          "folder",
+          "selected",
+          "notes",
+          "integration",
+          "stage",
+          "merging."
+        ],
+        "coveredTerms": [
+          "compare",
+          "standalone",
+          "vault",
+          "deletable",
+          "folder",
+          "selected",
+          "notes",
+          "integration",
+          "stage",
+          "merging."
+        ],
+        "mechanismTerms": [
+          "compare",
+          "standalone",
+          "vault",
+          "deletable",
+          "folder",
+          "selected",
+          "notes",
+          "integration",
+          "stage",
+          "merging."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "knowledge-provenance",
+      "title": "Source backlinks and provenance",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "bare",
+          "linked",
+          "notes",
+          "need",
+          "content",
+          "origin",
+          "support",
+          "verification."
+        ],
+        "coveredTerms": [
+          "bare",
+          "linked",
+          "notes",
+          "need",
+          "content",
+          "origin",
+          "support",
+          "verification."
+        ],
+        "mechanismTerms": [
+          "bare",
+          "linked",
+          "notes",
+          "need",
+          "content",
+          "origin",
+          "support",
+          "verification."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "knowledge-retrieval-cadence",
+      "title": "Retrieval and review cadence for a second brain",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "commenter",
+          "identifies",
+          "unresolved",
+          "limitation",
+          "storage",
+          "without",
+          "resurfacing",
+          "routine",
+          "becomes",
+          "graveyard."
+        ],
+        "coveredTerms": [
+          "commenter",
+          "identifies",
+          "unresolved",
+          "limitation",
+          "storage",
+          "without",
+          "resurfacing",
+          "routine",
+          "becomes",
+          "graveyard."
+        ],
+        "mechanismTerms": [
+          "commenter",
+          "identifies",
+          "unresolved",
+          "limitation",
+          "storage",
+          "without",
+          "resurfacing",
+          "routine",
+          "becomes",
+          "graveyard."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "practice-writing-markdown",
+      "title": "Claude Code for writing and Markdown",
+      "domain": "adjacent-workflows",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "files",
+          "diffs",
+          "version",
+          "control",
+          "structured",
+          "non-code",
+          "notion",
+          "paste",
+          "preservation",
+          "narrow",
+          "tactic."
+        ],
+        "coveredTerms": [
+          "files",
+          "diffs",
+          "version",
+          "control",
+          "structured",
+          "non-code",
+          "notion",
+          "paste",
+          "preservation",
+          "narrow",
+          "tactic."
+        ],
+        "mechanismTerms": [
+          "files",
+          "diffs",
+          "version",
+          "control",
+          "structured",
+          "non-code",
+          "notion",
+          "paste",
+          "preservation",
+          "narrow",
+          "tactic."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "practice-personal-workflow",
+      "title": "Invest in a personalized workflow",
+      "domain": "adjacent-workflows",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "measure",
+          "friction",
+          "adding",
+          "tooling",
+          "maintain",
+          "remove",
+          "customizations",
+          "longer",
+          "off."
+        ],
+        "coveredTerms": [
+          "measure",
+          "friction",
+          "adding",
+          "tooling",
+          "maintain",
+          "remove",
+          "customizations",
+          "longer",
+          "off."
+        ],
+        "mechanismTerms": [
+          "measure",
+          "friction",
+          "adding",
+          "tooling",
+          "maintain",
+          "remove",
+          "customizations",
+          "longer",
+          "off."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "practice-learning",
+      "title": "Deliberate practice, iterative problem solving, and sharing",
+      "domain": "adjacent-workflows",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "real",
+          "failures",
+          "reusable",
+          "discoveries",
+          "contribute",
+          "improvements",
+          "continue",
+          "learning."
+        ],
+        "coveredTerms": [
+          "real",
+          "failures",
+          "reusable",
+          "discoveries",
+          "contribute",
+          "improvements",
+          "continue",
+          "learning."
+        ],
+        "mechanismTerms": [
+          "real",
+          "failures",
+          "reusable",
+          "discoveries",
+          "contribute",
+          "improvements",
+          "continue",
+          "learning."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "practice-personal-software",
+      "title": "Personalized software and mini-tools",
+      "domain": "adjacent-workflows",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "lower",
+          "implementation",
+          "cost",
+          "makes",
+          "narrow",
+          "personal",
+          "tools",
+          "viable",
+          "maintenance",
+          "privacy",
+          "data",
+          "portability",
+          "still",
+          "matter."
+        ],
+        "coveredTerms": [
+          "lower",
+          "implementation",
+          "cost",
+          "makes",
+          "narrow",
+          "personal",
+          "tools",
+          "viable",
+          "maintenance",
+          "privacy",
+          "data",
+          "portability",
+          "still",
+          "matter."
+        ],
+        "mechanismTerms": [
+          "lower",
+          "implementation",
+          "cost",
+          "makes",
+          "narrow",
+          "personal",
+          "tools",
+          "viable",
+          "maintenance",
+          "privacy",
+          "data",
+          "portability",
+          "still",
+          "matter."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "context-session-resume",
+      "title": "Name, resume, and hand off sessions",
+      "domain": "context-memory",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "session",
+          "naming",
+          "aids",
+          "retrieval",
+          "resumption",
+          "still",
+          "requires",
+          "checking",
+          "goal",
+          "repository",
+          "prior",
+          "decisions",
+          "remaining",
+          "verification."
+        ],
+        "coveredTerms": [
+          "session",
+          "naming",
+          "aids",
+          "retrieval",
+          "resumption",
+          "still",
+          "requires",
+          "checking",
+          "goal",
+          "repository",
+          "prior",
+          "decisions",
+          "remaining",
+          "verification."
+        ],
+        "mechanismTerms": [
+          "session",
+          "naming",
+          "aids",
+          "retrieval",
+          "resumption",
+          "still",
+          "requires",
+          "checking",
+          "goal",
+          "repository",
+          "prior",
+          "decisions",
+          "remaining",
+          "verification."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "automation-fanout",
+      "title": "Fan-out batch work",
+      "domain": "automation",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "stable",
+          "input",
+          "isolated",
+          "invocation",
+          "item",
+          "structured",
+          "results",
+          "concurrency",
+          "bounds",
+          "retry",
+          "policy",
+          "aggregation."
+        ],
+        "coveredTerms": [
+          "stable",
+          "input",
+          "isolated",
+          "invocation",
+          "item",
+          "structured",
+          "results",
+          "concurrency",
+          "bounds",
+          "retry",
+          "policy",
+          "aggregation."
+        ],
+        "mechanismTerms": [
+          "stable",
+          "input",
+          "isolated",
+          "invocation",
+          "item",
+          "structured",
+          "results",
+          "concurrency",
+          "bounds",
+          "retry",
+          "policy",
+          "aggregation."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-why-how-what",
+      "title": "Organize CLAUDE.md as why, how, and what",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "explain",
+          "project",
+          "purpose",
+          "architecture",
+          "operational",
+          "commands",
+          "repository",
+          "without",
+          "turning",
+          "file",
+          "exhaustive",
+          "documentation."
+        ],
+        "coveredTerms": [
+          "explain",
+          "project",
+          "purpose",
+          "architecture",
+          "operational",
+          "commands",
+          "repository",
+          "without",
+          "turning",
+          "file",
+          "exhaustive",
+          "documentation."
+        ],
+        "mechanismTerms": [
+          "commands",
+          "repository",
+          "file"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "instructions-creation",
+      "title": "Create and bootstrap CLAUDE.md safely",
+      "domain": "instructions",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "compare",
+          "generated",
+          "initialization",
+          "manual",
+          "authoring",
+          "incremental",
+          "memory",
+          "capture",
+          "review",
+          "claims",
+          "against",
+          "repository."
+        ],
+        "coveredTerms": [
+          "compare",
+          "generated",
+          "initialization",
+          "manual",
+          "authoring",
+          "incremental",
+          "memory",
+          "capture",
+          "review",
+          "claims",
+          "against",
+          "repository."
+        ],
+        "mechanismTerms": [
+          "generated",
+          "review",
+          "claims"
+        ],
+        "sharedBoilerplateSentences": [
+          "treat topic as a repository protocol nuance the protocol is valid only when its files and verifier outputs agree.",
+          "avoid this mechanism when a single deterministic command solves the task with lower coordination cost.",
+          "do not promote autonomy until the submitted mastery rubric passes in a clean review.",
+          "is visible in a file command output status or trace.",
+          "promotion beyond the worked scenario requires representative evaluation explicit cost and iteration ceilings rollback and a reviewer who did not supervise the original run."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "knowledge-corpus-ingest",
+      "title": "Acquire and normalize an authoritative corpus",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "define",
+          "canonical",
+          "sources",
+          "retrieval",
+          "boundaries",
+          "document",
+          "identity",
+          "update",
+          "date",
+          "failed",
+          "acquisitions",
+          "graph",
+          "construction."
+        ],
+        "coveredTerms": [
+          "define",
+          "canonical",
+          "sources",
+          "retrieval",
+          "boundaries",
+          "document",
+          "identity",
+          "update",
+          "date",
+          "failed",
+          "acquisitions",
+          "graph",
+          "construction."
+        ],
+        "mechanismTerms": [
+          "define",
+          "canonical",
+          "sources",
+          "retrieval",
+          "boundaries",
+          "document",
+          "identity",
+          "update",
+          "date",
+          "failed",
+          "acquisitions",
+          "graph",
+          "construction."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "knowledge-node-enrichment",
+      "title": "Enrich bare graph nodes with useful content",
+      "domain": "knowledge-systems",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "title",
+          "backlinks",
+          "note",
+          "source-grounded",
+          "explanation",
+          "relationship",
+          "meaning",
+          "provenance",
+          "without",
+          "inventing",
+          "content."
+        ],
+        "coveredTerms": [
+          "title",
+          "backlinks",
+          "note",
+          "source-grounded",
+          "explanation",
+          "relationship",
+          "meaning",
+          "provenance",
+          "without",
+          "inventing",
+          "content."
+        ],
+        "mechanismTerms": [
+          "title",
+          "backlinks",
+          "note",
+          "source-grounded",
+          "explanation",
+          "relationship",
+          "meaning",
+          "provenance",
+          "without",
+          "inventing",
+          "content."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "recovery-common-failures",
+      "title": "Diagnose and recover from common agent failures",
+      "domain": "verification",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "classify",
+          "context",
+          "overload",
+          "vague",
+          "requests",
+          "unchecked",
+          "runaway",
+          "scope",
+          "repeated",
+          "failed",
+          "edits",
+          "unsafe",
+          "automation",
+          "choose",
+          "rewind",
+          "clarify",
+          "isolate",
+          "re-plan",
+          "restart",
+          "accordingly."
+        ],
+        "coveredTerms": [
+          "classify",
+          "context",
+          "overload",
+          "vague",
+          "requests",
+          "unchecked",
+          "runaway",
+          "scope",
+          "repeated",
+          "failed",
+          "edits",
+          "unsafe",
+          "automation",
+          "choose",
+          "rewind",
+          "clarify",
+          "isolate",
+          "re-plan",
+          "restart",
+          "accordingly."
+        ],
+        "mechanismTerms": [
+          "classify",
+          "context",
+          "overload",
+          "vague",
+          "requests",
+          "unchecked",
+          "runaway",
+          "scope",
+          "repeated",
+          "failed",
+          "edits",
+          "unsafe",
+          "automation",
+          "choose",
+          "rewind",
+          "clarify",
+          "isolate",
+          "re-plan",
+          "restart",
+          "accordingly."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": true,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "source-system-prompt-slimming",
+      "title": "System-prompt slimming and patching",
+      "domain": "source-specific",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "risky",
+          "anecdotal",
+          "customization",
+          "remove",
+          "safety",
+          "product",
+          "assumptions",
+          "become",
+          "stale",
+          "after",
+          "upgrades",
+          "teach",
+          "warnings",
+          "reversible",
+          "alternative."
+        ],
+        "coveredTerms": [
+          "risky",
+          "anecdotal",
+          "customization",
+          "remove",
+          "safety",
+          "product",
+          "assumptions",
+          "become",
+          "stale",
+          "after",
+          "upgrades",
+          "teach",
+          "warnings",
+          "reversible",
+          "alternative."
+        ],
+        "mechanismTerms": [
+          "risky",
+          "anecdotal",
+          "customization",
+          "remove",
+          "safety",
+          "product",
+          "assumptions",
+          "become",
+          "stale",
+          "after",
+          "upgrades",
+          "teach",
+          "warnings",
+          "reversible",
+          "alternative."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "source-model-routing",
+      "title": "Model and effort routing",
+      "domain": "source-specific",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "names",
+          "pricing",
+          "availability",
+          "time-sensitive.",
+          "preserve",
+          "ruben",
+          "principle",
+          "spend",
+          "more",
+          "reasoning",
+          "framing",
+          "without",
+          "presenting",
+          "durable",
+          "guidance."
+        ],
+        "coveredTerms": [
+          "names",
+          "pricing",
+          "availability",
+          "time-sensitive.",
+          "preserve",
+          "ruben",
+          "principle",
+          "spend",
+          "more",
+          "reasoning",
+          "framing",
+          "without",
+          "presenting",
+          "durable",
+          "guidance."
+        ],
+        "mechanismTerms": [
+          "names",
+          "pricing",
+          "availability",
+          "time-sensitive.",
+          "preserve",
+          "ruben",
+          "principle",
+          "spend",
+          "more",
+          "reasoning",
+          "framing",
+          "without",
+          "presenting",
+          "durable",
+          "guidance."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "source-cowork-code",
+      "title": "Code versus Cowork and Cowork parallelism",
+      "domain": "source-specific",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "product",
+          "comparison",
+          "ruben",
+          "dated",
+          "opinion",
+          "extract",
+          "durable",
+          "distinction",
+          "between",
+          "coding",
+          "tools",
+          "multi-agent",
+          "knowledge-work",
+          "coordination."
+        ],
+        "coveredTerms": [
+          "product",
+          "comparison",
+          "ruben",
+          "dated",
+          "opinion",
+          "extract",
+          "durable",
+          "distinction",
+          "between",
+          "coding",
+          "tools",
+          "multi-agent",
+          "knowledge-work",
+          "coordination."
+        ],
+        "mechanismTerms": [
+          "product",
+          "comparison",
+          "ruben",
+          "dated",
+          "opinion",
+          "extract",
+          "durable",
+          "distinction",
+          "between",
+          "coding",
+          "tools",
+          "multi-agent",
+          "knowledge-work",
+          "coordination."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "used",
+        "manifestMatch": true
+      }
+    },
+    {
+      "id": "source-enterprise-seats",
+      "title": "Enterprise seat and privacy claims",
+      "domain": "source-specific",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "pricing",
+          "thresholds",
+          "comparisons",
+          "high-change",
+          "claims.",
+          "cite",
+          "date",
+          "them",
+          "require",
+          "official",
+          "verification",
+          "operational",
+          "decisions."
+        ],
+        "coveredTerms": [
+          "pricing",
+          "thresholds",
+          "comparisons",
+          "high-change",
+          "claims.",
+          "cite",
+          "date",
+          "them",
+          "require",
+          "official",
+          "verification",
+          "operational",
+          "decisions."
+        ],
+        "mechanismTerms": [
+          "pricing",
+          "thresholds",
+          "comparisons",
+          "high-change",
+          "claims.",
+          "cite",
+          "date",
+          "them",
+          "require",
+          "official",
+          "verification",
+          "operational",
+          "decisions."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    },
+    {
+      "id": "source-creative-opinions",
+      "title": "Creative-work and adoption opinions",
+      "domain": "source-specific",
+      "pass": true,
+      "score": 100,
+      "failures": [],
+      "diagnostics": {
+        "distinctiveTerms": [
+          "includes",
+          "writing-style",
+          "research",
+          "mode",
+          "loop-engineering",
+          "platform-switching",
+          "commercial-success",
+          "opinions.",
+          "teach",
+          "provocative",
+          "heuristics",
+          "facts."
+        ],
+        "coveredTerms": [
+          "includes",
+          "writing-style",
+          "research",
+          "mode",
+          "loop-engineering",
+          "platform-switching",
+          "commercial-success",
+          "opinions.",
+          "teach",
+          "provocative",
+          "heuristics",
+          "facts."
+        ],
+        "mechanismTerms": [
+          "includes",
+          "writing-style",
+          "research",
+          "mode",
+          "loop-engineering",
+          "platform-switching",
+          "commercial-success",
+          "opinions.",
+          "teach",
+          "provocative",
+          "heuristics",
+          "facts."
+        ],
+        "sharedBoilerplateSentences": [
+          "is deliberately violated so diagnosis must expose the mechanism."
+        ],
+        "identicalRubricReuse": 1,
+        "badCitations": [],
+        "procedural": false,
+        "hasArtifact": true,
+        "visualStatus": "not_applicable",
+        "manifestMatch": false
+      }
+    }
+  ]
+}

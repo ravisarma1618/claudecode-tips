@@ -1,0 +1,222 @@
+[
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/voice-transcription-mistakes.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/voice-transcription-mistakes.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Imperfect voice transcription interpreted in context",
+    "altText": "Claude Code interpreting imperfect voice-transcribed instructions",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-prompt-briefs",
+    "notes": "Instructional terminal screenshot; original watermark/appearance preserved."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/breakdown-direct.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/breakdown-direct.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Direct A-to-B task approach",
+    "altText": "A direct leap from task state A to state B",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "supporting comparison asset",
+    "notes": "Paired with breakdown-steps."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/breakdown-steps.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/breakdown-steps.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Task decomposed into verifiable steps",
+    "altText": "A large task decomposed into smaller steps from A to B",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-plan-slices",
+    "notes": "Instructional diagram."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/multitasking-terminal-tabs.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/multitasking-terminal-tabs.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Separate terminal tabs for concurrent workstreams",
+    "altText": "Multiple terminal tabs organized as separate Claude Code workstreams",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-context",
+    "notes": "Instructional workflow screenshot."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/git-worktrees.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/git-worktrees.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Git worktrees isolate parallel branches and directories",
+    "altText": "Git worktrees diagram with separate branches in separate directories",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-parallel",
+    "notes": "Instructional diagram."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/manual-exponential-backoff.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/manual-exponential-backoff.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Bounded polling with progressively longer delays",
+    "altText": "Terminal showing progressively delayed checks of a long-running build",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-automation",
+    "notes": "Instructional terminal screenshot."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/writing-assistant-side-by-side.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/writing-assistant-side-by-side.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Claude Code and a durable editor side by side",
+    "altText": "Claude Code terminal beside an editor in a collaborative writing workflow",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-operating-manual",
+    "notes": "Instructional workflow screenshot."
+  },
+  {
+    "localPath": "assets/source-images/src-ykdojo-repo/vibe-coding-spectrum.png",
+    "originalImageUrl": "https://github.com/ykdojo/claude-code-tips/blob/main/assets/vibe-coding-spectrum.png",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Verification rigor should rise with project risk",
+    "altText": "Spectrum from fast vibe coding to carefully verified engineering",
+    "captureMethod": "Copied from authoritative Git repository",
+    "attribution": "Y.K. Sugi / ykdojo",
+    "usageLocation": "lesson-agent-loop",
+    "notes": "Instructional diagram."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-008-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Agent goal and tool model",
+    "altText": "Agent goal and tool model",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-agentic-harness",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-014-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Memory across runs",
+    "altText": "Memory across runs",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-state-memory",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-013-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Tool use",
+    "altText": "Tool use",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-tool-design",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-019-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Orchestration",
+    "altText": "Orchestration",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-orchestration",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-018-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Permissions and human review",
+    "altText": "Permissions and human review",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-guardrails-human",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-021-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Observability",
+    "altText": "Observability",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-evals-observability",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-agentic-15/page-022-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-agentic-15)",
+    "sourceId": "pdf-agentic-15",
+    "caption": "Stopping conditions",
+    "altText": "Stopping conditions",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-stopping-recovery",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-ralph-loop/page-013-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-ralph-loop)",
+    "sourceId": "pdf-ralph-loop",
+    "caption": "Ralph architecture",
+    "altText": "Ralph architecture",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-ralph-loop",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-009-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-claudemd-masterclass)",
+    "sourceId": "pdf-claudemd-masterclass",
+    "caption": "CLAUDE.md hierarchy",
+    "altText": "CLAUDE.md hierarchy",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-claudemd-layers",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-claudemd-masterclass/page-033-image-02.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-claudemd-masterclass)",
+    "sourceId": "pdf-claudemd-masterclass",
+    "caption": "CLAUDE.md and hook enforcement",
+    "altText": "CLAUDE.md and hook enforcement",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-hooks-subagents",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-graphify-obsidian/page-007-image-01.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-graphify-obsidian)",
+    "sourceId": "pdf-graphify-obsidian",
+    "caption": "Connected idea graph",
+    "altText": "Connected idea graph",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-knowledge-graph",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  },
+  {
+    "localPath": "assets/pdf-images/pdf-ykdojo-repo/page-004-image-01.png",
+    "originalImageUrl": "Local PDF embedded image (pdf-ykdojo-repo)",
+    "sourceId": "pdf-ykdojo-repo",
+    "caption": "Daily Claude Code interface",
+    "altText": "Daily Claude Code interface",
+    "captureMethod": "Extracted losslessly from supplied local PDF with pypdf",
+    "attribution": "See source PDF record",
+    "usageLocation": "lesson-daily-interface",
+    "notes": "Meaningful instructional visual selected after contact-sheet review."
+  }
+]

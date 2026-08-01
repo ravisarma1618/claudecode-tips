@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');const read=n=>JSON.parse(fs.readFileSync(path.join(root,'data',n),'utf8'));
+const sources=read('source-manifest.json'),insights=read('insights.json'),curriculum=read('curriculum.json'),ref=read('reference.json'),topics=read('topic-coverage.json'),images=read('image-manifest.json');
+const assert=(v,m)=>{if(!v)throw new Error(m)};assert(sources.length===10,'All 10 sources required');assert(new Set(sources.map(s=>s.id)).size===10,'Duplicate source IDs');
+for(const s of sources){for(const k of ['id','url','title','retrievedAt','extractionMethod','status','coverageNotes','limitations'])assert(s[k]!=null,`${s.id}: missing ${k}`)}
+const sourceIds=new Set(sources.map(s=>s.id));for(const i of insights){assert(i.sourceIds.length,`${i.id}: no sources`);assert(i.sourceIds.every(x=>sourceIds.has(x)),`${i.id}: bad source`)}
+const lessons=curriculum.phases.flatMap(p=>p.levels.flatMap(l=>l.modules));assert(lessons.length>=27,'Too few lessons');assert(ref.workflows.length===15,'Expected 15 workflows');assert(ref.prompts.length===14,'Expected 14 prompts');assert(ref.decisions.length===10,'Expected 10 decisions');assert(ref.checklists.length===15,'Expected 15 checklists');
+const lessonIds=new Set(lessons.map(x=>x.id));assert(topics.length>=49,'Topic audit incomplete');for(const t of topics){assert(t.status==='covered',`Uncovered topic ${t.topic}`);assert(lessonIds.has(t.lessonId),`Topic ${t.topic} has invalid lesson`);assert(t.sourceIds.every(x=>sourceIds.has(x)),`Topic ${t.topic} has invalid source`)}
+for(const image of images){assert(sourceIds.has(image.sourceId)||image.sourceId==='src-ykdojo-repo',`Image ${image.localPath} has invalid source`);assert(fs.existsSync(path.join(root,image.localPath)),`Missing image ${image.localPath}`)}
+assert(fs.existsSync(path.join(root,'dist','index.html')),'Build dist first');const html=fs.readFileSync(path.join(root,'dist','index.html'),'utf8');assert(!html.includes('__APP_DATA__'),'Data not embedded');
+console.log(`Validated: ${sources.length} sources, ${insights.length} insights, ${lessons.length} lessons, ${ref.workflows.length} workflows, ${ref.prompts.length} prompts.`);

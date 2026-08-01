@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A traceable, interactive curriculum and operating manual for Claude Code.">
+  <title>Claude Code Mastery: From Beginner to Expert</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <button id="menuToggle" class="icon-button mobile-only" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <a class="brand" href="#home"><span class="brand-mark">CC</span><span>Claude Code Mastery</span></a>
+    <nav class="top-actions" aria-label="Site controls">
+      <button id="printButton" class="icon-button" aria-label="Print guide">Print</button>
+      <button id="themeToggle" class="icon-button" aria-label="Switch theme">Theme</button>
+    </nav>
+  </header>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar" aria-label="Curriculum navigation">
+      <div class="sidebar-head"><strong>Learning path</strong><button id="menuClose" class="icon-button mobile-only" aria-label="Close navigation">×</button></div>
+      <div class="overall-progress"><span id="progressLabel">0% complete</span><progress id="progressBar" max="100" value="0">0%</progress></div>
+      <nav id="courseNav"></nav>
+      <hr>
+      <nav class="reference-nav" aria-label="Reference sections">
+        <a href="#professional-practice">Professional projects</a><a href="#quick-start">90-minute starter path</a><a href="#workflows">Workflow playbook</a><a href="#prompts">Prompt library</a><a href="#decisions">Decision lab</a><a href="#antipatterns">Anti-patterns</a><a href="#checklists">Checklists</a><a href="#glossary">Glossary</a><a href="#topic-audit">Coverage and evidence audit</a><a href="#pdf-reader">Source evidence archive</a><a href="#sources">Source records and limitations</a>
+      </nav>
+    </aside>
+    <div id="drawerScrim" class="scrim" hidden></div>
+    <main id="main" tabindex="-1">
+      <div id="crumbs" class="breadcrumbs" aria-label="Current location">Home</div>
+      <section id="home" class="hero">
+        <p class="eyebrow">Interactive field manual · evidence-linked</p>
+        <h1>Claude Code Mastery:<br><span>From Beginner to Expert</span></h1>
+        <p class="lede">Learn to turn Claude Code from a persuasive assistant into a controlled engineering system: scoped prompts, fresh context, executable evidence, safe autonomy, and independent review.</p>
+        <div class="hero-actions"><a class="button primary" href="#deep-topics">Start the curriculum</a><a class="button" href="#workflows">Open the playbook</a></div>
+        <div id="metrics" class="metrics" aria-label="Guide metrics"></div>
+      </section>
+      <section class="control-deck" aria-label="Search and filters">
+        <div class="search-wrap"><label for="searchInput">Search the guide</label><input id="searchInput" type="search" placeholder="Try context, debugging, worktrees…" autocomplete="off"><span id="searchStatus" class="sr-only" aria-live="polite"></span></div>
+        <div class="filters">
+          <label>Level<select id="levelFilter"><option value="">All</option><option value="foundation">Foundation</option><option value="productive">Productive</option><option value="advanced">Advanced</option><option value="expert">Expert</option></select></label>
+          <label>Topic<select id="topicFilter"><option value="">All</option></select></label>
+          <label>Source<select id="sourceFilter"><option value="">All</option></select></label>
+          <label>Difficulty<select id="difficultyFilter"><option value="">All</option><option value="1">1 · Beginner</option><option value="2">2 · Productive</option><option value="3">3 · Advanced</option><option value="4">4 · Expert</option></select></label>
+          <label>Type<select id="typeFilter"><option value="">All</option></select></label>
+        </div>
+        <div class="control-row"><button id="clearFilters">Clear filters</button><button id="expandAll">Expand all</button><button id="collapseAll">Collapse all</button><label class="toggle"><input id="advancedToggle" type="checkbox" checked> Show advanced detail</label></div>
+      </section>
+      <div id="emptyState" class="empty-state" hidden><h2>No matches</h2><p>Try fewer filters or a broader search term.</p></div>
+      <section id="deep-topics" class="reference-section"><div class="section-heading"><p class="eyebrow">Primary learning path · 95 complete lessons</p><h2>Beginner-to-expert curriculum</h2><p>The PDF material has been converted into structured phases, levels, and teaching lessons. Each lesson moves from a plain-language mental model to mechanism, boundaries, procedure, worked application, recovery, practice, and page-level evidence.</p></div><div id="topicHandbook" class="topic-handbook"></div></section>
+      <section id="professional-practice" class="reference-section"><div class="section-heading"><p class="eyebrow">Professional practicum</p><h2>Eight cumulative projects and capstone</h2><p>Turn lesson knowledge into auditable professional artifacts through guided labs, independent assignments, weighted rubrics, model-solution outlines, and mastery gates.</p></div><div id="practiceGrid"></div><div id="capstoneTrack"></div></section>
+      <section id="quick-start" class="reference-section"><div class="section-heading"><p class="eyebrow">Optional condensed route</p><h2>90-minute guided starter path</h2><p>These shorter starter modules provide orientation. Use the 95-lesson curriculum above for complete teaching.</p></div><div id="curriculum"></div></section>
+      <section id="workflows" class="reference-section"><div class="section-heading"><p class="eyebrow">Operational playbook</p><h2>Master workflows</h2><p>Repeatable procedures with prompts, evidence gates, failure modes, and recovery.</p></div><div id="workflowGrid" class="card-grid"></div></section>
+      <section id="prompts" class="reference-section"><div class="section-heading"><p class="eyebrow">Copy · replace · verify</p><h2>Prompt library</h2></div><div id="promptGrid" class="card-grid"></div></section>
+      <section id="decisions" class="reference-section"><div class="section-heading"><p class="eyebrow">Choose deliberately</p><h2>Decision lab</h2></div><div id="decisionGrid" class="card-grid"></div></section>
+      <section id="antipatterns" class="reference-section"><div class="section-heading"><p class="eyebrow">Failure atlas</p><h2>Anti-pattern catalog</h2></div><div id="antiGrid" class="card-grid"></div></section>
+      <section id="checklists" class="reference-section"><div class="section-heading"><p class="eyebrow">Persistent safeguards</p><h2>Master checklists</h2><p>Checks are saved in this browser.</p></div><div id="checklistGrid" class="card-grid"></div></section>
+      <section id="glossary" class="reference-section"><div class="section-heading"><p class="eyebrow">Shared vocabulary</p><h2>Glossary</h2></div><dl id="glossaryGrid" class="glossary-grid"></dl></section>
+      <section id="topic-audit" class="reference-section"><div class="section-heading"><p class="eyebrow">Nothing silently omitted</p><h2>Coverage and evidence audit</h2><p>Every substantive topic found in the ten supplied PDFs is mapped to a lesson and supporting PDF records.</p></div><div id="topicCoverage" class="topic-coverage"></div></section>
+      <section id="pdf-reader" class="reference-section source-appendix"><div class="section-heading"><p class="eyebrow">Evidence appendix · not the learning curriculum</p><h2>Raw PDF extraction and page index</h2><p>This collapsed appendix exists only for citation checking and extraction transparency. Its text preserves PDF/OCR formatting and is intentionally not presented as a lesson. Learn from the structured 95-lesson curriculum above; open raw pages only to inspect underlying evidence.</p></div><div id="pdfReader"></div></section>
+      <section id="sources" class="reference-section"><div class="section-heading"><p class="eyebrow">Trace every claim to the supplied files</p><h2>Source records and limitations</h2><p>All ten PDFs were processed page by page. Open a record for extraction details and limitations.</p></div><div id="sourceGrid" class="source-grid"></div></section>
+    </main>
+  </div>
+  <button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
+  <dialog id="sourceDialog" aria-labelledby="sourceDialogTitle"><button class="dialog-close" aria-label="Close source details">×</button><div id="sourceDialogBody"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script id="app-data" type="application/json">__APP_DATA__</script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

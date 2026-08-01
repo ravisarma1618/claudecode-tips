@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');
+const forensic=JSON.parse(fs.readFileSync(path.join(root,'research','forensic-evidence.json'),'utf8'));
+const ontology=JSON.parse(fs.readFileSync(path.join(root,'research','topic-ontology.json'),'utf8'));
+const records=new Map();
+for(const source of forensic.sources)for(const concept of source.concepts)records.set(concept.id,{...concept,sourceId:source.sourceId,sourceTitle:source.title});
+const mapping=ontology.evidenceRecordMappings,byTopic=Object.fromEntries(ontology.topics.map(t=>[t.id,[]]));
+for(const [topicId,ids] of Object.entries(mapping.topicEvidenceRecords))for(const id of ids)byTopic[topicId]?.push(id);
+for(const [id,topicIds] of Object.entries(mapping.multiTopicAggregateRecords))for(const topicId of topicIds)byTopic[topicId]?.push(id);
+for(const [id,disposition] of Object.entries(mapping.sourceOnlyEvidenceRecords))byTopic[disposition.topicId]?.push(id);
+const sourceTitles=Object.fromEntries(forensic.sources.map(s=>[s.sourceId,s.title]));
+const out=ontology.topics.map(topic=>{const mapped=[...new Set(byTopic[topic.id])].map(id=>records.get(id)).filter(Boolean).map(r=>({recordId:r.id,sourceId:r.sourceId,sourceTitle:r.sourceTitle,title:r.title,pages:r.pages,evidence:r.evidence,details:r.details||[],warnings:r.warnings||[],confidence:r.confidence||'medium'}));if(!mapped.length)for(const source of topic.sources||[])mapped.push({recordId:`ontology-${topic.id}-${source.id}`,sourceId:source.id,sourceTitle:sourceTitles[source.id]||source.id,title:topic.title,pages:source.pages,evidence:topic.nuance,details:[],warnings:[],confidence:'medium'});return {topicId:topic.id,nuance:topic.nuance,records:mapped}});
+fs.writeFileSync(path.join(root,'data','source-mechanisms.json'),JSON.stringify(out,null,2)+'\n');
+console.log(`Generated source-specific mechanisms for ${out.filter(x=>x.records.length).length}/${out.length} topics.`);
