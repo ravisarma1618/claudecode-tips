@@ -1,72 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A traceable, interactive curriculum and operating manual for Claude Code.">
-  <title>Claude Code Mastery: From Beginner to Expert</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CCU Scholar Portal — an interactive Claude Code curriculum from complete beginner to AI architect.">
+    <title>CCU | Scholar Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        :root { color-scheme: light; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #fafafa; }
+        .glass-sidebar { background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(12px); }
+        .module-card { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .module-card:hover { transform: translateY(-2px); border-color: #000; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e5e5e5; border-radius: 10px; }
+        .ccu-shell { min-height: 100vh; }
+        .ccu-sidebar { width: 18rem; }
+        .ccu-main { min-width: 0; }
+        .ccu-section { scroll-margin-top: 2rem; }
+        .ccu-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 1rem; }
+        .ccu-eyebrow { font-size: 0.68rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; color: #9ca3af; }
+        .ccu-nav-link { display: block; font-size: .875rem; font-weight: 500; color: #9ca3af; transition: color .2s ease; }
+        .ccu-nav-link:hover, .ccu-nav-link.active { color: #111827; }
+        .ccu-mobile-header { display: none; }
+        #courseNav a, .reference-nav a { display: block; padding: .38rem 0; font-size: .8rem; color: #9ca3af; }
+        #courseNav a:hover, .reference-nav a:hover { color: #111827; }
+        #courseNav button { width: 100%; text-align: left; }
+        #progressBar { width: 100%; height: .25rem; accent-color: #111827; }
+        .control-deck input, .control-deck select, .control-deck button {
+            border: 1px solid #e5e7eb; background: #fff; border-radius: .65rem; padding: .65rem .8rem; font-size: .82rem;
+        }
+        .control-deck label { font-size: .72rem; color: #6b7280; display: grid; gap: .3rem; }
+        .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: .75rem; }
+        .control-row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+        .search-wrap { display: grid; gap: .35rem; }
+        .topic-handbook, #curriculum, #practiceGrid, #capstoneTrack, .card-grid, .source-grid, .topic-coverage, .glossary-grid { margin-top: 1.5rem; }
+        .section-heading h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); font-weight: 600; letter-spacing: -.035em; color: #111827; }
+        .section-heading p { color: #6b7280; max-width: 52rem; }
+        .reference-section { padding: 2rem 0; border-top: 1px solid #f0f0f0; }
+        .hero-actions .button, .button { display: inline-flex; align-items: center; justify-content: center; border: 1px solid #d1d5db; border-radius: .7rem; padding: .75rem 1rem; font-size: .82rem; font-weight: 600; }
+        .button.primary { background: #111827; color: #fff; border-color: #111827; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: .75rem; margin-top: 1.25rem; }
+        .scrim { display: none; }
+        dialog { border: 0; border-radius: 1rem; padding: 0; width: min(760px, 92vw); box-shadow: 0 24px 80px rgba(0,0,0,.18); }
+        dialog::backdrop { background: rgba(17,24,39,.5); }
+        .dialog-close { position: absolute; top: .75rem; right: .9rem; z-index: 2; }
+        .back-top { position: fixed; right: 1.25rem; bottom: 1.25rem; width: 2.5rem; height: 2.5rem; border-radius: 999px; background: #111827; color: white; }
+        .toast { position: fixed; right: 1.25rem; bottom: 4.5rem; z-index: 50; }
+        .mobile-only { display: none; }
+        @media (max-width: 960px) {
+            body { overflow: auto; }
+            .ccu-shell { display: block; }
+            .ccu-sidebar { position: fixed; inset: 0 auto 0 0; z-index: 40; transform: translateX(-100%); transition: transform .2s ease; }
+            .ccu-sidebar.open { transform: translateX(0); }
+            .ccu-main { padding-top: 4.25rem; }
+            .ccu-mobile-header { display: flex; position: fixed; inset: 0 0 auto 0; z-index: 35; height: 4.25rem; align-items: center; justify-content: space-between; padding: 0 1rem; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; }
+            .scrim { position: fixed; inset: 0; z-index: 30; background: rgba(17,24,39,.35); }
+            .scrim:not([hidden]) { display: block; }
+            .mobile-only { display: inline-flex; }
+        }
+    </style>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="topbar">
-    <button id="menuToggle" class="icon-button mobile-only" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <a class="brand" href="#home"><span class="brand-mark">CC</span><span>Claude Code Mastery</span></a>
-    <nav class="top-actions" aria-label="Site controls">
-      <button id="printButton" class="icon-button" aria-label="Print guide">Print</button>
-      <button id="themeToggle" class="icon-button" aria-label="Switch theme">Theme</button>
-    </nav>
-  </header>
-  <div class="app-shell">
-    <aside id="sidebar" class="sidebar" aria-label="Curriculum navigation">
-      <div class="sidebar-head"><strong>Learning path</strong><button id="menuClose" class="icon-button mobile-only" aria-label="Close navigation">×</button></div>
-      <div class="overall-progress"><span id="progressLabel">0% complete</span><progress id="progressBar" max="100" value="0">0%</progress></div>
-      <nav id="courseNav"></nav>
-      <hr>
-      <nav class="reference-nav" aria-label="Reference sections">
-        <a href="#professional-practice">Professional projects</a><a href="#quick-start">90-minute starter path</a><a href="#workflows">Workflow playbook</a><a href="#prompts">Prompt library</a><a href="#decisions">Decision lab</a><a href="#antipatterns">Anti-patterns</a><a href="#checklists">Checklists</a><a href="#glossary">Glossary</a><a href="#topic-audit">Coverage and evidence audit</a><a href="#pdf-reader">Source evidence archive</a><a href="#sources">Source records and limitations</a>
-      </nav>
-    </aside>
-    <div id="drawerScrim" class="scrim" hidden></div>
-    <main id="main" tabindex="-1">
-      <div id="crumbs" class="breadcrumbs" aria-label="Current location">Home</div>
-      <section id="home" class="hero">
-        <p class="eyebrow">Interactive field manual · evidence-linked</p>
-        <h1>Claude Code Mastery:<br><span>From Beginner to Expert</span></h1>
-        <p class="lede">Learn to turn Claude Code from a persuasive assistant into a controlled engineering system: scoped prompts, fresh context, executable evidence, safe autonomy, and independent review.</p>
-        <div class="hero-actions"><a class="button primary" href="#deep-topics">Start the curriculum</a><a class="button" href="#workflows">Open the playbook</a></div>
-        <div id="metrics" class="metrics" aria-label="Guide metrics"></div>
-      </section>
-      <section class="control-deck" aria-label="Search and filters">
-        <div class="search-wrap"><label for="searchInput">Search the guide</label><input id="searchInput" type="search" placeholder="Try context, debugging, worktrees…" autocomplete="off"><span id="searchStatus" class="sr-only" aria-live="polite"></span></div>
-        <div class="filters">
-          <label>Level<select id="levelFilter"><option value="">All</option><option value="foundation">Foundation</option><option value="productive">Productive</option><option value="advanced">Advanced</option><option value="expert">Expert</option></select></label>
-          <label>Topic<select id="topicFilter"><option value="">All</option></select></label>
-          <label>Source<select id="sourceFilter"><option value="">All</option></select></label>
-          <label>Difficulty<select id="difficultyFilter"><option value="">All</option><option value="1">1 · Beginner</option><option value="2">2 · Productive</option><option value="3">3 · Advanced</option><option value="4">4 · Expert</option></select></label>
-          <label>Type<select id="typeFilter"><option value="">All</option></select></label>
-        </div>
-        <div class="control-row"><button id="clearFilters">Clear filters</button><button id="expandAll">Expand all</button><button id="collapseAll">Collapse all</button><label class="toggle"><input id="advancedToggle" type="checkbox" checked> Show advanced detail</label></div>
-      </section>
-      <div id="emptyState" class="empty-state" hidden><h2>No matches</h2><p>Try fewer filters or a broader search term.</p></div>
-      <section id="deep-topics" class="reference-section"><div class="section-heading"><p class="eyebrow">Primary learning path · 95 complete lessons</p><h2>Beginner-to-expert curriculum</h2><p>The PDF material has been converted into structured phases, levels, and teaching lessons. Each lesson moves from a plain-language mental model to mechanism, boundaries, procedure, worked application, recovery, practice, and page-level evidence.</p></div><div id="topicHandbook" class="topic-handbook"></div></section>
-      <section id="professional-practice" class="reference-section"><div class="section-heading"><p class="eyebrow">Professional practicum</p><h2>Eight cumulative projects and capstone</h2><p>Turn lesson knowledge into auditable professional artifacts through guided labs, independent assignments, weighted rubrics, model-solution outlines, and mastery gates.</p></div><div id="practiceGrid"></div><div id="capstoneTrack"></div></section>
-      <section id="quick-start" class="reference-section"><div class="section-heading"><p class="eyebrow">Optional condensed route</p><h2>90-minute guided starter path</h2><p>These shorter starter modules provide orientation. Use the 95-lesson curriculum above for complete teaching.</p></div><div id="curriculum"></div></section>
-      <section id="workflows" class="reference-section"><div class="section-heading"><p class="eyebrow">Operational playbook</p><h2>Master workflows</h2><p>Repeatable procedures with prompts, evidence gates, failure modes, and recovery.</p></div><div id="workflowGrid" class="card-grid"></div></section>
-      <section id="prompts" class="reference-section"><div class="section-heading"><p class="eyebrow">Copy · replace · verify</p><h2>Prompt library</h2></div><div id="promptGrid" class="card-grid"></div></section>
-      <section id="decisions" class="reference-section"><div class="section-heading"><p class="eyebrow">Choose deliberately</p><h2>Decision lab</h2></div><div id="decisionGrid" class="card-grid"></div></section>
-      <section id="antipatterns" class="reference-section"><div class="section-heading"><p class="eyebrow">Failure atlas</p><h2>Anti-pattern catalog</h2></div><div id="antiGrid" class="card-grid"></div></section>
-      <section id="checklists" class="reference-section"><div class="section-heading"><p class="eyebrow">Persistent safeguards</p><h2>Master checklists</h2><p>Checks are saved in this browser.</p></div><div id="checklistGrid" class="card-grid"></div></section>
-      <section id="glossary" class="reference-section"><div class="section-heading"><p class="eyebrow">Shared vocabulary</p><h2>Glossary</h2></div><dl id="glossaryGrid" class="glossary-grid"></dl></section>
-      <section id="topic-audit" class="reference-section"><div class="section-heading"><p class="eyebrow">Nothing silently omitted</p><h2>Coverage and evidence audit</h2><p>Every substantive topic found in the ten supplied PDFs is mapped to a lesson and supporting PDF records.</p></div><div id="topicCoverage" class="topic-coverage"></div></section>
-      <section id="pdf-reader" class="reference-section source-appendix"><div class="section-heading"><p class="eyebrow">Evidence appendix · not the learning curriculum</p><h2>Raw PDF extraction and page index</h2><p>This collapsed appendix exists only for citation checking and extraction transparency. Its text preserves PDF/OCR formatting and is intentionally not presented as a lesson. Learn from the structured 95-lesson curriculum above; open raw pages only to inspect underlying evidence.</p></div><div id="pdfReader"></div></section>
-      <section id="sources" class="reference-section"><div class="section-heading"><p class="eyebrow">Trace every claim to the supplied files</p><h2>Source records and limitations</h2><p>All ten PDFs were processed page by page. Open a record for extraction details and limitations.</p></div><div id="sourceGrid" class="source-grid"></div></section>
-    </main>
-  </div>
-  <button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
-  <dialog id="sourceDialog" aria-labelledby="sourceDialogTitle"><button class="dialog-close" aria-label="Close source details">×</button><div id="sourceDialogBody"></div></dialog>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script id="app-data" type="application/json">__APP_DATA__</script>
-  <script src="scripts/app.js"></script>
+<body class="h-screen overflow-hidden">
+    <a class="sr-only focus:not-sr-only" href="#main">Skip to content</a>
+
+    <header class="ccu-mobile-header">
+        <button id="menuToggle" class="w-10 h-10 rounded-full border border-gray-200" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <a href="#home" class="font-semibold tracking-tight">CCU Scholar</a>
+        <button id="themeToggle" class="text-xs font-semibold" aria-label="Switch theme">Theme</button>
+    </header>
+
+    <div class="ccu-shell flex h-screen overflow-hidden">
+        <aside id="sidebar" class="ccu-sidebar glass-sidebar border-r border-gray-200 flex flex-col justify-between p-8 overflow-y-auto" aria-label="Curriculum navigation">
+            <div>
+                <div class="flex items-center justify-between gap-3 mb-10">
+                    <a href="#home" class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-[10px] font-bold">CCU</div>
+                        <span class="font-semibold text-lg tracking-tight">CCU Scholar</span>
+                    </a>
+                    <button id="menuClose" class="mobile-only text-xl" aria-label="Close navigation">×</button>
+                </div>
+
+                <nav class="space-y-4 mb-8">
+                    <a href="#home" class="ccu-nav-link active">Dashboard</a>
+                    <a href="#deep-topics" class="ccu-nav-link">Modules</a>
+                    <a href="#professional-practice" class="ccu-nav-link">Projects</a>
+                    <a href="#sources" class="ccu-nav-link">Research</a>
+                    <a href="#checklists" class="ccu-nav-link">Settings</a>
+                </nav>
+
+                <div class="border-t border-gray-200 pt-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="ccu-eyebrow">Course progress</span>
+                        <span id="progressLabel" class="text-xs text-gray-500">0% complete</span>
+                    </div>
+                    <progress id="progressBar" max="100" value="0">0%</progress>
+                </div>
+
+                <div class="mt-8">
+                    <p class="ccu-eyebrow mb-3">Learning path</p>
+                    <nav id="courseNav"></nav>
+                </div>
+
+                <div class="mt-8">
+                    <p class="ccu-eyebrow mb-3">Resources</p>
+                    <nav class="reference-nav" aria-label="Reference sections">
+                        <a href="#quick-start">90-minute starter path</a>
+                        <a href="#workflows">Workflow playbook</a>
+                        <a href="#prompts">Prompt library</a>
+                        <a href="#decisions">Decision lab</a>
+                        <a href="#antipatterns">Anti-patterns</a>
+                        <a href="#checklists">Checklists</a>
+                        <a href="#glossary">Glossary</a>
+                        <a href="#topic-audit">Coverage audit</a>
+                        <a href="#pdf-reader">Evidence archive</a>
+                        <a href="#sources">Source records</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="pt-8 text-[10px] text-gray-400 uppercase tracking-widest font-semibold">Semester 2026.01</div>
+        </aside>
+
+        <div id="drawerScrim" class="scrim" hidden></div>
+
+        <main id="main" tabindex="-1" class="ccu-main flex-1 overflow-y-auto bg-white px-6 md:px-10 xl:px-14 py-10">
+            <div class="max-w-6xl mx-auto">
+                <div id="crumbs" class="text-xs text-gray-400 mb-8" aria-label="Current location">Dashboard</div>
+
+                <section id="home" class="ccu-section mb-12">
+                    <div class="max-w-4xl">
+                        <p class="ccu-eyebrow mb-3">Claude Code University</p>
+                        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-gray-900 mb-4">From complete beginner to AI architect.</h1>
+                        <p class="text-gray-500 text-base md:text-lg max-w-3xl">An interactive, practical curriculum for someone who has never used Claude Code. Learn by building, testing, failing safely, recovering, and progressing toward production-grade agent systems.</p>
+                        <div class="hero-actions flex flex-wrap gap-3 mt-7">
+                            <a class="button primary" href="#deep-topics">Start learning</a>
+                            <a class="button" href="#quick-start">Open starter path</a>
+                            <button id="printButton" class="button" aria-label="Print guide">Print guide</button>
+                        </div>
+                        <div id="metrics" class="metrics" aria-label="Guide metrics"></div>
+                    </div>
+                </section>
+
+                <section class="ccu-panel p-5 md:p-6 mb-12 control-deck" aria-label="Search and filters">
+                    <div class="search-wrap mb-5">
+                        <label for="searchInput">Search the university</label>
+                        <input id="searchInput" type="search" placeholder="Try agents, hooks, Git, MCP, permissions…" autocomplete="off">
+                        <span id="searchStatus" class="sr-only" aria-live="polite"></span>
+                    </div>
+                    <div class="filters mb-5">
+                        <label>Level<select id="levelFilter"><option value="">All</option><option value="foundation">Foundation</option><option value="productive">Productive</option><option value="advanced">Advanced</option><option value="expert">Expert</option></select></label>
+                        <label>Topic<select id="topicFilter"><option value="">All</option></select></label>
+                        <label>Source<select id="sourceFilter"><option value="">All</option></select></label>
+                        <label>Difficulty<select id="difficultyFilter"><option value="">All</option><option value="1">1 · Beginner</option><option value="2">2 · Productive</option><option value="3">3 · Advanced</option><option value="4">4 · Expert</option></select></label>
+                        <label>Type<select id="typeFilter"><option value="">All</option></select></label>
+                    </div>
+                    <div class="control-row">
+                        <button id="clearFilters">Clear filters</button>
+                        <button id="expandAll">Expand all</button>
+                        <button id="collapseAll">Collapse all</button>
+                        <label class="inline-flex items-center gap-2 text-xs text-gray-500"><input id="advancedToggle" type="checkbox" checked> Show advanced detail</label>
+                    </div>
+                </section>
+
+                <div id="emptyState" class="ccu-panel p-8 text-center mb-10" hidden><h2 class="text-xl font-semibold">No matches</h2><p class="text-gray-500">Try fewer filters or a broader search term.</p></div>
+
+                <section id="deep-topics" class="ccu-section reference-section">
+                    <div class="section-heading">
+                        <p class="ccu-eyebrow">Primary curriculum</p>
+                        <h2>Claude Code modules</h2>
+                        <p>Move from terminal basics and first edits to agents, orchestration, production evaluation, governance, and architecture.</p>
+                    </div>
+                    <div id="topicHandbook" class="topic-handbook"></div>
+                </section>
+
+                <section id="professional-practice" class="ccu-section reference-section">
+                    <div class="section-heading"><p class="ccu-eyebrow">Practical projects</p><h2>Build, test, and prove your skills</h2><p>Use cumulative projects, rubrics, mastery gates, and a final production capstone.</p></div>
+                    <div id="practiceGrid"></div><div id="capstoneTrack"></div>
+                </section>
+
+                <section id="quick-start" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Starter route</p><h2>90-minute guided path</h2><p>Use this condensed route to install Claude Code, understand the working folder, make a safe edit, and verify the result.</p></div><div id="curriculum"></div></section>
+                <section id="workflows" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Operational playbook</p><h2>Master workflows</h2><p>Repeatable procedures with prompts, evidence gates, failure modes, and recovery.</p></div><div id="workflowGrid" class="card-grid"></div></section>
+                <section id="prompts" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Copy · replace · verify</p><h2>Prompt library</h2></div><div id="promptGrid" class="card-grid"></div></section>
+                <section id="decisions" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Choose deliberately</p><h2>Decision lab</h2></div><div id="decisionGrid" class="card-grid"></div></section>
+                <section id="antipatterns" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Failure atlas</p><h2>Anti-pattern catalog</h2></div><div id="antiGrid" class="card-grid"></div></section>
+                <section id="checklists" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Persistent safeguards</p><h2>Master checklists</h2><p>Checks are saved in this browser.</p></div><div id="checklistGrid" class="card-grid"></div></section>
+                <section id="glossary" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Shared vocabulary</p><h2>Glossary</h2></div><dl id="glossaryGrid" class="glossary-grid"></dl></section>
+                <section id="topic-audit" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Coverage and evidence</p><h2>Topic audit</h2><p>Every substantive topic is mapped to a lesson and source record.</p></div><div id="topicCoverage" class="topic-coverage"></div></section>
+                <section id="pdf-reader" class="ccu-section reference-section source-appendix"><div class="section-heading"><p class="ccu-eyebrow">Evidence appendix</p><h2>Raw PDF extraction and page index</h2><p>Open raw pages only when you need to inspect the underlying evidence.</p></div><div id="pdfReader"></div></section>
+                <section id="sources" class="ccu-section reference-section"><div class="section-heading"><p class="ccu-eyebrow">Research records</p><h2>Sources and limitations</h2><p>Inspect the source material, extraction details, and limitations behind the curriculum.</p></div><div id="sourceGrid" class="source-grid"></div></section>
+            </div>
+        </main>
+    </div>
+
+    <button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
+    <dialog id="sourceDialog" aria-labelledby="sourceDialogTitle"><button class="dialog-close" aria-label="Close source details">×</button><div id="sourceDialogBody"></div></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script id="app-data" type="application/json">__APP_DATA__</script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
